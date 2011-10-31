@@ -1,0 +1,286 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/utilities/general/clearfix";
+@import "compass/css3";
+@import "compass/css3/transition";
+@import "compass/css3/border-radius";
+@import "_config.scss";
+@import "_fonts.scss";
+@import "_slider.scss";
+@import "_accordion.scss";
+
+// Gradient background + highlight borders
+@mixin box {
+    color: $ci_lightgray;
+    margin-bottom: 5px;
+    border-top: 1px solid $box_3d_highlight;
+    border-bottom: 1px solid $box_3d_shadow;
+    @include background-image(linear-gradient(left, $gradient_darkgray, $gradient_lightgray, $gradient_darkgray));
+}
+
+// Adds a yellow bar at bottom
+@mixin boxactive {
+    display: block;
+    margin-left: -10px;
+    margin-top: -$accordion_underline_height;
+    height: $accordion_underline_height;
+    @include background-image(linear-gradient(left, $gradient_darkorange, $gradient_lightorange, $gradient_darkorange));
+    content: '';
+}
+
+body {
+    background-color: $ci_background;
+    margin: 0;
+    padding: 0;
+    @include Joey;
+    line-height: 1.4em;
+    color: $ci_lightgray;
+}
+
+#container {
+    min-width: 320px;
+    max-width: $width;
+    margin: 0 auto;
+
+}
+
+#footerbar {
+    // TODO: Shadow
+}
+
+#headerbar, #footerbar, #precontentbar, #contentbar {
+    height: 31px;
+    @include clearfix;
+    @include box;
+}
+
+#logobar {
+   img {
+        float: right;
+        margin: 50px 10px 20px 0;
+   }
+}
+
+#main {
+    @include clearfix;
+    width: $width;
+    > nav {
+        @include box;
+        @include background-image(linear-gradient(top left, $gradient_lightgray, $gradient_darkgray));
+        float: left;
+        width: $nav_width;
+        ul {
+            list-style: none;
+            li {
+                color: $ci_lightgray;
+                font-family: "Caput Bold";
+                font-size: $nav_font_size;
+                margin: $nav_spacing 0;
+                &.active, &:hover {
+                    color: $ci_orange;
+                }
+                // This is for the appearing
+                // asdf symbol on hover
+                &:before {
+                    text-align: center;
+                    display: inline-block;
+                    width: 20px;
+                    content: '';
+                }
+                &:hover:before, &.active:before {
+                    content: '≡';
+                }
+                // First and last nav element are not
+                // supposed to have big spacings.
+                // (Collapsing finally makes sense!)
+                &:first-child, &:last-child {
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+    #content {
+        float: right;
+        width: 720px;
+        dl.accordion {
+            > dt {
+                line-height: 31px;
+                padding-left: 10px;
+                @include box;
+                &:hover:after, &.active:after {
+                    @include boxactive;
+                }
+            }
+            > dd > div {
+                @include box;
+                padding: 10px;
+            }
+            dd > dl.accordion {
+                dt {
+                    background-color: $ci_orange;
+                    background-image: none !important;
+                    border: 0 !important;
+                    color: $ci_white;
+                    &.active {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .slider {
+            .pages {
+                height: 200px;
+
+            }
+            nav {
+                div {
+                    text-align: center;
+                    @include single-transition("opacity", $slider_fade_duration, ease-in-out, 0);
+                }
+                .next, .prev {
+                    background-color: $ci_orange;
+                    color: $ci_white;
+                    font-size: 2.5em;
+                    width: $slider_button_size;
+                    height: $slider_button_size;
+                    line-height: $slider_button_size - 2*$slider_button_radius;
+                    vertical-align: baseline;
+                    @include border-radius($slider_button_radius);
+                    &.disabled {
+                        @include opacity(0);
+                    }
+                }
+                .next {
+                    float: right;
+                    &:before {
+                        content: '→'
+                    }
+                }
+                .prev {
+                    float: left;
+                    &:before {
+                        content: '←'
+                    }
+                }
+                .page {
+                    line-height: $slider_button_size;
+                    width: 200px;
+                    margin: 0 auto;
+                    span {
+                        margin: 0 2px;
+                        @include opacity(0.5);
+                        &.active {
+                            @include opacity(1.0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.clearfix {
+    @include legacy-pie-clearfix;
+}
+
+@mixin corner_common {
+    position: fixed;
+    width: 0;
+    height: 0;
+    border-color: $ci_orange;
+}
+
+#corner_top {
+	@include corner_common;
+    top: 0px;
+    left: 0px;
+    border-right-color: transparent;
+    border-style: solid;
+    border-width: $corner_height ($corner_width_wide - $corner_width_narrow) 0 $corner_width_narrow;
+}
+
+#corner_bottom {
+	@include corner_common;
+    bottom: 0px;
+    right: 0px;
+    border-left-color: transparent;
+    border-style: solid;
+    border-width: 0 $corner_width_narrow $corner_height ($corner_width_wide - $corner_width_narrow);
+}
+
+@media screen and (max-width: 1150px) {
+    #corner_bottom, #corner_top {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    #main {
+        width: 100%;
+        nav {
+            width: 100%;
+            ul {
+                width: 100%;
+                li {
+                   width: 100%/$nav_num_items;
+                   text-align: center;
+                   float: left;
+                   margin: 14px 0 !important;
+                    &:last-child {
+                        float:right;
+                    }
+                }
+            }
+        }
+
+        #content {
+            clear: both;
+            float: none;
+            width: 100%;
+
+            dl.accordion {
+                > dt {
+                    color: $ci_white;
+                    line-height: 31px;
+                    padding-left: 10px;
+                    @include box;
+                    &:hover:after, &.active:after {
+                        @include boxactive;
+                    }
+                }
+                > dd > div {
+                    @include box;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 580px) {
+    #main {
+        width: 100%;
+        nav {
+            width: 100%;
+            ul {
+                $num_items_per_row: $nav_num_items/2;
+                width: 100%;
+                li {
+                    width: 100%/$num_items_per_row;
+                    text-align: center;
+                    float: left;
+                    margin: 14px 0 !important;
+                    &:nth-child(#{$num_items_per_row}n+2) {
+                        float:right;
+                    }
+                }
+            }
+        }
+    }
+}

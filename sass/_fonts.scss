@@ -1,0 +1,9 @@
+@import "compass/css3/font-face";
+
+
+@include font-face("Joey", font-files("Joey.otf", opentype), "");
+@include font-face("Caput Bold", font-files("caput_bold.otf", opentype), "");
+
+@mixin Joey {
+	font-family: "Joey";
+}
