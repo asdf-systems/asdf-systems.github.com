@@ -3,6 +3,6 @@
 	// - Remove active class from all
 	// - add active to the clicked one
 	$('nav ul li').click(function(elem) {
-		location.href = "/"+$(this).text().trim().toLowerCase()+".html";
-	})
+		window.location.href = "/"+$.trim($(this).text()).toLowerCase()+".html";
+	});
 })(jQuery);
