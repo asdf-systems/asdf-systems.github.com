@@ -178,6 +178,13 @@ h1:last-child {
   margin-bottom: 0;
 }
 
+/* line 19, ../sass/_defaults.scss */
+a {
+  color: inherit;
+  text-decoration: inherit;
+  font: inherit;
+}
+
 /* line 37, ../sass/screen.scss */
 body {
   background-color: #161616;
