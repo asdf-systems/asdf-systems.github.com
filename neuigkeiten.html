@@ -1,0 +1,37 @@
+---
+layout: main
+menu: Neuigkeiten
+corners: orange
+---
+<div id="precontentbar"></div>
+<div class="intro">
+	<h1>Herzlich Willkommen auf der Website von asdf-systems</h1>
+	<p>Wir von asdf-systems sind spezialisiert auf Soft- und Hardwarelösungen zur Optimierung
+	computergestützter Arbeitsprozesse.
+	Wir analysieren zusammen mit Ihnen Arbeitsabläufe, und sorgen für Schnittstellen zwischen Arbeitsprozessen und der eingesetzten Software, um alltägliche Handgriffe schneller und komfortabler zu gestalten.</p>
+
+	<p>„Man darf nur dann etwas Neues machen, wenn man etwas besser machen kann.“
+	Adolf Loos (1870–1933), österreichischer Architekt</p>
+
+	<p>Überzeugen Sie sich selbst und sehen Sie sich unsere Projekte an, oder schauen Sie sich in der Werkstatt um.</p>
+</div>
+{% for post in site.posts %}
+    {% if post.categories contains "news" %}
+    	{% include newspost.ext %}
+    {% endif %}
+{% endfor %}
+    <dl class="accordion">
+    	<dt>Archive</dt>
+    	<dd>
+    		<dl class="accordion">
+    			<dt>2010</dt>
+    			<dd>
+					{% for post in site.posts %}
+					    {% if post.categories contains "archive" %}
+					    	{% include newspost.ext %}
+					    {% endif %}
+					{% endfor %}
+		    	</dd>
+	    	</dl>
+    	</dd>
+    </dl>

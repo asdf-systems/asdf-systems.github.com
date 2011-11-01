@@ -1,0 +1,12 @@
+<div class="news">
+	<div class="inside">
+        <header>{{post.title}}</header>
+        {% if post.image %}
+            <img src="/img/newspics/{{post.image}}">
+        {% endif %}
+        <article>
+	        {{post.content}}
+        </article>
+    </div>
+    <div class="clearfix"></div>
+</div>

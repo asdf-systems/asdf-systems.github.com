@@ -1,0 +1,17 @@
+<dd>
+	<div class="slider">
+        <section>
+            {% for line in {{post.content}} %}
+                {% if post.image and forloop.first %}
+                    <img src="/img/{{page.menu | downcase}}/{{post.image}}">
+                {% endif %}
+                {% if line contains "===" %}
+                    </section>
+                    <section>
+                {% else %}
+                    {{line}}
+                {% endif %}
+            {% endfor %}
+        </section>
+    </div>
+</dd>

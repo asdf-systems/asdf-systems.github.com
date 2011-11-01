@@ -1,0 +1,10 @@
+---
+title: Pux - The Glaciator
+image: pux.png
+categories:
+- software
+---
+Unser kleiner Held stellt sich in der königlichen Arena dem Kampf gegen Haie, Hechte und Wale.
+Durch seine gezielten Schneeball Würfe versucht er sich seine Gegner vom Leib zu halten und daran zu hindern seine Eisscholle zu zerstören.
+Unterstützung findet der cute kleine Kerl bei seinem König, denn dieser lässt seinem Recken die eine oder andere kleine Hilfe zukommen.
+Geschwindigkeit und Geschicklichkeit entscheiden über den Sieg oder ein Bad im eiskalten Wasser.

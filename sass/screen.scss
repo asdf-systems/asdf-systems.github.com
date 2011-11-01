@@ -12,6 +12,7 @@
 @import "_fonts.scss";
 @import "_slider.scss";
 @import "_accordion.scss";
+@import "_defaults.scss";
 
 // Gradient background + highlight borders
 @mixin box {
@@ -23,12 +24,11 @@
 }
 
 // Adds a yellow bar at bottom
-@mixin boxactive {
+@mixin boxactive($lightcolor: $gradient_lightorange, $darkcolor: $gradient_darkorange) {
     display: block;
-    margin-left: -10px;
     margin-top: -$accordion_underline_height;
     height: $accordion_underline_height;
-    @include background-image(linear-gradient(left, $gradient_darkorange, $gradient_lightorange, $gradient_darkorange));
+    @include background-image(linear-gradient(left, $darkcolor, $lightcolor, $darkcolor));
     content: '';
 }
 
@@ -36,7 +36,7 @@ body {
     background-color: $ci_background;
     margin: 0;
     padding: 0;
-    @include Joey;
+    @include CaputBold;
     line-height: 1.4em;
     color: $ci_lightgray;
 }
@@ -49,7 +49,21 @@ body {
 }
 
 #footerbar {
-    // TODO: Shadow
+    margin-top: 20px;
+    font-size: 11px;
+    > div {
+        float: left;
+    }
+    > nav {
+        float: right;
+        > ul > li {
+            float: left;
+            margin: 0 10px;
+            &:hover, &.active {
+                color: $ci_orange;
+            }
+        }
+    }
 }
 
 #headerbar, #footerbar, #precontentbar, #contentbar {
@@ -112,16 +126,33 @@ body {
                 padding-left: 10px;
                 @include box;
                 &:hover:after, &.active:after {
-                    @include boxactive;
+                    margin-left: -10px;
                 }
-            }
-            > dd > div {
-                @include box;
-                padding: 10px;
+                &:hover:after, &.active:after {
+                    @include boxactive($gradient_lightorange, $gradient_darkorange);
+                }
+                &.turquoise:hover:after, &.turquoise.active:after {
+                    @include boxactive($gradient_lightturquoise, $gradient_darkturquoise);
+                }
+                &.pink:hover:after, &.pink.active:after {
+                    @include boxactive($gradient_lightpink, $gradient_darkpink);
+                }
+                &.blue:hover:after, &.blue.active:after {
+                    @include boxactive($gradient_lightblue, $gradient_darkblue);
+                }
             }
             dd > dl.accordion {
                 dt {
                     background-color: $ci_orange;
+                    &.turquoise {
+                        background-color: $ci_turquoise;
+                    }
+                    &.pink {
+                        background-color: $ci_pink;
+                    }
+                    &.blue {
+                        background-color: $ci_blue;
+                    }
                     background-image: none !important;
                     border: 0 !important;
                     color: $ci_white;
@@ -132,9 +163,17 @@ body {
             }
         }
         .slider {
+                @include box;
+                padding: 5px;
             .pages {
-                height: 200px;
-
+                height: 600px;
+                img {
+                    width: 100%;
+                    max-width: 720px;
+                    margin: 0 auto;
+                    margin-bottom: 10px;
+                    display: block;
+                }
             }
             nav {
                 div {
@@ -142,6 +181,7 @@ body {
                     @include single-transition("opacity", $slider_fade_duration, ease-in-out, 0);
                 }
                 .next, .prev {
+                    @include Joey;
                     background-color: $ci_orange;
                     color: $ci_white;
                     font-size: 2.5em;
@@ -180,6 +220,33 @@ body {
                 }
             }
         }
+        .intro {
+            @include box;
+            @include Joey;
+            padding: 5px;
+            color: $ci_orange;
+        }
+        .news {
+            @include box;
+            margin-bottom: 0;
+            .inside {
+                padding: 5px;
+            }
+            &:after {
+                @include boxactive;
+                margin-top: 10px;;
+            }
+            header {
+                @include Joey;
+                color: $ci_white;
+                font-size: $h1_size;
+                margin-bottom: 10px;
+            }
+            img {
+                float: left;
+                margin-right: 10px;
+            }
+        }
     }
 }
 
@@ -193,14 +260,25 @@ body {
     position: fixed;
     width: 0;
     height: 0;
-    border-color: $ci_orange;
+    &.orange {
+        border-color: $ci_orange;
+    }
+    &.blue {
+        border-color: $ci_blue;
+    }
+    &.turquoise {
+        border-color: $ci_turquoise;
+    }
+    &.pink {
+        border-color: $ci_pink;
+    }
 }
 
 #corner_top {
 	@include corner_common;
     top: 0px;
     left: 0px;
-    border-right-color: transparent;
+    border-right-color: transparent !important;
     border-style: solid;
     border-width: $corner_height ($corner_width_wide - $corner_width_narrow) 0 $corner_width_narrow;
 }
@@ -209,7 +287,7 @@ body {
 	@include corner_common;
     bottom: 0px;
     right: 0px;
-    border-left-color: transparent;
+    border-left-color: transparent !important;
     border-style: solid;
     border-width: 0 $corner_width_narrow $corner_height ($corner_width_wide - $corner_width_narrow);
 }
@@ -244,21 +322,21 @@ body {
             float: none;
             width: 100%;
 
-            dl.accordion {
-                > dt {
-                    color: $ci_white;
-                    line-height: 31px;
-                    padding-left: 10px;
-                    @include box;
-                    &:hover:after, &.active:after {
-                        @include boxactive;
-                    }
-                }
-                > dd > div {
-                    @include box;
-                    padding: 10px;
-                }
-            }
+            // dl.accordion {
+            //     > dt {
+            //         color: $ci_white;
+            //         line-height: 31px;
+            //         padding-left: 10px;
+            //         @include box;
+            //         &:hover:after, &.active:after {
+            //             @include boxactive;
+            //         }
+            //     }
+            //     > dd > div {
+            //         @include box;
+            //         padding: 10px;
+            //     }
+            // }
         }
     }
 }
