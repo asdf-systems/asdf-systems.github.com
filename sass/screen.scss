@@ -89,11 +89,11 @@ body {
         @include background-image(linear-gradient(top left, $gradient_lightgray, $gradient_darkgray));
         float: left;
         width: $nav_width;
+        @include Joey;
         ul {
             list-style: none;
             li {
                 color: $ci_lightgray;
-                font-family: "Caput Bold";
                 font-size: $nav_font_size;
                 margin: $nav_spacing 0;
                 &.active, &:hover {

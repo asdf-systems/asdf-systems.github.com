@@ -269,15 +269,15 @@ body {
   background-image: linear-gradient(top left, #232320, #1c1c19);
   float: left;
   width: 150px;
+  font-family: "Joey";
 }
-/* line 92, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 #main > nav ul {
   list-style: none;
 }
-/* line 94, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 #main > nav ul li {
   color: #c2c3ba;
-  font-family: "Caput Bold";
   font-size: 13px;
   margin: 14px 0;
 }
