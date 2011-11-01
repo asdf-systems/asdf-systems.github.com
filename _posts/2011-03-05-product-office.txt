@@ -1,8 +1,7 @@
 ---
 title: asdf Office PC
 image: office.png
-categories:
-- consulting
+category: consulting
 ---
 Starten Sie doch Ihren PC genauso schnell und zuverlässig wie Ihren Fernseher, ohne Wartezeit.
 

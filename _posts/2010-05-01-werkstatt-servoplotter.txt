@@ -1,12 +1,11 @@
 ---
 title: servoPlotter
 image: servoplotter.png
-categories:
-- werkstatt
+category: werkstatt
 ---
 Der Servoplotter sollte ein Drucker werden, der – im Gegensatz zu üblichen Tintenstrahl- oder Laserdruckern – die Bilder nicht rastert, sondern menschenähnlich mit einem Stift malt.
 Mit Hilfe eines selbstgebauten Arms mit Stifthalterung und Servomotorisierung haben wir den ersten Prototypen umgesetzt.
-===
+<slide />
 Zeichenbewegungen, die mit der Maus auf dem Rechner ausgeführt werden, sollen mittels Motoren auf einen mechanischen Arm übertragen werden.
 An diesem Arm befindet sich ein Stift, der die Bewegungen möglichst präzise auf ein Blatt Papier überträgt
 

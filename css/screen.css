@@ -184,6 +184,10 @@ a {
   text-decoration: inherit;
   font: inherit;
 }
+/* line 21, ../sass/_defaults.scss */
+a:hover, a:active {
+  color: #e4ae46;
+}
 
 /* line 37, ../sass/screen.scss */
 body {
@@ -428,7 +432,7 @@ body {
 }
 /* line 170, ../sass/screen.scss */
 #main #content .slider .pages {
-  height: 600px;
+  height: 650px;
 }
 /* line 172, ../sass/screen.scss */
 #main #content .slider .pages img {

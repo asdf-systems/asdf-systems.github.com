@@ -1,8 +1,7 @@
 ---
 title: Webengine fertiggestellt
 image: webengine.png
-categories:
-- news
+category: news
 ---
 Wir haben unsere firmeninterne Engine für Websites fertig gestellt.
 Die Engine ermöglicht es uns auch komplexe Internetauftritte präzise und schnell

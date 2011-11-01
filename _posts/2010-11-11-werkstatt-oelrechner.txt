@@ -1,13 +1,12 @@
 ---
 title: Ölrechner
 image: oelrechner.png
-categories:
-- werkstatt
+category: werkstatt
 ---
 Bei diesem Projekt wollten wir überprüfen, ob es möglich ist mit mid-end Computerhardware die selben Leistungen zu erzielen, wie mit spezialisierter Clusterhardware. Dies wollten wir durch starkes Übertakten und ein ungewöhnliches Kühlprinzip erreichen.
 
 Eine vergleichbare Leistung konnte mit den Testrechnern nicht erreicht werden.
-===
+<slide />
 Nach eingehender Recherche haben wir uns entschieden, AMD X2 und AMD Athlon Prozessoren für den Testlauf zu verwenden.
 
 Phase 1:

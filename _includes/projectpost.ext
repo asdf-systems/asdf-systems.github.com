@@ -1,17 +1,8 @@
 <dd>
 	<div class="slider">
         <section>
-            {% for line in {{post.content}} %}
-                {% if post.image and forloop.first %}
-                    <img src="/img/{{page.menu | downcase}}/{{post.image}}">
-                {% endif %}
-                {% if line contains "===" %}
-                    </section>
-                    <section>
-                {% else %}
-                    {{line}}
-                {% endif %}
-            {% endfor %}
+            <img src="/img/{{page.menu | downcase}}/{{post.image}}">
+            {{ post.content | newline_to_br | markdownify | replace: "<slide />", "</section><section>" }}
         </section>
     </div>
 </dd>

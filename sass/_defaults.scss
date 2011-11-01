@@ -18,6 +18,9 @@ h1 {
 }
 a {
 	color: inherit;
+	&:hover, &:active {
+		color: $ci_orange;
+	}
 	text-decoration: inherit;
 	font: inherit;
 }

@@ -17,7 +17,7 @@ corners: orange
 </div>
 {% for post in site.posts %}
     {% if post.categories contains "news" %}
-    	{% include newspost.ext %}
+    	{% include neuigkeitenpost.ext %}
     {% endif %}
 {% endfor %}
     <dl class="accordion">
@@ -27,8 +27,8 @@ corners: orange
     			<dt>2010</dt>
     			<dd>
 					{% for post in site.posts %}
-					    {% if post.categories contains "archive" %}
-					    	{% include newspost.ext %}
+					    {% if post.categories contains "archiv" %}
+					    	{% include neuigkeitenpost.ext %}
 					    {% endif %}
 					{% endfor %}
 		    	</dd>

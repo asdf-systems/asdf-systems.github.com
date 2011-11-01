@@ -1,8 +1,7 @@
 ---
 title: syncSuite fertiggestellt
 image: syncsuite.png
-categories:
-- archive
+category: archiv
 ---
 Für eine in Berlin ansässige Firma für Film-Effekte haben wir die syncSuite
 eingerichtet. Durch sie ist das netzwerkweite Installieren von neuer Software
