@@ -4,8 +4,7 @@ image: webengine.png
 category: news
 ---
 Wir haben unsere firmeninterne Engine für Websites fertig gestellt.
-Die Engine ermöglicht es uns auch komplexe Internetauftritte präzise und schnell
-umzusetzen um Ihre Wünsche zu erfüllen.
+Die Engine ermöglicht es uns auch komplexe Internetauftritte präzise und schnell umzusetzen um Ihre Wünsche zu erfüllen.
 
 Auch unsere Homepage ist mit dieser Engine umgesetzt worden.
 Schauen Sie sich doch einfach mal um.

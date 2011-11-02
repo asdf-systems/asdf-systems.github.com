@@ -1,0 +1,29 @@
+---
+layout: main
+menu: firmenprofil
+corners: orange
+---
+<dl class="accordion">
+	<dt class="active">Firmenprofil</dt>
+	<dd>
+		<dl id="firmenprofil"  class="accordion">
+			{% for post in site.posts %}
+			    {% if post.categories contains "firmenprofil" %}
+					<dt>{{post.title}}</dt>
+			    	{% include projectpost.ext %}
+			    {% endif %}
+			{% endfor %}
+    	</dl>
+	</dd>
+	<dt>Wir</dt>
+	<dd>
+		<div id="wir">
+			{% for post in site.posts %}
+			    {% if post.categories contains "wir" %}
+			    	{% include wirpost.ext %}
+			    {% endif %}
+			{% endfor %}
+    	</dl>
+	</dd>
+</dl>
+

@@ -1,11 +1,11 @@
 ---
 layout: main
-menu: Support
+menu: AGB
 corners: orange
 ---
-<dl id="support" class="accordion">
+<dl id="agb" class="accordion">
 	{% for post in site.posts %}
-	    {% if post.categories contains "support" %}
+	    {% if post.categories contains "agb" %}
 			<dt class="active">{{post.title}}</dt>
 	    	{% include projectpost.ext %}
 	    {% endif %}

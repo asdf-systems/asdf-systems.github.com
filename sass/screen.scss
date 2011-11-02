@@ -126,6 +126,7 @@ body {
             > dt {
                 line-height: 31px;
                 padding-left: 10px;
+                font-size: $opener_size;
                 @include box;
                 &:hover:after, &.active:after {
                     margin-left: -10px;
@@ -227,26 +228,62 @@ body {
             @include Joey;
             padding: 5px;
             color: $ci_orange;
+            font-size: $opener_size;
         }
         .news {
             @include box;
             margin-bottom: 0;
             .inside {
-                padding: 5px;
+                padding: 20px;
             }
             &:after {
                 @include boxactive;
-                margin-top: 10px;;
+                margin-top: 10px;
             }
             header {
                 @include Joey;
                 color: $ci_white;
                 font-size: $h1_size;
-                margin-bottom: 10px;
             }
             img {
                 float: left;
-                margin-right: 10px;
+                margin: 20px;
+                margin-left: 0;
+            }
+            article {
+                margin-top: 20px;
+                font-size: $opener_size;
+            }
+        }
+        #firmenprofil {
+            input {
+                background-color: transparent;
+                border: 1px solid $ci_orange;
+                color: $ci_orange;
+            }
+            section {
+                font-size: $opener_size;
+            }
+        }
+        #wir {
+            >div {
+                @include box;
+                margin-bottom: 0;
+                &:after {
+                    @include boxactive;
+                    margin-top: 10px;;
+                }
+            }
+            img {
+                float: left;
+                margin: 20px;
+            }
+            header {
+                margin-top: 20px;
+                font-size: $h1_size;
+                color: $ci_white;
+            }
+            article {
             }
         }
     }

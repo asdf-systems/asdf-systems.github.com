@@ -6,8 +6,10 @@
 
 @mixin Joey {
 	font-family: "Joey";
+	font-size: $normal_size;
 }
 
 @mixin CaputBold {
 	font-family: "Caput Bold";
+	font-size: $normal_size;
 }

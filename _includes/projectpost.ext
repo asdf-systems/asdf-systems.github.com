@@ -1,7 +1,9 @@
 <dd>
 	<div class="slider">
         <section>
-            <img src="/img/{{page.menu | downcase}}/{{post.image}}">
+        	{% if post.image %}
+	            <img src="/img/{{page.menu | downcase}}/{{post.image}}">
+	        {% endif %}
             {{ post.content | newline_to_br | markdownify | replace: "<slide />", "</section><section>" }}
         </section>
     </div>
