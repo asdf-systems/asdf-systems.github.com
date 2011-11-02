@@ -21,7 +21,6 @@
     border-top: 1px solid $box_3d_highlight;
     border-bottom: 1px solid $box_3d_shadow;
     background-color: $gradient_lightgray;
-    // @include background-image(linear-gradient(top left, $gradient_darkgray,  , $gradient_darkgray));
     @include background-image(linear-gradient(top left, $gradient_darkgray, $gradient_lightgray, $gradient_darkgray));
 }
 
@@ -128,11 +127,21 @@ body {
             > dt {
                 @include HeadlineText;
                 font-size: $accordion_header_font_size;
-                line-height: 31px;
-                padding-left: 10px;
+                line-height: $accordion_header_height;
+                padding-left: $spacing;
                 @include box;
+                &:before {
+                    font-size: $accordion_button_size;
+                    margin-right: $spacing;
+                    float: right;
+                    content: '↓';
+                    @include opacity(0.2);
+                }
+                &.active:before {
+                    content: '↑';
+                }
                 &:hover:after, &.active:after {
-                    margin-left: -10px;
+                    margin-left: -$spacing;
                 }
                 &:hover:after, &.active:after {
                     @include boxactive($gradient_lightorange, $gradient_darkorange);
