@@ -349,6 +349,9 @@ body {
 }
 
 @media screen and (max-width: 860px) {
+    #precontentbar {
+        display: none;
+    }
     #main {
         width: 100%;
         nav {
