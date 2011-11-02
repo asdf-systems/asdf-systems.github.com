@@ -242,7 +242,7 @@ body {
             color: $ci_orange;
             font-size: $opener_size;
         }
-        .news {
+        .news, .wir {
             @include box;
             margin-bottom: 0;
             .inside {
@@ -255,14 +255,21 @@ body {
                 @include HeadlineText;
                 color: $ci_white;
             }
-            img {
-                float: left;
+            figure {
+                display: inline-block;
                 margin: $spacing;
                 margin-left: 0;
+                height: 100%;
+                img {
+                    display: block;
+                }
             }
             article {
                 @include OpenerText;
+                display: inline-block;
+                vertical-align: top;
                 margin-top: $spacing;
+                width: 70%;
             }
         }
         #firmenprofil {
@@ -275,8 +282,8 @@ body {
                 font-size: $opener_size;
             }
         }
-        #wir {
-            >div {
+        /* #wir {
+            > div {
                 @include box;
                 margin-bottom: 0;
                 &:after {
@@ -296,7 +303,7 @@ body {
             article {
                 @include OpenerText;
             }
-        }
+        } */
     }
 }
 
@@ -374,6 +381,20 @@ body {
             clear: both;
             float: none;
             width: 100%;
+            .news, .wir {
+                figure {
+                    display: block;
+                    height: auto;
+                    float: left;
+                    img {
+                        display: block;
+                    }
+                }
+                article {
+                    display: block;
+                    width: 100%;
+                }
+            }
         }
     }
 }

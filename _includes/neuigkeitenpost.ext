@@ -2,7 +2,9 @@
 	<div class="inside">
         <header>{{post.title}}</header>
         {% if post.image %}
-            <img src="/img/neuigkeiten/{{post.image}}">
+            <figure>
+                <img src="/img/neuigkeiten/{{post.image}}">
+            </figure>
         {% endif %}
         <article>
             {{ post.content | newline_to_br | markdownify | replace: "<slide />", "</section><section>" }}

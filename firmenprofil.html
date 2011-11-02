@@ -17,13 +17,14 @@ corners: orange
 	</dd>
 	<dt>Wir</dt>
 	<dd>
-		<div id="wir">
+		<div>
 			{% for post in site.posts %}
 			    {% if post.categories contains "wir" %}
 			    	{% include wirpost.ext %}
 			    {% endif %}
 			{% endfor %}
-    	</dl>
+    	<!-- </dl> -->
+    	</div>
 	</dd>
 </dl>
 
