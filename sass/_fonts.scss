@@ -2,14 +2,21 @@
 
 
 @include font-face("Joey", font-files("Joey.otf", opentype), "");
-@include font-face("Caput Bold", font-files("caput_bold.otf", opentype), "");
+// @include font-face("Caput Bold", font-files("caput_bold.otf", opentype), "");
 
-@mixin Joey {
+@mixin HeadlineText {
 	font-family: "Joey";
+	font-size: $h1_size;
+}
+
+@mixin NormalText {
+	font-family: "Ubuntu";
+	font-weight: 400;
 	font-size: $normal_size;
 }
 
-@mixin CaputBold {
-	font-family: "Caput Bold";
-	font-size: $normal_size;
+@mixin OpenerText {
+	font-family: "Ubuntu";
+	font-weight: 700;
+    font-size: $opener_size;
 }

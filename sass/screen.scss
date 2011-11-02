@@ -38,7 +38,7 @@ body {
     background-color: $ci_background;
     margin: 0;
     padding: 0;
-    @include CaputBold;
+    @include NormalText;
     line-height: 1.4em;
     color: $ci_lightgray;
 }
@@ -90,7 +90,7 @@ body {
         @include background-image(linear-gradient(top left, $gradient_lightgray, $gradient_darkgray));
         float: left;
         width: $nav_width;
-        @include Joey;
+        @include HeadlineText;
         ul {
             list-style: none;
             li {
@@ -125,9 +125,10 @@ body {
         width: 720px;
         dl.accordion {
             > dt {
+                @include HeadlineText;
+                font-size: $accordion_header_font_size;
                 line-height: 31px;
                 padding-left: 10px;
-                font-size: $accordion_header_font_size;
                 @include box;
                 &:hover:after, &.active:after {
                     margin-left: -10px;
@@ -170,14 +171,23 @@ body {
                 @include box;
             .pages {
                 height: 650px;
-                img {
-                    width: 100%;
-                    max-width: 720px;
-                    display: block;
-                    margin: 0 auto;
-                }
-                div {
-                    padding: $spacing;
+                section {
+                    @include NormalText;
+                    &:first-child {
+                        @include OpenerText;
+                    }
+                    img {
+                        width: 100%;
+                        max-width: 720px;
+                        display: block;
+                        margin: 0 auto;
+                    }
+                    div {
+                        > br:first-child {
+                            display: none;
+                        }
+                        padding: $spacing;
+                    }
                 }
             }
             nav {
@@ -186,7 +196,7 @@ body {
                     @include single-transition("opacity", $slider_fade_duration, ease-in-out, 0);
                 }
                 .next, .prev {
-                    @include Joey;
+                    @include HeadlineText;
                     background-color: $ci_orange;
                     color: $ci_white;
                     font-size: 2.5em;
@@ -227,7 +237,7 @@ body {
         }
         .intro {
             @include box;
-            @include Joey;
+            @include HeadlineText;
             padding: $spacing;
             color: $ci_orange;
             font-size: $opener_size;
@@ -242,9 +252,8 @@ body {
                 @include boxactive;
             }
             header {
-                @include Joey;
+                @include HeadlineText;
                 color: $ci_white;
-                font-size: $h1_size;
             }
             img {
                 float: left;
@@ -252,8 +261,8 @@ body {
                 margin-left: 0;
             }
             article {
+                @include OpenerText;
                 margin-top: $spacing;
-                font-size: $opener_size;
             }
         }
         #firmenprofil {
@@ -280,11 +289,12 @@ body {
                 margin: 20px;
             }
             header {
+                @include HeadlineText;
                 margin-top: 20px;
-                font-size: $h1_size;
                 color: $ci_white;
             }
             article {
+                @include OpenerText;
             }
         }
     }
