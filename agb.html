@@ -7,7 +7,11 @@ corners: orange
 	{% for post in site.posts %}
 	    {% if post.categories contains "agb" %}
 			<dt class="active">{{post.title}}</dt>
-	    	{% include projectpost.ext %}
+			<dd>
+				<div>
+					{{post.content}}
+				</div>
+			</dd>
 	    {% endif %}
 	{% endfor %}
 </dl>

@@ -292,28 +292,25 @@ body {
                 font-size: $opener_size;
             }
         }
-        /* #wir {
-            > div {
-                @include box;
-                margin-bottom: 0;
-                &:after {
-                    @include boxactive;
-                    margin-top: 10px;;
+        #agb {
+            dd {
+                div {
+                    @include box;
+                    padding: $spacing;
+                    > ol > li > p {
+                        font-weight: 700;
+                    }
+                    ol {
+                        list-style-type: decimal;
+                        list-style-position: outside;
+                        li {
+                            margin-left: $spacing;
+                        }
+                    }
+                    // white-space: pre;
                 }
             }
-            img {
-                float: left;
-                margin: 20px;
-            }
-            header {
-                @include HeadlineText;
-                margin-top: 20px;
-                color: $ci_white;
-            }
-            article {
-                @include OpenerText;
-            }
-        } */
+        }
     }
 }
 
