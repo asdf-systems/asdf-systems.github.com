@@ -1,4 +1,4 @@
-/* Welcome to Compass.
+    /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
@@ -126,7 +126,7 @@ body {
             > dt {
                 line-height: 31px;
                 padding-left: 10px;
-                font-size: $opener_size;
+                font-size: $accordion_header_font_size;
                 @include box;
                 &:hover:after, &.active:after {
                     margin-left: -10px;
@@ -167,15 +167,15 @@ body {
         }
         .slider {
                 @include box;
-                padding: 5px;
             .pages {
                 height: 650px;
                 img {
                     width: 100%;
                     max-width: 720px;
-                    margin: 0 auto;
-                    margin-bottom: 10px;
                     display: block;
+                }
+                div {
+                    padding: $spacing;
                 }
             }
             nav {
@@ -226,7 +226,7 @@ body {
         .intro {
             @include box;
             @include Joey;
-            padding: 5px;
+            padding: $spacing;
             color: $ci_orange;
             font-size: $opener_size;
         }
@@ -234,11 +234,10 @@ body {
             @include box;
             margin-bottom: 0;
             .inside {
-                padding: 20px;
+                padding: $spacing;
             }
             &:after {
                 @include boxactive;
-                margin-top: 10px;
             }
             header {
                 @include Joey;
@@ -247,11 +246,11 @@ body {
             }
             img {
                 float: left;
-                margin: 20px;
+                margin: $spacing;
                 margin-left: 0;
             }
             article {
-                margin-top: 20px;
+                margin-top: $spacing;
                 font-size: $opener_size;
             }
         }
