@@ -1,12 +1,12 @@
 <dd>
 	<div class="slider">
-        <section>
-        	{% if post.image %}
-	            <img src="/img/{{page.menu | downcase}}/{{post.image}}">
-	        {% endif %}
-	        <div>
-	            {{ post.content | newline_to_br | markdownify | replace: "<slide />", "</div></section><section><div>" }}
-            </div>
-        </section>
-    </div>
+		<section>
+			{% if post.image %}
+				<img src="/img/{{page.menu | downcase}}/{{post.image}}">
+			{% endif %}
+			<div>
+				{{ post.content | newline_to_br | markdownify | replace: "<slide />", "</div></section><section><div>" }}
+			</div>
+		</section>
+	</div>
 </dd>

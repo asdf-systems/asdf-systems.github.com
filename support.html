@@ -5,10 +5,10 @@ corners: orange
 ---
 <dl id="support" class="accordion">
 	{% for post in site.posts %}
-	    {% if post.categories contains "support" %}
+		{% if post.categories contains "support" %}
 			<dt class="active">{{post.title}}</dt>
-	    	{% include projectpost.ext %}
-	    {% endif %}
+			{% include projectpost.ext %}
+		{% endif %}
 	{% endfor %}
 </dl>
 

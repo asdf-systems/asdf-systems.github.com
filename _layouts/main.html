@@ -19,86 +19,86 @@ footermenu:
 <!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="en">
-    <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
 
-        <!-- Use the .htaccess and remove these lines to avoid edge case issues. More info: h5bp.com/b/378 -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>
-            asdf-systems
-        </title>
+		<!-- Use the .htaccess and remove these lines to avoid edge case issues. More info: h5bp.com/b/378 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>
+			asdf-systems
+		</title>
 
-        <!-- Mobile viewport optimized: j.mp/bplateviewport -->
-        <meta name="viewport" content="width=device-width,initial-scale=1">
+		<!-- Mobile viewport optimized: j.mp/bplateviewport -->
+		<meta name="viewport" content="width=device-width,initial-scale=1">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
-        <!-- CSS: implied media=all -->
-        <!-- CSS concatenated and minified via ant build script-->
-        <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic' rel='stylesheet' type='text/css'>
-        <link href="/css/pie.css" rel="stylesheet" type="text/css">
-        <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+		<!-- CSS: implied media=all -->
+		<!-- CSS concatenated and minified via ant build script-->
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic' rel='stylesheet' type='text/css'>
+		<link href="/css/pie.css" rel="stylesheet" type="text/css">
+		<link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 
-        <!--[if IE]>
-            <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-        <![endif]-->
-        <script src="js/libs/modernizr-2.0.6.min.js" type="text/javascript">
+		<!--[if IE]>
+			<link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<![endif]-->
+		<script src="js/libs/modernizr-2.0.6.min.js" type="text/javascript">
 </script>
-    </head>
-    <body>
-        <div id="corner_top" class="{{page.corners}}"></div>
-        <div id="container">
-            <div id="headerbar"></div>
-            <div id="logobar">
-                <img src="img/logo.png">
-            </div>
-            <div id="main">
-                <nav>
-                    <ul>
-                        {% for item in page.mainmenu %}
-                            <li {% if page.menu == item %}class="active"{% endif %}><a href="/{{item | downcase}}.html">{{item}}</a></li>
-                        {% endfor %}
-                    </ul>
-                </nav>
-                <div id="content">
-                    {{content}}
-                </div>
-            </div>
-            <div id="footerbar">
-                <div>© 2010-2011 asdf-systems UG.</div>
-                <nav>
-                    <ul>
-                        {% for item in page.footermenu %}
-                            <li {% if page.menu == item %}class="active"{% endif %}><a href="/{{item | downcase}}.html">{{item}}</a></li>
-                        {% endfor %}
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <div id="corner_bottom" class="{{page.corners}}"></div>
+	</head>
+	<body>
+		<div id="corner_top" class="{{page.corners}}"></div>
+		<div id="container">
+			<div id="headerbar"></div>
+			<div id="logobar">
+				<img src="img/logo.png">
+			</div>
+			<div id="main">
+				<nav>
+					<ul>
+						{% for item in page.mainmenu %}
+							<li {% if page.menu == item %}class="active"{% endif %}><a href="/{{item | downcase}}.html">{{item}}</a></li>
+						{% endfor %}
+					</ul>
+				</nav>
+				<div id="content">
+					{{content}}
+				</div>
+			</div>
+			<div id="footerbar">
+				<div>© 2010-2011 asdf-systems UG.</div>
+				<nav>
+					<ul>
+						{% for item in page.footermenu %}
+							<li {% if page.menu == item %}class="active"{% endif %}><a href="/{{item | downcase}}.html">{{item}}</a></li>
+						{% endfor %}
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div id="corner_bottom" class="{{page.corners}}"></div>
 
-        <!-- JavaScript at the bottom for fast page loading -->
-        <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
-        <script type="text/javascript">
-            window.jQuery || document.write('<script src="/js/libs/jquery-1.6.2.min.js"><\/script>')
-        </script>
-        <script src="/js/LAB.js" type="text/javascript"></script>
-        <script defer src="/js/asdf.js" type="text/javascript"></script>
+		<!-- JavaScript at the bottom for fast page loading -->
+		<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			window.jQuery || document.write('<script src="/js/libs/jquery-1.6.2.min.js"><\/script>')
+		</script>
+		<script src="/js/LAB.js" type="text/javascript"></script>
+		<script defer src="/js/asdf.js" type="text/javascript"></script>
 
-        <!-- Change UA-XXXXX-X to be your site's ID -->
-        <script type="text/javascript">
-            window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
-            Modernizr.load({
-            load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
-            });
-        </script>
+		<!-- Change UA-XXXXX-X to be your site's ID -->
+		<script type="text/javascript">
+			window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+			Modernizr.load({
+			load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+			});
+		</script>
 
-        <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
-           chromium.org/developers/how-tos/chrome-frame-getting-started -->
-        <!--[if lt IE 7 ]>
-            <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-            <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-          <![endif]-->
-    </body>
+		<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+		   chromium.org/developers/how-tos/chrome-frame-getting-started -->
+		<!--[if lt IE 7 ]>
+			<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+			<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+		  <![endif]-->
+	</body>
 </html>

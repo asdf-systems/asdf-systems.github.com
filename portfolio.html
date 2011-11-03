@@ -8,34 +8,34 @@ corners: turquoise
 	<dd>
 		<dl class="accordion">
 			{% for post in site.posts %}
-			    {% if post.categories contains "hardware" %}
+				{% if post.categories contains "hardware" %}
 					<dt class="turquoise">{{post.title}}</dt>
-			    	{% include projectpost.ext %}
-			    {% endif %}
+					{% include projectpost.ext %}
+				{% endif %}
 			{% endfor %}
-    	</dl>
+		</dl>
 	</dd>
 	<dt class="pink">Software</dt>
 	<dd>
 		<dl class="accordion">
 			{% for post in site.posts %}
-			    {% if post.categories contains "software" %}
+				{% if post.categories contains "software" %}
 					<dt class="pink">{{post.title}}</dt>
-			    	{% include projectpost.ext %}
-			    {% endif %}
+					{% include projectpost.ext %}
+				{% endif %}
 			{% endfor %}
-    	</dl>
+		</dl>
 	</dd>
 	<dt class="blue">Consulting</dt>
 	<dd>
 		<dl class="accordion">
 			{% for post in site.posts %}
-			    {% if post.categories contains "consulting" %}
+				{% if post.categories contains "consulting" %}
 					<dt class="blue">{{post.title}}</dt>
-			    	{% include projectpost.ext %}
-			    {% endif %}
+					{% include projectpost.ext %}
+				{% endif %}
 			{% endfor %}
-    	</dl>
+		</dl>
 	</dd>
 </dl>
 

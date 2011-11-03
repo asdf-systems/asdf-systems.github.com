@@ -6,29 +6,29 @@ corners: orange
 <div id="precontentbar"></div>
 <div class="intro">
 	{% for post in site.posts %}
-	    {% if post.categories contains "intro" %}
-	    	<h1>{{ post.title }}</h1>
-            {{ post.content | newline_to_br | markdownify }}
-	    {% endif %}
+		{% if post.categories contains "intro" %}
+			<h1>{{ post.title }}</h1>
+			{{ post.content | newline_to_br | markdownify }}
+		{% endif %}
 	{% endfor %}
 </div>
 {% for post in site.posts %}
-    {% if post.categories contains "news" %}
-    	{% include neuigkeitenpost.ext %}
-    {% endif %}
+	{% if post.categories contains "news" %}
+		{% include neuigkeitenpost.ext %}
+	{% endif %}
 {% endfor %}
-    <dl class="accordion closed">
-    	<dt>Archiv</dt>
-    	<dd>
-    		<dl class="accordion">
-    			<dt>2010</dt>
-    			<dd>
+	<dl class="accordion closed">
+		<dt>Archiv</dt>
+		<dd>
+			<dl class="accordion">
+				<dt>2010</dt>
+				<dd>
 					{% for post in site.posts %}
-					    {% if post.categories contains "archiv" %}
-					    	{% include neuigkeitenpost.ext %}
-					    {% endif %}
+						{% if post.categories contains "archiv" %}
+							{% include neuigkeitenpost.ext %}
+						{% endif %}
 					{% endfor %}
-		    	</dd>
-	    	</dl>
-    	</dd>
-    </dl>
+				</dd>
+			</dl>
+		</dd>
+	</dl>

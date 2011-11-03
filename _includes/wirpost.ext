@@ -1,14 +1,14 @@
 <div class="wir">
 	<div class="inside">
-	    <header>{{post.title}}</header>
-	    {% if post.image %}
-	    	<figure>
-		        <img src="/img/{{post.category}}/{{post.image}}">
-		    </figure>
-	    {% endif %}
-	    <article>
-	        {{ post.content | newline_to_br | markdownify | replace: "<slide />", "</section><section>" }}
-	    </article>
-	    <div class="clearfix"></div>
+		<header>{{post.title}}</header>
+		{% if post.image %}
+			<figure>
+				<img src="/img/{{post.category}}/{{post.image}}">
+			</figure>
+		{% endif %}
+		<article>
+			{{ post.content | newline_to_br | markdownify | replace: "<slide />", "</section><section>" }}
+		</article>
+		<div class="clearfix"></div>
 	</div>
 </div>

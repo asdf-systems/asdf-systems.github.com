@@ -8,23 +8,22 @@ corners: orange
 	<dd>
 		<dl id="firmenprofil"  class="accordion">
 			{% for post in site.posts %}
-			    {% if post.categories contains "firmenprofil" %}
+				{% if post.categories contains "firmenprofil" %}
 					<dt>{{post.title}}</dt>
-			    	{% include projectpost.ext %}
-			    {% endif %}
+					{% include projectpost.ext %}
+				{% endif %}
 			{% endfor %}
-    	</dl>
+		</dl>
 	</dd>
 	<dt>Wir</dt>
 	<dd>
 		<div>
 			{% for post in site.posts %}
-			    {% if post.categories contains "wir" %}
-			    	{% include wirpost.ext %}
-			    {% endif %}
+				{% if post.categories contains "wir" %}
+					{% include wirpost.ext %}
+				{% endif %}
 			{% endfor %}
-    	<!-- </dl> -->
-    	</div>
+		</div>
 	</dd>
 </dl>
 

@@ -1,14 +1,14 @@
 dl.accordion {
-    > dd {
-        @include single-transition("max-height, margin-bottom", $accordion_animation_duration, ease-in-out, 0);
-        overflow: hidden;
-    }
-    > dt {
-        &:not(.active) + dd {
-            max-height: 0;
-        }
-        &.active + dd {
-            max-height: 2999px;
-        }
-    }
+	> dd {
+		@include single-transition("max-height, margin-bottom", $accordion_animation_duration, ease-in-out, 0);
+		overflow: hidden;
+	}
+	> dt {
+		&:not(.active) + dd {
+			max-height: 0;
+		}
+		&.active + dd {
+			max-height: 2999px;
+		}
+	}
 }

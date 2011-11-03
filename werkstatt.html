@@ -7,10 +7,10 @@ corners: orange
 	<dt class="active">Werkstatt</dt>
 	<dd>
 		<div class="slider">
-            <section>
-	            <img src="/img/werkstatt/werkstatt.png">
-	            <div>
-		            Willkommen in unserer Bastelstube.
+			<section>
+				<img src="/img/werkstatt/werkstatt.png">
+				<div>
+					Willkommen in unserer Bastelstube.
 
 					Auf unserer kreativen Spielwiese für Entwickler entstehen aus den Experimenten von heute
 					unsere Projekte von morgen! Oder aber die Erkenntnis viel Spaß gehabt zu haben...
@@ -18,19 +18,19 @@ corners: orange
 					Wir haben uns in den Kopf gesetzt auch ungewöhnliche Wege zu beschreiten
 					und dafür kann man nicht immer nur auf ausgetretenen Pfaden eine Abkürzung suchen.
 				</div>
-	        </section>
-	    </div>
+			</section>
+		</div>
 	</dd>
 	<dt>2010</dt>
 	<dd>
 		<dl class="accordion">
 			{% for post in site.posts %}
-			    {% if post.categories contains "werkstatt" and {{post.date | date: "%Y" }} == "2010" %}
+				{% if post.categories contains "werkstatt" and {{post.date | date: "%Y" }} == "2010" %}
 					<dt>{{post.title}}</dt>
-			    	{% include projectpost.ext %}
-			    {% endif %}
+					{% include projectpost.ext %}
+				{% endif %}
 			{% endfor %}
-    	</dl>
+		</dl>
 	</dd>
 </dl>
 

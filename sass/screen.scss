@@ -1,7 +1,7 @@
-    /* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* Welcome to Compass.
+* In this file you should write your main styles. (or centralize your imports)
+* Import this file using the following HTML or equivalent:
+* <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
 @import "compass/utilities/general/clearfix";
@@ -16,417 +16,417 @@
 
 // Gradient background + highlight borders
 @mixin box {
-    color: $ci_lightgray;
-    margin-bottom: 5px;
-    border-top: 1px solid $box_3d_highlight;
-    border-bottom: 1px solid $box_3d_shadow;
-    background-color: $gradient_lightgray;
-    @include background-image(linear-gradient(top left, $gradient_darkgray, $gradient_lightgray, $gradient_darkgray));
+	color: $ci_lightgray;
+	margin-bottom: 5px;
+	border-top: 1px solid $box_3d_highlight;
+	border-bottom: 1px solid $box_3d_shadow;
+	background-color: $gradient_lightgray;
+	@include background-image(linear-gradient(top left, $gradient_darkgray, $gradient_lightgray, $gradient_darkgray));
 }
 
 // Adds a yellow bar at bottom
 @mixin boxactive($lightcolor: $gradient_lightorange, $darkcolor: $gradient_darkorange) {
-    display: block;
-    margin-top: -$accordion_underline_height;
-    height: $accordion_underline_height;
-    background-color: $lightcolor;
-    @include background-image(linear-gradient(left, $darkcolor, $lightcolor, $darkcolor));
-    content: '';
+	display: block;
+	margin-top: -$accordion_underline_height;
+	height: $accordion_underline_height;
+	background-color: $lightcolor;
+	@include background-image(linear-gradient(left, $darkcolor, $lightcolor, $darkcolor));
+	content: '';
 }
 
 body {
-    background-color: $ci_background;
-    margin: 0;
-    padding: 0;
-    @include NormalText;
-    line-height: 1.4em;
-    color: $ci_lightgray;
+	background-color: $ci_background;
+	margin: 0;
+	padding: 0;
+	@include NormalText;
+	line-height: 1.4em;
+	color: $ci_lightgray;
 }
 
 #container {
-    min-width: 320px;
-    max-width: $width;
-    margin: 0 auto;
+	min-width: 320px;
+	max-width: $width;
+	margin: 0 auto;
 
 }
 
 #footerbar {
-    margin-top: 20px;
-    font-size: 11px;
-    > div {
-        float: left;
-    }
-    > nav {
-        float: right;
-        > ul > li {
-            float: left;
-            margin: 0 10px;
-            &:hover, &.active {
-                color: $ci_orange;
-            }
-        }
-    }
+	margin-top: 20px;
+	font-size: 11px;
+	> div {
+		float: left;
+	}
+	> nav {
+		float: right;
+		> ul > li {
+			float: left;
+			margin: 0 10px;
+			&:hover, &.active {
+				color: $ci_orange;
+			}
+		}
+	}
 }
 
 #headerbar, #footerbar, #precontentbar, #contentbar {
-    height: $bar_height;
-    @include clearfix;
-    @include box;
-    line-height: $bar_height;
+	height: $bar_height;
+	@include clearfix;
+	@include box;
+	line-height: $bar_height;
 }
 
 #logobar {
-   img {
-        float: right;
-        margin: 50px 10px 20px 0;
-   }
+	img {
+		float: right;
+		margin: 50px 10px 20px 0;
+	}
 }
 
 #main {
-    @include clearfix;
-    width: $width;
-    > nav {
-        @include box;
-        @include background-image(linear-gradient(top left, $gradient_lightgray, $gradient_darkgray));
-        float: left;
-        width: $nav_width;
-        @include HeadlineText;
-        ul {
-            list-style: none;
-            li {
-                color: $ci_lightgray;
-                font-size: $nav_font_size;
-                margin: $nav_spacing 0;
-                &.active, &:hover {
-                    color: $ci_orange;
-                }
-                // This is for the appearing
-                // asdf symbol on hover
-                &:before {
-                    text-align: center;
-                    display: inline-block;
-                    width: 20px;
-                    content: '';
-                }
-                &:hover:before, &.active:before {
-                    content: '≡';
-                }
-                // First and last nav element are not
-                // supposed to have big spacings.
-                // (Collapsing finally makes sense!)
-                &:first-child, &:last-child {
-                    margin: 10px 0;
-                }
-            }
-        }
-    }
-    #content {
-        float: right;
-        width: 720px;
-        dl.accordion {
-            > dt {
-                @include HeadlineText;
-                font-size: $accordion_header_font_size;
-                line-height: $accordion_header_height;
-                padding-left: $spacing;
-                @include box;
-                &:before {
-                    font-size: $accordion_button_size;
-                    margin-right: $spacing;
-                    float: right;
-                    content: '↓';
-                    @include opacity(0.2);
-                }
-                &.active:before {
-                    content: '↑';
-                }
-                &:hover:after, &.active:after {
-                    margin-left: -$spacing;
-                }
-                &:hover:after, &.active:after {
-                    @include boxactive($gradient_lightorange, $gradient_darkorange);
-                }
-                &.turquoise:hover:after, &.turquoise.active:after {
-                    @include boxactive($gradient_lightturquoise, $gradient_darkturquoise);
-                }
-                &.pink:hover:after, &.pink.active:after {
-                    @include boxactive($gradient_lightpink, $gradient_darkpink);
-                }
-                &.blue:hover:after, &.blue.active:after {
-                    @include boxactive($gradient_lightblue, $gradient_darkblue);
-                }
-            }
-            dd > dl.accordion {
-                dt {
-                    background-color: $ci_orange;
-                    &.turquoise {
-                        background-color: $ci_turquoise;
-                    }
-                    &.pink {
-                        background-color: $ci_pink;
-                    }
-                    &.blue {
-                        background-color: $ci_blue;
-                    }
-                    background-image: none !important;
-                    border: 0 !important;
-                    color: $ci_white;
-                    &.active {
-                        margin: 0;
-                    }
-                }
-            }
-        }
-        .slider {
-                @include box;
-            .pages {
-                height: 650px;
-                section {
-                    @include NormalText;
-                    &:first-child {
-                        @include OpenerText;
-                    }
-                    img {
-                        width: 100%;
-                        max-width: 720px;
-                        display: block;
-                        margin: 0 auto;
-                    }
-                    div {
-                        > br:first-child {
-                            display: none;
-                        }
-                        padding: $spacing;
-                    }
-                }
-            }
-            nav {
-                div {
-                    text-align: center;
-                    @include single-transition("opacity", $slider_fade_duration, ease-in-out, 0);
-                }
-                .next, .prev {
-                    @include HeadlineText;
-                    background-color: $ci_orange;
-                    color: $ci_white;
-                    font-size: 2.5em;
-                    width: $slider_button_size;
-                    height: $slider_button_size;
-                    line-height: $slider_button_size - 2*$slider_button_radius;
-                    vertical-align: baseline;
-                    @include border-radius($slider_button_radius);
-                    &.disabled {
-                        @include opacity(0);
-                    }
-                }
-                .next {
-                    float: right;
-                    &:before {
-                        content: '→'
-                    }
-                }
-                .prev {
-                    float: left;
-                    &:before {
-                        content: '←'
-                    }
-                }
-                .page {
-                    line-height: $slider_button_size;
-                    width: 200px;
-                    margin: 0 auto;
-                    span {
-                        margin: 0 2px;
-                        @include opacity(0.5);
-                        &.active {
-                            @include opacity(1.0);
-                        }
-                    }
-                }
-            }
-        }
-        .intro {
-            @include box;
-            @include HeadlineText;
-            padding: $spacing;
-            color: $ci_orange;
-            font-size: $opener_size;
-        }
-        .news, .wir {
-            @include box;
-            margin-bottom: 0;
-            .inside {
-                padding: $spacing;
-            }
-            &:after {
-                @include boxactive;
-            }
-            header {
-                @include HeadlineText;
-                color: $ci_white;
-            }
-            figure {
-                display: inline-block;
-                margin: $spacing;
-                margin-left: 0;
-                height: 100%;
-                img {
-                    display: block;
-                }
-            }
-            article {
-                @include OpenerText;
-                display: inline-block;
-                vertical-align: top;
-                margin-top: $spacing;
-                width: 70%;
-            }
-        }
-        #firmenprofil {
-            input {
-                background-color: transparent;
-                border: 1px solid $ci_orange;
-                color: $ci_orange;
-            }
-            section {
-                font-size: $opener_size;
-            }
-        }
-        #agb {
-            dd {
-                div {
-                    @include box;
-                    padding: $spacing;
-                    > ol > li > p {
-                        font-weight: 700;
-                    }
-                    ol {
-                        list-style-type: decimal;
-                        list-style-position: outside;
-                        li {
-                            margin-left: $spacing;
-                        }
-                    }
-                    // white-space: pre;
-                }
-            }
-        }
-    }
+	@include clearfix;
+	width: $width;
+	> nav {
+		@include box;
+		@include background-image(linear-gradient(top left, $gradient_lightgray, $gradient_darkgray));
+		float: left;
+		width: $nav_width;
+		@include HeadlineText;
+		ul {
+			list-style: none;
+			li {
+				color: $ci_lightgray;
+				font-size: $nav_font_size;
+				margin: $nav_spacing 0;
+				&.active, &:hover {
+					color: $ci_orange;
+				}
+				// This is for the appearing
+				// asdf symbol on hover
+				&:before {
+					text-align: center;
+					display: inline-block;
+					width: 20px;
+					content: '';
+				}
+				&:hover:before, &.active:before {
+					content: '≡';
+				}
+				// First and last nav element are not
+				// supposed to have big spacings.
+				// (Collapsing finally makes sense!)
+				&:first-child, &:last-child {
+					margin: 10px 0;
+				}
+			}
+		}
+	}
+	#content {
+		float: right;
+		width: 720px;
+		dl.accordion {
+			> dt {
+				@include HeadlineText;
+				font-size: $accordion_header_font_size;
+				line-height: $accordion_header_height;
+				padding-left: $spacing;
+				@include box;
+				&:before {
+					font-size: $accordion_button_size;
+					margin-right: $spacing;
+					float: right;
+					content: '↓';
+					@include opacity(0.2);
+				}
+				&.active:before {
+					content: '↑';
+				}
+				&:hover:after, &.active:after {
+					margin-left: -$spacing;
+				}
+				&:hover:after, &.active:after {
+					@include boxactive($gradient_lightorange, $gradient_darkorange);
+				}
+				&.turquoise:hover:after, &.turquoise.active:after {
+					@include boxactive($gradient_lightturquoise, $gradient_darkturquoise);
+				}
+				&.pink:hover:after, &.pink.active:after {
+					@include boxactive($gradient_lightpink, $gradient_darkpink);
+				}
+				&.blue:hover:after, &.blue.active:after {
+					@include boxactive($gradient_lightblue, $gradient_darkblue);
+				}
+			}
+			dd > dl.accordion {
+				dt {
+					background-color: $ci_orange;
+					&.turquoise {
+						background-color: $ci_turquoise;
+					}
+					&.pink {
+						background-color: $ci_pink;
+					}
+					&.blue {
+						background-color: $ci_blue;
+					}
+					background-image: none !important;
+					border: 0 !important;
+					color: $ci_white;
+					&.active {
+						margin: 0;
+					}
+				}
+			}
+		}
+		.slider {
+			@include box;
+			.pages {
+				height: 650px;
+				section {
+					@include NormalText;
+					&:first-child {
+						@include OpenerText;
+					}
+					img {
+						width: 100%;
+						max-width: 720px;
+						display: block;
+						margin: 0 auto;
+					}
+					div {
+						> br:first-child {
+							display: none;
+						}
+						padding: $spacing;
+					}
+				}
+			}
+			nav {
+				div {
+					text-align: center;
+					@include single-transition("opacity", $slider_fade_duration, ease-in-out, 0);
+				}
+				.next, .prev {
+					@include HeadlineText;
+					background-color: $ci_orange;
+					color: $ci_white;
+					font-size: 2.5em;
+					width: $slider_button_size;
+					height: $slider_button_size;
+					line-height: $slider_button_size - 2*$slider_button_radius;
+					vertical-align: baseline;
+					@include border-radius($slider_button_radius);
+					&.disabled {
+						@include opacity(0);
+					}
+				}
+				.next {
+					float: right;
+					&:before {
+						content: '→'
+					}
+				}
+				.prev {
+					float: left;
+					&:before {
+						content: '←'
+					}
+				}
+				.page {
+					line-height: $slider_button_size;
+					width: 200px;
+					margin: 0 auto;
+					span {
+						margin: 0 2px;
+						@include opacity(0.5);
+						&.active {
+							@include opacity(1.0);
+						}
+					}
+				}
+			}
+		}
+		.intro {
+			@include box;
+			@include HeadlineText;
+			padding: $spacing;
+			color: $ci_orange;
+			font-size: $opener_size;
+		}
+		.news, .wir {
+			@include box;
+			margin-bottom: 0;
+			.inside {
+				padding: $spacing;
+			}
+			&:after {
+				@include boxactive;
+			}
+			header {
+				@include HeadlineText;
+				color: $ci_white;
+			}
+			figure {
+				display: inline-block;
+				margin: $spacing;
+				margin-left: 0;
+				height: 100%;
+				img {
+					display: block;
+				}
+			}
+			article {
+				@include OpenerText;
+				display: inline-block;
+				vertical-align: top;
+				margin-top: $spacing;
+				width: 70%;
+			}
+		}
+		#firmenprofil {
+			input {
+				background-color: transparent;
+				border: 1px solid $ci_orange;
+				color: $ci_orange;
+			}
+			section {
+				font-size: $opener_size;
+			}
+		}
+		#agb {
+			dd {
+				div {
+					@include box;
+					padding: $spacing;
+					> ol > li > p {
+						font-weight: 700;
+					}
+					ol {
+						list-style-type: decimal;
+						list-style-position: outside;
+						li {
+							margin-left: $spacing;
+						}
+					}
+					// white-space: pre;
+				}
+			}
+		}
+	}
 }
 
 
 
 .clearfix {
-    @include legacy-pie-clearfix;
+	@include legacy-pie-clearfix;
 }
 
 @mixin corner_common {
-    position: fixed;
-    width: 0;
-    height: 0;
-    &.orange {
-        border-color: $ci_orange;
-    }
-    &.blue {
-        border-color: $ci_blue;
-    }
-    &.turquoise {
-        border-color: $ci_turquoise;
-    }
-    &.pink {
-        border-color: $ci_pink;
-    }
+	position: fixed;
+	width: 0;
+	height: 0;
+	&.orange {
+		border-color: $ci_orange;
+	}
+	&.blue {
+		border-color: $ci_blue;
+	}
+	&.turquoise {
+		border-color: $ci_turquoise;
+	}
+	&.pink {
+		border-color: $ci_pink;
+	}
 }
 
 #corner_top {
 	@include corner_common;
-    top: 0px;
-    left: 0px;
-    border-right-color: transparent !important;
-    border-style: solid;
-    border-width: $corner_height ($corner_width_wide - $corner_width_narrow) 0 $corner_width_narrow;
+	top: 0px;
+	left: 0px;
+	border-right-color: transparent !important;
+	border-style: solid;
+	border-width: $corner_height ($corner_width_wide - $corner_width_narrow) 0 $corner_width_narrow;
 }
 
 #corner_bottom {
 	@include corner_common;
-    bottom: 0px;
-    right: 0px;
-    border-left-color: transparent !important;
-    border-style: solid;
-    border-width: 0 $corner_width_narrow $corner_height ($corner_width_wide - $corner_width_narrow);
+	bottom: 0px;
+	right: 0px;
+	border-left-color: transparent !important;
+	border-style: solid;
+	border-width: 0 $corner_width_narrow $corner_height ($corner_width_wide - $corner_width_narrow);
 }
 
 // Too small to show corners
 @media screen and (max-width: 1150px) {
-    #corner_bottom, #corner_top {
-        display: none;
-    }
+	#corner_bottom, #corner_top {
+		display: none;
+	}
 }
 
- // To small to have nav next to the content
+// To small to have nav next to the content
 @media screen and (max-width: 860px) {
-    #precontentbar {
-        display: none;
-    }
-    #main {
-        width: 100%;
-        nav {
-            width: 100%;
-            ul {
-                width: 100%;
-                li {
-                   width: 100%/$nav_num_items;
-                   text-align: center;
-                   float: left;
-                   margin: $nav_spacing/2 0 !important;
-                    &:last-child {
-                        float:right;
-                    }
-                }
-            }
-        }
+	#precontentbar {
+		display: none;
+	}
+	#main {
+		width: 100%;
+		nav {
+			width: 100%;
+			ul {
+				width: 100%;
+				li {
+					width: 100%/$nav_num_items;
+					text-align: center;
+					float: left;
+					margin: $nav_spacing/2 0 !important;
+					&:last-child {
+						float:right;
+					}
+				}
+			}
+		}
 
-        #content {
-            clear: both;
-            float: none;
-            width: 100%;
-            .news, .wir {
-                figure {
-                    display: block;
-                    height: auto;
-                    float: left;
-                    img {
-                        display: block;
-                    }
-                }
-                article {
-                    display: block;
-                    width: 100%;
-                }
-            }
-        }
-    }
+		#content {
+			clear: both;
+			float: none;
+			width: 100%;
+			.news, .wir {
+				figure {
+					display: block;
+					height: auto;
+					float: left;
+					img {
+						display: block;
+					}
+				}
+				article {
+					display: block;
+					width: 100%;
+				}
+			}
+		}
+	}
 }
 
 // Too small to have nav in one row
 @media screen and (max-width: 580px) {
-    #main {
-        width: 100%;
-        nav {
-            width: 100%;
-            ul {
-                $num_items_per_row: $nav_num_items/2;
-                width: 100%;
-                li {
-                    width: 100%/$num_items_per_row;
-                    text-align: center;
-                    float: left;
-                    margin: $nav_spacing/4 0 !important;
-                    &:nth-child(#{$num_items_per_row}n+2) {
-                        float:right;
-                    }
-                }
-            }
-        }
-    }
+	#main {
+		width: 100%;
+		nav {
+			width: 100%;
+			ul {
+				$num_items_per_row: $nav_num_items/2;
+				width: 100%;
+				li {
+					width: 100%/$num_items_per_row;
+					text-align: center;
+					float: left;
+					margin: $nav_spacing/4 0 !important;
+					&:nth-child(#{$num_items_per_row}n+2) {
+						float:right;
+					}
+				}
+			}
+		}
+	}
 }

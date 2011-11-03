@@ -1,6 +1,6 @@
 /* line 27, ../sass/pie.scss */
 .pie-element, .bordered, .gradient {
-  behavior: url("/stylesheets/PIE.htc");
+  behavior: url("/css/PIE.htc");
   position: relative;
 }
 
@@ -33,13 +33,13 @@
 
 /* line 56, ../sass/pie.scss */
 .z-pie-element, .widget h3 {
-  behavior: url("/stylesheets/PIE.htc");
+  behavior: url("/css/PIE.htc");
   z-index: 0;
 }
 
 /* line 71, ../sass/pie.scss */
 .has-gradient {
-  behavior: url("/stylesheets/PIE.htc");
+  behavior: url("/css/PIE.htc");
   position: relative;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(100%, #0000ff));
   background: -webkit-linear-gradient(#ff0000, #0000ff);
