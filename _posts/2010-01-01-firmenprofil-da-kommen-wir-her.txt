@@ -1,7 +1,0 @@
----
-title: Da kommen wir her
-category: firmenprofil
----
-Ausgehend von einem studentischen Projekt haben wir asdf-systems im Sommer 2010 als Unternehmergesellschaft (UG) in Berlin gegründet.
-
-Nach kurzer Zeit wurde mit der syncSuite das erste Projekt abgeschlossen.

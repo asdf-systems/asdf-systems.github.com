@@ -1,0 +1,10 @@
+<span>
+	&copy; 2010-{{ site.time | date: "%Y" }}
+</span>
+<nav>
+	<ul>
+		{% for item in page.footermenu %}
+			<li {% if page.menu == item %}class="active"{% endif %}><a href="/{{item | downcase}}.html">{{item}}</a></li>
+		{% endfor %}
+	</ul>
+</nav>

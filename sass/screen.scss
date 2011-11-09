@@ -3,26 +3,76 @@
 * Import this file using the following HTML or equivalent:
 * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+@import "_config.scss";
+@import "_augmented_reset.scss";
+@import "_fonts.scss";
+// @import "_slider.scss";
+// @import "_accordion.scss";
+
 @import "compass/reset";
 @import "compass/utilities/general/clearfix";
 @import "compass/css3";
 @import "compass/css3/transition";
 @import "compass/css3/border-radius";
-@import "_config.scss";
-@import "_fonts.scss";
-@import "_slider.scss";
-@import "_accordion.scss";
-@import "_defaults.scss";
+
 
 // Gradient background + highlight borders
-@mixin box {
-	color: $ci_lightgray;
+@mixin box-style {
 	margin-bottom: 5px;
 	border-top: 1px solid $box_3d_highlight;
 	border-bottom: 1px solid $box_3d_shadow;
 	background-color: $gradient_lightgray;
+	// padding: $spacing;
 	@include background-image(linear-gradient(top left, $gradient_darkgray, $gradient_lightgray, $gradient_darkgray));
 }
+
+@import "page_elements/_corners.scss";
+html {
+	min-height: 100%;
+	body {
+		position: absolute;
+		top: 0;
+		left: 0;
+		min-height: 100%;
+		width: 100%;
+		background-color: $ci_background;
+		color: $ci_lightgray;
+		padding: 0;
+		margin: 0;
+		@include normal-text-style;
+		> #container {
+			width: $container_width;
+			margin: 0 auto;
+			@import "page_elements/_header.scss";
+			@import "page_elements/_nav.scss";
+			@import "page_elements/_content.scss";
+			@import "page_elements/_footer.scss";
+		}
+	}
+}
+
+#corner_top {
+	position: absolute;
+	top: 0%;
+	left: 0%
+}
+
+.bar {
+	@include box-style;
+	height: $bar_height;
+}
+
+
+
+
+
+
+
+
+
+
+//===============================================
+/*
 
 // Adds a yellow bar at bottom
 @mixin boxactive($lightcolor: $gradient_lightorange, $darkcolor: $gradient_darkorange) {
@@ -430,3 +480,4 @@ body {
 		}
 	}
 }
+*/

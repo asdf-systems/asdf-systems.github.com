@@ -1,0 +1,37 @@
+> nav {
+	@include box-style;
+	@include headline-text-style;
+	font-size: $nav_font_size;
+	letter-spacing: $nav_font_letter_spacing;
+	line-height: $nav_font_line_height;
+	width: $nav_width;
+	display: inline-block;
+	margin-bottom: $bar_height + $spacing;
+	> ul {
+		list-style-type: none;
+		> li {
+			margin-left: $nav_logo_space;
+			&.active, &:hover, a:hover {
+				color: $ci_orange;
+			}
+			// This is for the appearing
+			// asdf symbol on hover
+			&:before {
+				text-align: center;
+				display: inline-block;
+				width: $nav_logo_space;
+				content: '';
+			}
+			&:hover:before, &.active:before {
+				// TODO: Replace with image
+				content: '≡';
+			}
+			&:first-child {
+				margin-top: $padding/2;
+			}
+			&:last-child {
+				margin-bottom: $padding/2;
+			}
+		}
+	}
+}

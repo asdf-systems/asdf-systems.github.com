@@ -48,32 +48,18 @@ footermenu:
 	<body>
 		<div id="corner_top" class="{{page.corners}}"></div>
 		<div id="container">
-			<div id="headerbar"></div>
-			<div id="logobar">
-				<img src="img/logo.png">
+			<header>
+				{% include header.html %}
+			</header>
+			<nav>
+				{% include nav.html %}
+			</nav>
+			<div id="content">
+				{{content}}
 			</div>
-			<div id="main">
-				<nav>
-					<ul>
-						{% for item in page.mainmenu %}
-							<li {% if page.menu == item %}class="active"{% endif %}><a href="/{{item | downcase}}.html">{{item}}</a></li>
-						{% endfor %}
-					</ul>
-				</nav>
-				<div id="content">
-					{{content}}
-				</div>
-			</div>
-			<div id="footerbar">
-				<div>© 2010-2011 asdf-systems UG.</div>
-				<nav>
-					<ul>
-						{% for item in page.footermenu %}
-							<li {% if page.menu == item %}class="active"{% endif %}><a href="/{{item | downcase}}.html">{{item}}</a></li>
-						{% endfor %}
-					</ul>
-				</nav>
-			</div>
+			<footer>
+				{% include footer.html %}
+			</footer>
 		</div>
 		<div id="corner_bottom" class="{{page.corners}}"></div>
 

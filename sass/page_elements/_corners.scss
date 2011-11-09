@@ -1,0 +1,35 @@
+@mixin corner_common {
+	position: absolute;
+	width: 0;
+	height: 0;
+	&.orange {
+		border-color: $ci_orange;
+	}
+	&.blue {
+		border-color: $ci_blue;
+	}
+	&.turquoise {
+		border-color: $ci_turquoise;
+	}
+	&.pink {
+		border-color: $ci_pink;
+	}
+}
+
+#corner_top {
+	@include corner_common;
+	top: 0%;
+	left: 0%;
+	border-right-color: transparent !important;
+	border-style: solid;
+	border-width: $corner_height ($corner_width_wide - $corner_width_narrow) 0 $corner_width_narrow;
+}
+
+#corner_bottom {
+	@include corner_common;
+	bottom: 0%;
+	right: 0%;
+	border-left-color: transparent !important;
+	border-style: solid;
+	border-width: 0 $corner_width_narrow $corner_height ($corner_width_wide - $corner_width_narrow);
+}

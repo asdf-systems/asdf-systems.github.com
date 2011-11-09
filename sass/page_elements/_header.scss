@@ -1,0 +1,10 @@
+> header {
+	> img {
+		display: block;
+		float: right;
+		margin-right: $spacing;
+		margin-top: 50px;
+		margin-bottom: $spacing;
+	}
+	@include pie-clearfix;
+}

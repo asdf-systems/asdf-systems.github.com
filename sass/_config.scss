@@ -1,5 +1,5 @@
-$width: 875px;
-$spacing: 20px;
+$spacing: 5px;
+$padding: 20px;
 $bar_height: 31px;
 
 // ci colors
@@ -31,10 +31,14 @@ $gradient_lightpink: #86648e;
 $box_3d_highlight: #2d2c29;
 $box_3d_shadow: #181817;
 
+// content
+$content_width: 720px;
+
 // navigation
 $nav_width: 150px;
 $nav_spacing: 14px;
 $nav_num_items: 6;
+$nav_logo_space: 10px;
 
 // accordion
 $accordion_underline_height: 3px;
@@ -49,8 +53,29 @@ $slider_button_size: 40px;
 $slider_button_radius: 3px;
 
 // font sizes
-$accordion_header_font_size: 14px;
-$h1_size: 22px;
-$opener_size: 14px;
-$normal_size: 14px;
-$nav_font_size: 13px;
+$header_size: 16pt;
+$header_letter_spacing: 25em/1000;
+$header_line_height: 26pt;
+
+$accordion_header_font_size: 16pt;
+$accordion_letter_spacing: 25em/1000;
+$accordion_line_height: 26pt;
+
+$opener_size: 16pt;
+$opener_letter_spacing: 25em/1000;
+$opener_line_height: 26pt;
+
+$normal_size: 16pt;
+$normal_letter_spacing: 25em/1000;
+$normal_line_height: 26pt;
+
+$nav_font_size: 10pt;
+$nav_font_letter_spacing: 25em/1000;
+$nav_font_line_height: 20pt;
+
+$footer_font_size: 10pt;
+$footer_font_letter_spacing: 25em/1000;
+$footer_font_line_height: 20pt;
+
+// calculations
+$container_width: $nav_width + $spacing + $content_width;

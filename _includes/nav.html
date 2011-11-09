@@ -1,0 +1,5 @@
+<ul>
+	{% for item in page.mainmenu %}
+		<li {% if page.menu == item %}class="active"{% endif %}><a href="/{{item | downcase}}.html">{{item}}</a></li>
+	{% endfor %}
+</ul>
