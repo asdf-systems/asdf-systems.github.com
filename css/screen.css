@@ -2,18 +2,6 @@
 * In this file you should write your main styles. (or centralize your imports)
 * Import this file using the following HTML or equivalent:
 * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 1, ../sass/_augmented_reset.scss */
-a, a:link, a:active, a:hover, a:visited {
-  text-decoration: none;
-  color: inherit;
-}
-
-@font-face {
-  font-family: "Joey";
-  src: url('/css/fonts/');
-  src: url('/css/fonts/?iefix') format('eot'), url('/css/fonts/Joey.otf') format('opentype');
-}
-
 /* line 17, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -79,6 +67,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+/* line 1, ../sass/_augmented_reset.scss */
+a, a:link, a:active, a:hover, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+@font-face {
+  font-family: "Joey";
+  src: url('/css/fonts/');
+  src: url('/css/fonts/?iefix') format('eot'), url('/css/fonts/Joey.otf') format('opentype');
+}
+
 /* line 19, ../sass/page_elements/_corners.scss */
 #corner_top {
   position: absolute;
@@ -135,11 +135,89 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-color: #a37ca5;
 }
 
-/* line 30, ../sass/screen.scss */
+/* line 22, ../sass/page_elements/_bars.scss */
+.bar {
+  margin-bottom: 5px;
+  border-top: 1px solid #2d2c29;
+  border-bottom: 1px solid #181817;
+  background-color: #232320;
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #1c1c19), color-stop(50%, #232320), color-stop(100%, #1c1c19));
+  background-image: -webkit-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -moz-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -o-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  height: 31px;
+}
+
+/* line 1, ../sass/page_elements/_smallpost.scss */
+article.smallpost {
+  margin-bottom: 5px;
+  border-top: 1px solid #2d2c29;
+  border-bottom: 1px solid #181817;
+  background-color: #232320;
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #1c1c19), color-stop(50%, #232320), color-stop(100%, #1c1c19));
+  background-image: -webkit-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -moz-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -o-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  font-family: "Joey";
+  font-size: 16px;
+  letter-spacing: 0.025em;
+  line-height: 26px;
+  margin-bottom: 0;
+}
+/* line 5, ../sass/page_elements/_smallpost.scss */
+article.smallpost > header {
+  font-family: "Joey";
+  font-size: 18px;
+  letter-spacing: 0.025em;
+  line-height: 1em;
+  color: #ececec;
+  margin: 10px 20px;
+}
+/* line 10, ../sass/page_elements/_smallpost.scss */
+article.smallpost > figure {
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px 20px;
+  margin-top: 0;
+}
+/* line 15, ../sass/page_elements/_smallpost.scss */
+article.smallpost > figure > img {
+  width: 150px;
+  height: auto;
+}
+/* line 20, ../sass/page_elements/_smallpost.scss */
+article.smallpost > div {
+  margin: 10px 20px;
+  margin-left: 0;
+  margin-top: 0;
+  vertical-align: top;
+  display: inline-block;
+  width: 490px;
+}
+/* line 12, ../sass/page_elements/_bars.scss */
+article.smallpost:after {
+  display: block;
+  margin-top: -3px;
+  height: 3px;
+  background-color: #fea343;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #b67938), color-stop(50%, #fea343), color-stop(100%, #b67938));
+  background-image: -webkit-linear-gradient(left, #b67938, #fea343, #b67938);
+  background-image: -moz-linear-gradient(left, #b67938, #fea343, #b67938);
+  background-image: -o-linear-gradient(left, #b67938, #fea343, #b67938);
+  background-image: -ms-linear-gradient(left, #b67938, #fea343, #b67938);
+  background-image: linear-gradient(left, #b67938, #fea343, #b67938);
+  content: '';
+}
+
+/* line 24, ../sass/screen.scss */
 html {
   min-height: 100%;
 }
-/* line 32, ../sass/screen.scss */
+/* line 26, ../sass/screen.scss */
 html body {
   position: absolute;
   top: 0;
@@ -152,11 +230,11 @@ html body {
   margin: 0;
   font-family: "Ubuntu";
   font-weight: 400;
-  font-size: 16pt;
+  font-size: 18px;
   letter-spacing: 0.025em;
-  line-height: 26pt;
+  line-height: 26px;
 }
-/* line 43, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 html body > #container {
   width: 875px;
   margin: 0 auto;
@@ -169,9 +247,9 @@ html body > #container > header {
 html body > #container > header > img {
   display: block;
   float: right;
-  margin-right: 5px;
+  margin-right: 20px;
   margin-top: 50px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 /* line 38, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 html body > #container > header:after {
@@ -192,12 +270,12 @@ html body > #container > nav {
   background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
   background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
   font-family: "Joey";
-  font-size: 16pt;
+  font-size: 18px;
   letter-spacing: 0.025em;
-  line-height: 26pt;
-  font-size: 10pt;
+  line-height: 1em;
+  font-size: 14px;
   letter-spacing: 0.025em;
-  line-height: 20pt;
+  line-height: 36px;
   width: 150px;
   display: inline-block;
   margin-bottom: 36px;
@@ -225,14 +303,6 @@ html body > #container > nav > ul > li:before {
 html body > #container > nav > ul > li:hover:before, html body > #container > nav > ul > li.active:before {
   content: '≡';
 }
-/* line 29, ../sass/page_elements/_nav.scss */
-html body > #container > nav > ul > li:first-child {
-  margin-top: 10px;
-}
-/* line 32, ../sass/page_elements/_nav.scss */
-html body > #container > nav > ul > li:last-child {
-  margin-bottom: 10px;
-}
 /* line 1, ../sass/page_elements/_content.scss */
 html body > #container > #content {
   position: relative;
@@ -254,50 +324,47 @@ html body > #container > footer {
   background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
   background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
   font-family: "Joey";
-  font-size: 16pt;
+  font-size: 18px;
   letter-spacing: 0.025em;
-  line-height: 26pt;
+  line-height: 1em;
   position: absolute;
   bottom: 0%;
   margin-bottom: 0;
-  font-size: 10pt;
-  letter-spacing: 0.025em;
-  line-height: 20pt;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  line-height: 1em;
   width: 100%;
   max-width: 875px;
 }
 /* line 13, ../sass/page_elements/_footer.scss */
-html body > #container > footer > span {
-  display: inline;
-  margin-left: 20px;
+html body > #container > footer > div {
+  float: left;
+  margin: 5px 20px;
 }
 /* line 17, ../sass/page_elements/_footer.scss */
 html body > #container > footer > nav {
+  margin: 5px 20px;
   float: right;
 }
-/* line 19, ../sass/page_elements/_footer.scss */
+/* line 20, ../sass/page_elements/_footer.scss */
 html body > #container > footer > nav > ul {
   list-style-type: none;
 }
-/* line 21, ../sass/page_elements/_footer.scss */
+/* line 22, ../sass/page_elements/_footer.scss */
 html body > #container > footer > nav > ul > li {
   display: inline-block;
   margin: 0 20px;
 }
-/* line 24, ../sass/page_elements/_footer.scss */
+/* line 25, ../sass/page_elements/_footer.scss */
 html body > #container > footer > nav > ul > li.active, html body > #container > footer > nav > ul > li:hover, html body > #container > footer > nav > ul > li a:hover {
   color: #e4ae46;
 }
-
-/* line 54, ../sass/screen.scss */
-#corner_top {
-  position: absolute;
-  top: 0%;
-  left: 0%;
+/* line 28, ../sass/page_elements/_footer.scss */
+html body > #container > footer > nav > ul > li:last-child {
+  margin-right: 0;
 }
-
-/* line 60, ../sass/screen.scss */
-.bar {
+/* line 1, ../sass/page_elements/_intro.scss */
+html body .intro {
   margin-bottom: 5px;
   border-top: 1px solid #2d2c29;
   border-bottom: 1px solid #181817;
@@ -308,5 +375,21 @@ html body > #container > footer > nav > ul > li.active, html body > #container >
   background-image: -o-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
   background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
   background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  height: 31px;
+  color: #e4ae46;
+  padding: 10px 20px;
+}
+/* line 5, ../sass/page_elements/_intro.scss */
+html body .intro > header {
+  font-family: "Joey";
+  font-size: 18px;
+  letter-spacing: 0.025em;
+  line-height: 1em;
+  margin-bottom: 10px;
+}
+/* line 9, ../sass/page_elements/_intro.scss */
+html body .intro > p {
+  font-family: "Joey";
+  font-size: 16px;
+  letter-spacing: 0.025em;
+  line-height: 26px;
 }

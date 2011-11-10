@@ -1,0 +1,25 @@
+// Gradient background + highlight borders
+@mixin box-style {
+	margin-bottom: 5px;
+	border-top: 1px solid $box_3d_highlight;
+	border-bottom: 1px solid $box_3d_shadow;
+	background-color: $gradient_lightgray;
+	@include background-image(linear-gradient(top left, $gradient_darkgray, $gradient_lightgray, $gradient_darkgray));
+}
+
+// Adds a yellow bar at bottom
+@mixin box-active-style($lightcolor: $gradient_lightorange, $darkcolor: $gradient_darkorange) {
+	&:after {
+		display: block;
+		margin-top: -$accordion_underline_height;
+		height: $accordion_underline_height;
+		background-color: $lightcolor;
+		@include background-image(linear-gradient(left, $darkcolor, $lightcolor, $darkcolor));
+		content: '';
+	}
+}
+
+.bar {
+	@include box-style;
+	height: $bar_height;
+}

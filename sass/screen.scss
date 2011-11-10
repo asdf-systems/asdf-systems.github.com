@@ -3,38 +3,37 @@
 * Import this file using the following HTML or equivalent:
 * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "_config.scss";
-@import "_augmented_reset.scss";
-@import "_fonts.scss";
-// @import "_slider.scss";
-// @import "_accordion.scss";
-
 @import "compass/reset";
 @import "compass/utilities/general/clearfix";
 @import "compass/css3";
 @import "compass/css3/transition";
 @import "compass/css3/border-radius";
 
+@import "_config.scss";
+@import "_augmented_reset.scss";
+@import "_fonts.scss";
+// @import "_slider.scss";
+// @import "_accordion.scss";
 
-// Gradient background + highlight borders
-@mixin box-style {
-	margin-bottom: 5px;
-	border-top: 1px solid $box_3d_highlight;
-	border-bottom: 1px solid $box_3d_shadow;
-	background-color: $gradient_lightgray;
-	// padding: $spacing;
-	@include background-image(linear-gradient(top left, $gradient_darkgray, $gradient_lightgray, $gradient_darkgray));
-}
+
 
 @import "page_elements/_corners.scss";
+@import "page_elements/_bars.scss";
+@import "page_elements/_smallpost.scss";
+
 html {
 	min-height: 100%;
 	body {
+		// This is a dirty hack to make the body
+		// at least as high as the viewport
+		// (but grow if it needs to)
 		position: absolute;
 		top: 0;
 		left: 0;
 		min-height: 100%;
 		width: 100%;
+
+		// Now back to our regular program
 		background-color: $ci_background;
 		color: $ci_lightgray;
 		padding: 0;
@@ -48,18 +47,8 @@ html {
 			@import "page_elements/_content.scss";
 			@import "page_elements/_footer.scss";
 		}
+		@import "page_elements/_intro.scss";
 	}
-}
-
-#corner_top {
-	position: absolute;
-	top: 0%;
-	left: 0%
-}
-
-.bar {
-	@include box-style;
-	height: $bar_height;
 }
 
 
@@ -73,16 +62,6 @@ html {
 
 //===============================================
 /*
-
-// Adds a yellow bar at bottom
-@mixin boxactive($lightcolor: $gradient_lightorange, $darkcolor: $gradient_darkorange) {
-	display: block;
-	margin-top: -$accordion_underline_height;
-	height: $accordion_underline_height;
-	background-color: $lightcolor;
-	@include background-image(linear-gradient(left, $darkcolor, $lightcolor, $darkcolor));
-	content: '';
-}
 
 body {
 	background-color: $ci_background;

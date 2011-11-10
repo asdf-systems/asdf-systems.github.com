@@ -26,12 +26,6 @@
 				// TODO: Replace with image
 				content: '≡';
 			}
-			&:first-child {
-				margin-top: $padding/2;
-			}
-			&:last-child {
-				margin-bottom: $padding/2;
-			}
 		}
 	}
 }

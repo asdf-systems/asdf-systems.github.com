@@ -1,23 +1,24 @@
 ---
 layout: main
-menu: Neuigkeiten
+menu: news
 corners: orange
 ---
-<div id="precontentbar"></div>
-<div class="intro">
+<div id="precontentbar" class="bar"></div>
+<article class="intro">
 	{% for post in site.posts %}
 		{% if post.categories contains "intro" %}
-			<h1>{{ post.title }}</h1>
+			<header>{{ post.title }}</header>
 			{{ post.content | newline_to_br | markdownify }}
 		{% endif %}
 	{% endfor %}
-</div>
+</article>
+
 {% for post in site.posts %}
 	{% if post.categories contains "news" %}
-		{% include neuigkeitenpost.ext %}
+		{% include smallpost.html %}
 	{% endif %}
 {% endfor %}
-	<dl class="accordion closed">
+<!--	<dl class="accordion closed">
 		<dt>Archiv</dt>
 		<dd>
 			<dl class="accordion">
@@ -31,4 +32,4 @@ corners: orange
 				</dd>
 			</dl>
 		</dd>
-	</dl>
+	</dl>-->

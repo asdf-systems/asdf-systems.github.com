@@ -10,19 +10,23 @@
 	// Hack for responsiveness
 	width: 100%;
 	max-width: $container_width;
-	> span {
-		display: inline;
-		margin-left: $padding;
+	> div {
+		float: left;
+		margin: $footer_padding_vertical $padding_horizontal;
 	}
 	> nav {
+		margin: $footer_padding_vertical $padding_horizontal;
 		float: right;
 		> ul {
 			list-style-type: none;
 			> li {
 				display: inline-block;
-				margin: 0 $padding;
+				margin: 0 $padding_horizontal;
 				&.active, &:hover, a:hover {
 					color: $ci_orange;
+				}
+				&:last-child {
+					margin-right: 0;
 				}
 			}
 		}

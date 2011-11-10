@@ -1,0 +1,29 @@
+article.smallpost {
+	@include box-style;
+	@include opener-text-style;
+	margin-bottom: 0;
+	> header  {
+		@include headline-text-style;
+		color: $ci_white;
+		margin: $padding_vertical $padding_horizontal;
+	}
+	> figure {
+		display: inline-block;
+		vertical-align: top;
+		margin: $padding_vertical $padding_horizontal;
+		margin-top: 0;
+		> img {
+			width: $news_image_width;
+			height: auto;
+		}
+	}
+	> div {
+		margin: $padding_vertical $padding_horizontal;
+		margin-left: 0;
+		margin-top: 0;
+		vertical-align: top;
+		display: inline-block;
+		width: $content-width - 4 * $padding_horizontal - $news_image_width;
+	}
+	@include box-active-style;
+}

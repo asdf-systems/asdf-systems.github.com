@@ -2,9 +2,9 @@
 	> img {
 		display: block;
 		float: right;
-		margin-right: $spacing;
+		margin-right: $padding-horizontal;
 		margin-top: 50px;
-		margin-bottom: $spacing;
+		margin-bottom: $padding-vertical;
 	}
 	@include pie-clearfix;
 }

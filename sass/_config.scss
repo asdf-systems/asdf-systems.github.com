@@ -1,5 +1,6 @@
 $spacing: 5px;
-$padding: 20px;
+$padding_horizontal: 20px;
+$padding_vertical: $padding_horizontal/2;
 $bar_height: 31px;
 
 // ci colors
@@ -31,12 +32,17 @@ $gradient_lightpink: #86648e;
 $box_3d_highlight: #2d2c29;
 $box_3d_shadow: #181817;
 
+// images
+$news_image_width: 150px;
+
+// footer
+$footer_padding_vertical: 5px;
+
 // content
 $content_width: 720px;
 
 // navigation
 $nav_width: 150px;
-$nav_spacing: 14px;
 $nav_num_items: 6;
 $nav_logo_space: 10px;
 
@@ -53,29 +59,37 @@ $slider_button_size: 40px;
 $slider_button_radius: 3px;
 
 // font sizes
-$header_size: 16pt;
+$header_size: 18px;
 $header_letter_spacing: 25em/1000;
-$header_line_height: 26pt;
+$header_line_height: 1em;
 
-$accordion_header_font_size: 16pt;
-$accordion_letter_spacing: 25em/1000;
-$accordion_line_height: 26pt;
+$accordion_l1_header_font_size: 14px;
+$accordion_l1_letter_spacing: 25em/1000;
+$accordion_l1_line_height: 1em;
 
-$opener_size: 16pt;
+$accordion_l2_header_font_size: 18px;
+$accordion_l2_letter_spacing: 25em/1000;
+$accordion_l2_line_height: 1em;
+
+$intro_size: 18px;
+$intro_letter_spacing: 25em/1000;
+$intro_line_height: 26px;
+
+$opener_size: 16px;
 $opener_letter_spacing: 25em/1000;
-$opener_line_height: 26pt;
+$opener_line_height: 26px;
 
-$normal_size: 16pt;
+$normal_size: 18px;
 $normal_letter_spacing: 25em/1000;
-$normal_line_height: 26pt;
+$normal_line_height: 26px;
 
-$nav_font_size: 10pt;
+$nav_font_size: 14px;
 $nav_font_letter_spacing: 25em/1000;
-$nav_font_line_height: 20pt;
+$nav_font_line_height: 36px;
 
-$footer_font_size: 10pt;
-$footer_font_letter_spacing: 25em/1000;
-$footer_font_line_height: 20pt;
+$footer_font_size: 12px;
+$footer_font_letter_spacing: 50em/1000;
+$footer_font_line_height: 1em;
 
 // calculations
 $container_width: $nav_width + $spacing + $content_width;
