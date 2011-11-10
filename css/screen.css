@@ -92,7 +92,7 @@ a, a:link, a:active, a:hover, a:visited {
 }
 /* line 5, ../sass/page_elements/_corners.scss */
 #corner_top.orange {
-  border-color: #e4ae46;
+  border-color: #fba22b;
 }
 /* line 8, ../sass/page_elements/_corners.scss */
 #corner_top.blue {
@@ -120,7 +120,7 @@ a, a:link, a:active, a:hover, a:visited {
 }
 /* line 5, ../sass/page_elements/_corners.scss */
 #corner_bottom.orange {
-  border-color: #e4ae46;
+  border-color: #fba22b;
 }
 /* line 8, ../sass/page_elements/_corners.scss */
 #corner_bottom.blue {
@@ -203,13 +203,13 @@ article.smallpost:after {
   display: block;
   margin-top: -3px;
   height: 3px;
-  background-color: #fea343;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #b67938), color-stop(50%, #fea343), color-stop(100%, #b67938));
-  background-image: -webkit-linear-gradient(left, #b67938, #fea343, #b67938);
-  background-image: -moz-linear-gradient(left, #b67938, #fea343, #b67938);
-  background-image: -o-linear-gradient(left, #b67938, #fea343, #b67938);
-  background-image: -ms-linear-gradient(left, #b67938, #fea343, #b67938);
-  background-image: linear-gradient(left, #b67938, #fea343, #b67938);
+  background-color: #fbad44;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #bc6d04), color-stop(50%, #fbad44), color-stop(100%, #bc6d04));
+  background-image: -webkit-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: -moz-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: -o-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: -ms-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
   content: '';
 }
 
@@ -290,7 +290,7 @@ html body > #container > nav > ul > li {
 }
 /* line 14, ../sass/page_elements/_nav.scss */
 html body > #container > nav > ul > li.active, html body > #container > nav > ul > li:hover, html body > #container > nav > ul > li a:hover {
-  color: #e4ae46;
+  color: #fba22b;
 }
 /* line 19, ../sass/page_elements/_nav.scss */
 html body > #container > nav > ul > li:before {
@@ -357,7 +357,7 @@ html body > #container > footer > nav > ul > li {
 }
 /* line 25, ../sass/page_elements/_footer.scss */
 html body > #container > footer > nav > ul > li.active, html body > #container > footer > nav > ul > li:hover, html body > #container > footer > nav > ul > li a:hover {
-  color: #e4ae46;
+  color: #fba22b;
 }
 /* line 28, ../sass/page_elements/_footer.scss */
 html body > #container > footer > nav > ul > li:last-child {
@@ -375,7 +375,7 @@ html body .intro {
   background-image: -o-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
   background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
   background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  color: #e4ae46;
+  color: #fba22b;
   padding: 10px 20px;
 }
 /* line 5, ../sass/page_elements/_intro.scss */

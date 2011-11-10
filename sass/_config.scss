@@ -5,7 +5,7 @@ $bar_height: 31px;
 
 // ci colors
 $ci_background: #161616;
-$ci_orange: #e4ae46;
+$ci_orange: #fba22b;
 $ci_gray: #292b28;
 $ci_lightgray: #c2c3ba;
 $ci_white: #ececec;
@@ -19,8 +19,8 @@ $corner_width_wide: 130px;
 $corner_width_narrow: 50px;
 
 // gradients / highlights
-$gradient_lightorange: #fea343;
-$gradient_darkorange: #b67938;
+$gradient_lightorange: lighten($ci_orange, 5%);
+$gradient_darkorange: darken($ci_orange, 20%);
 $gradient_lightgray: #232320;
 $gradient_darkgray: #1c1c19;
 $gradient_darkturquoise: #325c65;
