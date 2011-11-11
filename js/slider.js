@@ -3,10 +3,13 @@
 	// - register Click handler for .next and .prev
 	// - make first panel active
 	$('.slider').each(function(elem) {
-
+		var activeIndex = 0;
 		var $slider = $(this);
 		var $pages = $($slider.find('> *'));
-		$slider.empty().append($('<div>').addClass('pages').append($pages));
+		$($pages[0]).addClass('active');
+
+		var $pageholder =$('<div>').addClass('pages').append($pages[0]);
+		$slider.empty().append($pageholder);
 
 		$slider.append($('<nav>')
 			.append($('<div>').addClass('next'))
@@ -14,33 +17,6 @@
 			.append($('<div>').addClass('page'))
 			.append($('<div>').addClass('clearfix')));
 		var $buttons = $($slider.find('> nav > .prev, > nav > .next'));
-
-
-		// Remove all .left and .right tags on pages
-		// mark every page before .active with .left
-		// mark every page after .active with .right
-		var updateTags = function() {
-			var marker = 'left';
-			for(var i = 0; i < $pages.length; i++){
-				$($pages[i]).removeClass('left right');
-				if($($pages[i]).hasClass('active')) {
-					$buttons.removeClass('disabled');
-					marker = 'right';
-
-					setCounter(i+1);
-
-					// Disable corresponding button if we’re on first or last page
-					if(i == 0) {
-						$($buttons.filter('.prev')).addClass('disabled');
-					}
-					if (i == $pages.length - 1) {
-						$($buttons.filter('.next')).addClass('disabled');
-					}
-					continue;
-				}
-				$($pages[i]).addClass(marker);
-			}
-		}
 
 		var setCounter = function(page) {
 			var numPages = $pages.length;
@@ -51,31 +27,40 @@
 				$page.append($('<span>').text('·').addClass(marker));
 			}
 		}
+		setCounter(1);
 
-		$($pages[0]).addClass('active');
-		updateTags($slider.get());
+		var animate = function(fromRight) {
+			setCounter(activeIndex+1);
+			var $curpage = $($pageholder.find('> *'));
+			$curpage.addClass(fromRight?'left':'right');
+			setTimeout(function() {
+				var newplace = fromRight?'right':'left';
+				$curpage = $($pages[activeIndex]).addClass(newplace);
+				$pageholder.empty().append($curpage);
+				// This timeout effectively gives control to the browser
+				// which is necessary for the animation to work.
+				// With out this the classes are changed without the browser
+				// "noticing", hence no animation.
+				setTimeout(function() {
+					$curpage.addClass('active').removeClass(newplace);
+				}, 1);
+			}, 1000);
+		}
 
-		$($slider.find('> nav .next')).click(function(elem) {
-			for(var i = 0; i < $pages.length; i++){
-				if($($pages[i]).hasClass('active') && i < $pages.length-1) {
-					$($pages[i]).removeClass('active');
-					$($pages[i+1]).addClass('active');
-					break;
-				}
+		$($buttons.filter('.next')).click(function(elem) {
+			if(activeIndex+1 >= $pages.length){
+				return;
 			}
-			updateTags();
+			activeIndex++;
+			animate(true);
 		});
 
-		$($slider.find('> nav .prev')).click(function(elem) {
-			for(var i = 0; i < $pages.length; i++){
-				if($($pages[i]).hasClass('active') && i > 0) {
-					$($pages[i]).removeClass('active');
-					$($pages[i-1]).addClass('active');
-					break;
-				}
+		$($buttons.filter('.prev')).click(function(elem) {
+			if(activeIndex <= 0){
+				return;
 			}
-			updateTags();
+			activeIndex--;
+			animate(false);
 		});
-
 	});
 })(jQuery);

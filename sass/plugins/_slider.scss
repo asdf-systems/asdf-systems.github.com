@@ -1,27 +1,17 @@
 .slider {
-	> nav {
-		> div {
-			z-index: 900;
-		}
-	}
+	overflow: hidden;
 	.pages {
-		overflow: hidden;
-		position: relative;
-		width: 100%;
 		> section {
-			position: absolute;
 			width: 100%;
-			@include single-transition("left", $slider_slide_duration, ease-in-out, 0);
-			top: 0;
-			left: 200%;
+			@include single-transition("margin", $slider_slide_duration, ease-in-out, 0);
 			&.active{
-				left: 0;
+				margin-left: 0;
 			}
 			&.left {
-				left: -100%;
+				margin-left: -150%;
 			}
 			&.right {
-				left: 100%;
+				margin-left: 150%;
 			}
 		}
 	}

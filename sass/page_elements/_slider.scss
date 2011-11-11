@@ -1,7 +1,7 @@
 .slider {
 	@include box-style;
 	.pages {
-		height: 650px;
+		// height: 650px;
 		section {
 			@include normal-text-style;
 			&:first-child {

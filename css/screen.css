@@ -79,24 +79,17 @@ a, a:link, a:active, a:hover, a:visited {
   src: url('/css/fonts/?iefix') format('eot'), url('/css/fonts/Joey.otf') format('opentype');
 }
 
-/* line 3, ../sass/plugins/_slider.scss */
-.slider > nav > div {
-  z-index: 900;
-}
-/* line 7, ../sass/plugins/_slider.scss */
-.slider .pages {
+/* line 1, ../sass/plugins/_slider.scss */
+.slider {
   overflow: hidden;
-  position: relative;
-  width: 100%;
 }
-/* line 11, ../sass/plugins/_slider.scss */
+/* line 4, ../sass/plugins/_slider.scss */
 .slider .pages > section {
-  position: absolute;
   width: 100%;
-  -moz-transition-property: left;
-  -webkit-transition-property: left;
-  -o-transition-property: left;
-  transition-property: left;
+  -moz-transition-property: margin;
+  -webkit-transition-property: margin;
+  -o-transition-property: margin;
+  transition-property: margin;
   -moz-transition-duration: 1s;
   -webkit-transition-duration: 1s;
   -o-transition-duration: 1s;
@@ -109,20 +102,18 @@ a, a:link, a:active, a:hover, a:visited {
   -webkit-transition-delay: 0;
   -o-transition-delay: 0;
   transition-delay: 0;
-  top: 0;
-  left: 200%;
 }
-/* line 17, ../sass/plugins/_slider.scss */
+/* line 7, ../sass/plugins/_slider.scss */
 .slider .pages > section.active {
-  left: 0;
+  margin-left: 0;
 }
-/* line 20, ../sass/plugins/_slider.scss */
+/* line 10, ../sass/plugins/_slider.scss */
 .slider .pages > section.left {
-  left: -100%;
+  margin-left: -150%;
 }
-/* line 23, ../sass/plugins/_slider.scss */
+/* line 13, ../sass/plugins/_slider.scss */
 .slider .pages > section.right {
-  left: 100%;
+  margin-left: 150%;
 }
 
 /* line 2, ../sass/plugins/_accordion.scss */
@@ -483,10 +474,6 @@ dl.accordion dd > dl.accordion dt.active:after, dl.accordion dd > dl.accordion d
   background-image: -o-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
   background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
   background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-}
-/* line 3, ../sass/page_elements/_slider.scss */
-.slider .pages {
-  height: 650px;
 }
 /* line 5, ../sass/page_elements/_slider.scss */
 .slider .pages section {
