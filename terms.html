@@ -6,7 +6,9 @@ corners: orange
 <dl id="agb" class="accordion">
 	{% for post in site.posts %}
 		{% if post.categories contains "agb" %}
-			<dt class="active">{{post.title}}</dt>
+			<dt class="active">
+				<div>{{post.title}} </div>
+			</dt>
 			<dd>
 				<div>
 					{{post.content}}

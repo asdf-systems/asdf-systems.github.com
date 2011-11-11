@@ -44,7 +44,7 @@ $content_width: 720px;
 // navigation
 $nav_width: 150px;
 $nav_num_items: 6;
-$nav_logo_space: 10px;
+$nav_logo_space: 7px;
 
 // accordion
 $accordion_underline_height: 3px;
@@ -55,8 +55,7 @@ $accordion_button_size: 22px;
 // slider
 $slider_slide_duration: 1s;
 $slider_fade_duration: 0.5s;
-$slider_button_size: 40px;
-$slider_button_radius: 3px;
+$slider_arrow_border: 3px;
 
 // font sizes
 $header_size: 18px;
@@ -65,11 +64,11 @@ $header_line_height: 1em;
 
 $accordion_l1_header_font_size: 14px;
 $accordion_l1_letter_spacing: 25em/1000;
-$accordion_l1_line_height: 1em;
+$accordion_l1_line_height: $accordion_header_height;
 
 $accordion_l2_header_font_size: 18px;
 $accordion_l2_letter_spacing: 25em/1000;
-$accordion_l2_line_height: 1em;
+$accordion_l2_line_height: $accordion_header_height;
 
 $intro_size: 18px;
 $intro_letter_spacing: 25em/1000;
@@ -79,7 +78,7 @@ $opener_size: 16px;
 $opener_letter_spacing: 25em/1000;
 $opener_line_height: 26px;
 
-$normal_size: 18px;
+$normal_size: 14px;
 $normal_letter_spacing: 25em/1000;
 $normal_line_height: 26px;
 

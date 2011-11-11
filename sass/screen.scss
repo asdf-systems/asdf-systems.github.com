@@ -12,14 +12,15 @@
 @import "_config.scss";
 @import "_augmented_reset.scss";
 @import "_fonts.scss";
-// @import "_slider.scss";
-// @import "_accordion.scss";
 
-
+@import "plugins/_slider.scss";
+@import "plugins/_accordion.scss";
 
 @import "page_elements/_corners.scss";
 @import "page_elements/_bars.scss";
 @import "page_elements/_smallpost.scss";
+@import "page_elements/_accordion.scss";
+@import "page_elements/_slider.scss";
 
 html {
 	min-height: 100%;
@@ -152,59 +153,6 @@ body {
 	#content {
 		float: right;
 		width: 720px;
-		dl.accordion {
-			> dt {
-				@include HeadlineText;
-				font-size: $accordion_header_font_size;
-				line-height: $accordion_header_height;
-				padding-left: $spacing;
-				@include box;
-				&:before {
-					font-size: $accordion_button_size;
-					margin-right: $spacing;
-					float: right;
-					content: '↓';
-					@include opacity(0.2);
-				}
-				&.active:before {
-					content: '↑';
-				}
-				&:hover:after, &.active:after {
-					margin-left: -$spacing;
-				}
-				&:hover:after, &.active:after {
-					@include boxactive($gradient_lightorange, $gradient_darkorange);
-				}
-				&.turquoise:hover:after, &.turquoise.active:after {
-					@include boxactive($gradient_lightturquoise, $gradient_darkturquoise);
-				}
-				&.pink:hover:after, &.pink.active:after {
-					@include boxactive($gradient_lightpink, $gradient_darkpink);
-				}
-				&.blue:hover:after, &.blue.active:after {
-					@include boxactive($gradient_lightblue, $gradient_darkblue);
-				}
-			}
-			dd > dl.accordion {
-				dt {
-					background-color: $ci_orange;
-					&.turquoise {
-						background-color: $ci_turquoise;
-					}
-					&.pink {
-						background-color: $ci_pink;
-					}
-					&.blue {
-						background-color: $ci_blue;
-					}
-					background-image: none !important;
-					border: 0 !important;
-					color: $ci_white;
-					&.active {
-						margin: 0;
-					}
-				}
-			}
 		}
 		.slider {
 			@include box;

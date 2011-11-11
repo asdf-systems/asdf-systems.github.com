@@ -19,12 +19,15 @@
 			&:before {
 				text-align: center;
 				display: inline-block;
-				width: $nav_logo_space;
 				content: '';
+				width: 6px;
+				height: 9px;
+				margin-right: $nav_logo_space;
 			}
 			&:hover:before, &.active:before {
 				// TODO: Replace with image
-				content: '≡';
+				content: '';
+				background-image: url('/img/navilogo.png');
 			}
 		}
 	}

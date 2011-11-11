@@ -6,7 +6,9 @@ corners: orange
 <dl id="impressum" class="accordion">
 	{% for post in site.posts %}
 		{% if post.categories contains "impressum" %}
-			<dt class="active">{{post.title}}</dt>
+			<dt class="active">
+				<div>{{post.title}}</div>
+			</dt>
 			{% include projectpost.ext %}
 		{% endif %}
 	{% endfor %}

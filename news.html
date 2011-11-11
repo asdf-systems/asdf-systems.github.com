@@ -18,18 +18,23 @@ corners: orange
 		{% include smallpost.html %}
 	{% endif %}
 {% endfor %}
-<!--	<dl class="accordion closed">
-		<dt>Archiv</dt>
-		<dd>
-			<dl class="accordion">
-				<dt>2010</dt>
-				<dd>
-					{% for post in site.posts %}
-						{% if post.categories contains "archiv" %}
-							{% include neuigkeitenpost.ext %}
-						{% endif %}
-					{% endfor %}
-				</dd>
-			</dl>
-		</dd>
-	</dl>-->
+
+<dl class="accordion closed">
+	<dt>
+		<div>Archiv</div>
+	</dt>
+	<dd>
+		<dl class="accordion">
+			<dt>
+				<div>2010</div>
+			</dt>
+			<dd>
+				{% for post in site.posts %}
+					{% if post.categories contains "archiv" %}
+						{% include smallpost.html %}
+					{% endif %}
+				{% endfor %}
+			</dd>
+		</dl>
+	</dd>
+</dl>
