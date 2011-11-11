@@ -2,13 +2,13 @@ article.smallpost {
 	@include box-style;
 	@include opener-text-style;
 	margin-bottom: 0;
-	> header  {
+	header  {
 		@include headline-text-style;
 		display: block;
 		color: $ci_white;
 		margin: $padding_vertical $padding_horizontal;
 	}
-	> figure {
+	figure {
 		display: inline-block;
 		vertical-align: top;
 		@media screen and (max-width: 880px) {
@@ -25,7 +25,7 @@ article.smallpost {
 			}
 		}
 	}
-	> div {
+	div {
 		vertical-align: top;
 		display: inline-block;
 		width: $content-width - 4 * $padding_horizontal - $news_image_width;

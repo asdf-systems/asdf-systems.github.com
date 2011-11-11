@@ -262,7 +262,7 @@ article.smallpost {
   margin-bottom: 0;
 }
 /* line 5, ../sass/page_elements/_smallpost.scss */
-article.smallpost > header {
+article.smallpost header {
   font-family: "Joey";
   font-size: 18px;
   letter-spacing: 0.025em;
@@ -272,7 +272,7 @@ article.smallpost > header {
   margin: 10px 20px;
 }
 /* line 11, ../sass/page_elements/_smallpost.scss */
-article.smallpost > figure {
+article.smallpost figure {
   display: inline-block;
   vertical-align: top;
   margin: 10px 20px;
@@ -280,24 +280,24 @@ article.smallpost > figure {
 }
 @media screen and (max-width: 880px) {
   /* line 11, ../sass/page_elements/_smallpost.scss */
-  article.smallpost > figure {
+  article.smallpost figure {
     display: block;
     float: left;
   }
 }
 /* line 20, ../sass/page_elements/_smallpost.scss */
-article.smallpost > figure > img {
+article.smallpost figure > img {
   width: 150px;
   height: auto;
 }
 @media screen and (max-width: 880px) {
   /* line 20, ../sass/page_elements/_smallpost.scss */
-  article.smallpost > figure > img {
+  article.smallpost figure > img {
     margin-right: 0;
   }
 }
 /* line 28, ../sass/page_elements/_smallpost.scss */
-article.smallpost > div {
+article.smallpost div {
   vertical-align: top;
   display: inline-block;
   width: 490px;
@@ -308,14 +308,14 @@ article.smallpost > div {
 }
 @media screen and (max-width: 880px) {
   /* line 28, ../sass/page_elements/_smallpost.scss */
-  article.smallpost > div {
+  article.smallpost div {
     width: 90%;
     display: block;
     padding-left: 20px;
   }
 }
 /* line 38, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-article.smallpost > div:after {
+article.smallpost div:after {
   content: "";
   display: table;
   clear: both;
@@ -333,6 +333,16 @@ article.smallpost:after {
   background-image: -ms-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
   background-image: linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
   content: '';
+}
+
+/* line 3, ../sass/page_elements/_employee.scss */
+article.employee figure {
+  margin: 10px 20px;
+}
+/* line 6, ../sass/page_elements/_employee.scss */
+article.employee header {
+  margin: 0;
+  margin: 10px 0;
 }
 
 /* line 2, ../sass/page_elements/_accordion.scss */
@@ -589,11 +599,11 @@ dl.accordion dd > dl.accordion dt.active:after, dl.accordion dd > dl.accordion d
   clear: both;
 }
 
-/* line 25, ../sass/screen.scss */
+/* line 26, ../sass/screen.scss */
 html {
   min-height: 100%;
 }
-/* line 27, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
 html body {
   position: absolute;
   top: 0;
@@ -610,13 +620,13 @@ html body {
   letter-spacing: 0.025em;
   line-height: 26px;
 }
-/* line 43, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 html body > #container {
   width: 880px;
   margin: 0 auto;
 }
 @media screen and (max-width: 880px) {
-  /* line 43, ../sass/screen.scss */
+  /* line 44, ../sass/screen.scss */
   html body > #container {
     width: 100%;
   }
