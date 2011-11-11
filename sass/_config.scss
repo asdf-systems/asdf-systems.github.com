@@ -91,4 +91,4 @@ $footer_font_letter_spacing: 50em/1000;
 $footer_font_line_height: 1em;
 
 // calculations
-$container_width: $nav_width + $spacing + $content_width;
+$container_width: $nav_width + 2*$spacing + $content_width;

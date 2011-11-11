@@ -4,26 +4,40 @@ article.smallpost {
 	margin-bottom: 0;
 	> header  {
 		@include headline-text-style;
+		display: block;
 		color: $ci_white;
 		margin: $padding_vertical $padding_horizontal;
 	}
 	> figure {
 		display: inline-block;
 		vertical-align: top;
+		@media screen and (max-width: 880px) {
+			display: block;
+			float: left;
+		}
 		margin: $padding_vertical $padding_horizontal;
 		margin-top: 0;
 		> img {
 			width: $news_image_width;
 			height: auto;
+			@media screen and (max-width: 880px) {
+				margin-right: 0;
+			}
 		}
 	}
 	> div {
-		margin: $padding_vertical $padding_horizontal;
-		margin-left: 0;
-		margin-top: 0;
 		vertical-align: top;
 		display: inline-block;
 		width: $content-width - 4 * $padding_horizontal - $news_image_width;
+		@media screen and (max-width: 880px) {
+			width: 90%;
+			display: block;
+			padding-left: $padding_horizontal;
+		}
+		margin: $padding_vertical $padding_horizontal;
+		margin-left: 0;
+		margin-top: 0;
+		@include pie-clearfix;
 	}
 	@include box-active-style;
 }

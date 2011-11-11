@@ -42,6 +42,9 @@ html {
 		@include normal-text-style;
 		> #container {
 			width: $container_width;
+			@media screen and (max-width: 880px) {
+				width: 100%;
+			}
 			margin: 0 auto;
 			@import "page_elements/_header.scss";
 			@import "page_elements/_nav.scss";

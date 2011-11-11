@@ -154,7 +154,7 @@ dl.accordion > dt.active + dd {
   max-height: 2999px;
 }
 
-/* line 19, ../sass/page_elements/_corners.scss */
+/* line 22, ../sass/page_elements/_corners.scss */
 #corner_top {
   position: absolute;
   width: 0;
@@ -181,8 +181,14 @@ dl.accordion > dt.active + dd {
 #corner_top.pink {
   border-color: #a37ca5;
 }
+@media screen and (max-width: 1150px) {
+  /* line 22, ../sass/page_elements/_corners.scss */
+  #corner_top {
+    display: none;
+  }
+}
 
-/* line 28, ../sass/page_elements/_corners.scss */
+/* line 31, ../sass/page_elements/_corners.scss */
 #corner_bottom {
   position: absolute;
   width: 0;
@@ -209,6 +215,12 @@ dl.accordion > dt.active + dd {
 #corner_bottom.pink {
   border-color: #a37ca5;
 }
+@media screen and (max-width: 1150px) {
+  /* line 31, ../sass/page_elements/_corners.scss */
+  #corner_bottom {
+    display: none;
+  }
+}
 
 /* line 22, ../sass/page_elements/_bars.scss */
 .bar {
@@ -225,6 +237,12 @@ dl.accordion > dt.active + dd {
   height: 31px;
 }
 
+@media screen and (max-width: 880px) {
+  /* line 28, ../sass/page_elements/_bars.scss */
+  #precontentbar {
+    display: none;
+  }
+}
 /* line 1, ../sass/page_elements/_smallpost.scss */
 article.smallpost {
   margin-bottom: 5px;
@@ -249,29 +267,58 @@ article.smallpost > header {
   font-size: 18px;
   letter-spacing: 0.025em;
   line-height: 1em;
+  display: block;
   color: #ececec;
   margin: 10px 20px;
 }
-/* line 10, ../sass/page_elements/_smallpost.scss */
+/* line 11, ../sass/page_elements/_smallpost.scss */
 article.smallpost > figure {
   display: inline-block;
   vertical-align: top;
   margin: 10px 20px;
   margin-top: 0;
 }
-/* line 15, ../sass/page_elements/_smallpost.scss */
+@media screen and (max-width: 880px) {
+  /* line 11, ../sass/page_elements/_smallpost.scss */
+  article.smallpost > figure {
+    display: block;
+    float: left;
+  }
+}
+/* line 20, ../sass/page_elements/_smallpost.scss */
 article.smallpost > figure > img {
   width: 150px;
   height: auto;
 }
-/* line 20, ../sass/page_elements/_smallpost.scss */
+@media screen and (max-width: 880px) {
+  /* line 20, ../sass/page_elements/_smallpost.scss */
+  article.smallpost > figure > img {
+    margin-right: 0;
+  }
+}
+/* line 28, ../sass/page_elements/_smallpost.scss */
 article.smallpost > div {
-  margin: 10px 20px;
-  margin-left: 0;
-  margin-top: 0;
   vertical-align: top;
   display: inline-block;
   width: 490px;
+  margin: 10px 20px;
+  margin-left: 0;
+  margin-top: 0;
+  *zoom: 1;
+}
+@media screen and (max-width: 880px) {
+  /* line 28, ../sass/page_elements/_smallpost.scss */
+  article.smallpost > div {
+    width: 90%;
+    display: block;
+    padding-left: 20px;
+  }
+}
+/* line 38, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+article.smallpost > div:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 /* line 12, ../sass/page_elements/_bars.scss */
 article.smallpost:after {
@@ -565,18 +612,37 @@ html body {
 }
 /* line 43, ../sass/screen.scss */
 html body > #container {
-  width: 875px;
+  width: 880px;
   margin: 0 auto;
+}
+@media screen and (max-width: 880px) {
+  /* line 43, ../sass/screen.scss */
+  html body > #container {
+    width: 100%;
+  }
 }
 /* line 1, ../sass/page_elements/_header.scss */
 html body > #container > header {
   *zoom: 1;
 }
 /* line 2, ../sass/page_elements/_header.scss */
-html body > #container > header > img {
+html body > #container > header > figure {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+@media screen and (max-width: 880px) {
+  /* line 2, ../sass/page_elements/_header.scss */
+  html body > #container > header > figure {
+    float: none;
+    max-width: 720px;
+  }
+}
+/* line 10, ../sass/page_elements/_header.scss */
+html body > #container > header > figure > img {
   display: block;
   float: right;
-  margin-right: 20px;
+  padding-right: 20px;
   margin-top: 50px;
   margin-bottom: 10px;
 }
@@ -608,20 +674,50 @@ html body > #container > nav {
   width: 150px;
   display: inline-block;
   margin-bottom: 36px;
+  margin-right: 5px;
 }
-/* line 10, ../sass/page_elements/_nav.scss */
+@media screen and (max-width: 880px) {
+  /* line 1, ../sass/page_elements/_nav.scss */
+  html body > #container > nav {
+    display: block;
+    width: 100%;
+    max-width: 720px;
+    margin: 5px auto;
+    margin-top: 0;
+  }
+}
+/* line 18, ../sass/page_elements/_nav.scss */
 html body > #container > nav > ul {
   list-style-type: none;
 }
-/* line 12, ../sass/page_elements/_nav.scss */
+@media screen and (max-width: 880px) {
+  /* line 18, ../sass/page_elements/_nav.scss */
+  html body > #container > nav > ul {
+    text-align: center;
+  }
+}
+/* line 23, ../sass/page_elements/_nav.scss */
 html body > #container > nav > ul > li {
   margin-left: 7px;
 }
-/* line 14, ../sass/page_elements/_nav.scss */
+@media screen and (max-width: 880px) {
+  /* line 23, ../sass/page_elements/_nav.scss */
+  html body > #container > nav > ul > li {
+    display: inline-block;
+    width: 15%;
+  }
+}
+@media screen and (max-width: 580px) {
+  /* line 23, ../sass/page_elements/_nav.scss */
+  html body > #container > nav > ul > li {
+    width: 30%;
+  }
+}
+/* line 32, ../sass/page_elements/_nav.scss */
 html body > #container > nav > ul > li.active, html body > #container > nav > ul > li:hover, html body > #container > nav > ul > li a:hover {
   color: #fba22b;
 }
-/* line 19, ../sass/page_elements/_nav.scss */
+/* line 37, ../sass/page_elements/_nav.scss */
 html body > #container > nav > ul > li:before {
   text-align: center;
   display: inline-block;
@@ -630,7 +726,7 @@ html body > #container > nav > ul > li:before {
   height: 9px;
   margin-right: 7px;
 }
-/* line 27, ../sass/page_elements/_nav.scss */
+/* line 45, ../sass/page_elements/_nav.scss */
 html body > #container > nav > ul > li:hover:before, html body > #container > nav > ul > li.active:before {
   content: '';
   background-image: url("/img/navilogo.png");
@@ -642,6 +738,16 @@ html body > #container > #content {
   width: 720px;
   display: inline-block;
   margin-bottom: 36px;
+}
+@media screen and (max-width: 880px) {
+  /* line 1, ../sass/page_elements/_content.scss */
+  html body > #container > #content {
+    display: block;
+    width: 100%;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 /* line 1, ../sass/page_elements/_footer.scss */
 html body > #container > footer {
@@ -661,12 +767,12 @@ html body > #container > footer {
   line-height: 1em;
   position: absolute;
   bottom: 0%;
-  margin-bottom: 0;
+  margin: 0;
   font-size: 12px;
   letter-spacing: 0.05em;
   line-height: 1em;
   width: 100%;
-  max-width: 875px;
+  max-width: 880px;
 }
 /* line 13, ../sass/page_elements/_footer.scss */
 html body > #container > footer > div {

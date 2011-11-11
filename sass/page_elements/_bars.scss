@@ -23,3 +23,10 @@
 	@include box-style;
 	height: $bar_height;
 }
+
+@media screen and (max-width: 880px) {
+	#precontentbar {
+		display: none;
+	}
+}
+

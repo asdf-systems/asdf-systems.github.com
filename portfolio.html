@@ -1,6 +1,6 @@
 ---
 layout: main
-menu: Portfolio
+menu: portfolio
 corners: turquoise
 ---
 <dl id="portfolio" class="accordion">
@@ -14,7 +14,7 @@ corners: turquoise
 					<dt class="turquoise">
 						<div>{{post.title}}</div>
 					</dt>
-					{% include projectpost.ext %}
+					{% include bigpost.html %}
 				{% endif %}
 			{% endfor %}
 		</dl>
@@ -29,7 +29,7 @@ corners: turquoise
 					<dt class="pink">
 						<div>{{post.title}}</div>
 					</dt>
-					{% include projectpost.ext %}
+					{% include bigpost.html %}
 				{% endif %}
 			{% endfor %}
 		</dl>
@@ -44,7 +44,7 @@ corners: turquoise
 					<dt class="blue">
 						<div>{{post.title}}</div>
 					</dt>
-					{% include projectpost.ext %}
+					{% include bigpost.html %}
 				{% endif %}
 			{% endfor %}
 		</dl>

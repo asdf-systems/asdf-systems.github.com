@@ -7,10 +7,28 @@
 	width: $nav_width;
 	display: inline-block;
 	margin-bottom: $bar_height + $spacing;
+	margin-right: $spacing;
+	@media screen and (max-width: 880px) {
+		display: block;
+		width: 100%;
+		max-width: 720px;
+		margin: $spacing auto;
+		margin-top: 0;
+	}
 	> ul {
 		list-style-type: none;
+		@media screen and (max-width: 880px) {
+			text-align: center;
+		}
 		> li {
 			margin-left: $nav_logo_space;
+			@media screen and (max-width: 880px) {
+				display: inline-block;
+				width: 90%/$nav_num_items;
+			}
+			@media screen and (max-width: 580px) {
+				width: 2*90%/$nav_num_items;
+			}
 			&.active, &:hover, a:hover {
 				color: $ci_orange;
 			}
