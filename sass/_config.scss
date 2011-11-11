@@ -1,10 +1,11 @@
-$width: 875px;
-$spacing: 20px;
+$spacing: 5px;
+$padding_horizontal: 20px;
+$padding_vertical: $padding_horizontal/2;
 $bar_height: 31px;
 
 // ci colors
 $ci_background: #161616;
-$ci_orange: #e4ae46;
+$ci_orange: #fba22b;
 $ci_gray: #292b28;
 $ci_lightgray: #c2c3ba;
 $ci_white: #ececec;
@@ -18,8 +19,8 @@ $corner_width_wide: 130px;
 $corner_width_narrow: 50px;
 
 // gradients / highlights
-$gradient_lightorange: #fea343;
-$gradient_darkorange: #b67938;
+$gradient_lightorange: lighten($ci_orange, 5%);
+$gradient_darkorange: darken($ci_orange, 20%);
 $gradient_lightgray: #232320;
 $gradient_darkgray: #1c1c19;
 $gradient_darkturquoise: #325c65;
@@ -31,10 +32,19 @@ $gradient_lightpink: #86648e;
 $box_3d_highlight: #2d2c29;
 $box_3d_shadow: #181817;
 
+// images
+$news_image_width: 150px;
+
+// footer
+$footer_padding_vertical: 5px;
+
+// content
+$content_width: 720px;
+
 // navigation
 $nav_width: 150px;
-$nav_spacing: 14px;
 $nav_num_items: 6;
+$nav_logo_space: 7px;
 
 // accordion
 $accordion_underline_height: 3px;
@@ -45,12 +55,40 @@ $accordion_button_size: 22px;
 // slider
 $slider_slide_duration: 1s;
 $slider_fade_duration: 0.5s;
-$slider_button_size: 40px;
-$slider_button_radius: 3px;
+$slider_arrow_border: 3px;
 
 // font sizes
-$accordion_header_font_size: 14px;
-$h1_size: 22px;
-$opener_size: 14px;
+$header_size: 18px;
+$header_letter_spacing: 25em/1000;
+$header_line_height: 1em;
+
+$accordion_l1_header_font_size: 14px;
+$accordion_l1_letter_spacing: 25em/1000;
+$accordion_l1_line_height: $accordion_header_height;
+
+$accordion_l2_header_font_size: 18px;
+$accordion_l2_letter_spacing: 25em/1000;
+$accordion_l2_line_height: $accordion_header_height;
+
+$intro_size: 18px;
+$intro_letter_spacing: 25em/1000;
+$intro_line_height: 26px;
+
+$opener_size: 16px;
+$opener_letter_spacing: 25em/1000;
+$opener_line_height: 26px;
+
 $normal_size: 14px;
-$nav_font_size: 13px;
+$normal_letter_spacing: 25em/1000;
+$normal_line_height: 26px;
+
+$nav_font_size: 14px;
+$nav_font_letter_spacing: 25em/1000;
+$nav_font_line_height: 36px;
+
+$footer_font_size: 12px;
+$footer_font_letter_spacing: 50em/1000;
+$footer_font_line_height: 1em;
+
+// calculations
+$container_width: $nav_width + 2*$spacing + $content_width;

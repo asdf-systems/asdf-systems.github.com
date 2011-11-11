@@ -1,0 +1,11 @@
+<article class="smallpost">
+	<header>{{post.title}}</header>
+	{% if post.image %}
+		<figure>
+			<img src="/img/{{page.menu | downcase}}/{{post.image}}">
+		</figure>
+	{% endif %}
+	<div>
+		{{ post.content | newline_to_br | markdownify | replace: "<slide />", "</section><section>" }}
+	</div>
+</article>

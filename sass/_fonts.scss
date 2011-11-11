@@ -4,19 +4,24 @@
 @include font-face("Joey", font-files("Joey.otf", opentype), "");
 // @include font-face("Caput Bold", font-files("caput_bold.otf", opentype), "");
 
-@mixin HeadlineText {
+@mixin headline-text-style {
 	font-family: "Joey";
-	font-size: $h1_size;
+	font-size: $header_size;
+	letter-spacing: $header_letter_spacing;
+	line-height: $header_line_height;
 }
 
-@mixin NormalText {
+@mixin normal-text-style {
 	font-family: "Ubuntu";
 	font-weight: 400;
 	font-size: $normal_size;
+	letter-spacing: $normal_letter_spacing;
+	line-height: $normal_line_height;
 }
 
-@mixin OpenerText {
-	font-family: "Ubuntu";
-	font-weight: 700;
+@mixin opener-text-style {
+	font-family: "Joey";
 	font-size: $opener_size;
+	letter-spacing: $opener_letter_spacing;
+	line-height: $opener_line_height;
 }

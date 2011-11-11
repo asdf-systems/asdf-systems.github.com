@@ -1,16 +1,15 @@
 ---
 mainmenu:
-- "Neuigkeiten"
-- "Portfolio"
-- "Werkstatt"
-- "Support"
-- "Firmenprofil"
-- "Kontakt"
+- ["Neuigkeiten", "news"]
+- ["Portfolio", "portfolio"]
+- ["Werkstatt", "workshop"]
+- ["Service", "service"]
+- ["Über uns", "about"]
+- ["Kontakt", "contact"]
 
 footermenu:
-- "Impressum"
-#- "FAQ"
-- "AGB"
+- ["Impressum", "impressum"]
+- ["AGB", "terms"]
 ---
 <!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
@@ -18,7 +17,7 @@ footermenu:
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
 <!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
 <!--[if gt IE 8]><!-->
-<html class="no-js" lang="en">
+<html class="no-js {{page.menu}}" lang="en">
 	<!--<![endif]-->
 	<head>
 		<meta charset="utf-8">
@@ -48,32 +47,19 @@ footermenu:
 	<body>
 		<div id="corner_top" class="{{page.corners}}"></div>
 		<div id="container">
-			<div id="headerbar"></div>
-			<div id="logobar">
-				<img src="img/logo.png">
+			<header>
+				{% include header.html %}
+			</header>
+			<nav>
+				{% assign menuitems = page.mainmenu %}
+				{% include nav.html %}
+			</nav>
+			<div id="content">
+				{{content}}
 			</div>
-			<div id="main">
-				<nav>
-					<ul>
-						{% for item in page.mainmenu %}
-							<li {% if page.menu == item %}class="active"{% endif %}><a href="/{{item | downcase}}.html">{{item}}</a></li>
-						{% endfor %}
-					</ul>
-				</nav>
-				<div id="content">
-					{{content}}
-				</div>
-			</div>
-			<div id="footerbar">
-				<div>© 2010-2011 asdf-systems UG.</div>
-				<nav>
-					<ul>
-						{% for item in page.footermenu %}
-							<li {% if page.menu == item %}class="active"{% endif %}><a href="/{{item | downcase}}.html">{{item}}</a></li>
-						{% endfor %}
-					</ul>
-				</nav>
-			</div>
+			<footer>
+				{% include footer.html %}
+			</footer>
 		</div>
 		<div id="corner_bottom" class="{{page.corners}}"></div>
 

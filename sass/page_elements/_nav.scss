@@ -1,0 +1,52 @@
+> nav {
+	@include box-style;
+	@include headline-text-style;
+	font-size: $nav_font_size;
+	letter-spacing: $nav_font_letter_spacing;
+	line-height: $nav_font_line_height;
+	width: $nav_width;
+	display: inline-block;
+	margin-bottom: $bar_height + $spacing;
+	margin-right: $spacing;
+	@media screen and (max-width: 880px) {
+		display: block;
+		width: 100%;
+		max-width: 720px;
+		margin: $spacing auto;
+		margin-top: 0;
+	}
+	> ul {
+		list-style-type: none;
+		@media screen and (max-width: 880px) {
+			text-align: center;
+		}
+		> li {
+			margin-left: $nav_logo_space;
+			@media screen and (max-width: 880px) {
+				display: inline-block;
+				width: 90%/$nav_num_items;
+			}
+			@media screen and (max-width: 580px) {
+				width: 2*90%/$nav_num_items;
+			}
+			&.active, &:hover, a:hover {
+				color: $ci_orange;
+			}
+			// This is for the appearing
+			// asdf symbol on hover
+			&:before {
+				text-align: center;
+				display: inline-block;
+				content: '';
+				width: 6px;
+				height: 9px;
+				margin-right: $nav_logo_space;
+			}
+			&:hover:before, &.active:before {
+				// TODO: Replace with image
+				content: '';
+				background-image: url('/img/navilogo.png');
+			}
+		}
+	}
+}

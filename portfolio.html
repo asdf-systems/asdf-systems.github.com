@@ -1,38 +1,50 @@
 ---
 layout: main
-menu: Portfolio
+menu: portfolio
 corners: turquoise
 ---
 <dl id="portfolio" class="accordion">
-	<dt class="turquoise active">Hardware</dt>
+	<dt class="turquoise active">
+		<div>Hardware</div>
+	</dt>
 	<dd>
 		<dl class="accordion">
 			{% for post in site.posts %}
 				{% if post.categories contains "hardware" %}
-					<dt class="turquoise">{{post.title}}</dt>
-					{% include projectpost.ext %}
+					<dt class="turquoise">
+						<div>{{post.title}}</div>
+					</dt>
+					{% include bigpost.html %}
 				{% endif %}
 			{% endfor %}
 		</dl>
 	</dd>
-	<dt class="pink">Software</dt>
+	<dt class="pink">
+		<div>Software</div>
+	</dt>
 	<dd>
 		<dl class="accordion">
 			{% for post in site.posts %}
 				{% if post.categories contains "software" %}
-					<dt class="pink">{{post.title}}</dt>
-					{% include projectpost.ext %}
+					<dt class="pink">
+						<div>{{post.title}}</div>
+					</dt>
+					{% include bigpost.html %}
 				{% endif %}
 			{% endfor %}
 		</dl>
 	</dd>
-	<dt class="blue">Consulting</dt>
+	<dt class="blue">
+		<div>Consulting</div>
+	</dt>
 	<dd>
 		<dl class="accordion">
 			{% for post in site.posts %}
 				{% if post.categories contains "consulting" %}
-					<dt class="blue">{{post.title}}</dt>
-					{% include projectpost.ext %}
+					<dt class="blue">
+						<div>{{post.title}}</div>
+					</dt>
+					{% include bigpost.html %}
 				{% endif %}
 			{% endfor %}
 		</dl>

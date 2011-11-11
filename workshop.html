@@ -1,10 +1,12 @@
 ---
 layout: main
-menu: Werkstatt
+menu: workshop
 corners: orange
 ---
 <dl id="werkstatt" class="accordion">
-	<dt class="active">Werkstatt</dt>
+	<dt class="active">
+		<div>Werkstatt</div>
+	</dt>
 	<dd>
 		<div class="slider">
 			<section>
@@ -21,13 +23,17 @@ corners: orange
 			</section>
 		</div>
 	</dd>
-	<dt>2010</dt>
+	<dt>
+		<div>2010</div>
+	</dt>
 	<dd>
 		<dl class="accordion">
 			{% for post in site.posts %}
 				{% if post.categories contains "werkstatt" and {{post.date | date: "%Y" }} == "2010" %}
-					<dt>{{post.title}}</dt>
-					{% include projectpost.ext %}
+					<dt>
+						<div>{{post.title}}</div>
+					</dt>
+					{% include bigpost.html %}
 				{% endif %}
 			{% endfor %}
 		</dl>

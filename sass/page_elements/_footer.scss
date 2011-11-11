@@ -1,0 +1,34 @@
+> footer {
+	@include box-style;
+	@include headline-text-style;
+	position: absolute;
+	bottom: 0%;
+	margin: 0;
+	font-size: $footer_font_size;
+	letter-spacing: $footer_font_letter_spacing;
+	line-height: $footer_font_line_height;
+	// Hack for responsiveness
+	width: 100%;
+	max-width: $container_width;
+	> div {
+		float: left;
+		margin: $footer_padding_vertical $padding_horizontal;
+	}
+	> nav {
+		margin: $footer_padding_vertical $padding_horizontal;
+		float: right;
+		> ul {
+			list-style-type: none;
+			> li {
+				display: inline-block;
+				margin: 0 $padding_horizontal;
+				&.active, &:hover, a:hover {
+					color: $ci_orange;
+				}
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}

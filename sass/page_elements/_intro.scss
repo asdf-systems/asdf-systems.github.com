@@ -1,0 +1,12 @@
+.intro {
+	@include box-style;
+	color: $ci_orange;
+	padding: $padding_vertical $padding_horizontal;
+	> header {
+		@include headline-text-style;
+		margin-bottom: $padding_vertical;
+	}
+	> p {
+		@include opener-text-style;
+	}
+}

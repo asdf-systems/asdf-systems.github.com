@@ -1,0 +1,14 @@
+> #content {
+	position: relative;
+	vertical-align: top;
+	width: $content_width;
+	display: inline-block;
+	margin-bottom: $bar_height + $spacing;
+	@media screen and (max-width: 880px) {
+		display: block;
+		width: 100%;
+		max-width: 720px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

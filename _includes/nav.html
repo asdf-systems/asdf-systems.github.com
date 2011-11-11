@@ -1,0 +1,5 @@
+<ul>
+	{% for item in menuitems %}
+		<li {% if page.menu == item[1] %}class="active"{% endif %}><a href="/{{item[1]}}.html">{{item[0]}}</a></li>
+	{% endfor %}
+</ul>

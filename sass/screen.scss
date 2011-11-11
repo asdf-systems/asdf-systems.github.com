@@ -8,31 +8,65 @@
 @import "compass/css3";
 @import "compass/css3/transition";
 @import "compass/css3/border-radius";
+
 @import "_config.scss";
+@import "_augmented_reset.scss";
 @import "_fonts.scss";
-@import "_slider.scss";
-@import "_accordion.scss";
-@import "_defaults.scss";
 
-// Gradient background + highlight borders
-@mixin box {
-	color: $ci_lightgray;
-	margin-bottom: 5px;
-	border-top: 1px solid $box_3d_highlight;
-	border-bottom: 1px solid $box_3d_shadow;
-	background-color: $gradient_lightgray;
-	@include background-image(linear-gradient(top left, $gradient_darkgray, $gradient_lightgray, $gradient_darkgray));
+@import "plugins/_slider.scss";
+@import "plugins/_accordion.scss";
+
+@import "page_elements/_corners.scss";
+@import "page_elements/_bars.scss";
+@import "page_elements/_smallpost.scss";
+@import "page_elements/_employee.scss";
+@import "page_elements/_accordion.scss";
+@import "page_elements/_slider.scss";
+
+html {
+	min-height: 100%;
+	body {
+		// This is a dirty hack to make the body
+		// at least as high as the viewport
+		// (but grow if it needs to)
+		position: absolute;
+		top: 0;
+		left: 0;
+		min-height: 100%;
+		width: 100%;
+
+		// Now back to our regular program
+		background-color: $ci_background;
+		color: $ci_lightgray;
+		padding: 0;
+		margin: 0;
+		@include normal-text-style;
+		> #container {
+			width: $container_width;
+			@media screen and (max-width: 880px) {
+				width: 100%;
+			}
+			margin: 0 auto;
+			@import "page_elements/_header.scss";
+			@import "page_elements/_nav.scss";
+			@import "page_elements/_content.scss";
+			@import "page_elements/_footer.scss";
+		}
+		@import "page_elements/_intro.scss";
+	}
 }
 
-// Adds a yellow bar at bottom
-@mixin boxactive($lightcolor: $gradient_lightorange, $darkcolor: $gradient_darkorange) {
-	display: block;
-	margin-top: -$accordion_underline_height;
-	height: $accordion_underline_height;
-	background-color: $lightcolor;
-	@include background-image(linear-gradient(left, $darkcolor, $lightcolor, $darkcolor));
-	content: '';
-}
+
+
+
+
+
+
+
+
+
+//===============================================
+/*
 
 body {
 	background-color: $ci_background;
@@ -123,59 +157,6 @@ body {
 	#content {
 		float: right;
 		width: 720px;
-		dl.accordion {
-			> dt {
-				@include HeadlineText;
-				font-size: $accordion_header_font_size;
-				line-height: $accordion_header_height;
-				padding-left: $spacing;
-				@include box;
-				&:before {
-					font-size: $accordion_button_size;
-					margin-right: $spacing;
-					float: right;
-					content: '↓';
-					@include opacity(0.2);
-				}
-				&.active:before {
-					content: '↑';
-				}
-				&:hover:after, &.active:after {
-					margin-left: -$spacing;
-				}
-				&:hover:after, &.active:after {
-					@include boxactive($gradient_lightorange, $gradient_darkorange);
-				}
-				&.turquoise:hover:after, &.turquoise.active:after {
-					@include boxactive($gradient_lightturquoise, $gradient_darkturquoise);
-				}
-				&.pink:hover:after, &.pink.active:after {
-					@include boxactive($gradient_lightpink, $gradient_darkpink);
-				}
-				&.blue:hover:after, &.blue.active:after {
-					@include boxactive($gradient_lightblue, $gradient_darkblue);
-				}
-			}
-			dd > dl.accordion {
-				dt {
-					background-color: $ci_orange;
-					&.turquoise {
-						background-color: $ci_turquoise;
-					}
-					&.pink {
-						background-color: $ci_pink;
-					}
-					&.blue {
-						background-color: $ci_blue;
-					}
-					background-image: none !important;
-					border: 0 !important;
-					color: $ci_white;
-					&.active {
-						margin: 0;
-					}
-				}
-			}
 		}
 		.slider {
 			@include box;
@@ -430,3 +411,4 @@ body {
 		}
 	}
 }
+*/

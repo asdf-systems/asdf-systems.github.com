@@ -1,26 +1,34 @@
 ---
 layout: main
-menu: firmenprofil
+menu: about
 corners: orange
 ---
 <dl class="accordion">
-	<dt class="active">Firmenprofil</dt>
+	<dt class="active">
+		<div>
+			Firmenprofil
+		</div>
+	</dt>
 	<dd>
 		<dl id="firmenprofil"  class="accordion">
 			{% for post in site.posts %}
 				{% if post.categories contains "firmenprofil" %}
-					<dt>{{post.title}}</dt>
-					{% include projectpost.ext %}
+					<dt>
+						<div>{{post.title}}</div>
+					</dt>
+					{% include bigpost.html %}
 				{% endif %}
 			{% endfor %}
 		</dl>
 	</dd>
-	<dt>Wir</dt>
+	<dt>
+		<div>Wir</div>
+	</dt>
 	<dd>
 		<div>
 			{% for post in site.posts %}
 				{% if post.categories contains "wir" %}
-					{% include wirpost.ext %}
+					{% include employee.html %}
 				{% endif %}
 			{% endfor %}
 		</div>

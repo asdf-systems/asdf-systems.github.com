@@ -1,0 +1,10 @@
+// These are only overrides for the .smallpost class
+article.employee {
+	figure {
+		margin: $padding_vertical $padding_horizontal;
+	}
+	header {
+		margin: 0;
+		margin: $padding_vertical 0;
+	}
+}

@@ -67,23 +67,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+/* line 1, ../sass/_augmented_reset.scss */
+a, a:link, a:active, a:hover, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
 @font-face {
   font-family: "Joey";
   src: url('/css/fonts/');
   src: url('/css/fonts/?iefix') format('eot'), url('/css/fonts/Joey.otf') format('opentype');
 }
 
-/* line 3, ../sass/_slider.scss */
+/* line 3, ../sass/plugins/_slider.scss */
 .slider > nav > div {
   z-index: 900;
 }
-/* line 7, ../sass/_slider.scss */
+/* line 7, ../sass/plugins/_slider.scss */
 .slider .pages {
   overflow: hidden;
   position: relative;
   width: 100%;
 }
-/* line 11, ../sass/_slider.scss */
+/* line 11, ../sass/plugins/_slider.scss */
 .slider .pages > section {
   position: absolute;
   width: 100%;
@@ -106,20 +112,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   top: 0;
   left: 200%;
 }
-/* line 17, ../sass/_slider.scss */
+/* line 17, ../sass/plugins/_slider.scss */
 .slider .pages > section.active {
   left: 0;
 }
-/* line 20, ../sass/_slider.scss */
+/* line 20, ../sass/plugins/_slider.scss */
 .slider .pages > section.left {
   left: -100%;
 }
-/* line 23, ../sass/_slider.scss */
+/* line 23, ../sass/plugins/_slider.scss */
 .slider .pages > section.right {
   left: 100%;
 }
 
-/* line 2, ../sass/_accordion.scss */
+/* line 2, ../sass/plugins/_accordion.scss */
 dl.accordion > dd {
   -moz-transition-property: max-height, margin-bottom;
   -webkit-transition-property: max-height, margin-bottom;
@@ -139,189 +145,216 @@ dl.accordion > dd {
   transition-delay: 0;
   overflow: hidden;
 }
-/* line 7, ../sass/_accordion.scss */
+/* line 7, ../sass/plugins/_accordion.scss */
 dl.accordion > dt:not(.active) + dd {
   max-height: 0;
 }
-/* line 10, ../sass/_accordion.scss */
+/* line 10, ../sass/plugins/_accordion.scss */
 dl.accordion > dt.active + dd {
   max-height: 2999px;
 }
 
-/* line 1, ../sass/_defaults.scss */
-p {
-  margin: 10px 0;
+/* line 22, ../sass/page_elements/_corners.scss */
+#corner_top {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0%;
+  left: 0%;
+  border-right-color: transparent !important;
+  border-style: solid;
+  border-width: 510px 80px 0 50px;
 }
-/* line 3, ../sass/_defaults.scss */
-p:first-child, p:last-child {
-  margin: 0;
+/* line 5, ../sass/page_elements/_corners.scss */
+#corner_top.orange {
+  border-color: #fba22b;
+}
+/* line 8, ../sass/page_elements/_corners.scss */
+#corner_top.blue {
+  border-color: #5c79b6;
+}
+/* line 11, ../sass/page_elements/_corners.scss */
+#corner_top.turquoise {
+  border-color: #3d8d99;
+}
+/* line 14, ../sass/page_elements/_corners.scss */
+#corner_top.pink {
+  border-color: #a37ca5;
+}
+@media screen and (max-width: 1150px) {
+  /* line 22, ../sass/page_elements/_corners.scss */
+  #corner_top {
+    display: none;
+  }
 }
 
-/* line 8, ../sass/_defaults.scss */
-h1 {
-  font-size: 22px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+/* line 31, ../sass/page_elements/_corners.scss */
+#corner_bottom {
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0%;
+  right: 0%;
+  border-left-color: transparent !important;
+  border-style: solid;
+  border-width: 0 50px 510px 80px;
 }
-/* line 12, ../sass/_defaults.scss */
-h1:first-child {
-  margin-top: 0;
+/* line 5, ../sass/page_elements/_corners.scss */
+#corner_bottom.orange {
+  border-color: #fba22b;
 }
-/* line 15, ../sass/_defaults.scss */
-h1:last-child {
+/* line 8, ../sass/page_elements/_corners.scss */
+#corner_bottom.blue {
+  border-color: #5c79b6;
+}
+/* line 11, ../sass/page_elements/_corners.scss */
+#corner_bottom.turquoise {
+  border-color: #3d8d99;
+}
+/* line 14, ../sass/page_elements/_corners.scss */
+#corner_bottom.pink {
+  border-color: #a37ca5;
+}
+@media screen and (max-width: 1150px) {
+  /* line 31, ../sass/page_elements/_corners.scss */
+  #corner_bottom {
+    display: none;
+  }
+}
+
+/* line 22, ../sass/page_elements/_bars.scss */
+.bar {
+  margin-bottom: 5px;
+  border-top: 1px solid #2d2c29;
+  border-bottom: 1px solid #181817;
+  background-color: #232320;
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #1c1c19), color-stop(50%, #232320), color-stop(100%, #1c1c19));
+  background-image: -webkit-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -moz-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -o-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  height: 31px;
+}
+
+@media screen and (max-width: 880px) {
+  /* line 28, ../sass/page_elements/_bars.scss */
+  #precontentbar {
+    display: none;
+  }
+}
+/* line 1, ../sass/page_elements/_smallpost.scss */
+article.smallpost {
+  margin-bottom: 5px;
+  border-top: 1px solid #2d2c29;
+  border-bottom: 1px solid #181817;
+  background-color: #232320;
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #1c1c19), color-stop(50%, #232320), color-stop(100%, #1c1c19));
+  background-image: -webkit-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -moz-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -o-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  font-family: "Joey";
+  font-size: 16px;
+  letter-spacing: 0.025em;
+  line-height: 26px;
   margin-bottom: 0;
 }
-
-/* line 19, ../sass/_defaults.scss */
-a {
-  color: inherit;
-  text-decoration: inherit;
-  font: inherit;
-}
-/* line 21, ../sass/_defaults.scss */
-a:hover, a:active {
-  color: #e4ae46;
-}
-
-/* line 37, ../sass/screen.scss */
-body {
-  background-color: #161616;
-  margin: 0;
-  padding: 0;
-  font-family: "Ubuntu";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4em;
-  color: #c2c3ba;
-}
-
-/* line 46, ../sass/screen.scss */
-#container {
-  min-width: 320px;
-  max-width: 875px;
-  margin: 0 auto;
-}
-
-/* line 53, ../sass/screen.scss */
-#footerbar {
-  margin-top: 20px;
-  font-size: 11px;
-}
-/* line 56, ../sass/screen.scss */
-#footerbar > div {
-  float: left;
-}
-/* line 59, ../sass/screen.scss */
-#footerbar > nav {
-  float: right;
-}
-/* line 61, ../sass/screen.scss */
-#footerbar > nav > ul > li {
-  float: left;
-  margin: 0 10px;
-}
-/* line 64, ../sass/screen.scss */
-#footerbar > nav > ul > li:hover, #footerbar > nav > ul > li.active {
-  color: #e4ae46;
-}
-
-/* line 71, ../sass/screen.scss */
-#headerbar, #footerbar, #precontentbar, #contentbar {
-  height: 31px;
-  overflow: hidden;
-  *zoom: 1;
-  color: #c2c3ba;
-  margin-bottom: 5px;
-  border-top: 1px solid #2d2c29;
-  border-bottom: 1px solid #181817;
-  background-color: #232320;
-  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #1c1c19), color-stop(50%, #232320), color-stop(100%, #1c1c19));
-  background-image: -webkit-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  background-image: -moz-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  background-image: -o-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  line-height: 31px;
-}
-
-/* line 79, ../sass/screen.scss */
-#logobar img {
-  float: right;
-  margin: 50px 10px 20px 0;
-}
-
-/* line 85, ../sass/screen.scss */
-#main {
-  overflow: hidden;
-  *zoom: 1;
-  width: 875px;
-}
-/* line 88, ../sass/screen.scss */
-#main > nav {
-  color: #c2c3ba;
-  margin-bottom: 5px;
-  border-top: 1px solid #2d2c29;
-  border-bottom: 1px solid #181817;
-  background-color: #232320;
-  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #1c1c19), color-stop(50%, #232320), color-stop(100%, #1c1c19));
-  background-image: -webkit-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  background-image: -moz-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  background-image: -o-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #232320), color-stop(100%, #1c1c19));
-  background-image: -webkit-linear-gradient(top left, #232320, #1c1c19);
-  background-image: -moz-linear-gradient(top left, #232320, #1c1c19);
-  background-image: -o-linear-gradient(top left, #232320, #1c1c19);
-  background-image: -ms-linear-gradient(top left, #232320, #1c1c19);
-  background-image: linear-gradient(top left, #232320, #1c1c19);
-  float: left;
-  width: 150px;
+/* line 5, ../sass/page_elements/_smallpost.scss */
+article.smallpost header {
   font-family: "Joey";
-  font-size: 22px;
+  font-size: 18px;
+  letter-spacing: 0.025em;
+  line-height: 1em;
+  display: block;
+  color: #ececec;
+  margin: 10px 20px;
 }
-/* line 94, ../sass/screen.scss */
-#main > nav ul {
-  list-style: none;
-}
-/* line 96, ../sass/screen.scss */
-#main > nav ul li {
-  color: #c2c3ba;
-  font-size: 13px;
-  margin: 14px 0;
-}
-/* line 100, ../sass/screen.scss */
-#main > nav ul li.active, #main > nav ul li:hover {
-  color: #e4ae46;
-}
-/* line 105, ../sass/screen.scss */
-#main > nav ul li:before {
-  text-align: center;
+/* line 11, ../sass/page_elements/_smallpost.scss */
+article.smallpost figure {
   display: inline-block;
-  width: 20px;
+  vertical-align: top;
+  margin: 10px 20px;
+  margin-top: 0;
+}
+@media screen and (max-width: 880px) {
+  /* line 11, ../sass/page_elements/_smallpost.scss */
+  article.smallpost figure {
+    display: block;
+    float: left;
+  }
+}
+/* line 20, ../sass/page_elements/_smallpost.scss */
+article.smallpost figure > img {
+  width: 150px;
+  height: auto;
+}
+@media screen and (max-width: 880px) {
+  /* line 20, ../sass/page_elements/_smallpost.scss */
+  article.smallpost figure > img {
+    margin-right: 0;
+  }
+}
+/* line 28, ../sass/page_elements/_smallpost.scss */
+article.smallpost div {
+  vertical-align: top;
+  display: inline-block;
+  width: 490px;
+  margin: 10px 20px;
+  margin-left: 0;
+  margin-top: 0;
+  *zoom: 1;
+}
+@media screen and (max-width: 880px) {
+  /* line 28, ../sass/page_elements/_smallpost.scss */
+  article.smallpost div {
+    width: 90%;
+    display: block;
+    padding-left: 20px;
+  }
+}
+/* line 38, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+article.smallpost div:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 12, ../sass/page_elements/_bars.scss */
+article.smallpost:after {
+  display: block;
+  margin-top: -3px;
+  height: 3px;
+  background-color: #fbad44;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #bc6d04), color-stop(50%, #fbad44), color-stop(100%, #bc6d04));
+  background-image: -webkit-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: -moz-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: -o-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: -ms-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
   content: '';
 }
-/* line 111, ../sass/screen.scss */
-#main > nav ul li:hover:before, #main > nav ul li.active:before {
-  content: '≡';
+
+/* line 3, ../sass/page_elements/_employee.scss */
+article.employee figure {
+  margin: 10px 20px;
 }
-/* line 117, ../sass/screen.scss */
-#main > nav ul li:first-child, #main > nav ul li:last-child {
+/* line 6, ../sass/page_elements/_employee.scss */
+article.employee header {
+  margin: 0;
   margin: 10px 0;
 }
-/* line 123, ../sass/screen.scss */
-#main #content {
-  float: right;
-  width: 720px;
-}
-/* line 127, ../sass/screen.scss */
-#main #content dl.accordion > dt {
+
+/* line 2, ../sass/page_elements/_accordion.scss */
+dl.accordion > dt {
+  z-index: 900;
   font-family: "Joey";
-  font-size: 22px;
+  font-size: 18px;
+  letter-spacing: 0.025em;
+  line-height: 1em;
   font-size: 14px;
+  letter-spacing: 0.025em;
   line-height: 31px;
-  padding-left: 20px;
-  color: #c2c3ba;
   margin-bottom: 5px;
   border-top: 1px solid #2d2c29;
   border-bottom: 1px solid #181817;
@@ -333,39 +366,39 @@ body {
   background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
   background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
 }
-/* line 133, ../sass/screen.scss */
-#main #content dl.accordion > dt:before {
+/* line 8, ../sass/page_elements/_accordion.scss */
+dl.accordion > dt > div {
+  padding: 0 20px;
+}
+/* line 12, ../sass/page_elements/_accordion.scss */
+dl.accordion > dt:before {
   font-size: 22px;
   margin-right: 20px;
   float: right;
   content: '↓';
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
-  opacity: 0.2;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
 }
-/* line 140, ../sass/screen.scss */
-#main #content dl.accordion > dt.active:before {
+/* line 19, ../sass/page_elements/_accordion.scss */
+dl.accordion > dt.active:before {
   content: '↑';
 }
-/* line 143, ../sass/screen.scss */
-#main #content dl.accordion > dt:hover:after, #main #content dl.accordion > dt.active:after {
-  margin-left: -20px;
-}
-/* line 146, ../sass/screen.scss */
-#main #content dl.accordion > dt:hover:after, #main #content dl.accordion > dt.active:after {
+/* line 12, ../sass/page_elements/_bars.scss */
+dl.accordion > dt:hover:after, dl.accordion > dt.active:after {
   display: block;
   margin-top: -3px;
   height: 3px;
-  background-color: #fea343;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #b67938), color-stop(50%, #fea343), color-stop(100%, #b67938));
-  background-image: -webkit-linear-gradient(left, #b67938, #fea343, #b67938);
-  background-image: -moz-linear-gradient(left, #b67938, #fea343, #b67938);
-  background-image: -o-linear-gradient(left, #b67938, #fea343, #b67938);
-  background-image: -ms-linear-gradient(left, #b67938, #fea343, #b67938);
-  background-image: linear-gradient(left, #b67938, #fea343, #b67938);
+  background-color: #fbad44;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #bc6d04), color-stop(50%, #fbad44), color-stop(100%, #bc6d04));
+  background-image: -webkit-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: -moz-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: -o-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: -ms-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
   content: '';
 }
-/* line 149, ../sass/screen.scss */
-#main #content dl.accordion > dt.turquoise:hover:after, #main #content dl.accordion > dt.turquoise.active:after {
+/* line 12, ../sass/page_elements/_bars.scss */
+dl.accordion > dt.turquoise:hover:after, dl.accordion > dt.turquoise.active:after {
   display: block;
   margin-top: -3px;
   height: 3px;
@@ -378,8 +411,8 @@ body {
   background-image: linear-gradient(left, #325c65, #478797, #325c65);
   content: '';
 }
-/* line 152, ../sass/screen.scss */
-#main #content dl.accordion > dt.pink:hover:after, #main #content dl.accordion > dt.pink.active:after {
+/* line 12, ../sass/page_elements/_bars.scss */
+dl.accordion > dt.pink:hover:after, dl.accordion > dt.pink.active:after {
   display: block;
   margin-top: -3px;
   height: 3px;
@@ -392,8 +425,8 @@ body {
   background-image: linear-gradient(left, #654c6a, #86648e, #654c6a);
   content: '';
 }
-/* line 155, ../sass/screen.scss */
-#main #content dl.accordion > dt.blue:hover:after, #main #content dl.accordion > dt.blue.active:after {
+/* line 12, ../sass/page_elements/_bars.scss */
+dl.accordion > dt.blue:hover:after, dl.accordion > dt.blue.active:after {
   display: block;
   margin-top: -3px;
   height: 3px;
@@ -406,32 +439,40 @@ body {
   background-image: linear-gradient(left, #333c68, #455395, #333c68);
   content: '';
 }
-/* line 160, ../sass/screen.scss */
-#main #content dl.accordion dd > dl.accordion dt {
-  background-color: #e4ae46;
+/* line 36, ../sass/page_elements/_accordion.scss */
+dl.accordion dd > dl.accordion dt {
+  font-size: 18px;
+  letter-spacing: 0.025em;
+  line-height: 31px;
+  background-color: #fba22b;
   background-image: none !important;
-  border: 0 !important;
-  color: #ececec;
+  margin-bottom: 0;
+  color: #c2c3ba;
 }
-/* line 162, ../sass/screen.scss */
-#main #content dl.accordion dd > dl.accordion dt.turquoise {
+/* line 41, ../sass/page_elements/_accordion.scss */
+dl.accordion dd > dl.accordion dt.turquoise {
   background-color: #3d8d99;
 }
-/* line 165, ../sass/screen.scss */
-#main #content dl.accordion dd > dl.accordion dt.pink {
+/* line 44, ../sass/page_elements/_accordion.scss */
+dl.accordion dd > dl.accordion dt.pink {
   background-color: #a37ca5;
 }
-/* line 168, ../sass/screen.scss */
-#main #content dl.accordion dd > dl.accordion dt.blue {
+/* line 47, ../sass/page_elements/_accordion.scss */
+dl.accordion dd > dl.accordion dt.blue {
   background-color: #5c79b6;
 }
-/* line 174, ../sass/screen.scss */
-#main #content dl.accordion dd > dl.accordion dt.active {
-  margin: 0;
+/* line 53, ../sass/page_elements/_accordion.scss */
+dl.accordion dd > dl.accordion dt.active, dl.accordion dd > dl.accordion dt:hover {
+  color: #ececec;
 }
-/* line 180, ../sass/screen.scss */
-#main #content .slider {
-  color: #c2c3ba;
+/* line 55, ../sass/page_elements/_accordion.scss */
+dl.accordion dd > dl.accordion dt.active:after, dl.accordion dd > dl.accordion dt:hover:after {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* line 1, ../sass/page_elements/_slider.scss */
+.slider {
   margin-bottom: 5px;
   border-top: 1px solid #2d2c29;
   border-bottom: 1px solid #181817;
@@ -443,39 +484,46 @@ body {
   background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
   background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
 }
-/* line 182, ../sass/screen.scss */
-#main #content .slider .pages {
+/* line 3, ../sass/page_elements/_slider.scss */
+.slider .pages {
   height: 650px;
 }
-/* line 184, ../sass/screen.scss */
-#main #content .slider .pages section {
+/* line 5, ../sass/page_elements/_slider.scss */
+.slider .pages section {
   font-family: "Ubuntu";
   font-weight: 400;
   font-size: 14px;
+  letter-spacing: 0.025em;
+  line-height: 26px;
 }
-/* line 186, ../sass/screen.scss */
-#main #content .slider .pages section:first-child {
-  font-family: "Ubuntu";
-  font-weight: 700;
-  font-size: 14px;
+/* line 7, ../sass/page_elements/_slider.scss */
+.slider .pages section:first-child {
+  font-family: "Joey";
+  font-size: 16px;
+  letter-spacing: 0.025em;
+  line-height: 26px;
 }
-/* line 189, ../sass/screen.scss */
-#main #content .slider .pages section img {
+/* line 10, ../sass/page_elements/_slider.scss */
+.slider .pages section img {
   width: 100%;
   max-width: 720px;
   display: block;
   margin: 0 auto;
 }
-/* line 195, ../sass/screen.scss */
-#main #content .slider .pages section div {
-  padding: 20px;
+/* line 16, ../sass/page_elements/_slider.scss */
+.slider .pages section div {
+  padding: 10px 20px;
 }
-/* line 196, ../sass/screen.scss */
-#main #content .slider .pages section div > br:first-child {
+/* line 17, ../sass/page_elements/_slider.scss */
+.slider .pages section div > br:first-child {
   display: none;
 }
-/* line 204, ../sass/screen.scss */
-#main #content .slider nav div {
+/* line 24, ../sass/page_elements/_slider.scss */
+.slider nav {
+  *zoom: 1;
+}
+/* line 25, ../sass/page_elements/_slider.scss */
+.slider nav div {
   text-align: center;
   -moz-transition-property: opacity;
   -webkit-transition-property: opacity;
@@ -494,329 +542,302 @@ body {
   -o-transition-delay: 0;
   transition-delay: 0;
 }
-/* line 208, ../sass/screen.scss */
-#main #content .slider nav .next, #main #content .slider nav .prev {
+/* line 29, ../sass/page_elements/_slider.scss */
+.slider nav .next, .slider nav .prev {
   font-family: "Joey";
-  font-size: 22px;
-  background-color: #e4ae46;
+  font-size: 18px;
+  letter-spacing: 0.025em;
+  line-height: 1em;
   color: #ececec;
-  font-size: 2.5em;
-  width: 40px;
-  height: 40px;
-  line-height: 34px;
-  vertical-align: baseline;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -o-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -khtml-border-radius: 3px;
-  border-radius: 3px;
+  border: 0;
+  border-style: solid;
+  border-color: #fba22b;
 }
-/* line 218, ../sass/screen.scss */
-#main #content .slider nav .next.disabled, #main #content .slider nav .prev.disabled {
+/* line 35, ../sass/page_elements/_slider.scss */
+.slider nav .next.disabled, .slider nav .prev.disabled {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-/* line 222, ../sass/screen.scss */
-#main #content .slider nav .next {
+/* line 39, ../sass/page_elements/_slider.scss */
+.slider nav .next {
+  border-right-width: 3px;
   float: right;
 }
-/* line 224, ../sass/screen.scss */
-#main #content .slider nav .next:before {
+/* line 42, ../sass/page_elements/_slider.scss */
+.slider nav .next:before {
   content: '→';
 }
-/* line 228, ../sass/screen.scss */
-#main #content .slider nav .prev {
+/* line 46, ../sass/page_elements/_slider.scss */
+.slider nav .prev {
+  border-left-width: 3px;
   float: left;
 }
-/* line 230, ../sass/screen.scss */
-#main #content .slider nav .prev:before {
+/* line 49, ../sass/page_elements/_slider.scss */
+.slider nav .prev:before {
   content: '←';
 }
-/* line 234, ../sass/screen.scss */
-#main #content .slider nav .page {
-  line-height: 40px;
+/* line 53, ../sass/page_elements/_slider.scss */
+.slider nav .page {
   width: 200px;
   margin: 0 auto;
 }
-/* line 238, ../sass/screen.scss */
-#main #content .slider nav .page span {
+/* line 56, ../sass/page_elements/_slider.scss */
+.slider nav .page span {
   margin: 0 2px;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
-/* line 241, ../sass/screen.scss */
-#main #content .slider nav .page span.active {
+/* line 59, ../sass/page_elements/_slider.scss */
+.slider nav .page span.active {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 248, ../sass/screen.scss */
-#main #content .intro {
-  color: #c2c3ba;
-  margin-bottom: 5px;
-  border-top: 1px solid #2d2c29;
-  border-bottom: 1px solid #181817;
-  background-color: #232320;
-  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #1c1c19), color-stop(50%, #232320), color-stop(100%, #1c1c19));
-  background-image: -webkit-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  background-image: -moz-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  background-image: -o-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  font-family: "Joey";
-  font-size: 22px;
-  padding: 20px;
-  color: #e4ae46;
-  font-size: 14px;
-}
-/* line 255, ../sass/screen.scss */
-#main #content .news, #main #content .wir {
-  color: #c2c3ba;
-  margin-bottom: 5px;
-  border-top: 1px solid #2d2c29;
-  border-bottom: 1px solid #181817;
-  background-color: #232320;
-  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #1c1c19), color-stop(50%, #232320), color-stop(100%, #1c1c19));
-  background-image: -webkit-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  background-image: -moz-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  background-image: -o-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  margin-bottom: 0;
-}
-/* line 258, ../sass/screen.scss */
-#main #content .news .inside, #main #content .wir .inside {
-  padding: 20px;
-}
-/* line 261, ../sass/screen.scss */
-#main #content .news:after, #main #content .wir:after {
-  display: block;
-  margin-top: -3px;
-  height: 3px;
-  background-color: #fea343;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #b67938), color-stop(50%, #fea343), color-stop(100%, #b67938));
-  background-image: -webkit-linear-gradient(left, #b67938, #fea343, #b67938);
-  background-image: -moz-linear-gradient(left, #b67938, #fea343, #b67938);
-  background-image: -o-linear-gradient(left, #b67938, #fea343, #b67938);
-  background-image: -ms-linear-gradient(left, #b67938, #fea343, #b67938);
-  background-image: linear-gradient(left, #b67938, #fea343, #b67938);
-  content: '';
-}
-/* line 264, ../sass/screen.scss */
-#main #content .news header, #main #content .wir header {
-  font-family: "Joey";
-  font-size: 22px;
-  color: #ececec;
-}
-/* line 268, ../sass/screen.scss */
-#main #content .news figure, #main #content .wir figure {
-  display: inline-block;
-  margin: 20px;
-  margin-left: 0;
-  height: 100%;
-}
-/* line 273, ../sass/screen.scss */
-#main #content .news figure img, #main #content .wir figure img {
-  display: block;
-}
-/* line 277, ../sass/screen.scss */
-#main #content .news article, #main #content .wir article {
-  font-family: "Ubuntu";
-  font-weight: 700;
-  font-size: 14px;
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 20px;
-  width: 70%;
-}
-/* line 286, ../sass/screen.scss */
-#main #content #firmenprofil input {
-  background-color: transparent;
-  border: 1px solid #e4ae46;
-  color: #e4ae46;
-}
-/* line 291, ../sass/screen.scss */
-#main #content #firmenprofil section {
-  font-size: 14px;
-}
-/* line 297, ../sass/screen.scss */
-#main #content #agb dd div {
-  color: #c2c3ba;
-  margin-bottom: 5px;
-  border-top: 1px solid #2d2c29;
-  border-bottom: 1px solid #181817;
-  background-color: #232320;
-  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #1c1c19), color-stop(50%, #232320), color-stop(100%, #1c1c19));
-  background-image: -webkit-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  background-image: -moz-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  background-image: -o-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  padding: 20px;
-}
-/* line 300, ../sass/screen.scss */
-#main #content #agb dd div > ol > li > p {
-  font-weight: 700;
-}
-/* line 303, ../sass/screen.scss */
-#main #content #agb dd div ol {
-  list-style-type: decimal;
-  list-style-position: outside;
-}
-/* line 306, ../sass/screen.scss */
-#main #content #agb dd div ol li {
-  margin-left: 20px;
+/* line 38, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.slider nav:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-/* line 319, ../sass/screen.scss */
-.clearfix {
+/* line 26, ../sass/screen.scss */
+html {
+  min-height: 100%;
+}
+/* line 28, ../sass/screen.scss */
+html body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  width: 100%;
+  background-color: #161616;
+  color: #c2c3ba;
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.025em;
+  line-height: 26px;
+}
+/* line 44, ../sass/screen.scss */
+html body > #container {
+  width: 880px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 880px) {
+  /* line 44, ../sass/screen.scss */
+  html body > #container {
+    width: 100%;
+  }
+}
+/* line 1, ../sass/page_elements/_header.scss */
+html body > #container > header {
   *zoom: 1;
 }
-/* line 22, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.clearfix:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  clear: both;
-  overflow: hidden;
-  visibility: hidden;
+/* line 2, ../sass/page_elements/_header.scss */
+html body > #container > header > figure {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
-
-/* line 341, ../sass/screen.scss */
-#corner_top {
-  position: fixed;
-  width: 0;
-  height: 0;
-  top: 0px;
-  left: 0px;
-  border-right-color: transparent !important;
-  border-style: solid;
-  border-width: 510px 80px 0 50px;
-}
-/* line 327, ../sass/screen.scss */
-#corner_top.orange {
-  border-color: #e4ae46;
-}
-/* line 330, ../sass/screen.scss */
-#corner_top.blue {
-  border-color: #5c79b6;
-}
-/* line 333, ../sass/screen.scss */
-#corner_top.turquoise {
-  border-color: #3d8d99;
-}
-/* line 336, ../sass/screen.scss */
-#corner_top.pink {
-  border-color: #a37ca5;
-}
-
-/* line 350, ../sass/screen.scss */
-#corner_bottom {
-  position: fixed;
-  width: 0;
-  height: 0;
-  bottom: 0px;
-  right: 0px;
-  border-left-color: transparent !important;
-  border-style: solid;
-  border-width: 0 50px 510px 80px;
-}
-/* line 327, ../sass/screen.scss */
-#corner_bottom.orange {
-  border-color: #e4ae46;
-}
-/* line 330, ../sass/screen.scss */
-#corner_bottom.blue {
-  border-color: #5c79b6;
-}
-/* line 333, ../sass/screen.scss */
-#corner_bottom.turquoise {
-  border-color: #3d8d99;
-}
-/* line 336, ../sass/screen.scss */
-#corner_bottom.pink {
-  border-color: #a37ca5;
-}
-
-@media screen and (max-width: 1150px) {
-  /* line 361, ../sass/screen.scss */
-  #corner_bottom, #corner_top {
-    display: none;
-  }
-}
-@media screen and (max-width: 860px) {
-  /* line 368, ../sass/screen.scss */
-  #precontentbar {
-    display: none;
-  }
-
-  /* line 371, ../sass/screen.scss */
-  #main {
-    width: 100%;
-  }
-  /* line 373, ../sass/screen.scss */
-  #main nav {
-    width: 100%;
-  }
-  /* line 375, ../sass/screen.scss */
-  #main nav ul {
-    width: 100%;
-  }
-  /* line 377, ../sass/screen.scss */
-  #main nav ul li {
-    width: 16.667%;
-    text-align: center;
-    float: left;
-    margin: 7px 0 !important;
-  }
-  /* line 382, ../sass/screen.scss */
-  #main nav ul li:last-child {
-    float: right;
-  }
-  /* line 389, ../sass/screen.scss */
-  #main #content {
-    clear: both;
+@media screen and (max-width: 880px) {
+  /* line 2, ../sass/page_elements/_header.scss */
+  html body > #container > header > figure {
     float: none;
+    max-width: 720px;
+  }
+}
+/* line 10, ../sass/page_elements/_header.scss */
+html body > #container > header > figure > img {
+  display: block;
+  float: right;
+  padding-right: 20px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+/* line 38, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+html body > #container > header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 1, ../sass/page_elements/_nav.scss */
+html body > #container > nav {
+  margin-bottom: 5px;
+  border-top: 1px solid #2d2c29;
+  border-bottom: 1px solid #181817;
+  background-color: #232320;
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #1c1c19), color-stop(50%, #232320), color-stop(100%, #1c1c19));
+  background-image: -webkit-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -moz-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -o-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  font-family: "Joey";
+  font-size: 18px;
+  letter-spacing: 0.025em;
+  line-height: 1em;
+  font-size: 14px;
+  letter-spacing: 0.025em;
+  line-height: 36px;
+  width: 150px;
+  display: inline-block;
+  margin-bottom: 36px;
+  margin-right: 5px;
+}
+@media screen and (max-width: 880px) {
+  /* line 1, ../sass/page_elements/_nav.scss */
+  html body > #container > nav {
+    display: block;
     width: 100%;
+    max-width: 720px;
+    margin: 5px auto;
+    margin-top: 0;
   }
-  /* line 394, ../sass/screen.scss */
-  #main #content .news figure, #main #content .wir figure {
-    display: block;
-    height: auto;
-    float: left;
+}
+/* line 18, ../sass/page_elements/_nav.scss */
+html body > #container > nav > ul {
+  list-style-type: none;
+}
+@media screen and (max-width: 880px) {
+  /* line 18, ../sass/page_elements/_nav.scss */
+  html body > #container > nav > ul {
+    text-align: center;
   }
-  /* line 398, ../sass/screen.scss */
-  #main #content .news figure img, #main #content .wir figure img {
-    display: block;
-  }
-  /* line 402, ../sass/screen.scss */
-  #main #content .news article, #main #content .wir article {
-    display: block;
-    width: 100%;
+}
+/* line 23, ../sass/page_elements/_nav.scss */
+html body > #container > nav > ul > li {
+  margin-left: 7px;
+}
+@media screen and (max-width: 880px) {
+  /* line 23, ../sass/page_elements/_nav.scss */
+  html body > #container > nav > ul > li {
+    display: inline-block;
+    width: 15%;
   }
 }
 @media screen and (max-width: 580px) {
-  /* line 413, ../sass/screen.scss */
-  #main {
+  /* line 23, ../sass/page_elements/_nav.scss */
+  html body > #container > nav > ul > li {
+    width: 30%;
+  }
+}
+/* line 32, ../sass/page_elements/_nav.scss */
+html body > #container > nav > ul > li.active, html body > #container > nav > ul > li:hover, html body > #container > nav > ul > li a:hover {
+  color: #fba22b;
+}
+/* line 37, ../sass/page_elements/_nav.scss */
+html body > #container > nav > ul > li:before {
+  text-align: center;
+  display: inline-block;
+  content: '';
+  width: 6px;
+  height: 9px;
+  margin-right: 7px;
+}
+/* line 45, ../sass/page_elements/_nav.scss */
+html body > #container > nav > ul > li:hover:before, html body > #container > nav > ul > li.active:before {
+  content: '';
+  background-image: url("/img/navilogo.png");
+}
+/* line 1, ../sass/page_elements/_content.scss */
+html body > #container > #content {
+  position: relative;
+  vertical-align: top;
+  width: 720px;
+  display: inline-block;
+  margin-bottom: 36px;
+}
+@media screen and (max-width: 880px) {
+  /* line 1, ../sass/page_elements/_content.scss */
+  html body > #container > #content {
+    display: block;
     width: 100%;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  /* line 415, ../sass/screen.scss */
-  #main nav {
-    width: 100%;
-  }
-  /* line 417, ../sass/screen.scss */
-  #main nav ul {
-    width: 100%;
-  }
-  /* line 420, ../sass/screen.scss */
-  #main nav ul li {
-    width: 33.333%;
-    text-align: center;
-    float: left;
-    margin: 3.5px 0 !important;
-  }
-  /* line 425, ../sass/screen.scss */
-  #main nav ul li:nth-child(3n+2) {
-    float: right;
-  }
+}
+/* line 1, ../sass/page_elements/_footer.scss */
+html body > #container > footer {
+  margin-bottom: 5px;
+  border-top: 1px solid #2d2c29;
+  border-bottom: 1px solid #181817;
+  background-color: #232320;
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #1c1c19), color-stop(50%, #232320), color-stop(100%, #1c1c19));
+  background-image: -webkit-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -moz-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -o-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  font-family: "Joey";
+  font-size: 18px;
+  letter-spacing: 0.025em;
+  line-height: 1em;
+  position: absolute;
+  bottom: 0%;
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  line-height: 1em;
+  width: 100%;
+  max-width: 880px;
+}
+/* line 13, ../sass/page_elements/_footer.scss */
+html body > #container > footer > div {
+  float: left;
+  margin: 5px 20px;
+}
+/* line 17, ../sass/page_elements/_footer.scss */
+html body > #container > footer > nav {
+  margin: 5px 20px;
+  float: right;
+}
+/* line 20, ../sass/page_elements/_footer.scss */
+html body > #container > footer > nav > ul {
+  list-style-type: none;
+}
+/* line 22, ../sass/page_elements/_footer.scss */
+html body > #container > footer > nav > ul > li {
+  display: inline-block;
+  margin: 0 20px;
+}
+/* line 25, ../sass/page_elements/_footer.scss */
+html body > #container > footer > nav > ul > li.active, html body > #container > footer > nav > ul > li:hover, html body > #container > footer > nav > ul > li a:hover {
+  color: #fba22b;
+}
+/* line 28, ../sass/page_elements/_footer.scss */
+html body > #container > footer > nav > ul > li:last-child {
+  margin-right: 0;
+}
+/* line 1, ../sass/page_elements/_intro.scss */
+html body .intro {
+  margin-bottom: 5px;
+  border-top: 1px solid #2d2c29;
+  border-bottom: 1px solid #181817;
+  background-color: #232320;
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #1c1c19), color-stop(50%, #232320), color-stop(100%, #1c1c19));
+  background-image: -webkit-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -moz-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -o-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  color: #fba22b;
+  padding: 10px 20px;
+}
+/* line 5, ../sass/page_elements/_intro.scss */
+html body .intro > header {
+  font-family: "Joey";
+  font-size: 18px;
+  letter-spacing: 0.025em;
+  line-height: 1em;
+  margin-bottom: 10px;
+}
+/* line 9, ../sass/page_elements/_intro.scss */
+html body .intro > p {
+  font-family: "Joey";
+  font-size: 16px;
+  letter-spacing: 0.025em;
+  line-height: 26px;
 }
