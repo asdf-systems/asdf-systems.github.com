@@ -1,4 +1,4 @@
-> footer {
+#container > footer {
 	@include box-style;
 	@include headline-text-style;
 	position: absolute;
@@ -20,6 +20,9 @@
 		> ul {
 			list-style-type: none;
 			> li {
+				a:before {
+					content: '';
+				}
 				display: inline-block;
 				margin: 0 $padding_horizontal;
 				&.active, &:hover, a:hover {

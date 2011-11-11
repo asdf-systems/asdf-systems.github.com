@@ -1,0 +1,9 @@
+a {
+	&:before {
+		content: '→';
+		color: $ci_orange;
+	}
+	&:hover {
+		color: $ci_orange;
+	}
+}

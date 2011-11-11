@@ -22,6 +22,13 @@
 @import "page_elements/_employee.scss";
 @import "page_elements/_accordion.scss";
 @import "page_elements/_slider.scss";
+@import "page_elements/_intro.scss";
+@import "page_elements/_header.scss";
+@import "page_elements/_nav.scss";
+@import "page_elements/_content.scss";
+@import "page_elements/_footer.scss";
+
+@import "_links.scss";
 
 html {
 	min-height: 100%;
@@ -47,12 +54,7 @@ html {
 				width: 100%;
 			}
 			margin: 0 auto;
-			@import "page_elements/_header.scss";
-			@import "page_elements/_nav.scss";
-			@import "page_elements/_content.scss";
-			@import "page_elements/_footer.scss";
 		}
-		@import "page_elements/_intro.scss";
 	}
 }
 

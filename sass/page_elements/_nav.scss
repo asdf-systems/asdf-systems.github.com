@@ -1,4 +1,4 @@
-> nav {
+#container > nav {
 	@include box-style;
 	@include headline-text-style;
 	font-size: $nav_font_size;
@@ -21,6 +21,9 @@
 			text-align: center;
 		}
 		> li {
+			a:before {
+				content: '';
+			}
 			margin-left: $nav_logo_space;
 			@media screen and (max-width: 880px) {
 				display: inline-block;

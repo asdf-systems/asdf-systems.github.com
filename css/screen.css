@@ -599,57 +599,56 @@ dl.accordion dd > dl.accordion dt.active:after, dl.accordion dd > dl.accordion d
   clear: both;
 }
 
-/* line 26, ../sass/screen.scss */
-html {
-  min-height: 100%;
+/* line 1, ../sass/page_elements/_intro.scss */
+.intro {
+  margin-bottom: 5px;
+  border-top: 1px solid #2d2c29;
+  border-bottom: 1px solid #181817;
+  background-color: #232320;
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #1c1c19), color-stop(50%, #232320), color-stop(100%, #1c1c19));
+  background-image: -webkit-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -moz-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -o-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  color: #fba22b;
+  padding: 10px 20px;
 }
-/* line 28, ../sass/screen.scss */
-html body {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-height: 100%;
-  width: 100%;
-  background-color: #161616;
-  color: #c2c3ba;
-  padding: 0;
-  margin: 0;
-  font-family: "Ubuntu";
-  font-weight: 400;
-  font-size: 14px;
+/* line 5, ../sass/page_elements/_intro.scss */
+.intro > header {
+  font-family: "Joey";
+  font-size: 18px;
+  letter-spacing: 0.025em;
+  line-height: 1em;
+  margin-bottom: 10px;
+}
+/* line 9, ../sass/page_elements/_intro.scss */
+.intro > p {
+  font-family: "Joey";
+  font-size: 16px;
   letter-spacing: 0.025em;
   line-height: 26px;
 }
-/* line 44, ../sass/screen.scss */
-html body > #container {
-  width: 880px;
-  margin: 0 auto;
-}
-@media screen and (max-width: 880px) {
-  /* line 44, ../sass/screen.scss */
-  html body > #container {
-    width: 100%;
-  }
-}
+
 /* line 1, ../sass/page_elements/_header.scss */
-html body > #container > header {
+#container > header {
   *zoom: 1;
 }
 /* line 2, ../sass/page_elements/_header.scss */
-html body > #container > header > figure {
+#container > header > figure {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 }
 @media screen and (max-width: 880px) {
   /* line 2, ../sass/page_elements/_header.scss */
-  html body > #container > header > figure {
+  #container > header > figure {
     float: none;
     max-width: 720px;
   }
 }
 /* line 10, ../sass/page_elements/_header.scss */
-html body > #container > header > figure > img {
+#container > header > figure > img {
   display: block;
   float: right;
   padding-right: 20px;
@@ -657,13 +656,14 @@ html body > #container > header > figure > img {
   margin-bottom: 10px;
 }
 /* line 38, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-html body > #container > header:after {
+#container > header:after {
   content: "";
   display: table;
   clear: both;
 }
+
 /* line 1, ../sass/page_elements/_nav.scss */
-html body > #container > nav {
+#container > nav {
   margin-bottom: 5px;
   border-top: 1px solid #2d2c29;
   border-bottom: 1px solid #181817;
@@ -688,7 +688,7 @@ html body > #container > nav {
 }
 @media screen and (max-width: 880px) {
   /* line 1, ../sass/page_elements/_nav.scss */
-  html body > #container > nav {
+  #container > nav {
     display: block;
     width: 100%;
     max-width: 720px;
@@ -697,38 +697,42 @@ html body > #container > nav {
   }
 }
 /* line 18, ../sass/page_elements/_nav.scss */
-html body > #container > nav > ul {
+#container > nav > ul {
   list-style-type: none;
 }
 @media screen and (max-width: 880px) {
   /* line 18, ../sass/page_elements/_nav.scss */
-  html body > #container > nav > ul {
+  #container > nav > ul {
     text-align: center;
   }
 }
 /* line 23, ../sass/page_elements/_nav.scss */
-html body > #container > nav > ul > li {
+#container > nav > ul > li {
   margin-left: 7px;
+}
+/* line 24, ../sass/page_elements/_nav.scss */
+#container > nav > ul > li a:before {
+  content: '';
 }
 @media screen and (max-width: 880px) {
   /* line 23, ../sass/page_elements/_nav.scss */
-  html body > #container > nav > ul > li {
+  #container > nav > ul > li {
     display: inline-block;
     width: 15%;
   }
 }
 @media screen and (max-width: 580px) {
   /* line 23, ../sass/page_elements/_nav.scss */
-  html body > #container > nav > ul > li {
+  #container > nav > ul > li {
     width: 30%;
   }
 }
-/* line 32, ../sass/page_elements/_nav.scss */
-html body > #container > nav > ul > li.active, html body > #container > nav > ul > li:hover, html body > #container > nav > ul > li a:hover {
+/* line 35, ../sass/page_elements/_nav.scss */
+#container > nav > ul > li.active, #container > nav > ul > li:hover, #container > nav > ul > li a:hover {
   color: #fba22b;
 }
-/* line 37, ../sass/page_elements/_nav.scss */
-html body > #container > nav > ul > li:before {
+/* line 40, ../sass/page_elements/_nav.scss */
+#container > nav > ul > li:before {
   text-align: center;
   display: inline-block;
   content: '';
@@ -736,13 +740,14 @@ html body > #container > nav > ul > li:before {
   height: 9px;
   margin-right: 7px;
 }
-/* line 45, ../sass/page_elements/_nav.scss */
-html body > #container > nav > ul > li:hover:before, html body > #container > nav > ul > li.active:before {
+/* line 48, ../sass/page_elements/_nav.scss */
+#container > nav > ul > li:hover:before, #container > nav > ul > li.active:before {
   content: '';
   background-image: url("/img/navilogo.png");
 }
+
 /* line 1, ../sass/page_elements/_content.scss */
-html body > #container > #content {
+#container > #content {
   position: relative;
   vertical-align: top;
   width: 720px;
@@ -751,7 +756,7 @@ html body > #container > #content {
 }
 @media screen and (max-width: 880px) {
   /* line 1, ../sass/page_elements/_content.scss */
-  html body > #container > #content {
+  #container > #content {
     display: block;
     width: 100%;
     max-width: 720px;
@@ -759,8 +764,9 @@ html body > #container > #content {
     margin-right: auto;
   }
 }
+
 /* line 1, ../sass/page_elements/_footer.scss */
-html body > #container > footer {
+#container > footer {
   margin-bottom: 5px;
   border-top: 1px solid #2d2c29;
   border-bottom: 1px solid #181817;
@@ -785,59 +791,76 @@ html body > #container > footer {
   max-width: 880px;
 }
 /* line 13, ../sass/page_elements/_footer.scss */
-html body > #container > footer > div {
+#container > footer > div {
   float: left;
   margin: 5px 20px;
 }
 /* line 17, ../sass/page_elements/_footer.scss */
-html body > #container > footer > nav {
+#container > footer > nav {
   margin: 5px 20px;
   float: right;
 }
 /* line 20, ../sass/page_elements/_footer.scss */
-html body > #container > footer > nav > ul {
+#container > footer > nav > ul {
   list-style-type: none;
 }
 /* line 22, ../sass/page_elements/_footer.scss */
-html body > #container > footer > nav > ul > li {
+#container > footer > nav > ul > li {
   display: inline-block;
   margin: 0 20px;
 }
-/* line 25, ../sass/page_elements/_footer.scss */
-html body > #container > footer > nav > ul > li.active, html body > #container > footer > nav > ul > li:hover, html body > #container > footer > nav > ul > li a:hover {
-  color: #fba22b;
+/* line 23, ../sass/page_elements/_footer.scss */
+#container > footer > nav > ul > li a:before {
+  content: '';
 }
 /* line 28, ../sass/page_elements/_footer.scss */
-html body > #container > footer > nav > ul > li:last-child {
+#container > footer > nav > ul > li.active, #container > footer > nav > ul > li:hover, #container > footer > nav > ul > li a:hover {
+  color: #fba22b;
+}
+/* line 31, ../sass/page_elements/_footer.scss */
+#container > footer > nav > ul > li:last-child {
   margin-right: 0;
 }
-/* line 1, ../sass/page_elements/_intro.scss */
-html body .intro {
-  margin-bottom: 5px;
-  border-top: 1px solid #2d2c29;
-  border-bottom: 1px solid #181817;
-  background-color: #232320;
-  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #1c1c19), color-stop(50%, #232320), color-stop(100%, #1c1c19));
-  background-image: -webkit-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  background-image: -moz-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  background-image: -o-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+
+/* line 2, ../sass/_links.scss */
+a:before {
+  content: '→';
   color: #fba22b;
-  padding: 10px 20px;
 }
-/* line 5, ../sass/page_elements/_intro.scss */
-html body .intro > header {
-  font-family: "Joey";
-  font-size: 18px;
-  letter-spacing: 0.025em;
-  line-height: 1em;
-  margin-bottom: 10px;
+/* line 6, ../sass/_links.scss */
+a:hover {
+  color: #fba22b;
 }
-/* line 9, ../sass/page_elements/_intro.scss */
-html body .intro > p {
-  font-family: "Joey";
-  font-size: 16px;
+
+/* line 33, ../sass/screen.scss */
+html {
+  min-height: 100%;
+}
+/* line 35, ../sass/screen.scss */
+html body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  width: 100%;
+  background-color: #161616;
+  color: #c2c3ba;
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-size: 14px;
   letter-spacing: 0.025em;
   line-height: 26px;
+}
+/* line 51, ../sass/screen.scss */
+html body > #container {
+  width: 880px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 880px) {
+  /* line 51, ../sass/screen.scss */
+  html body > #container {
+    width: 100%;
+  }
 }
