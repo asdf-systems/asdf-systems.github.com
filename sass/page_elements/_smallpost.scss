@@ -39,5 +39,12 @@ article.smallpost {
 		margin-top: 0;
 		@include pie-clearfix;
 	}
+	aside {
+		margin: $padding_vertical $padding_horizontal;
+		text-align: right;
+		a {
+
+		}
+	}
 	@include box-active-style;
 }

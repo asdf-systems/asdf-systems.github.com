@@ -62,8 +62,8 @@ dl.accordion {
 						background-image: none !important;
 					}
 				}
-				// If there’s no image in the post, there’s
-				// no negative-margin-magic to worry about
+				// If there’s no image in the post, or if it’s
+				// a smallpost, there’s no negative-margin-magic to worry about
 				&.noimg + dd {
 					margin-top: 0;
 					max-height: 0;
@@ -74,6 +74,9 @@ dl.accordion {
 							}
 						}
 					}
+				}
+				+ dd > article.smallpost:first-child {
+					padding-top: $accordion_header_height;
 				}
 			}
 			dd {

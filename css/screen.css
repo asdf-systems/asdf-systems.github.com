@@ -311,6 +311,11 @@ article.smallpost div:after {
   display: table;
   clear: both;
 }
+/* line 42, ../sass/page_elements/_smallpost.scss */
+article.smallpost aside {
+  margin: 10px 20px;
+  text-align: right;
+}
 /* line 12, ../sass/page_elements/_bars.scss */
 article.smallpost:after {
   display: block;
@@ -474,7 +479,11 @@ dl.accordion dd > dl.accordion dt.noimg + dd {
 dl.accordion dd > dl.accordion dt.noimg + dd .slider .pages section:not(.page-0) {
   padding-top: 0;
 }
-/* line 79, ../sass/page_elements/_accordion.scss */
+/* line 78, ../sass/page_elements/_accordion.scss */
+dl.accordion dd > dl.accordion dt + dd > article.smallpost:first-child {
+  padding-top: 31px;
+}
+/* line 82, ../sass/page_elements/_accordion.scss */
 dl.accordion dd > dl.accordion dd {
   max-height: 31px;
   position: relative;
@@ -482,11 +491,11 @@ dl.accordion dd > dl.accordion dd {
   margin-top: -31px;
   margin-bottom: 5px;
 }
-/* line 88, ../sass/page_elements/_accordion.scss */
+/* line 91, ../sass/page_elements/_accordion.scss */
 dl.accordion dd > dl.accordion dd .slider {
   margin-bottom: 0;
 }
-/* line 91, ../sass/page_elements/_accordion.scss */
+/* line 94, ../sass/page_elements/_accordion.scss */
 dl.accordion dd > dl.accordion dd .slider .pages section:not(.page-0) {
   padding-top: 31px;
 }

@@ -20,7 +20,7 @@
 					return;
 				}
 			})
-			if(!found) {
+			if(!found && $headers.length > 0 && !$accordion.hasClass('closed')) {
 				$($headers[0]).addClass('active');
 			}
 		}
