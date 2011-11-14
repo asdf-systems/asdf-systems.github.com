@@ -7,6 +7,9 @@
 		var $slider = $(this);
 		var $pages = $($slider.find('> *'));
 		$($pages[0]).addClass('active');
+		$pages.each(function(idx) {
+			$(this).addClass('page-'+idx);
+		})
 
 		var $pageholder =$('<div>').addClass('pages').append($pages[0]);
 		$slider.empty().append($pageholder);

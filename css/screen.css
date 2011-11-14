@@ -142,7 +142,7 @@ dl.accordion > dt:not(.active) + dd {
 }
 /* line 10, ../sass/plugins/_accordion.scss */
 dl.accordion > dt.active + dd {
-  max-height: 2999px;
+  max-height: 2999px !important;
 }
 
 /* line 22, ../sass/page_elements/_corners.scss */
@@ -343,6 +343,7 @@ dl.accordion > dt {
   font-size: 18px;
   letter-spacing: 0.025em;
   line-height: 1em;
+  margin-bottom: 0;
   font-size: 14px;
   letter-spacing: 0.025em;
   line-height: 31px;
@@ -357,11 +358,11 @@ dl.accordion > dt {
   background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
   background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
 }
-/* line 8, ../sass/page_elements/_accordion.scss */
+/* line 9, ../sass/page_elements/_accordion.scss */
 dl.accordion > dt > div {
   padding: 0 20px;
 }
-/* line 12, ../sass/page_elements/_accordion.scss */
+/* line 13, ../sass/page_elements/_accordion.scss */
 dl.accordion > dt:before {
   font-size: 22px;
   margin-right: 20px;
@@ -370,7 +371,7 @@ dl.accordion > dt:before {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   opacity: 0.4;
 }
-/* line 19, ../sass/page_elements/_accordion.scss */
+/* line 20, ../sass/page_elements/_accordion.scss */
 dl.accordion > dt.active:before {
   content: '↑';
 }
@@ -430,36 +431,55 @@ dl.accordion > dt.blue:hover:after, dl.accordion > dt.blue.active:after {
   background-image: linear-gradient(left, #333c68, #455395, #333c68);
   content: '';
 }
-/* line 36, ../sass/page_elements/_accordion.scss */
+/* line 38, ../sass/page_elements/_accordion.scss */
 dl.accordion dd > dl.accordion dt {
+  position: relative;
+  z-index: 10;
   font-size: 18px;
   letter-spacing: 0.025em;
   line-height: 31px;
-  background-color: #fba22b;
+  background-color: rgba(251, 162, 43, 0.8);
+  border: 0;
   background-image: none !important;
   margin-bottom: 0;
   color: #c2c3ba;
 }
-/* line 41, ../sass/page_elements/_accordion.scss */
+/* line 46, ../sass/page_elements/_accordion.scss */
 dl.accordion dd > dl.accordion dt.turquoise {
-  background-color: #3d8d99;
+  background-color: rgba(61, 141, 153, 0.8);
 }
-/* line 44, ../sass/page_elements/_accordion.scss */
+/* line 49, ../sass/page_elements/_accordion.scss */
 dl.accordion dd > dl.accordion dt.pink {
-  background-color: #a37ca5;
+  background-color: rgba(163, 124, 165, 0.8);
 }
-/* line 47, ../sass/page_elements/_accordion.scss */
+/* line 52, ../sass/page_elements/_accordion.scss */
 dl.accordion dd > dl.accordion dt.blue {
-  background-color: #5c79b6;
+  background-color: rgba(92, 121, 182, 0.8);
 }
-/* line 53, ../sass/page_elements/_accordion.scss */
+/* line 58, ../sass/page_elements/_accordion.scss */
 dl.accordion dd > dl.accordion dt.active, dl.accordion dd > dl.accordion dt:hover {
   color: #ececec;
 }
-/* line 55, ../sass/page_elements/_accordion.scss */
+/* line 60, ../sass/page_elements/_accordion.scss */
 dl.accordion dd > dl.accordion dt.active:after, dl.accordion dd > dl.accordion dt:hover:after {
   background-color: transparent !important;
   background-image: none !important;
+}
+/* line 66, ../sass/page_elements/_accordion.scss */
+dl.accordion dd > dl.accordion dd {
+  max-height: 31px;
+  position: relative;
+  z-index: 0;
+  margin-top: -31px;
+  margin-bottom: 5px;
+}
+/* line 72, ../sass/page_elements/_accordion.scss */
+dl.accordion dd > dl.accordion dd .slider {
+  margin-bottom: 0;
+}
+/* line 75, ../sass/page_elements/_accordion.scss */
+dl.accordion dd > dl.accordion dd .slider .pages section:not(.page-0) {
+  padding-top: 31px;
 }
 
 /* line 1, ../sass/page_elements/_slider.scss */
@@ -484,7 +504,7 @@ dl.accordion dd > dl.accordion dt.active:after, dl.accordion dd > dl.accordion d
   line-height: 26px;
 }
 /* line 7, ../sass/page_elements/_slider.scss */
-.slider .pages section:first-child {
+.slider .pages section.page-0 {
   font-family: "Joey";
   font-size: 16px;
   letter-spacing: 0.025em;

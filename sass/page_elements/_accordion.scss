@@ -2,6 +2,7 @@ dl.accordion {
 	> dt {
 		z-index: 900;
 		@include headline-text-style;
+		margin-bottom: 0;
 		font-size: $accordion_l1_header_font_size;
 		letter-spacing: $accordion_l1_letter_spacing;
 		line-height: $accordion_l1_line_height;
@@ -32,34 +33,51 @@ dl.accordion {
 			@include box-active-style($gradient_lightblue, $gradient_darkblue);
 		}
 	}
-	dd > dl.accordion {
-		dt {
-			font-size: $accordion_l2_header_font_size;
-			letter-spacing: $accordion_l2_letter_spacing;
-			line-height: $accordion_l2_line_height;
-			background-color: $ci_orange;
-			&.turquoise {
-				background-color: $ci_turquoise;
-			}
-			&.pink {
-				background-color: $ci_pink;
-			}
-			&.blue {
-				background-color: $ci_blue;
-			}
-			background-image: none !important;
-			margin-bottom: 0;
-			color: $ci_lightgray;
-			&.active, &:hover {
-				color: $ci_white;
-				&:after {
-					background-color: transparent !important;
-					background-image: none !important;
+	dd {
+		> dl.accordion {
+			dt {
+				position: relative;
+				z-index: 10;
+				font-size: $accordion_l2_header_font_size;
+				letter-spacing: $accordion_l2_letter_spacing;
+				line-height: $accordion_l2_line_height;
+				background-color: transparentize($ci_orange, $accordion_l2_transparency);
+				border: 0;
+				&.turquoise {
+					background-color: transparentize($ci_turquoise, $accordion_l2_transparency);
+				}
+				&.pink {
+					background-color: transparentize($ci_pink, $accordion_l2_transparency);
+				}
+				&.blue {
+					background-color: transparentize($ci_blue, $accordion_l2_transparency);
+				}
+				background-image: none !important;
+				margin-bottom: 0;
+				color: $ci_lightgray;
+				&.active, &:hover {
+					color: $ci_white;
+					&:after {
+						background-color: transparent !important;
+						background-image: none !important;
+					}
 				}
 			}
-		}
-		dd {
-			// margin-top: -$accordion_header_height;
+			dd {
+				max-height: $accordion_header_height;
+				position: relative;
+				z-index: 0;
+				margin-top: -$accordion_header_height;
+				margin-bottom: $spacing;
+				.slider {
+					margin-bottom: 0;
+					.pages {
+						section:not(.page-0) {
+							padding-top: $accordion_header_height;
+						}
+					}
+				}
+			}
 		}
 	}
 }

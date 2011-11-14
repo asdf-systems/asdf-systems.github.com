@@ -8,7 +8,7 @@ dl.accordion {
 			max-height: 0;
 		}
 		&.active + dd {
-			max-height: 2999px;
+			max-height: 2999px !important;
 		}
 	}
 }

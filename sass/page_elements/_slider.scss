@@ -4,7 +4,7 @@
 		// height: 650px;
 		section {
 			@include normal-text-style;
-			&:first-child {
+			&.page-0 {
 				@include opener-text-style;
 			}
 			img {
