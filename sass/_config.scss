@@ -9,9 +9,9 @@ $ci_orange: rgba(#fba22b, 1.0);
 $ci_gray: rgba(#292b28, 1.0);
 $ci_lightgray: rgba(#c2c3ba, 1.0);
 $ci_white: rgba(#ececec, 1.0);
-$ci_blue: rgba(#5c79b6, 1.0);
-$ci_turquoise: rgba(#3d8d99, 1.0);
-$ci_pink: rgba(#a37ca5, 1.0);
+$ci_blue: rgba(#3475b2, 1.0);
+$ci_turquoise: rgba(#008692, 1.0);
+$ci_pink: rgba(#a9749e, 1.0);
 
 // corner thingys
 $corner_height: 510px;
@@ -23,12 +23,12 @@ $gradient_lightorange: lighten($ci_orange, 5%);
 $gradient_darkorange: darken($ci_orange, 20%);
 $gradient_lightgray: #232320;
 $gradient_darkgray: #1c1c19;
-$gradient_darkturquoise: #325c65;
-$gradient_lightturquoise: #478797;
-$gradient_darkblue: #333c68;
-$gradient_lightblue: #455395;
-$gradient_darkpink: #654c6a;
-$gradient_lightpink: #86648e;
+$gradient_lightblue: lighten($ci_blue, 5%);
+$gradient_darkblue: darken($ci_blue, 20%);
+$gradient_lightturquoise: lighten($ci_turquoise, 5%);
+$gradient_darkturquoise: darken($ci_turquoise, 20%);
+$gradient_lightpink: lighten($ci_pink, 5%);
+$gradient_darkpink: darken($ci_pink, 20%);
 $box_3d_highlight: #2d2c29;
 $box_3d_shadow: #181817;
 

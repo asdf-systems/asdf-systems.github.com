@@ -1,0 +1,69 @@
+body.about {
+	dl.accordion {
+		@import "page_elements/_accordion_header.scss";
+		dt#firmenprofil, dt#wir {
+			+ dd dl.accordion {
+				@import "page_elements/_accordion_l2_header.scss";
+			}
+		}
+		dt#referenzen + dd {
+			@include box-style;
+			dl.accordion {
+				padding: $padding_vertical $padding_horizontal;
+				dt {
+					@include headline-text-style;
+					background: none !important;
+					border: 0;
+					margin-top: $padding-vertical;
+					.name {
+						color: $ci_white;
+					}
+					.location {
+						color: $ci_lightgray;
+						margin-left: $spacing;
+					}
+					&:after {
+						display:block;
+						content: '';
+						width: 80%;
+						height: $accordion_underline_height;
+					}
+					&.active, &:hover {
+						.name {
+							color: $ci_orange;
+						}
+						@include box-active_style;
+						&:after {
+							margin-top: 0;
+						}
+					}
+					&:before {
+						display: block;
+						float: right;
+						content: '';
+						width: 6px;
+						height: 8px;
+						@include opacity(1.0);
+					}
+					&.software:before {
+							background-image: url('/img/minilogo_pink.png');
+					}
+					&.hardware:before {
+							background-image: url('/img/minilogo_turqiouse.png');
+					}
+					&.consulting:before {
+							background-image: url('/img/minilogo_blue.png');
+					}
+				}
+				dd {
+					@include box-active_style;
+					@include opener-text-style;
+					width: 80%;
+					&:after {
+						margin-top: 0;
+					}
+				}
+			}
+		}
+	}
+}

@@ -20,15 +20,18 @@
 @import "page_elements/_bars.scss";
 @import "page_elements/_smallpost.scss";
 @import "page_elements/_employee.scss";
-@import "page_elements/_accordion.scss";
 @import "page_elements/_slider.scss";
 @import "page_elements/_intro.scss";
 @import "page_elements/_header.scss";
 @import "page_elements/_nav.scss";
 @import "page_elements/_content.scss";
 @import "page_elements/_footer.scss";
-
 @import "_links.scss";
+
+@import "pages/_news.scss";
+@import "pages/_portfolio.scss";
+@import "pages/_workshop.scss";
+@import "pages/_about.scss";
 
 html {
 	min-height: 100%;

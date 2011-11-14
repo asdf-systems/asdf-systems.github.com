@@ -1,0 +1,9 @@
+<dt id="{{post.keyword}}" class="{{post.marker}}"><span class="name">{{post.title}}</span><span class="location">{{post.location}}</span></dt>
+<dd>
+	<aside>
+		<a href="{{post.link}}" target="_blank">{{post.link}}</a>
+	</aside>
+	<div>
+		{{ post.content | newline_to_br | markdownify}}
+	</div>
+</dd>

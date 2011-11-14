@@ -162,15 +162,15 @@ dl.accordion > dt.active + dd {
 }
 /* line 8, ../sass/page_elements/_corners.scss */
 #corner_top.blue {
-  border-color: #5c79b6;
+  border-color: #3475b2;
 }
 /* line 11, ../sass/page_elements/_corners.scss */
 #corner_top.turquoise {
-  border-color: #3d8d99;
+  border-color: #008692;
 }
 /* line 14, ../sass/page_elements/_corners.scss */
 #corner_top.pink {
-  border-color: #a37ca5;
+  border-color: #a9749e;
 }
 @media screen and (max-width: 1150px) {
   /* line 22, ../sass/page_elements/_corners.scss */
@@ -196,15 +196,15 @@ dl.accordion > dt.active + dd {
 }
 /* line 8, ../sass/page_elements/_corners.scss */
 #corner_bottom.blue {
-  border-color: #5c79b6;
+  border-color: #3475b2;
 }
 /* line 11, ../sass/page_elements/_corners.scss */
 #corner_bottom.turquoise {
-  border-color: #3d8d99;
+  border-color: #008692;
 }
 /* line 14, ../sass/page_elements/_corners.scss */
 #corner_bottom.pink {
-  border-color: #a37ca5;
+  border-color: #a9749e;
 }
 @media screen and (max-width: 1150px) {
   /* line 31, ../sass/page_elements/_corners.scss */
@@ -339,165 +339,6 @@ article.employee figure {
 article.employee header {
   margin: 0;
   margin: 10px 0;
-}
-
-/* line 2, ../sass/page_elements/_accordion.scss */
-dl.accordion > dt {
-  z-index: 900;
-  font-family: "Joey";
-  font-size: 18px;
-  letter-spacing: 0.025em;
-  line-height: 1em;
-  margin-bottom: 0;
-  font-size: 14px;
-  letter-spacing: 0.025em;
-  line-height: 31px;
-  margin-bottom: 5px;
-  border-top: 1px solid #2d2c29;
-  border-bottom: 1px solid #181817;
-  background-color: #232320;
-  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #1c1c19), color-stop(50%, #232320), color-stop(100%, #1c1c19));
-  background-image: -webkit-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  background-image: -moz-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  background-image: -o-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-}
-/* line 9, ../sass/page_elements/_accordion.scss */
-dl.accordion > dt > div {
-  padding: 0 20px;
-}
-/* line 13, ../sass/page_elements/_accordion.scss */
-dl.accordion > dt:before {
-  font-size: 22px;
-  margin-right: 20px;
-  float: right;
-  content: '↓';
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
-  opacity: 0.4;
-}
-/* line 20, ../sass/page_elements/_accordion.scss */
-dl.accordion > dt.active:before {
-  content: '↑';
-}
-/* line 12, ../sass/page_elements/_bars.scss */
-dl.accordion > dt:hover:after, dl.accordion > dt.active:after {
-  display: block;
-  margin-top: -3px;
-  height: 3px;
-  background-color: #fbad44;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #bc6d04), color-stop(50%, #fbad44), color-stop(100%, #bc6d04));
-  background-image: -webkit-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
-  background-image: -moz-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
-  background-image: -o-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
-  background-image: -ms-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
-  background-image: linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
-  content: '';
-}
-/* line 12, ../sass/page_elements/_bars.scss */
-dl.accordion > dt.turquoise:hover:after, dl.accordion > dt.turquoise.active:after {
-  display: block;
-  margin-top: -3px;
-  height: 3px;
-  background-color: #478797;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #325c65), color-stop(50%, #478797), color-stop(100%, #325c65));
-  background-image: -webkit-linear-gradient(left, #325c65, #478797, #325c65);
-  background-image: -moz-linear-gradient(left, #325c65, #478797, #325c65);
-  background-image: -o-linear-gradient(left, #325c65, #478797, #325c65);
-  background-image: -ms-linear-gradient(left, #325c65, #478797, #325c65);
-  background-image: linear-gradient(left, #325c65, #478797, #325c65);
-  content: '';
-}
-/* line 12, ../sass/page_elements/_bars.scss */
-dl.accordion > dt.pink:hover:after, dl.accordion > dt.pink.active:after {
-  display: block;
-  margin-top: -3px;
-  height: 3px;
-  background-color: #86648e;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #654c6a), color-stop(50%, #86648e), color-stop(100%, #654c6a));
-  background-image: -webkit-linear-gradient(left, #654c6a, #86648e, #654c6a);
-  background-image: -moz-linear-gradient(left, #654c6a, #86648e, #654c6a);
-  background-image: -o-linear-gradient(left, #654c6a, #86648e, #654c6a);
-  background-image: -ms-linear-gradient(left, #654c6a, #86648e, #654c6a);
-  background-image: linear-gradient(left, #654c6a, #86648e, #654c6a);
-  content: '';
-}
-/* line 12, ../sass/page_elements/_bars.scss */
-dl.accordion > dt.blue:hover:after, dl.accordion > dt.blue.active:after {
-  display: block;
-  margin-top: -3px;
-  height: 3px;
-  background-color: #455395;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #333c68), color-stop(50%, #455395), color-stop(100%, #333c68));
-  background-image: -webkit-linear-gradient(left, #333c68, #455395, #333c68);
-  background-image: -moz-linear-gradient(left, #333c68, #455395, #333c68);
-  background-image: -o-linear-gradient(left, #333c68, #455395, #333c68);
-  background-image: -ms-linear-gradient(left, #333c68, #455395, #333c68);
-  background-image: linear-gradient(left, #333c68, #455395, #333c68);
-  content: '';
-}
-/* line 38, ../sass/page_elements/_accordion.scss */
-dl.accordion dd > dl.accordion dt {
-  position: relative;
-  z-index: 10;
-  font-size: 18px;
-  letter-spacing: 0.025em;
-  line-height: 31px;
-  background-color: rgba(251, 162, 43, 0.8);
-  border: 0;
-  background-image: none !important;
-  margin-bottom: 0;
-  color: #c2c3ba;
-}
-/* line 46, ../sass/page_elements/_accordion.scss */
-dl.accordion dd > dl.accordion dt.turquoise {
-  background-color: rgba(61, 141, 153, 0.8);
-}
-/* line 49, ../sass/page_elements/_accordion.scss */
-dl.accordion dd > dl.accordion dt.pink {
-  background-color: rgba(163, 124, 165, 0.8);
-}
-/* line 52, ../sass/page_elements/_accordion.scss */
-dl.accordion dd > dl.accordion dt.blue {
-  background-color: rgba(92, 121, 182, 0.8);
-}
-/* line 58, ../sass/page_elements/_accordion.scss */
-dl.accordion dd > dl.accordion dt.active, dl.accordion dd > dl.accordion dt:hover {
-  color: #ececec;
-}
-/* line 60, ../sass/page_elements/_accordion.scss */
-dl.accordion dd > dl.accordion dt.active:after, dl.accordion dd > dl.accordion dt:hover:after {
-  background-color: transparent !important;
-  background-image: none !important;
-}
-/* line 67, ../sass/page_elements/_accordion.scss */
-dl.accordion dd > dl.accordion dt.noimg + dd {
-  margin-top: 0;
-  max-height: 0;
-}
-/* line 72, ../sass/page_elements/_accordion.scss */
-dl.accordion dd > dl.accordion dt.noimg + dd .slider .pages section:not(.page-0) {
-  padding-top: 0;
-}
-/* line 78, ../sass/page_elements/_accordion.scss */
-dl.accordion dd > dl.accordion dt + dd > article.smallpost:first-child {
-  padding-top: 31px;
-}
-/* line 82, ../sass/page_elements/_accordion.scss */
-dl.accordion dd > dl.accordion dd {
-  max-height: 31px;
-  position: relative;
-  z-index: 0;
-  margin-top: -31px;
-  margin-bottom: 5px;
-}
-/* line 91, ../sass/page_elements/_accordion.scss */
-dl.accordion dd > dl.accordion dd .slider {
-  margin-bottom: 0;
-}
-/* line 94, ../sass/page_elements/_accordion.scss */
-dl.accordion dd > dl.accordion dd .slider .pages section:not(.page-0) {
-  padding-top: 31px;
 }
 
 /* line 1, ../sass/page_elements/_slider.scss */
@@ -768,7 +609,7 @@ dl.accordion dd > dl.accordion dd .slider .pages section:not(.page-0) {
 /* line 48, ../sass/page_elements/_nav.scss */
 #container > nav > ul > li:hover:before, #container > nav > ul > li.active:before {
   content: '';
-  background-image: url("/img/navilogo.png");
+  background-image: url("/img/minilogo_orange.png");
 }
 
 /* line 1, ../sass/page_elements/_content.scss */
@@ -857,11 +698,760 @@ a:hover {
   color: #fba22b;
 }
 
-/* line 33, ../sass/screen.scss */
+/* line 1, ../sass/page_elements/_accordion_header.scss */
+body.news dl.accordion > dt {
+  z-index: 900;
+  font-family: "Joey";
+  font-size: 18px;
+  letter-spacing: 0.025em;
+  line-height: 1em;
+  margin-bottom: 0;
+  font-size: 14px;
+  letter-spacing: 0.025em;
+  line-height: 31px;
+  margin-bottom: 5px;
+  border-top: 1px solid #2d2c29;
+  border-bottom: 1px solid #181817;
+  background-color: #232320;
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #1c1c19), color-stop(50%, #232320), color-stop(100%, #1c1c19));
+  background-image: -webkit-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -moz-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -o-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+}
+/* line 8, ../sass/page_elements/_accordion_header.scss */
+body.news dl.accordion > dt > div {
+  padding: 0 20px;
+}
+/* line 12, ../sass/page_elements/_accordion_header.scss */
+body.news dl.accordion > dt:before {
+  font-size: 22px;
+  margin-right: 20px;
+  float: right;
+  content: '↓';
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+}
+/* line 19, ../sass/page_elements/_accordion_header.scss */
+body.news dl.accordion > dt.active:before {
+  content: '↑';
+}
+/* line 12, ../sass/page_elements/_bars.scss */
+body.news dl.accordion > dt:hover:after, body.news dl.accordion > dt.active:after {
+  display: block;
+  margin-top: -3px;
+  height: 3px;
+  background-color: #fbad44;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #bc6d04), color-stop(50%, #fbad44), color-stop(100%, #bc6d04));
+  background-image: -webkit-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: -moz-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: -o-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: -ms-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  content: '';
+}
+/* line 12, ../sass/page_elements/_bars.scss */
+body.news dl.accordion > dt.turquoise:hover:after, body.news dl.accordion > dt.turquoise.active:after {
+  display: block;
+  margin-top: -3px;
+  height: 3px;
+  background-color: #009dab;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #00282c), color-stop(50%, #009dab), color-stop(100%, #00282c));
+  background-image: -webkit-linear-gradient(left, #00282c, #009dab, #00282c);
+  background-image: -moz-linear-gradient(left, #00282c, #009dab, #00282c);
+  background-image: -o-linear-gradient(left, #00282c, #009dab, #00282c);
+  background-image: -ms-linear-gradient(left, #00282c, #009dab, #00282c);
+  background-image: linear-gradient(left, #00282c, #009dab, #00282c);
+  content: '';
+}
+/* line 12, ../sass/page_elements/_bars.scss */
+body.news dl.accordion > dt.pink:hover:after, body.news dl.accordion > dt.pink.active:after {
+  display: block;
+  margin-top: -3px;
+  height: 3px;
+  background-color: #b384a9;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #714668), color-stop(50%, #b384a9), color-stop(100%, #714668));
+  background-image: -webkit-linear-gradient(left, #714668, #b384a9, #714668);
+  background-image: -moz-linear-gradient(left, #714668, #b384a9, #714668);
+  background-image: -o-linear-gradient(left, #714668, #b384a9, #714668);
+  background-image: -ms-linear-gradient(left, #714668, #b384a9, #714668);
+  background-image: linear-gradient(left, #714668, #b384a9, #714668);
+  content: '';
+}
+/* line 12, ../sass/page_elements/_bars.scss */
+body.news dl.accordion > dt.blue:hover:after, body.news dl.accordion > dt.blue.active:after {
+  display: block;
+  margin-top: -3px;
+  height: 3px;
+  background-color: #3a82c5;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #1d4163), color-stop(50%, #3a82c5), color-stop(100%, #1d4163));
+  background-image: -webkit-linear-gradient(left, #1d4163, #3a82c5, #1d4163);
+  background-image: -moz-linear-gradient(left, #1d4163, #3a82c5, #1d4163);
+  background-image: -o-linear-gradient(left, #1d4163, #3a82c5, #1d4163);
+  background-image: -ms-linear-gradient(left, #1d4163, #3a82c5, #1d4163);
+  background-image: linear-gradient(left, #1d4163, #3a82c5, #1d4163);
+  content: '';
+}
+/* line 1, ../sass/page_elements/_accordion_l2_header.scss */
+body.news dl.accordion > dd dl.accordion dt {
+  position: relative;
+  z-index: 10;
+  font-size: 18px;
+  letter-spacing: 0.025em;
+  line-height: 31px;
+  background-color: rgba(251, 162, 43, 0.8);
+  border: 0;
+  background-image: none !important;
+  margin-bottom: 0;
+  color: #c2c3ba;
+}
+/* line 9, ../sass/page_elements/_accordion_l2_header.scss */
+body.news dl.accordion > dd dl.accordion dt.turquoise {
+  background-color: rgba(0, 134, 146, 0.8);
+}
+/* line 12, ../sass/page_elements/_accordion_l2_header.scss */
+body.news dl.accordion > dd dl.accordion dt.pink {
+  background-color: rgba(169, 116, 158, 0.8);
+}
+/* line 15, ../sass/page_elements/_accordion_l2_header.scss */
+body.news dl.accordion > dd dl.accordion dt.blue {
+  background-color: rgba(52, 117, 178, 0.8);
+}
+/* line 21, ../sass/page_elements/_accordion_l2_header.scss */
+body.news dl.accordion > dd dl.accordion dt.active, body.news dl.accordion > dd dl.accordion dt:hover {
+  color: #ececec;
+}
+/* line 23, ../sass/page_elements/_accordion_l2_header.scss */
+body.news dl.accordion > dd dl.accordion dt.active:after, body.news dl.accordion > dd dl.accordion dt:hover:after {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+/* line 30, ../sass/page_elements/_accordion_l2_header.scss */
+body.news dl.accordion > dd dl.accordion dt.noimg + dd {
+  margin-top: 0;
+  max-height: 0;
+}
+/* line 35, ../sass/page_elements/_accordion_l2_header.scss */
+body.news dl.accordion > dd dl.accordion dt.noimg + dd .slider .pages section:not(.page-0) {
+  padding-top: 0;
+}
+/* line 41, ../sass/page_elements/_accordion_l2_header.scss */
+body.news dl.accordion > dd dl.accordion dt + dd > article.smallpost:first-child {
+  padding-top: 31px;
+}
+/* line 45, ../sass/page_elements/_accordion_l2_header.scss */
+body.news dl.accordion > dd dl.accordion dd {
+  max-height: 31px;
+  position: relative;
+  z-index: 0;
+  margin-top: -31px;
+  margin-bottom: 5px;
+}
+/* line 54, ../sass/page_elements/_accordion_l2_header.scss */
+body.news dl.accordion > dd dl.accordion dd .slider {
+  margin-bottom: 0;
+}
+/* line 57, ../sass/page_elements/_accordion_l2_header.scss */
+body.news dl.accordion > dd dl.accordion dd .slider .pages section:not(.page-0) {
+  padding-top: 31px;
+}
+
+/* line 1, ../sass/page_elements/_accordion_header.scss */
+body.portfolio dl.accordion > dt {
+  z-index: 900;
+  font-family: "Joey";
+  font-size: 18px;
+  letter-spacing: 0.025em;
+  line-height: 1em;
+  margin-bottom: 0;
+  font-size: 14px;
+  letter-spacing: 0.025em;
+  line-height: 31px;
+  margin-bottom: 5px;
+  border-top: 1px solid #2d2c29;
+  border-bottom: 1px solid #181817;
+  background-color: #232320;
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #1c1c19), color-stop(50%, #232320), color-stop(100%, #1c1c19));
+  background-image: -webkit-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -moz-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -o-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+}
+/* line 8, ../sass/page_elements/_accordion_header.scss */
+body.portfolio dl.accordion > dt > div {
+  padding: 0 20px;
+}
+/* line 12, ../sass/page_elements/_accordion_header.scss */
+body.portfolio dl.accordion > dt:before {
+  font-size: 22px;
+  margin-right: 20px;
+  float: right;
+  content: '↓';
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+}
+/* line 19, ../sass/page_elements/_accordion_header.scss */
+body.portfolio dl.accordion > dt.active:before {
+  content: '↑';
+}
+/* line 12, ../sass/page_elements/_bars.scss */
+body.portfolio dl.accordion > dt:hover:after, body.portfolio dl.accordion > dt.active:after {
+  display: block;
+  margin-top: -3px;
+  height: 3px;
+  background-color: #fbad44;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #bc6d04), color-stop(50%, #fbad44), color-stop(100%, #bc6d04));
+  background-image: -webkit-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: -moz-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: -o-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: -ms-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  content: '';
+}
+/* line 12, ../sass/page_elements/_bars.scss */
+body.portfolio dl.accordion > dt.turquoise:hover:after, body.portfolio dl.accordion > dt.turquoise.active:after {
+  display: block;
+  margin-top: -3px;
+  height: 3px;
+  background-color: #009dab;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #00282c), color-stop(50%, #009dab), color-stop(100%, #00282c));
+  background-image: -webkit-linear-gradient(left, #00282c, #009dab, #00282c);
+  background-image: -moz-linear-gradient(left, #00282c, #009dab, #00282c);
+  background-image: -o-linear-gradient(left, #00282c, #009dab, #00282c);
+  background-image: -ms-linear-gradient(left, #00282c, #009dab, #00282c);
+  background-image: linear-gradient(left, #00282c, #009dab, #00282c);
+  content: '';
+}
+/* line 12, ../sass/page_elements/_bars.scss */
+body.portfolio dl.accordion > dt.pink:hover:after, body.portfolio dl.accordion > dt.pink.active:after {
+  display: block;
+  margin-top: -3px;
+  height: 3px;
+  background-color: #b384a9;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #714668), color-stop(50%, #b384a9), color-stop(100%, #714668));
+  background-image: -webkit-linear-gradient(left, #714668, #b384a9, #714668);
+  background-image: -moz-linear-gradient(left, #714668, #b384a9, #714668);
+  background-image: -o-linear-gradient(left, #714668, #b384a9, #714668);
+  background-image: -ms-linear-gradient(left, #714668, #b384a9, #714668);
+  background-image: linear-gradient(left, #714668, #b384a9, #714668);
+  content: '';
+}
+/* line 12, ../sass/page_elements/_bars.scss */
+body.portfolio dl.accordion > dt.blue:hover:after, body.portfolio dl.accordion > dt.blue.active:after {
+  display: block;
+  margin-top: -3px;
+  height: 3px;
+  background-color: #3a82c5;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #1d4163), color-stop(50%, #3a82c5), color-stop(100%, #1d4163));
+  background-image: -webkit-linear-gradient(left, #1d4163, #3a82c5, #1d4163);
+  background-image: -moz-linear-gradient(left, #1d4163, #3a82c5, #1d4163);
+  background-image: -o-linear-gradient(left, #1d4163, #3a82c5, #1d4163);
+  background-image: -ms-linear-gradient(left, #1d4163, #3a82c5, #1d4163);
+  background-image: linear-gradient(left, #1d4163, #3a82c5, #1d4163);
+  content: '';
+}
+/* line 1, ../sass/page_elements/_accordion_l2_header.scss */
+body.portfolio dl.accordion > dd dl.accordion dt {
+  position: relative;
+  z-index: 10;
+  font-size: 18px;
+  letter-spacing: 0.025em;
+  line-height: 31px;
+  background-color: rgba(251, 162, 43, 0.8);
+  border: 0;
+  background-image: none !important;
+  margin-bottom: 0;
+  color: #c2c3ba;
+}
+/* line 9, ../sass/page_elements/_accordion_l2_header.scss */
+body.portfolio dl.accordion > dd dl.accordion dt.turquoise {
+  background-color: rgba(0, 134, 146, 0.8);
+}
+/* line 12, ../sass/page_elements/_accordion_l2_header.scss */
+body.portfolio dl.accordion > dd dl.accordion dt.pink {
+  background-color: rgba(169, 116, 158, 0.8);
+}
+/* line 15, ../sass/page_elements/_accordion_l2_header.scss */
+body.portfolio dl.accordion > dd dl.accordion dt.blue {
+  background-color: rgba(52, 117, 178, 0.8);
+}
+/* line 21, ../sass/page_elements/_accordion_l2_header.scss */
+body.portfolio dl.accordion > dd dl.accordion dt.active, body.portfolio dl.accordion > dd dl.accordion dt:hover {
+  color: #ececec;
+}
+/* line 23, ../sass/page_elements/_accordion_l2_header.scss */
+body.portfolio dl.accordion > dd dl.accordion dt.active:after, body.portfolio dl.accordion > dd dl.accordion dt:hover:after {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+/* line 30, ../sass/page_elements/_accordion_l2_header.scss */
+body.portfolio dl.accordion > dd dl.accordion dt.noimg + dd {
+  margin-top: 0;
+  max-height: 0;
+}
+/* line 35, ../sass/page_elements/_accordion_l2_header.scss */
+body.portfolio dl.accordion > dd dl.accordion dt.noimg + dd .slider .pages section:not(.page-0) {
+  padding-top: 0;
+}
+/* line 41, ../sass/page_elements/_accordion_l2_header.scss */
+body.portfolio dl.accordion > dd dl.accordion dt + dd > article.smallpost:first-child {
+  padding-top: 31px;
+}
+/* line 45, ../sass/page_elements/_accordion_l2_header.scss */
+body.portfolio dl.accordion > dd dl.accordion dd {
+  max-height: 31px;
+  position: relative;
+  z-index: 0;
+  margin-top: -31px;
+  margin-bottom: 5px;
+}
+/* line 54, ../sass/page_elements/_accordion_l2_header.scss */
+body.portfolio dl.accordion > dd dl.accordion dd .slider {
+  margin-bottom: 0;
+}
+/* line 57, ../sass/page_elements/_accordion_l2_header.scss */
+body.portfolio dl.accordion > dd dl.accordion dd .slider .pages section:not(.page-0) {
+  padding-top: 31px;
+}
+
+/* line 1, ../sass/page_elements/_accordion_header.scss */
+body.workshop dl.accordion > dt {
+  z-index: 900;
+  font-family: "Joey";
+  font-size: 18px;
+  letter-spacing: 0.025em;
+  line-height: 1em;
+  margin-bottom: 0;
+  font-size: 14px;
+  letter-spacing: 0.025em;
+  line-height: 31px;
+  margin-bottom: 5px;
+  border-top: 1px solid #2d2c29;
+  border-bottom: 1px solid #181817;
+  background-color: #232320;
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #1c1c19), color-stop(50%, #232320), color-stop(100%, #1c1c19));
+  background-image: -webkit-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -moz-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -o-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+}
+/* line 8, ../sass/page_elements/_accordion_header.scss */
+body.workshop dl.accordion > dt > div {
+  padding: 0 20px;
+}
+/* line 12, ../sass/page_elements/_accordion_header.scss */
+body.workshop dl.accordion > dt:before {
+  font-size: 22px;
+  margin-right: 20px;
+  float: right;
+  content: '↓';
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+}
+/* line 19, ../sass/page_elements/_accordion_header.scss */
+body.workshop dl.accordion > dt.active:before {
+  content: '↑';
+}
+/* line 12, ../sass/page_elements/_bars.scss */
+body.workshop dl.accordion > dt:hover:after, body.workshop dl.accordion > dt.active:after {
+  display: block;
+  margin-top: -3px;
+  height: 3px;
+  background-color: #fbad44;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #bc6d04), color-stop(50%, #fbad44), color-stop(100%, #bc6d04));
+  background-image: -webkit-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: -moz-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: -o-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: -ms-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  content: '';
+}
+/* line 12, ../sass/page_elements/_bars.scss */
+body.workshop dl.accordion > dt.turquoise:hover:after, body.workshop dl.accordion > dt.turquoise.active:after {
+  display: block;
+  margin-top: -3px;
+  height: 3px;
+  background-color: #009dab;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #00282c), color-stop(50%, #009dab), color-stop(100%, #00282c));
+  background-image: -webkit-linear-gradient(left, #00282c, #009dab, #00282c);
+  background-image: -moz-linear-gradient(left, #00282c, #009dab, #00282c);
+  background-image: -o-linear-gradient(left, #00282c, #009dab, #00282c);
+  background-image: -ms-linear-gradient(left, #00282c, #009dab, #00282c);
+  background-image: linear-gradient(left, #00282c, #009dab, #00282c);
+  content: '';
+}
+/* line 12, ../sass/page_elements/_bars.scss */
+body.workshop dl.accordion > dt.pink:hover:after, body.workshop dl.accordion > dt.pink.active:after {
+  display: block;
+  margin-top: -3px;
+  height: 3px;
+  background-color: #b384a9;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #714668), color-stop(50%, #b384a9), color-stop(100%, #714668));
+  background-image: -webkit-linear-gradient(left, #714668, #b384a9, #714668);
+  background-image: -moz-linear-gradient(left, #714668, #b384a9, #714668);
+  background-image: -o-linear-gradient(left, #714668, #b384a9, #714668);
+  background-image: -ms-linear-gradient(left, #714668, #b384a9, #714668);
+  background-image: linear-gradient(left, #714668, #b384a9, #714668);
+  content: '';
+}
+/* line 12, ../sass/page_elements/_bars.scss */
+body.workshop dl.accordion > dt.blue:hover:after, body.workshop dl.accordion > dt.blue.active:after {
+  display: block;
+  margin-top: -3px;
+  height: 3px;
+  background-color: #3a82c5;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #1d4163), color-stop(50%, #3a82c5), color-stop(100%, #1d4163));
+  background-image: -webkit-linear-gradient(left, #1d4163, #3a82c5, #1d4163);
+  background-image: -moz-linear-gradient(left, #1d4163, #3a82c5, #1d4163);
+  background-image: -o-linear-gradient(left, #1d4163, #3a82c5, #1d4163);
+  background-image: -ms-linear-gradient(left, #1d4163, #3a82c5, #1d4163);
+  background-image: linear-gradient(left, #1d4163, #3a82c5, #1d4163);
+  content: '';
+}
+/* line 1, ../sass/page_elements/_accordion_l2_header.scss */
+body.workshop dl.accordion > dd dl.accordion dt {
+  position: relative;
+  z-index: 10;
+  font-size: 18px;
+  letter-spacing: 0.025em;
+  line-height: 31px;
+  background-color: rgba(251, 162, 43, 0.8);
+  border: 0;
+  background-image: none !important;
+  margin-bottom: 0;
+  color: #c2c3ba;
+}
+/* line 9, ../sass/page_elements/_accordion_l2_header.scss */
+body.workshop dl.accordion > dd dl.accordion dt.turquoise {
+  background-color: rgba(0, 134, 146, 0.8);
+}
+/* line 12, ../sass/page_elements/_accordion_l2_header.scss */
+body.workshop dl.accordion > dd dl.accordion dt.pink {
+  background-color: rgba(169, 116, 158, 0.8);
+}
+/* line 15, ../sass/page_elements/_accordion_l2_header.scss */
+body.workshop dl.accordion > dd dl.accordion dt.blue {
+  background-color: rgba(52, 117, 178, 0.8);
+}
+/* line 21, ../sass/page_elements/_accordion_l2_header.scss */
+body.workshop dl.accordion > dd dl.accordion dt.active, body.workshop dl.accordion > dd dl.accordion dt:hover {
+  color: #ececec;
+}
+/* line 23, ../sass/page_elements/_accordion_l2_header.scss */
+body.workshop dl.accordion > dd dl.accordion dt.active:after, body.workshop dl.accordion > dd dl.accordion dt:hover:after {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+/* line 30, ../sass/page_elements/_accordion_l2_header.scss */
+body.workshop dl.accordion > dd dl.accordion dt.noimg + dd {
+  margin-top: 0;
+  max-height: 0;
+}
+/* line 35, ../sass/page_elements/_accordion_l2_header.scss */
+body.workshop dl.accordion > dd dl.accordion dt.noimg + dd .slider .pages section:not(.page-0) {
+  padding-top: 0;
+}
+/* line 41, ../sass/page_elements/_accordion_l2_header.scss */
+body.workshop dl.accordion > dd dl.accordion dt + dd > article.smallpost:first-child {
+  padding-top: 31px;
+}
+/* line 45, ../sass/page_elements/_accordion_l2_header.scss */
+body.workshop dl.accordion > dd dl.accordion dd {
+  max-height: 31px;
+  position: relative;
+  z-index: 0;
+  margin-top: -31px;
+  margin-bottom: 5px;
+}
+/* line 54, ../sass/page_elements/_accordion_l2_header.scss */
+body.workshop dl.accordion > dd dl.accordion dd .slider {
+  margin-bottom: 0;
+}
+/* line 57, ../sass/page_elements/_accordion_l2_header.scss */
+body.workshop dl.accordion > dd dl.accordion dd .slider .pages section:not(.page-0) {
+  padding-top: 31px;
+}
+
+/* line 1, ../sass/page_elements/_accordion_header.scss */
+body.about dl.accordion > dt {
+  z-index: 900;
+  font-family: "Joey";
+  font-size: 18px;
+  letter-spacing: 0.025em;
+  line-height: 1em;
+  margin-bottom: 0;
+  font-size: 14px;
+  letter-spacing: 0.025em;
+  line-height: 31px;
+  margin-bottom: 5px;
+  border-top: 1px solid #2d2c29;
+  border-bottom: 1px solid #181817;
+  background-color: #232320;
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #1c1c19), color-stop(50%, #232320), color-stop(100%, #1c1c19));
+  background-image: -webkit-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -moz-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -o-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+}
+/* line 8, ../sass/page_elements/_accordion_header.scss */
+body.about dl.accordion > dt > div {
+  padding: 0 20px;
+}
+/* line 12, ../sass/page_elements/_accordion_header.scss */
+body.about dl.accordion > dt:before {
+  font-size: 22px;
+  margin-right: 20px;
+  float: right;
+  content: '↓';
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+}
+/* line 19, ../sass/page_elements/_accordion_header.scss */
+body.about dl.accordion > dt.active:before {
+  content: '↑';
+}
+/* line 12, ../sass/page_elements/_bars.scss */
+body.about dl.accordion > dt:hover:after, body.about dl.accordion > dt.active:after {
+  display: block;
+  margin-top: -3px;
+  height: 3px;
+  background-color: #fbad44;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #bc6d04), color-stop(50%, #fbad44), color-stop(100%, #bc6d04));
+  background-image: -webkit-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: -moz-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: -o-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: -ms-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  content: '';
+}
+/* line 12, ../sass/page_elements/_bars.scss */
+body.about dl.accordion > dt.turquoise:hover:after, body.about dl.accordion > dt.turquoise.active:after {
+  display: block;
+  margin-top: -3px;
+  height: 3px;
+  background-color: #009dab;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #00282c), color-stop(50%, #009dab), color-stop(100%, #00282c));
+  background-image: -webkit-linear-gradient(left, #00282c, #009dab, #00282c);
+  background-image: -moz-linear-gradient(left, #00282c, #009dab, #00282c);
+  background-image: -o-linear-gradient(left, #00282c, #009dab, #00282c);
+  background-image: -ms-linear-gradient(left, #00282c, #009dab, #00282c);
+  background-image: linear-gradient(left, #00282c, #009dab, #00282c);
+  content: '';
+}
+/* line 12, ../sass/page_elements/_bars.scss */
+body.about dl.accordion > dt.pink:hover:after, body.about dl.accordion > dt.pink.active:after {
+  display: block;
+  margin-top: -3px;
+  height: 3px;
+  background-color: #b384a9;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #714668), color-stop(50%, #b384a9), color-stop(100%, #714668));
+  background-image: -webkit-linear-gradient(left, #714668, #b384a9, #714668);
+  background-image: -moz-linear-gradient(left, #714668, #b384a9, #714668);
+  background-image: -o-linear-gradient(left, #714668, #b384a9, #714668);
+  background-image: -ms-linear-gradient(left, #714668, #b384a9, #714668);
+  background-image: linear-gradient(left, #714668, #b384a9, #714668);
+  content: '';
+}
+/* line 12, ../sass/page_elements/_bars.scss */
+body.about dl.accordion > dt.blue:hover:after, body.about dl.accordion > dt.blue.active:after {
+  display: block;
+  margin-top: -3px;
+  height: 3px;
+  background-color: #3a82c5;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #1d4163), color-stop(50%, #3a82c5), color-stop(100%, #1d4163));
+  background-image: -webkit-linear-gradient(left, #1d4163, #3a82c5, #1d4163);
+  background-image: -moz-linear-gradient(left, #1d4163, #3a82c5, #1d4163);
+  background-image: -o-linear-gradient(left, #1d4163, #3a82c5, #1d4163);
+  background-image: -ms-linear-gradient(left, #1d4163, #3a82c5, #1d4163);
+  background-image: linear-gradient(left, #1d4163, #3a82c5, #1d4163);
+  content: '';
+}
+/* line 1, ../sass/page_elements/_accordion_l2_header.scss */
+body.about dl.accordion dt#firmenprofil + dd dl.accordion dt, body.about dl.accordion dt#wir + dd dl.accordion dt {
+  position: relative;
+  z-index: 10;
+  font-size: 18px;
+  letter-spacing: 0.025em;
+  line-height: 31px;
+  background-color: rgba(251, 162, 43, 0.8);
+  border: 0;
+  background-image: none !important;
+  margin-bottom: 0;
+  color: #c2c3ba;
+}
+/* line 9, ../sass/page_elements/_accordion_l2_header.scss */
+body.about dl.accordion dt#firmenprofil + dd dl.accordion dt.turquoise, body.about dl.accordion dt#wir + dd dl.accordion dt.turquoise {
+  background-color: rgba(0, 134, 146, 0.8);
+}
+/* line 12, ../sass/page_elements/_accordion_l2_header.scss */
+body.about dl.accordion dt#firmenprofil + dd dl.accordion dt.pink, body.about dl.accordion dt#wir + dd dl.accordion dt.pink {
+  background-color: rgba(169, 116, 158, 0.8);
+}
+/* line 15, ../sass/page_elements/_accordion_l2_header.scss */
+body.about dl.accordion dt#firmenprofil + dd dl.accordion dt.blue, body.about dl.accordion dt#wir + dd dl.accordion dt.blue {
+  background-color: rgba(52, 117, 178, 0.8);
+}
+/* line 21, ../sass/page_elements/_accordion_l2_header.scss */
+body.about dl.accordion dt#firmenprofil + dd dl.accordion dt.active, body.about dl.accordion dt#firmenprofil + dd dl.accordion dt:hover, body.about dl.accordion dt#wir + dd dl.accordion dt.active, body.about dl.accordion dt#wir + dd dl.accordion dt:hover {
+  color: #ececec;
+}
+/* line 23, ../sass/page_elements/_accordion_l2_header.scss */
+body.about dl.accordion dt#firmenprofil + dd dl.accordion dt.active:after, body.about dl.accordion dt#firmenprofil + dd dl.accordion dt:hover:after, body.about dl.accordion dt#wir + dd dl.accordion dt.active:after, body.about dl.accordion dt#wir + dd dl.accordion dt:hover:after {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+/* line 30, ../sass/page_elements/_accordion_l2_header.scss */
+body.about dl.accordion dt#firmenprofil + dd dl.accordion dt.noimg + dd, body.about dl.accordion dt#wir + dd dl.accordion dt.noimg + dd {
+  margin-top: 0;
+  max-height: 0;
+}
+/* line 35, ../sass/page_elements/_accordion_l2_header.scss */
+body.about dl.accordion dt#firmenprofil + dd dl.accordion dt.noimg + dd .slider .pages section:not(.page-0), body.about dl.accordion dt#wir + dd dl.accordion dt.noimg + dd .slider .pages section:not(.page-0) {
+  padding-top: 0;
+}
+/* line 41, ../sass/page_elements/_accordion_l2_header.scss */
+body.about dl.accordion dt#firmenprofil + dd dl.accordion dt + dd > article.smallpost:first-child, body.about dl.accordion dt#wir + dd dl.accordion dt + dd > article.smallpost:first-child {
+  padding-top: 31px;
+}
+/* line 45, ../sass/page_elements/_accordion_l2_header.scss */
+body.about dl.accordion dt#firmenprofil + dd dl.accordion dd, body.about dl.accordion dt#wir + dd dl.accordion dd {
+  max-height: 31px;
+  position: relative;
+  z-index: 0;
+  margin-top: -31px;
+  margin-bottom: 5px;
+}
+/* line 54, ../sass/page_elements/_accordion_l2_header.scss */
+body.about dl.accordion dt#firmenprofil + dd dl.accordion dd .slider, body.about dl.accordion dt#wir + dd dl.accordion dd .slider {
+  margin-bottom: 0;
+}
+/* line 57, ../sass/page_elements/_accordion_l2_header.scss */
+body.about dl.accordion dt#firmenprofil + dd dl.accordion dd .slider .pages section:not(.page-0), body.about dl.accordion dt#wir + dd dl.accordion dd .slider .pages section:not(.page-0) {
+  padding-top: 31px;
+}
+/* line 9, ../sass/pages/_about.scss */
+body.about dl.accordion dt#referenzen + dd {
+  margin-bottom: 5px;
+  border-top: 1px solid #2d2c29;
+  border-bottom: 1px solid #181817;
+  background-color: #232320;
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #1c1c19), color-stop(50%, #232320), color-stop(100%, #1c1c19));
+  background-image: -webkit-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -moz-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -o-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+}
+/* line 11, ../sass/pages/_about.scss */
+body.about dl.accordion dt#referenzen + dd dl.accordion {
+  padding: 10px 20px;
+}
+/* line 13, ../sass/pages/_about.scss */
+body.about dl.accordion dt#referenzen + dd dl.accordion dt {
+  font-family: "Joey";
+  font-size: 18px;
+  letter-spacing: 0.025em;
+  line-height: 1em;
+  background: none !important;
+  border: 0;
+  margin-top: 10px;
+}
+/* line 18, ../sass/pages/_about.scss */
+body.about dl.accordion dt#referenzen + dd dl.accordion dt .name {
+  color: #ececec;
+}
+/* line 21, ../sass/pages/_about.scss */
+body.about dl.accordion dt#referenzen + dd dl.accordion dt .location {
+  color: #c2c3ba;
+  margin-left: 5px;
+}
+/* line 25, ../sass/pages/_about.scss */
+body.about dl.accordion dt#referenzen + dd dl.accordion dt:after {
+  display: block;
+  content: '';
+  width: 80%;
+  height: 3px;
+}
+/* line 32, ../sass/pages/_about.scss */
+body.about dl.accordion dt#referenzen + dd dl.accordion dt.active .name, body.about dl.accordion dt#referenzen + dd dl.accordion dt:hover .name {
+  color: #fba22b;
+}
+/* line 12, ../sass/page_elements/_bars.scss */
+body.about dl.accordion dt#referenzen + dd dl.accordion dt.active:after, body.about dl.accordion dt#referenzen + dd dl.accordion dt:hover:after {
+  display: block;
+  margin-top: -3px;
+  height: 3px;
+  background-color: #fbad44;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #bc6d04), color-stop(50%, #fbad44), color-stop(100%, #bc6d04));
+  background-image: -webkit-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: -moz-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: -o-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: -ms-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  content: '';
+}
+/* line 36, ../sass/pages/_about.scss */
+body.about dl.accordion dt#referenzen + dd dl.accordion dt.active:after, body.about dl.accordion dt#referenzen + dd dl.accordion dt:hover:after {
+  margin-top: 0;
+}
+/* line 40, ../sass/pages/_about.scss */
+body.about dl.accordion dt#referenzen + dd dl.accordion dt:before {
+  display: block;
+  float: right;
+  content: '';
+  width: 6px;
+  height: 8px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* line 48, ../sass/pages/_about.scss */
+body.about dl.accordion dt#referenzen + dd dl.accordion dt.software:before {
+  background-image: url("/img/minilogo_pink.png");
+}
+/* line 51, ../sass/pages/_about.scss */
+body.about dl.accordion dt#referenzen + dd dl.accordion dt.hardware:before {
+  background-image: url("/img/minilogo_turqiouse.png");
+}
+/* line 54, ../sass/pages/_about.scss */
+body.about dl.accordion dt#referenzen + dd dl.accordion dt.consulting:before {
+  background-image: url("/img/minilogo_blue.png");
+}
+/* line 58, ../sass/pages/_about.scss */
+body.about dl.accordion dt#referenzen + dd dl.accordion dd {
+  font-family: "Joey";
+  font-size: 16px;
+  letter-spacing: 0.025em;
+  line-height: 26px;
+  width: 80%;
+}
+/* line 12, ../sass/page_elements/_bars.scss */
+body.about dl.accordion dt#referenzen + dd dl.accordion dd:after {
+  display: block;
+  margin-top: -3px;
+  height: 3px;
+  background-color: #fbad44;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #bc6d04), color-stop(50%, #fbad44), color-stop(100%, #bc6d04));
+  background-image: -webkit-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: -moz-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: -o-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: -ms-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  content: '';
+}
+/* line 62, ../sass/pages/_about.scss */
+body.about dl.accordion dt#referenzen + dd dl.accordion dd:after {
+  margin-top: 0;
+}
+
+/* line 36, ../sass/screen.scss */
 html {
   min-height: 100%;
 }
-/* line 35, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 html body {
   position: absolute;
   top: 0;
@@ -878,13 +1468,13 @@ html body {
   letter-spacing: 0.025em;
   line-height: 26px;
 }
-/* line 51, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 html body > #container {
   width: 880px;
   margin: 0 auto;
 }
 @media screen and (max-width: 880px) {
-  /* line 51, ../sass/screen.scss */
+  /* line 54, ../sass/screen.scss */
   html body > #container {
     width: 100%;
   }

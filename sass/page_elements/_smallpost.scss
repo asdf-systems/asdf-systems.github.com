@@ -42,9 +42,6 @@ article.smallpost {
 	aside {
 		margin: $padding_vertical $padding_horizontal;
 		text-align: right;
-		a {
-
-		}
 	}
 	@include box-active-style;
 }

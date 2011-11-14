@@ -1,0 +1,34 @@
+> dt {
+	z-index: 900;
+	@include headline-text-style;
+	margin-bottom: 0;
+	font-size: $accordion_l1_header_font_size;
+	letter-spacing: $accordion_l1_letter_spacing;
+	line-height: $accordion_l1_line_height;
+	> div {
+		padding: 0 $padding_horizontal;
+	}
+	@include box-style;
+	&:before {
+		font-size: $accordion_button_size;
+		margin-right: $padding_horizontal;
+		float: right;
+		content: '↓';
+		@include opacity(0.4);
+	}
+	&.active:before {
+		content: '↑';
+	}
+	&:hover, &.active {
+		@include box-active-style($gradient_lightorange, $gradient_darkorange);
+	}
+	&.turquoise:hover, &.turquoise.active {
+		@include box-active-style($gradient_lightturquoise, $gradient_darkturquoise);
+	}
+	&.pink:hover, &.pink.active {
+		@include box-active-style($gradient_lightpink, $gradient_darkpink);
+	}
+	&.blue:hover, &.blue.active {
+		@include box-active-style($gradient_lightblue, $gradient_darkblue);
+	}
+}
