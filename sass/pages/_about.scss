@@ -6,7 +6,7 @@ body.about {
 				@import "page_elements/_accordion_l2_header.scss";
 			}
 		}
-		dt#referenzen + dd {
+		dt#referenzen + dd > div {
 			@include box-style;
 			dl.accordion {
 				padding: $padding_vertical $padding_horizontal;
@@ -32,7 +32,7 @@ body.about {
 						.name {
 							color: $ci_orange;
 						}
-						@include box-active_style;
+						@include box-active-style;
 						&:after {
 							margin-top: 0;
 						}
@@ -43,6 +43,7 @@ body.about {
 						content: '';
 						width: 6px;
 						height: 8px;
+						margin: 0;
 						@include opacity(1.0);
 					}
 					&.software:before {
@@ -56,7 +57,7 @@ body.about {
 					}
 				}
 				dd {
-					@include box-active_style;
+					@include box-active-style;
 					@include opener-text-style;
 					width: 80%;
 					&:after {

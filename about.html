@@ -37,13 +37,15 @@ corners: orange
 		<div>Referenzen</div>
 	</dt>
 	<dd>
-		<dl class="accordion">
-			{% for post in site.posts %}
-				{% if post.categories contains "referenzen" %}
-					{% include reference.html %}
-				{% endif %}
-			{% endfor %}
-		</dt>
+		<div>
+			<dl class="accordion">
+				{% for post in site.posts %}
+					{% if post.categories contains "referenzen" %}
+						{% include reference.html %}
+					{% endif %}
+				{% endfor %}
+			</dt>
+		</div>
 	</dd>
 </dl>
 
