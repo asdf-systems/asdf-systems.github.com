@@ -57,6 +57,9 @@
 			// which is necessary for the animation to work.
 			// With out this the classes are changed without the browser
 			// "noticing", hence no animation.
+			if(!$slider.hasClass('noscroll')) {
+				$('html, body').animate({scrollTop: $pageholder.offset().top-30}, 200);
+			}
 			setTimeout(donecb, 1);
 		}
 
