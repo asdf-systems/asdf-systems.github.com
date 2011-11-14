@@ -4,7 +4,7 @@ dl.accordion {
 		overflow: hidden;
 	}
 	> dt {
-		&:not(.active) + dd {
+		+ dd {
 			max-height: 0;
 		}
 		&.active + dd {

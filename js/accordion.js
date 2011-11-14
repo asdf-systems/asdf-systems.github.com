@@ -8,9 +8,18 @@
 	$('dl.accordion').each(function(elem) {
 		var $accordion = $(this);
 		var $headers = $($accordion.children('dt'));
-		if(!$accordion.hasClass('closed') && $headers.length > 0) {
-			$($headers[0]).addClass('active');
+
+		var openTargets = function() {
+			var targets = location.hash.split('#');
+			$headers.each(function() {
+				if($.inArray($(this).attr('id'), targets) != -1) {
+					$(this).addClass('active');
+					return;
+				}
+			})
 		}
+		openTargets();
+
 		$headers.click(function() {
 			if($(this).hasClass('active')) {
 				$(this).removeClass('active');

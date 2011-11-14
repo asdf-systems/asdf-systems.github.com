@@ -4,14 +4,14 @@ menu: portfolio
 corners: turquoise
 ---
 <dl id="portfolio" class="accordion">
-	<dt class="turquoise active">
+	<dt id="hardware" class="turquoise">
 		<div>Hardware</div>
 	</dt>
 	<dd>
 		<dl class="accordion">
 			{% for post in site.posts %}
 				{% if post.categories contains "hardware" %}
-					<dt class="turquoise">
+					<dt id="{{post.title || downcase}}" class="turquoise">
 						<div>{{post.title}}</div>
 					</dt>
 					{% include bigpost.html %}
@@ -19,14 +19,14 @@ corners: turquoise
 			{% endfor %}
 		</dl>
 	</dd>
-	<dt class="pink">
+	<dt id="software" class="pink">
 		<div>Software</div>
 	</dt>
 	<dd>
 		<dl class="accordion">
 			{% for post in site.posts %}
 				{% if post.categories contains "software" %}
-					<dt class="pink">
+					<dt id="{{post.title || downcase}}" class="pink">
 						<div>{{post.title}}</div>
 					</dt>
 					{% include bigpost.html %}
@@ -34,14 +34,14 @@ corners: turquoise
 			{% endfor %}
 		</dl>
 	</dd>
-	<dt class="blue">
+	<dt id="consulting" class="blue">
 		<div>Consulting</div>
 	</dt>
 	<dd>
 		<dl class="accordion">
 			{% for post in site.posts %}
 				{% if post.categories contains "consulting" %}
-					<dt class="blue">
+					<dt id="{{post.title || downcase}}" class="blue">
 						<div>{{post.title}}</div>
 					</dt>
 					{% include bigpost.html %}

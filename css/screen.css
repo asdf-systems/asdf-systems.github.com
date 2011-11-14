@@ -137,7 +137,7 @@ dl.accordion > dd {
   overflow: hidden;
 }
 /* line 7, ../sass/plugins/_accordion.scss */
-dl.accordion > dt:not(.active) + dd {
+dl.accordion > dt + dd {
   max-height: 0;
 }
 /* line 10, ../sass/plugins/_accordion.scss */
