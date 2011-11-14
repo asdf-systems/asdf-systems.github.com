@@ -29,38 +29,57 @@
 		}
 		setCounter(1);
 
-		var animate = function(fromRight) {
-			setCounter(activeIndex+1);
+		var updateButtons = function () {
+			$buttons.removeClass('disabled');
+			if(activeIndex+1 >= $pages.length) {
+				$buttons.filter('.next').addClass('disabled');
+			}
+			if(activeIndex <= 0) {
+				$buttons.filter('.prev').addClass('disabled');
+			}
+		}
+		updateButtons();
+
+		var move = function(direction, donecb) {
 			var $curpage = $($pageholder.find('> *'));
-			$curpage.addClass(fromRight?'left':'right');
-			setTimeout(function() {
-				var newplace = fromRight?'right':'left';
-				$curpage = $($pages[activeIndex]).addClass(newplace);
-				$pageholder.empty().append($curpage);
-				// This timeout effectively gives control to the browser
-				// which is necessary for the animation to work.
-				// With out this the classes are changed without the browser
-				// "noticing", hence no animation.
-				setTimeout(function() {
-					$curpage.addClass('active').removeClass(newplace);
-				}, 1);
-			}, 1000);
+			$curpage.removeClass('left right active').addClass(direction);
+			setTimeout(donecb, 1000);
+		}
+
+
+		var switchPage = function(idx, direction, donecb) {
+			var $newpage = $($pages[idx]);
+			$pageholder.empty().append($newpage.addClass(direction));
+			activeIndex = idx;
+			setCounter(idx+1);
+			updateButtons();
+			// This timeout effectively gives control to the browser
+			// which is necessary for the animation to work.
+			// With out this the classes are changed without the browser
+			// "noticing", hence no animation.
+			setTimeout(donecb, 1);
 		}
 
 		$($buttons.filter('.next')).click(function(elem) {
 			if(activeIndex+1 >= $pages.length){
 				return;
 			}
-			activeIndex++;
-			animate(true);
+			move('left', function() {
+				switchPage(activeIndex+1, 'right', function() {
+					move('active');
+				});
+			});
 		});
 
 		$($buttons.filter('.prev')).click(function(elem) {
 			if(activeIndex <= 0){
 				return;
 			}
-			activeIndex--;
-			animate(false);
+			move('right', function() {
+				switchPage(activeIndex-1, 'left', function() {
+					move('active');
+				});
+			});
 		});
 	});
 })(jQuery);
