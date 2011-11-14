@@ -4,7 +4,7 @@ menu: workshop
 corners: orange
 ---
 <dl id="werkstatt" class="accordion">
-	<dt class="active">
+	<dt id="werkstatt">
 		<div>Werkstatt</div>
 	</dt>
 	<dd>
@@ -23,14 +23,14 @@ corners: orange
 			</section>
 		</div>
 	</dd>
-	<dt>
+	<dt id="2010">
 		<div>2010</div>
 	</dt>
 	<dd>
 		<dl class="accordion">
 			{% for post in site.posts %}
 				{% if post.categories contains "werkstatt" and {{post.date | date: "%Y" }} == "2010" %}
-					<dt>
+					<dt id="{{post.keyword | downcase}}" {% if post.image == nil %}class="noimg"{% endif %}>
 						<div>{{post.title}}</div>
 					</dt>
 					{% include bigpost.html %}

@@ -2,6 +2,7 @@
 title: servoControl
 image: servocontrol.png
 category: hardware
+keyword: servocontrol
 ---
 Die ServoControl ist ein Komplettpaket aus Soft- und Hardware, um den Umgang mit den in der Filmbranche bekannten Animatronics zu erleichtern.
 

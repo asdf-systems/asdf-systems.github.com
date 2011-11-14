@@ -4,16 +4,16 @@ menu: about
 corners: orange
 ---
 <dl class="accordion">
-	<dt class="active">
+	<dt id="firmenprofil">
 		<div>
 			Firmenprofil
 		</div>
 	</dt>
 	<dd>
-		<dl id="firmenprofil"  class="accordion">
+		<dl class="accordion">
 			{% for post in site.posts %}
 				{% if post.categories contains "firmenprofil" %}
-					<dt>
+					<dt id="{{post.keyword | downcase}}" {% if post.image == nil %}class="noimg"{% endif %}>
 						<div>{{post.title}}</div>
 					</dt>
 					{% include bigpost.html %}
@@ -21,7 +21,7 @@ corners: orange
 			{% endfor %}
 		</dl>
 	</dd>
-	<dt>
+	<dt id="wir">
 		<div>Wir</div>
 	</dt>
 	<dd>

@@ -2,6 +2,7 @@
 title: syncSuite
 image: syncsuite.png
 category: software
+keyword: syncsuite
 ---
 Wenn an vielen gleichen Rechnern die gleiche Arbeit verrichtet werden muss, wie zum Beispiel die Installation einer neuen Software auf allen Workstations eines Büros, so kann Ihnen die syncSuite eine große Menge an Zeit und Nerven ersparen.
 

@@ -62,8 +62,24 @@ dl.accordion {
 						background-image: none !important;
 					}
 				}
+				// If there’s no image in the post, there’s
+				// no negative-margin-magic to worry about
+				&.noimg + dd {
+					margin-top: 0;
+					max-height: 0;
+					.slider {
+						.pages {
+							section:not(.page-0) {
+								padding-top: 0;
+							}
+						}
+					}
+				}
 			}
 			dd {
+				// Negative-margin-magic to make the post’s
+				// image appear underneath the semi-transaprent
+				// headebar
 				max-height: $accordion_header_height;
 				position: relative;
 				z-index: 0;

@@ -2,6 +2,7 @@
 title: Fernwartung
 image: fernwartung.png
 category: consulting
+keyword: fernwartung
 ---
 In vielen Situationen braucht man schnell Hilfe am Computer.
 

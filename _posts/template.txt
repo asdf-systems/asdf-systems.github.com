@@ -2,6 +2,7 @@
 title: Ueberschrift
 image: das_bild.png
 category: neuigkeiten, archiv, hardware, software, consulting oder werkstatt
+keyword: schlagwort_fuer_links
 ---
 Hier der Text hin.
 Zeilenumbrueche werden uebernommen.

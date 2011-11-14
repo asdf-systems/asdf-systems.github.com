@@ -2,6 +2,7 @@
 title: Ölrechner
 image: oelrechner.png
 category: werkstatt
+keyword: olrechner
 ---
 Bei diesem Projekt wollten wir überprüfen, ob es möglich ist mit mid-end Computerhardware die selben Leistungen zu erzielen, wie mit spezialisierter Clusterhardware. Dies wollten wir durch starkes Übertakten und ein ungewöhnliches Kühlprinzip erreichen.
 

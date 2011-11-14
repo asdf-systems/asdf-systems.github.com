@@ -1,6 +1,7 @@
 ---
 title: So sehen wir uns
 category: firmenprofil
+keyword: selbstbild
 ---
 Wir verstehen uns als Dienstleister für individuelle Unternehmenslösungen.
 Wir analysieren zusammen mit unseren Kunden Arbeitsprozesse im Unternehmen und erarbeiten Konzepte, diese mit Soft- und Hardware zu unterstützen und zu optimieren.

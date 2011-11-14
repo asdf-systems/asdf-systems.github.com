@@ -2,6 +2,7 @@
 title: webEngine
 image: webengine.png
 category: software
+keyword: webengine
 ---
 Die Webengine ist unser firmen-internes Tool zur effizienten und präzisen Umsetzung von Webauftritten. Sie wurde mit dem Ziel entworfen, eine möglichst gute Zusammenarbeit mit Grafikern und Designern zu ermöglichen und trotzdem einen unversierten Nutzer in die Lage zu versetzen, selbst die Inhalte seiner Webpräsenz zu aktualisieren.
 

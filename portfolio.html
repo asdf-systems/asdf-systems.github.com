@@ -11,7 +11,7 @@ corners: turquoise
 		<dl class="accordion">
 			{% for post in site.posts %}
 				{% if post.categories contains "hardware" %}
-					<dt id="{{post.title || downcase}}" class="turquoise">
+					<dt id="{{post.keyword | downcase}}" class="turquoise {% if post.image == nil %}noimg{% endif %}">
 						<div>{{post.title}}</div>
 					</dt>
 					{% include bigpost.html %}
@@ -26,7 +26,7 @@ corners: turquoise
 		<dl class="accordion">
 			{% for post in site.posts %}
 				{% if post.categories contains "software" %}
-					<dt id="{{post.title || downcase}}" class="pink">
+					<dt id="{{post.keyword | downcase}}" class="pink {% if post.image == nil %}noimg{% endif %}">
 						<div>{{post.title}}</div>
 					</dt>
 					{% include bigpost.html %}
@@ -41,7 +41,7 @@ corners: turquoise
 		<dl class="accordion">
 			{% for post in site.posts %}
 				{% if post.categories contains "consulting" %}
-					<dt id="{{post.title || downcase}}" class="blue">
+					<dt id="{{post.keyword | downcase}}" class="blue {% if post.image == nil %}noimg{% endif %}">
 						<div>{{post.title}}</div>
 					</dt>
 					{% include bigpost.html %}

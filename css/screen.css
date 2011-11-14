@@ -465,7 +465,16 @@ dl.accordion dd > dl.accordion dt.active:after, dl.accordion dd > dl.accordion d
   background-color: transparent !important;
   background-image: none !important;
 }
-/* line 66, ../sass/page_elements/_accordion.scss */
+/* line 67, ../sass/page_elements/_accordion.scss */
+dl.accordion dd > dl.accordion dt.noimg + dd {
+  margin-top: 0;
+  max-height: 0;
+}
+/* line 72, ../sass/page_elements/_accordion.scss */
+dl.accordion dd > dl.accordion dt.noimg + dd .slider .pages section:not(.page-0) {
+  padding-top: 0;
+}
+/* line 79, ../sass/page_elements/_accordion.scss */
 dl.accordion dd > dl.accordion dd {
   max-height: 31px;
   position: relative;
@@ -473,11 +482,11 @@ dl.accordion dd > dl.accordion dd {
   margin-top: -31px;
   margin-bottom: 5px;
 }
-/* line 72, ../sass/page_elements/_accordion.scss */
+/* line 88, ../sass/page_elements/_accordion.scss */
 dl.accordion dd > dl.accordion dd .slider {
   margin-bottom: 0;
 }
-/* line 75, ../sass/page_elements/_accordion.scss */
+/* line 91, ../sass/page_elements/_accordion.scss */
 dl.accordion dd > dl.accordion dd .slider .pages section:not(.page-0) {
   padding-top: 31px;
 }
