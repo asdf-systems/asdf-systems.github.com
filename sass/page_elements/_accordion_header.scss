@@ -32,3 +32,6 @@
 		@include box-active-style($gradient_lightblue, $gradient_darkblue);
 	}
 }
+> dd {
+	width: 100%;
+}

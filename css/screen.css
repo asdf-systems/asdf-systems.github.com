@@ -793,6 +793,10 @@ body.news dl.accordion > dt.blue:hover:after, body.news dl.accordion > dt.blue.a
   background-image: linear-gradient(left, #1d4163, #3a82c5, #1d4163);
   content: '';
 }
+/* line 35, ../sass/page_elements/_accordion_header.scss */
+body.news dl.accordion > dd {
+  width: 100%;
+}
 /* line 1, ../sass/page_elements/_accordion_l2_header.scss */
 body.news dl.accordion > dd dl.accordion dt {
   position: relative;
@@ -845,7 +849,7 @@ body.news dl.accordion > dd dl.accordion dd {
   max-height: 31px;
   position: relative;
   z-index: 0;
-  margin-top: -31px;
+  margin-top: -32px;
   margin-bottom: 5px;
 }
 /* line 54, ../sass/page_elements/_accordion_l2_header.scss */
@@ -952,6 +956,10 @@ body.portfolio dl.accordion > dt.blue:hover:after, body.portfolio dl.accordion >
   background-image: linear-gradient(left, #1d4163, #3a82c5, #1d4163);
   content: '';
 }
+/* line 35, ../sass/page_elements/_accordion_header.scss */
+body.portfolio dl.accordion > dd {
+  width: 100%;
+}
 /* line 1, ../sass/page_elements/_accordion_l2_header.scss */
 body.portfolio dl.accordion > dd dl.accordion dt {
   position: relative;
@@ -1004,7 +1012,7 @@ body.portfolio dl.accordion > dd dl.accordion dd {
   max-height: 31px;
   position: relative;
   z-index: 0;
-  margin-top: -31px;
+  margin-top: -32px;
   margin-bottom: 5px;
 }
 /* line 54, ../sass/page_elements/_accordion_l2_header.scss */
@@ -1111,6 +1119,10 @@ body.workshop dl.accordion > dt.blue:hover:after, body.workshop dl.accordion > d
   background-image: linear-gradient(left, #1d4163, #3a82c5, #1d4163);
   content: '';
 }
+/* line 35, ../sass/page_elements/_accordion_header.scss */
+body.workshop dl.accordion > dd {
+  width: 100%;
+}
 /* line 1, ../sass/page_elements/_accordion_l2_header.scss */
 body.workshop dl.accordion > dd dl.accordion dt {
   position: relative;
@@ -1163,7 +1175,7 @@ body.workshop dl.accordion > dd dl.accordion dd {
   max-height: 31px;
   position: relative;
   z-index: 0;
-  margin-top: -31px;
+  margin-top: -32px;
   margin-bottom: 5px;
 }
 /* line 54, ../sass/page_elements/_accordion_l2_header.scss */
@@ -1270,6 +1282,10 @@ body.about dl.accordion > dt.blue:hover:after, body.about dl.accordion > dt.blue
   background-image: linear-gradient(left, #1d4163, #3a82c5, #1d4163);
   content: '';
 }
+/* line 35, ../sass/page_elements/_accordion_header.scss */
+body.about dl.accordion > dd {
+  width: 100%;
+}
 /* line 1, ../sass/page_elements/_accordion_l2_header.scss */
 body.about dl.accordion dt#firmenprofil + dd dl.accordion dt, body.about dl.accordion dt#wir + dd dl.accordion dt {
   position: relative;
@@ -1322,7 +1338,7 @@ body.about dl.accordion dt#firmenprofil + dd dl.accordion dd, body.about dl.acco
   max-height: 31px;
   position: relative;
   z-index: 0;
-  margin-top: -31px;
+  margin-top: -32px;
   margin-bottom: 5px;
 }
 /* line 54, ../sass/page_elements/_accordion_l2_header.scss */
