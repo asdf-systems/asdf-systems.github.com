@@ -2,7 +2,8 @@
 title: NYX Cosmetics
 category: referenzen
 location: Düsseldorf
-marker: software
+markers:
+- software
 link: http://www.nyx-cosmetics.de
 keyword: nyx
 ---

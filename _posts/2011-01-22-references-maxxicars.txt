@@ -2,7 +2,8 @@
 title: Maxxicars
 category: referenzen
 location: Dresden
-marker: consulting
+markers:
+- consulting
 link: http://www.maxxicars-dresden.de
 keyword: maxxi
 ---

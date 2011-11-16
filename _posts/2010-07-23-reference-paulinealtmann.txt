@@ -2,7 +2,8 @@
 title: Pauline Altmann
 category: referenzen
 location: Berlin
-marker: software
+markers:
+- software
 link: http://www.paulinealtmann.de
 keyword: paulinealtmann
 ---

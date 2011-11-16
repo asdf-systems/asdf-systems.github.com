@@ -11,10 +11,11 @@ body.about {
 			dl.accordion {
 				padding: $padding_vertical $padding_horizontal;
 				dt {
-					@include headline-text-style;
+					// @include headline-text-style;
+					@include opener-text-style;
 					background: none !important;
 					border: 0;
-					margin-top: $padding-vertical;
+					// margin-top: $padding-vertical;
 					.name {
 						color: $ci_white;
 					}
@@ -38,30 +39,70 @@ body.about {
 						}
 					}
 					&:before {
-						display: block;
-						float: right;
-						content: '';
-						width: 6px;
-						height: 8px;
-						margin: 0;
-						@include opacity(1.0);
+						display: none;
 					}
-					&.software:before {
+					div.marker {
+						display: block;
+						@include opacity(0.2);
+						width: 6px;
+						height: 9px;
+						float: right;
+						padding: 0;
+						margin: 0 $spacing;
+					}
+					div.marker.software {
 							background-image: url('/img/minilogo_pink.png');
 					}
-					&.hardware:before {
-							background-image: url('/img/minilogo_turqiouse.png');
+					div.marker.hardware {
+							background-image: url('/img/minilogo_turquoise.png');
 					}
-					&.consulting:before {
+					div.marker.consulting {
 							background-image: url('/img/minilogo_blue.png');
+					}
+					&.software > div.software {
+						@include opacity(1.0);
+					}
+					&.hardware > div.hardware {
+						@include opacity(1.0);
+					}
+					&.consulting > div.consulting {
+						@include opacity(1.0);
 					}
 				}
 				dd {
 					@include box-active-style;
-					@include opener-text-style;
+					@include small-text-style;
 					width: 80%;
 					&:after {
 						margin-top: 0;
+					}
+					div.projects {
+						div {
+							display: inline-block;
+							margin-right: $spacing;
+							text-align: center;
+							> a {
+								&:before {
+									display: none;
+								}
+								> img {
+									display: block;
+									width: $references_img_width;
+									height: $references_img_height;
+									border: 4px solid transparent;
+									margin-top: $padding_vertical;
+								}
+							}
+							&.software img {
+								border-color: $ci_pink;
+							}
+							&.hardware img {
+								border-color: $ci_turquoise;
+							}
+							&.consulting img {
+								border-color: $ci_blue;
+							}
+						}
 					}
 				}
 			}

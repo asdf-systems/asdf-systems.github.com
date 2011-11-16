@@ -2,7 +2,8 @@
 title: LEDA Berlin
 category: referenzen
 location: Berlin
-marker: software
+markers:
+- software
 link: http://www.leda-berlin.de
 keyword: leda
 ---

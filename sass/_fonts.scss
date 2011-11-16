@@ -25,3 +25,10 @@
 	letter-spacing: $opener_letter_spacing;
 	line-height: $opener_line_height;
 }
+
+@mixin small-text-style {
+	font-family: "Joey";
+	font-size: $small_size;
+	letter-spacing: $small_letter_spacing;
+	line-height: $small_line_height;
+}

@@ -1,9 +1,29 @@
-<dt id="{{post.keyword}}" class="{{post.marker}}"><span class="name">{{post.title}}</span><span class="location">{{post.location}}</span></dt>
+<dt id="{{post.keyword}}" class="{% for marker in post.markers %}{{marker}} {% endfor %}">
+	<span class="name">{{post.title}}</span>
+	<span class="location">{{post.location}}</span>
+	<div class="software marker"></div>
+	<div class="hardware marker"></div>
+	<div class="consulting marker"></div>
+</dt>
 <dd>
 	<aside>
 		<a href="{{post.link}}" target="_blank">{{post.link}}</a>
 	</aside>
 	<div>
 		{{ post.content | newline_to_br | markdownify}}
+	</div>
+	<div class="projects">
+		{% for project in post.projects %}
+			{% for subpost in site.posts %}
+				{% if (subpost.keyword == project) and (subpost.category == "software" or subpost.category == "hardware" or subpost.category == "consulting") %}
+					<div class="{{subpost.category}}">
+						<a href="/portfolio.html#{{subpost.category}}#{{subpost.keyword}}">
+							<img src="/img/{{page.menu}}/references/{{subpost.keyword}}.png">
+							{{subpost.title}}
+						</a>
+					</div>
+				{% endif %}
+			{% endfor %}
+		{% endfor %}
 	</div>
 </dd>
