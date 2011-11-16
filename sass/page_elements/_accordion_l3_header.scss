@@ -1,0 +1,12 @@
+dt {
+	@include opener-text-style;
+	background: none !important;
+	border: 0;
+	color: $ci_white;
+	&.active, &:hover {
+		color: $ci_orange;
+	}
+	&:before {
+		display: none;
+	}
+}

@@ -9,8 +9,8 @@
 		{{ post.content | newline_to_br | markdownify | replace: "<slide />", "</section><section>" }}
 	</div>
 	{% if post.link != nil %}
-	<aside>
-		<a href="{{post.link}}">Weiterlesen</a>
-	</aside>
+		<aside>
+			<a href="{{post.link}}">Weiterlesen</a>
+		</aside>
 	{% endif %}
 </article>

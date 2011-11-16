@@ -2,5 +2,10 @@
 > dd {
 	dl.accordion {
 		@import "page_elements/_accordion_l2_header.scss";
+		> dd {
+			dl.accordion {
+				@import "page_elements/_accordion_l3_header.scss";
+			}
+		}
 	}
 }

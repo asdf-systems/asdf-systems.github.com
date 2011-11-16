@@ -1,0 +1,23 @@
+body.service {
+	dl.accordion {
+		@import "page_elements/_accordion_header.scss";
+		dt + dd dl.accordion {
+			@import "page_elements/_accordion_l2_header.scss";
+			dt + dd {
+				@include box-style;
+				 dl.accordion {
+					@import "page_elements/_accordion_l3_header.scss";
+					dd {
+						background-color: transparent !important;
+						background-image: none !important;
+						border: 0;
+						@include small-text-style;
+						div {
+							padding: $padding_vertical $padding_horizontal;
+						}
+					}
+				}
+			}
+		}
+	}
+}

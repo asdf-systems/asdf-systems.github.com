@@ -3,14 +3,105 @@ layout: main
 menu: service
 corners: orange
 ---
-<dl id="support" class="accordion">
-	{% for post in site.posts %}
-		{% if post.categories contains "support" %}
-			<dt class="active">
-				<div>{{post.title}}</div>
+<dl class="accordion">
+	<dt id="faq">
+		<div>
+			FAQ
+		</div>
+	</dt>
+	<dd>
+		<dl class="accordion">
+			<dt>
+				<div id="asdf">asdf</div>
 			</dt>
-			{% include bigpost.html %}
-		{% endif %}
-	{% endfor %}
+			<dd>
+				<dl class="accordion">
+					{% for post in site.posts %}
+						{% if post.categories contains "faq" and post.categories contains "asdf" %}
+							<dt>
+								<div>{{post.title}}</div>
+							</dt>
+							<dd>
+								<div>
+									{{ post.content | newline_to_br | markdownify }}
+								</div>
+							</dd>
+						{% endif %}
+					{% endfor %}
+				</dl>
+			</dd>
+			<dt>
+				<div id="jobs">Jobs</div>
+			</dt>
+			<dd>
+				<dl class="accordion">
+					{% for post in site.posts %}
+						{% if post.categories contains "faq" and post.categories contains "jobs" %}
+							<dt>
+								<div>{{post.title}}</div>
+							</dt>
+							<dd>
+								<div>
+									{{ post.content | newline_to_br | markdownify }}
+								</div>
+							</dd>
+						{% endif %}
+					{% endfor %}
+				</dl>
+			</dd>
+			<dt>
+				<div id="syncsuite">syncSuite</div>
+			</dt>
+			<dd>
+				<dl class="accordion">
+					{% for post in site.posts %}
+						{% if post.categories contains "faq" and post.categories contains "syncsuite" %}
+							<dt>
+								<div>{{post.title}}</div>
+							</dt>
+							<dd>
+								<div>
+									{{ post.content | newline_to_br | markdownify }}
+								</div>
+							</dd>
+						{% endif %}
+					{% endfor %}
+				</dl>
+			</dd>
+		</dl>
+	</dd>
+	<dt id="downloads">
+		<div>Downloads</div>
+	</dt>
+	<dd>
+		<dl class="accordion">
+			<dt>
+				<div>Wallpaper</div>
+			</dt>
+			<dd>
+				<div>
+					{% for post in site.posts %}
+						{% if post.categories contains "downloads" and post.categories contains "wallpaper" %}
+							{% include download.html %}
+						{% endif %}
+					{% endfor %}
+				</div>
+			</dd>
+		</dl>
+	</dd>
+	<dt id="links">
+		<div>Links</div>
+	</dt>
+	<dd>
+		<div>
+			<dl class="accordion">
+				{% for post in site.posts %}
+					{% if post.categories contains "referenzen" %}
+						<!-- {% include reference.html %} -->
+					{% endif %}
+				{% endfor %}
+			</dt>
+		</div>
+	</dd>
 </dl>
 

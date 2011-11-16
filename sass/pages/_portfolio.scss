@@ -1,5 +1,8 @@
 body.portfolio {
 	dl.accordion {
 		@import "page_elements/_accordion_default.scss";
+		dd > dl.accordion {
+			@import "page_elements/_accordion_l2_transparent_header.scss";
+		}
 	}
 }

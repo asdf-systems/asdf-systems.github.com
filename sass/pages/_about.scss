@@ -10,12 +10,8 @@ body.about {
 			@include box-style;
 			dl.accordion {
 				padding: $padding_vertical $padding_horizontal;
+				@import "page_elements/_accordion_l3_header.scss";
 				dt {
-					// @include headline-text-style;
-					@include opener-text-style;
-					background: none !important;
-					border: 0;
-					// margin-top: $padding-vertical;
 					.name {
 						color: $ci_white;
 					}
