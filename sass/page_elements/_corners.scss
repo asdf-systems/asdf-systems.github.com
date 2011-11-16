@@ -1,19 +1,6 @@
 @mixin corner_common {
 	position: absolute;
-	width: 0;
-	height: 0;
-	&.orange {
-		border-color: $ci_orange;
-	}
-	&.blue {
-		border-color: $ci_blue;
-	}
-	&.turquoise {
-		border-color: $ci_turquoise;
-	}
-	&.pink {
-		border-color: $ci_pink;
-	}
+	background-image: url('/img/corners.png');
 	@media screen and (max-width: 1150px) {
 		display: none;
 	}
@@ -23,16 +10,38 @@
 	@include corner_common;
 	top: 0%;
 	left: 0%;
-	border-right-color: transparent !important;
-	border-style: solid;
-	border-width: $corner_height ($corner_width_wide - $corner_width_narrow) 0 $corner_width_narrow;
+	width: $corner_top_width;
+	height: $corner_top_height;
+	&.orange {
+		background-position: -1*$corner_orange_index*$corner_sprite_width 0;
+	}
+	&.turquoise {
+		background-position: -1*$corner_turquoise_index*$corner_sprite_width 0;
+	}
+	&.blue {
+		background-position: -1*$corner_blue_index*$corner_sprite_width 0;
+	}
+	&.pink {
+		background-position: -1*$corner_pink_index*$corner_sprite_width 0;
+	}
 }
 
 #corner_bottom {
 	@include corner_common;
 	bottom: 0%;
 	right: 0%;
-	border-left-color: transparent !important;
-	border-style: solid;
-	border-width: 0 $corner_width_narrow $corner_height ($corner_width_wide - $corner_width_narrow);
+	width: $corner_bottom_width;
+	height: $corner_bottom_height;
+	&.orange {
+		background-position: -1*$corner_orange_index*$corner_sprite_width -1*$corner_top_height;
+	}
+	&.turquoise {
+		background-position: -1*$corner_turquoise_index*$corner_sprite_width -1*$corner_top_height;
+	}
+	&.blue {
+		background-position: -1*$corner_blue_index*$corner_sprite_width -1*$corner_top_height;
+	}
+	&.pink {
+		background-position: -1*$corner_pink_index*$corner_sprite_width -1*$corner_top_height;
+	}
 }

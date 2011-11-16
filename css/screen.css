@@ -145,72 +145,68 @@ dl.accordion > dt.active + dd {
   max-height: 2999px !important;
 }
 
-/* line 22, ../sass/page_elements/_corners.scss */
+/* line 9, ../sass/page_elements/_corners.scss */
 #corner_top {
   position: absolute;
-  width: 0;
-  height: 0;
+  background-image: url("/img/corners.png");
   top: 0%;
   left: 0%;
-  border-right-color: transparent !important;
-  border-style: solid;
-  border-width: 510px 80px 0 50px;
-}
-/* line 5, ../sass/page_elements/_corners.scss */
-#corner_top.orange {
-  border-color: #fba22b;
-}
-/* line 8, ../sass/page_elements/_corners.scss */
-#corner_top.blue {
-  border-color: #3475b2;
-}
-/* line 11, ../sass/page_elements/_corners.scss */
-#corner_top.turquoise {
-  border-color: #008692;
-}
-/* line 14, ../sass/page_elements/_corners.scss */
-#corner_top.pink {
-  border-color: #a9749e;
+  width: 129px;
+  height: 505px;
 }
 @media screen and (max-width: 1150px) {
-  /* line 22, ../sass/page_elements/_corners.scss */
+  /* line 9, ../sass/page_elements/_corners.scss */
   #corner_top {
     display: none;
   }
 }
+/* line 15, ../sass/page_elements/_corners.scss */
+#corner_top.orange {
+  background-position: 0px 0;
+}
+/* line 18, ../sass/page_elements/_corners.scss */
+#corner_top.turquoise {
+  background-position: -130px 0;
+}
+/* line 21, ../sass/page_elements/_corners.scss */
+#corner_top.blue {
+  background-position: -260px 0;
+}
+/* line 24, ../sass/page_elements/_corners.scss */
+#corner_top.pink {
+  background-position: -390px 0;
+}
 
-/* line 31, ../sass/page_elements/_corners.scss */
+/* line 29, ../sass/page_elements/_corners.scss */
 #corner_bottom {
   position: absolute;
-  width: 0;
-  height: 0;
+  background-image: url("/img/corners.png");
   bottom: 0%;
   right: 0%;
-  border-left-color: transparent !important;
-  border-style: solid;
-  border-width: 0 50px 510px 80px;
-}
-/* line 5, ../sass/page_elements/_corners.scss */
-#corner_bottom.orange {
-  border-color: #fba22b;
-}
-/* line 8, ../sass/page_elements/_corners.scss */
-#corner_bottom.blue {
-  border-color: #3475b2;
-}
-/* line 11, ../sass/page_elements/_corners.scss */
-#corner_bottom.turquoise {
-  border-color: #008692;
-}
-/* line 14, ../sass/page_elements/_corners.scss */
-#corner_bottom.pink {
-  border-color: #a9749e;
+  width: 95px;
+  height: 276px;
 }
 @media screen and (max-width: 1150px) {
-  /* line 31, ../sass/page_elements/_corners.scss */
+  /* line 29, ../sass/page_elements/_corners.scss */
   #corner_bottom {
     display: none;
   }
+}
+/* line 35, ../sass/page_elements/_corners.scss */
+#corner_bottom.orange {
+  background-position: 0px -505px;
+}
+/* line 38, ../sass/page_elements/_corners.scss */
+#corner_bottom.turquoise {
+  background-position: -130px -505px;
+}
+/* line 41, ../sass/page_elements/_corners.scss */
+#corner_bottom.blue {
+  background-position: -260px -505px;
+}
+/* line 44, ../sass/page_elements/_corners.scss */
+#corner_bottom.pink {
+  background-position: -390px -505px;
 }
 
 /* line 22, ../sass/page_elements/_bars.scss */

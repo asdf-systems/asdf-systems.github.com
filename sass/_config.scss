@@ -14,9 +14,15 @@ $ci_turquoise: rgba(#008692, 1.0);
 $ci_pink: rgba(#a9749e, 1.0);
 
 // corner thingys
-$corner_height: 510px;
-$corner_width_wide: 130px;
-$corner_width_narrow: 50px;
+$corner_top_height: 505px;
+$corner_top_width: 129px;
+$corner_bottom_height: 276px;
+$corner_bottom_width: 95px;
+$corner_sprite_width: $corner_top_width + 1px;
+$corner_orange_index: 0;
+$corner_turquoise_index: 1;
+$corner_blue_index: 2;
+$corner_pink_index: 3;
 
 // gradients / highlights
 $gradient_lightorange: lighten($ci_orange, 5%);
