@@ -435,8 +435,9 @@ article.link:after {
   background-image: -o-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
   background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
   background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  margin-bottom: 0;
 }
-/* line 5, ../sass/page_elements/_slider.scss */
+/* line 6, ../sass/page_elements/_slider.scss */
 .slider .pages section {
   font-family: "Ubuntu";
   font-weight: 400;
@@ -444,33 +445,33 @@ article.link:after {
   letter-spacing: 0.025em;
   line-height: 26px;
 }
-/* line 7, ../sass/page_elements/_slider.scss */
+/* line 8, ../sass/page_elements/_slider.scss */
 .slider .pages section.page-0 {
   font-family: "Joey";
   font-size: 16px;
   letter-spacing: 0.025em;
   line-height: 26px;
 }
-/* line 10, ../sass/page_elements/_slider.scss */
+/* line 11, ../sass/page_elements/_slider.scss */
 .slider .pages section img {
   width: 100%;
   max-width: 720px;
   display: block;
   margin: 0 auto;
 }
-/* line 16, ../sass/page_elements/_slider.scss */
+/* line 17, ../sass/page_elements/_slider.scss */
 .slider .pages section div {
   padding: 10px 20px;
 }
-/* line 17, ../sass/page_elements/_slider.scss */
+/* line 18, ../sass/page_elements/_slider.scss */
 .slider .pages section div > br:first-child {
   display: none;
 }
-/* line 24, ../sass/page_elements/_slider.scss */
+/* line 25, ../sass/page_elements/_slider.scss */
 .slider nav {
   *zoom: 1;
 }
-/* line 25, ../sass/page_elements/_slider.scss */
+/* line 26, ../sass/page_elements/_slider.scss */
 .slider nav div {
   text-align: center;
   -moz-transition-property: opacity;
@@ -490,7 +491,7 @@ article.link:after {
   -o-transition-delay: 0;
   transition-delay: 0;
 }
-/* line 29, ../sass/page_elements/_slider.scss */
+/* line 30, ../sass/page_elements/_slider.scss */
 .slider nav .next, .slider nav .prev {
   font-family: "Joey";
   font-size: 18px;
@@ -502,41 +503,41 @@ article.link:after {
   border-color: #fba22b;
   padding: 0 20px;
 }
-/* line 36, ../sass/page_elements/_slider.scss */
+/* line 37, ../sass/page_elements/_slider.scss */
 .slider nav .next.disabled, .slider nav .prev.disabled {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-/* line 40, ../sass/page_elements/_slider.scss */
+/* line 41, ../sass/page_elements/_slider.scss */
 .slider nav .next {
   border-right-width: 3px;
   float: right;
 }
-/* line 43, ../sass/page_elements/_slider.scss */
+/* line 44, ../sass/page_elements/_slider.scss */
 .slider nav .next:before {
   content: '→';
 }
-/* line 47, ../sass/page_elements/_slider.scss */
+/* line 48, ../sass/page_elements/_slider.scss */
 .slider nav .prev {
   border-left-width: 3px;
   float: left;
 }
-/* line 50, ../sass/page_elements/_slider.scss */
+/* line 51, ../sass/page_elements/_slider.scss */
 .slider nav .prev:before {
   content: '←';
 }
-/* line 54, ../sass/page_elements/_slider.scss */
+/* line 55, ../sass/page_elements/_slider.scss */
 .slider nav .page {
   width: 200px;
   margin: 0 auto;
 }
-/* line 57, ../sass/page_elements/_slider.scss */
+/* line 58, ../sass/page_elements/_slider.scss */
 .slider nav .page span {
   margin: 0 2px;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
-/* line 60, ../sass/page_elements/_slider.scss */
+/* line 61, ../sass/page_elements/_slider.scss */
 .slider nav .page span.active {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
@@ -715,9 +716,10 @@ dl.singlepage > dd dl.accordion dt.active:after, dl.singlepage > dd dl.accordion
 /* line 30, ../sass/page_elements/_accordion_l2_header.scss */
 dl.singlepage > dd dl.accordion dt.noimg + dd {
   margin-top: 0;
+  margin-bottom: 5px;
   max-height: 0;
 }
-/* line 35, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 36, ../sass/page_elements/_accordion_l2_header.scss */
 dl.singlepage > dd dl.accordion dt.noimg + dd .slider .pages section:not(.page-0) {
   padding-top: 0;
 }
@@ -1102,9 +1104,10 @@ body.news dl.accordion > dd dl.accordion dt.active:after, body.news dl.accordion
 /* line 30, ../sass/page_elements/_accordion_l2_header.scss */
 body.news dl.accordion > dd dl.accordion dt.noimg + dd {
   margin-top: 0;
+  margin-bottom: 5px;
   max-height: 0;
 }
-/* line 35, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 36, ../sass/page_elements/_accordion_l2_header.scss */
 body.news dl.accordion > dd dl.accordion dt.noimg + dd .slider .pages section:not(.page-0) {
   padding-top: 0;
 }
@@ -1263,9 +1266,10 @@ body.portfolio dl.accordion > dd dl.accordion dt.active:after, body.portfolio dl
 /* line 30, ../sass/page_elements/_accordion_l2_header.scss */
 body.portfolio dl.accordion > dd dl.accordion dt.noimg + dd {
   margin-top: 0;
+  margin-bottom: 5px;
   max-height: 0;
 }
-/* line 35, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 36, ../sass/page_elements/_accordion_l2_header.scss */
 body.portfolio dl.accordion > dd dl.accordion dt.noimg + dd .slider .pages section:not(.page-0) {
   padding-top: 0;
 }
@@ -1444,9 +1448,10 @@ body.workshop dl.accordion > dd dl.accordion dt.active:after, body.workshop dl.a
 /* line 30, ../sass/page_elements/_accordion_l2_header.scss */
 body.workshop dl.accordion > dd dl.accordion dt.noimg + dd {
   margin-top: 0;
+  margin-bottom: 5px;
   max-height: 0;
 }
-/* line 35, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 36, ../sass/page_elements/_accordion_l2_header.scss */
 body.workshop dl.accordion > dd dl.accordion dt.noimg + dd .slider .pages section:not(.page-0) {
   padding-top: 0;
 }
@@ -1625,9 +1630,10 @@ body.about dl.accordion dt#firmenprofil + dd dl.accordion dt.active:after, body.
 /* line 30, ../sass/page_elements/_accordion_l2_header.scss */
 body.about dl.accordion dt#firmenprofil + dd dl.accordion dt.noimg + dd, body.about dl.accordion dt#wir + dd dl.accordion dt.noimg + dd {
   margin-top: 0;
+  margin-bottom: 5px;
   max-height: 0;
 }
-/* line 35, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 36, ../sass/page_elements/_accordion_l2_header.scss */
 body.about dl.accordion dt#firmenprofil + dd dl.accordion dt.noimg + dd .slider .pages section:not(.page-0), body.about dl.accordion dt#wir + dd dl.accordion dt.noimg + dd .slider .pages section:not(.page-0) {
   padding-top: 0;
 }
@@ -1939,9 +1945,10 @@ body.service dl.accordion dt + dd dl.accordion dt.active:after, body.service dl.
 /* line 30, ../sass/page_elements/_accordion_l2_header.scss */
 body.service dl.accordion dt + dd dl.accordion dt.noimg + dd {
   margin-top: 0;
+  margin-bottom: 5px;
   max-height: 0;
 }
-/* line 35, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 36, ../sass/page_elements/_accordion_l2_header.scss */
 body.service dl.accordion dt + dd dl.accordion dt.noimg + dd .slider .pages section:not(.page-0) {
   padding-top: 0;
 }

@@ -29,6 +29,7 @@ dt {
 	// a smallpost, there’s no negative-margin-magic to worry about
 	&.noimg + dd {
 		margin-top: 0;
+		margin-bottom: $spacing;
 		max-height: 0;
 		.slider {
 			.pages {

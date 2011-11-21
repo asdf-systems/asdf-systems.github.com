@@ -1,5 +1,6 @@
 .slider {
 	@include box-style;
+	margin-bottom: 0;
 	.pages {
 		// height: 650px;
 		section {
