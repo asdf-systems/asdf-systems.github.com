@@ -1,15 +1,6 @@
 ---
-layout: main
+layout: singlepage
 menu: contact
 corners: orange
+filter: kontakt
 ---
-<dl id="kontakt" class="accordion">
-	{% for post in site.posts %}
-		{% if post.categories contains "kontakt" %}
-			<dt class="active">
-				<div>{{post.title}}</div>
-			</dt>
-			{% include bigpost.html %}
-		{% endif %}
-	{% endfor %}
-</dl>

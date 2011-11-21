@@ -1,0 +1,22 @@
+---
+layout: main
+---
+<dl class="accordion singlepage">
+	{% for post in site.posts %}
+		{% if post.categories contains page.filter %}
+			<dt id="{{post.title || downcase}}" class="active">
+				<div>{{post.title}}</div>
+			</dt>
+			<dd>
+				<div>
+					{% if post.raw %}
+						{{ post.content | markdownify }}
+					{% else %}
+						{{ post.content | newline_to_br | markdownify }}
+					{% endif %}
+				</div>
+			</dd>
+		{% endif %}
+	{% endfor %}
+</dl>
+

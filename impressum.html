@@ -1,16 +1,6 @@
 ---
-layout: main
+layout: singlepage
 menu: impressum
 corners: orange
+filter: impressum
 ---
-<dl id="impressum" class="accordion">
-	{% for post in site.posts %}
-		{% if post.categories contains "impressum" %}
-			<dt class="active">
-				<div>{{post.title}}</div>
-			</dt>
-			{% include bigpost.html %}
-		{% endif %}
-	{% endfor %}
-</dl>
-

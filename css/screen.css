@@ -579,6 +579,184 @@ article.link:after {
   line-height: 26px;
 }
 
+/* line 1, ../sass/page_elements/_accordion_header.scss */
+dl.singlepage > dt {
+  z-index: 900;
+  font-family: "Joey";
+  font-size: 18px;
+  letter-spacing: 0.025em;
+  line-height: 1em;
+  margin-bottom: 0;
+  font-size: 14px;
+  letter-spacing: 0.025em;
+  line-height: 31px;
+  margin-bottom: 5px;
+  border-top: 1px solid #2d2c29;
+  border-bottom: 1px solid #181817;
+  background-color: #232320;
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #1c1c19), color-stop(50%, #232320), color-stop(100%, #1c1c19));
+  background-image: -webkit-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -moz-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -o-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+}
+/* line 8, ../sass/page_elements/_accordion_header.scss */
+dl.singlepage > dt > div {
+  padding: 0 20px;
+}
+/* line 12, ../sass/page_elements/_accordion_header.scss */
+dl.singlepage > dt:before {
+  font-size: 22px;
+  margin-right: 20px;
+  float: right;
+  content: '↓';
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+}
+/* line 19, ../sass/page_elements/_accordion_header.scss */
+dl.singlepage > dt.active:before {
+  content: '↑';
+}
+/* line 12, ../sass/page_elements/_bars.scss */
+dl.singlepage > dt:hover:after, dl.singlepage > dt.active:after {
+  display: block;
+  margin-top: -3px;
+  height: 3px;
+  background-color: #fbad44;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #bc6d04), color-stop(50%, #fbad44), color-stop(100%, #bc6d04));
+  background-image: -webkit-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: -moz-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: -o-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: -ms-linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  background-image: linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
+  content: '';
+}
+/* line 12, ../sass/page_elements/_bars.scss */
+dl.singlepage > dt.turquoise:hover:after, dl.singlepage > dt.turquoise.active:after {
+  display: block;
+  margin-top: -3px;
+  height: 3px;
+  background-color: #009dab;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #00282c), color-stop(50%, #009dab), color-stop(100%, #00282c));
+  background-image: -webkit-linear-gradient(left, #00282c, #009dab, #00282c);
+  background-image: -moz-linear-gradient(left, #00282c, #009dab, #00282c);
+  background-image: -o-linear-gradient(left, #00282c, #009dab, #00282c);
+  background-image: -ms-linear-gradient(left, #00282c, #009dab, #00282c);
+  background-image: linear-gradient(left, #00282c, #009dab, #00282c);
+  content: '';
+}
+/* line 12, ../sass/page_elements/_bars.scss */
+dl.singlepage > dt.pink:hover:after, dl.singlepage > dt.pink.active:after {
+  display: block;
+  margin-top: -3px;
+  height: 3px;
+  background-color: #b384a9;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #714668), color-stop(50%, #b384a9), color-stop(100%, #714668));
+  background-image: -webkit-linear-gradient(left, #714668, #b384a9, #714668);
+  background-image: -moz-linear-gradient(left, #714668, #b384a9, #714668);
+  background-image: -o-linear-gradient(left, #714668, #b384a9, #714668);
+  background-image: -ms-linear-gradient(left, #714668, #b384a9, #714668);
+  background-image: linear-gradient(left, #714668, #b384a9, #714668);
+  content: '';
+}
+/* line 12, ../sass/page_elements/_bars.scss */
+dl.singlepage > dt.blue:hover:after, dl.singlepage > dt.blue.active:after {
+  display: block;
+  margin-top: -3px;
+  height: 3px;
+  background-color: #3a82c5;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #1d4163), color-stop(50%, #3a82c5), color-stop(100%, #1d4163));
+  background-image: -webkit-linear-gradient(left, #1d4163, #3a82c5, #1d4163);
+  background-image: -moz-linear-gradient(left, #1d4163, #3a82c5, #1d4163);
+  background-image: -o-linear-gradient(left, #1d4163, #3a82c5, #1d4163);
+  background-image: -ms-linear-gradient(left, #1d4163, #3a82c5, #1d4163);
+  background-image: linear-gradient(left, #1d4163, #3a82c5, #1d4163);
+  content: '';
+}
+/* line 35, ../sass/page_elements/_accordion_header.scss */
+dl.singlepage > dd {
+  width: 100%;
+}
+/* line 1, ../sass/page_elements/_accordion_l2_header.scss */
+dl.singlepage > dd dl.accordion dt {
+  position: relative;
+  z-index: 10;
+  font-size: 18px;
+  letter-spacing: 0.025em;
+  line-height: 31px;
+  background-color: rgba(251, 162, 43, 0.8);
+  border: 0;
+  background-image: none !important;
+  margin-bottom: 0;
+  color: #c2c3ba;
+}
+/* line 9, ../sass/page_elements/_accordion_l2_header.scss */
+dl.singlepage > dd dl.accordion dt.turquoise {
+  background-color: rgba(0, 134, 146, 0.8);
+}
+/* line 12, ../sass/page_elements/_accordion_l2_header.scss */
+dl.singlepage > dd dl.accordion dt.pink {
+  background-color: rgba(169, 116, 158, 0.8);
+}
+/* line 15, ../sass/page_elements/_accordion_l2_header.scss */
+dl.singlepage > dd dl.accordion dt.blue {
+  background-color: rgba(52, 117, 178, 0.8);
+}
+/* line 21, ../sass/page_elements/_accordion_l2_header.scss */
+dl.singlepage > dd dl.accordion dt.active, dl.singlepage > dd dl.accordion dt:hover {
+  color: #ececec;
+}
+/* line 23, ../sass/page_elements/_accordion_l2_header.scss */
+dl.singlepage > dd dl.accordion dt.active:after, dl.singlepage > dd dl.accordion dt:hover:after {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+/* line 30, ../sass/page_elements/_accordion_l2_header.scss */
+dl.singlepage > dd dl.accordion dt.noimg + dd {
+  margin-top: 0;
+  max-height: 0;
+}
+/* line 35, ../sass/page_elements/_accordion_l2_header.scss */
+dl.singlepage > dd dl.accordion dt.noimg + dd .slider .pages section:not(.page-0) {
+  padding-top: 0;
+}
+/* line 1, ../sass/page_elements/_accordion_l3_header.scss */
+dl.singlepage > dd dl.accordion > dd dl.accordion dt {
+  font-family: "Joey";
+  font-size: 16px;
+  letter-spacing: 0.025em;
+  line-height: 26px;
+  background: none !important;
+  border: 0;
+  color: #ececec;
+}
+/* line 6, ../sass/page_elements/_accordion_l3_header.scss */
+dl.singlepage > dd dl.accordion > dd dl.accordion dt.active, dl.singlepage > dd dl.accordion > dd dl.accordion dt:hover {
+  color: #fba22b;
+}
+/* line 9, ../sass/page_elements/_accordion_l3_header.scss */
+dl.singlepage > dd dl.accordion > dd dl.accordion dt:before {
+  display: none;
+}
+/* line 3, ../sass/page_elements/_singlepage.scss */
+dl.singlepage dd {
+  margin-bottom: 5px;
+  border-top: 1px solid #2d2c29;
+  border-bottom: 1px solid #181817;
+  background-color: #232320;
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #1c1c19), color-stop(50%, #232320), color-stop(100%, #1c1c19));
+  background-image: -webkit-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -moz-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -o-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+  background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
+}
+/* line 5, ../sass/page_elements/_singlepage.scss */
+dl.singlepage dd > div {
+  padding: 10px 20px;
+}
+
 /* line 1, ../sass/page_elements/_header.scss */
 #container > header {
   *zoom: 1;
@@ -1813,11 +1991,20 @@ body.service dl.accordion dt + dd dl.accordion dt + dd dl.accordion dd div {
   padding: 10px 20px;
 }
 
-/* line 39, ../sass/screen.scss */
+/* line 2, ../sass/pages/_terms.scss */
+dt#agb + dd ol {
+  list-style: decimal;
+}
+/* line 4, ../sass/pages/_terms.scss */
+dt#agb + dd ol li {
+  margin-left: 5px;
+}
+
+/* line 41, ../sass/screen.scss */
 html {
   min-height: 100%;
 }
-/* line 41, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 html body {
   position: absolute;
   top: 0;
@@ -1834,13 +2021,13 @@ html body {
   letter-spacing: 0.025em;
   line-height: 26px;
 }
-/* line 57, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 html body > #container {
   width: 880px;
   margin: 0 auto;
 }
 @media screen and (max-width: 880px) {
-  /* line 57, ../sass/screen.scss */
+  /* line 59, ../sass/screen.scss */
   html body > #container {
     width: 100%;
   }

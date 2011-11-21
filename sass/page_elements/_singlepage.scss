@@ -1,0 +1,9 @@
+dl.singlepage {
+	@import "page_elements/accordion_default.scss";
+	dd {
+		@include box-style;
+		> div {
+			padding: $padding_vertical $padding_horizontal;
+		}
+	}
+}

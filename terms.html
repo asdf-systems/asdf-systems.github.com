@@ -1,20 +1,6 @@
 ---
-layout: main
+layout: singlepage
 menu: terms
 corners: orange
+filter: agb
 ---
-<dl id="agb" class="accordion">
-	{% for post in site.posts %}
-		{% if post.categories contains "agb" %}
-			<dt class="active">
-				<div>{{post.title}} </div>
-			</dt>
-			<dd>
-				<div>
-					{{post.content}}
-				</div>
-			</dd>
-		{% endif %}
-	{% endfor %}
-</dl>
-
