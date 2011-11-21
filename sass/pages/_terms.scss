@@ -1,4 +1,5 @@
 dt#agb + dd {
+	@include small-text-style;
 	ol {
 		list-style: decimal;
 		li {

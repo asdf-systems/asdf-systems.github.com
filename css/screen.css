@@ -1998,11 +1998,18 @@ body.service dl.accordion dt + dd dl.accordion dt + dd dl.accordion dd div {
   padding: 10px 20px;
 }
 
-/* line 2, ../sass/pages/_terms.scss */
+/* line 1, ../sass/pages/_terms.scss */
+dt#agb + dd {
+  font-family: "Joey";
+  font-size: 11px;
+  letter-spacing: 0.025em;
+  line-height: 17.5px;
+}
+/* line 3, ../sass/pages/_terms.scss */
 dt#agb + dd ol {
   list-style: decimal;
 }
-/* line 4, ../sass/pages/_terms.scss */
+/* line 5, ../sass/pages/_terms.scss */
 dt#agb + dd ol li {
   margin-left: 5px;
 }
