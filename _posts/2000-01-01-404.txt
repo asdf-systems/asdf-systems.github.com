@@ -1,0 +1,5 @@
+---
+title: Fehler
+category: error
+---
+Diese Seite existiert nicht.
