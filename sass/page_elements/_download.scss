@@ -1,0 +1,27 @@
+// These are only overrides for the .smallpost class
+article.download {
+	figure {
+		margin: $padding_vertical $padding_horizontal;
+		float: left;
+	}
+	aside {
+		display: block;
+		float: right;
+	}
+	div {
+		@include small-text-style;
+		width: auto;
+		display: block;
+		header {
+			margin: 0;
+			margin: $padding_vertical 0;
+		}
+	}
+
+	// Clearfix sets display to "table", which
+	// destroys the separator between downloads
+	@include pie-clearfix;
+	&:after {
+		display: block;
+	}
+}

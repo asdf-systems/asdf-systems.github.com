@@ -1,0 +1,26 @@
+article.link {
+	figure {
+		img {
+			width: $dl_image_width;
+			height: auto;
+		}
+		margin: $padding_vertical $padding_horizontal;
+	}
+	div {
+		header {
+			margin-left: 0;
+			margin-bottom: 0;
+			@include opener-text-style;
+			color: $ci_lightgray;
+			a {
+				&:before {
+					display: none;
+				}
+			}
+		}
+		@include small-text-style;
+	}
+	&:after {
+		display: none;
+	}
+}

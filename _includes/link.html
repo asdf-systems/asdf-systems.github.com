@@ -1,0 +1,11 @@
+<article class="smallpost link">
+	{% if post.image %}
+		<figure>
+			<img src="/img/{{page.menu | downcase}}/links/{{post.image}}">
+		</figure>
+	{% endif %}
+	<div>
+		<header><a href="{{post.title}}">{{post.title | replace:'http://',''}}</a></header>
+		{{ post.content | newline_to_br | markdownify}}
+	</div>
+</article>

@@ -96,8 +96,8 @@ corners: orange
 		<div>
 			<dl class="accordion">
 				{% for post in site.posts %}
-					{% if post.categories contains "referenzen" %}
-						<!-- {% include reference.html %} -->
+					{% if post.categories contains "links" %}
+						{% include link.html %}
 					{% endif %}
 				{% endfor %}
 			</dt>

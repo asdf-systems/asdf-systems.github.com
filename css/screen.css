@@ -337,18 +337,78 @@ article.employee header {
   margin: 10px 0;
 }
 
+/* line 2, ../sass/page_elements/_download.scss */
+article.download {
+  *zoom: 1;
+}
 /* line 3, ../sass/page_elements/_download.scss */
 article.download figure {
   margin: 10px 20px;
+  float: left;
 }
-/* line 6, ../sass/page_elements/_download.scss */
+/* line 7, ../sass/page_elements/_download.scss */
 article.download aside {
   display: block;
+  float: right;
 }
-/* line 10, ../sass/page_elements/_download.scss */
-article.download header {
+/* line 11, ../sass/page_elements/_download.scss */
+article.download div {
+  font-family: "Joey";
+  font-size: 11px;
+  letter-spacing: 0.025em;
+  line-height: 17.5px;
+  width: auto;
+  display: block;
+}
+/* line 15, ../sass/page_elements/_download.scss */
+article.download div header {
   margin: 0;
   margin: 10px 0;
+}
+/* line 38, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+article.download:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 24, ../sass/page_elements/_download.scss */
+article.download:after {
+  display: block;
+}
+
+/* line 2, ../sass/page_elements/_link.scss */
+article.link figure {
+  margin: 10px 20px;
+}
+/* line 3, ../sass/page_elements/_link.scss */
+article.link figure img {
+  width: 50px;
+  height: auto;
+}
+/* line 9, ../sass/page_elements/_link.scss */
+article.link div {
+  font-family: "Joey";
+  font-size: 11px;
+  letter-spacing: 0.025em;
+  line-height: 17.5px;
+}
+/* line 10, ../sass/page_elements/_link.scss */
+article.link div header {
+  margin-left: 0;
+  margin-bottom: 0;
+  font-family: "Joey";
+  font-size: 16px;
+  letter-spacing: 0.025em;
+  line-height: 26px;
+  color: #c2c3ba;
+}
+/* line 16, ../sass/page_elements/_link.scss */
+article.link div header a:before {
+  display: none;
+}
+/* line 23, ../sass/page_elements/_link.scss */
+article.link:after {
+  display: none;
 }
 
 /* line 1, ../sass/page_elements/_slider.scss */
@@ -1733,11 +1793,11 @@ body.service dl.accordion dt + dd dl.accordion dt + dd dl.accordion dd div {
   padding: 10px 20px;
 }
 
-/* line 38, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 html {
   min-height: 100%;
 }
-/* line 40, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 html body {
   position: absolute;
   top: 0;
@@ -1754,13 +1814,13 @@ html body {
   letter-spacing: 0.025em;
   line-height: 26px;
 }
-/* line 56, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 html body > #container {
   width: 880px;
   margin: 0 auto;
 }
 @media screen and (max-width: 880px) {
-  /* line 56, ../sass/screen.scss */
+  /* line 57, ../sass/screen.scss */
   html body > #container {
     width: 100%;
   }
