@@ -11,7 +11,7 @@
 		var $headers = $($accordion.children('dt'));
 
 		var openTargets = function() {
-			var targets = location.hash.split('#');
+			var targets = unescape(location.hash).split('#');
 			var found = false;
 			$headers.each(function() {
 				if($.inArray($(this).attr('id'), targets) != -1) {
