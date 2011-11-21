@@ -688,7 +688,7 @@ article.link:after {
   vertical-align: top;
   width: 720px;
   display: inline-block;
-  margin-bottom: 36px;
+  margin-bottom: 67px;
 }
 @media screen and (max-width: 880px) {
   /* line 1, ../sass/page_elements/_content.scss */
