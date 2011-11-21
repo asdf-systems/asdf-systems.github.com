@@ -4,6 +4,7 @@ dl.accordion {
 		overflow: hidden;
 	}
 	> dt {
+		cursor: pointer;
 		+ dd {
 			max-height: 0;
 		}

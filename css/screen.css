@@ -115,6 +115,14 @@ a, a:link, a:active, a:hover, a:visited {
 .slider .pages > section.right {
   margin-left: 150%;
 }
+/* line 19, ../sass/plugins/_slider.scss */
+.slider nav .next {
+  cursor: pointer;
+}
+/* line 22, ../sass/plugins/_slider.scss */
+.slider nav .prev {
+  cursor: pointer;
+}
 
 /* line 2, ../sass/plugins/_accordion.scss */
 dl.accordion > dd {
@@ -136,11 +144,15 @@ dl.accordion > dd {
   transition-delay: 0;
   overflow: hidden;
 }
-/* line 7, ../sass/plugins/_accordion.scss */
+/* line 6, ../sass/plugins/_accordion.scss */
+dl.accordion > dt {
+  cursor: pointer;
+}
+/* line 8, ../sass/plugins/_accordion.scss */
 dl.accordion > dt + dd {
   max-height: 0;
 }
-/* line 10, ../sass/plugins/_accordion.scss */
+/* line 11, ../sass/plugins/_accordion.scss */
 dl.accordion > dt.active + dd {
   max-height: 2999px !important;
 }
