@@ -16,6 +16,7 @@
 	}
 	> nav {
 		margin: $footer_padding_vertical $padding_horizontal;
+		margin-left: 0;
 		float: right;
 		> ul {
 			list-style-type: none;
@@ -30,6 +31,9 @@
 				}
 				&:last-child {
 					margin-right: 0;
+				}
+				&:first-child {
+					margin-left: 0;
 				}
 			}
 		}

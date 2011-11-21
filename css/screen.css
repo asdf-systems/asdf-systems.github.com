@@ -933,28 +933,33 @@ dl.singlepage dd > div {
 /* line 17, ../sass/page_elements/_footer.scss */
 #container > footer > nav {
   margin: 5px 20px;
+  margin-left: 0;
   float: right;
 }
-/* line 20, ../sass/page_elements/_footer.scss */
+/* line 21, ../sass/page_elements/_footer.scss */
 #container > footer > nav > ul {
   list-style-type: none;
 }
-/* line 22, ../sass/page_elements/_footer.scss */
+/* line 23, ../sass/page_elements/_footer.scss */
 #container > footer > nav > ul > li {
   display: inline-block;
   margin: 0 20px;
 }
-/* line 23, ../sass/page_elements/_footer.scss */
+/* line 24, ../sass/page_elements/_footer.scss */
 #container > footer > nav > ul > li a:before {
   content: '';
 }
-/* line 28, ../sass/page_elements/_footer.scss */
+/* line 29, ../sass/page_elements/_footer.scss */
 #container > footer > nav > ul > li.active, #container > footer > nav > ul > li:hover, #container > footer > nav > ul > li a:hover {
   color: #fba22b;
 }
-/* line 31, ../sass/page_elements/_footer.scss */
+/* line 32, ../sass/page_elements/_footer.scss */
 #container > footer > nav > ul > li:last-child {
   margin-right: 0;
+}
+/* line 35, ../sass/page_elements/_footer.scss */
+#container > footer > nav > ul > li:first-child {
+  margin-left: 0;
 }
 
 /* line 2, ../sass/_links.scss */
