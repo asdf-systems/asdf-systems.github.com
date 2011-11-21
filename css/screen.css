@@ -500,42 +500,43 @@ article.link:after {
   border: 0;
   border-style: solid;
   border-color: #fba22b;
+  padding: 0 20px;
 }
-/* line 35, ../sass/page_elements/_slider.scss */
+/* line 36, ../sass/page_elements/_slider.scss */
 .slider nav .next.disabled, .slider nav .prev.disabled {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-/* line 39, ../sass/page_elements/_slider.scss */
+/* line 40, ../sass/page_elements/_slider.scss */
 .slider nav .next {
   border-right-width: 3px;
   float: right;
 }
-/* line 42, ../sass/page_elements/_slider.scss */
+/* line 43, ../sass/page_elements/_slider.scss */
 .slider nav .next:before {
   content: '→';
 }
-/* line 46, ../sass/page_elements/_slider.scss */
+/* line 47, ../sass/page_elements/_slider.scss */
 .slider nav .prev {
   border-left-width: 3px;
   float: left;
 }
-/* line 49, ../sass/page_elements/_slider.scss */
+/* line 50, ../sass/page_elements/_slider.scss */
 .slider nav .prev:before {
   content: '←';
 }
-/* line 53, ../sass/page_elements/_slider.scss */
+/* line 54, ../sass/page_elements/_slider.scss */
 .slider nav .page {
   width: 200px;
   margin: 0 auto;
 }
-/* line 56, ../sass/page_elements/_slider.scss */
+/* line 57, ../sass/page_elements/_slider.scss */
 .slider nav .page span {
   margin: 0 2px;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
-/* line 59, ../sass/page_elements/_slider.scss */
+/* line 60, ../sass/page_elements/_slider.scss */
 .slider nav .page span.active {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;

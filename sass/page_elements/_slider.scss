@@ -32,6 +32,7 @@
 			border: 0;
 			border-style: solid;
 			border-color: $ci_orange;
+			padding: 0 $padding_horizontal;
 			&.disabled {
 				@include opacity(0);
 			}
