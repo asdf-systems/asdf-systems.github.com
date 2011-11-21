@@ -8,9 +8,9 @@ Die Webengine ist unser firmen-internes Tool zur effizienten und präzisen Umset
 
 Mit Hilfe der Webengine können Webseiten präzise nach Designvorlage umgesetzt werden um das gewünschte Erscheinungsbild auf jedem Browser und Endgerät zu garantieren. Die Konfiguration der Inhalte basiert auf einfachen Textdateien. Das Bearbeiten von solchen Dateien ist jedem User vertraut und reicht aus, um die eigene Homepage komplett neu zu strukturieren.
 
-Was mit der Webengine möglich ist könnnen Sie sich hier anschauen:
-[www.leda-berlin.de](http://www.leda-berlin.de)
-[www.paulinealtmann.de](http://www.paulinealtmann.de)
+Was mit der Webengine möglich ist könnnen Sie sich hier anschauen:  
+[www.leda-berlin.de](http://www.leda-berlin.de)  
+[www.paulinealtmann.de](http://www.paulinealtmann.de)  
 <slide />
 Mit Hilfe der Webengine können Webseiten präzise nach Designvorlage umgesetzt werden um das gewünschte Erscheinungsbild auf jedem Browser und Endgerät zu garantieren.
 Die Konfiguration der Inhalte basiert auf einfachen Textdateien. Das Bearbeiten von solchen Dateien ist jedem User vertraut und reicht aus, um die eigene Homepage komplett neu zu strukturieren.

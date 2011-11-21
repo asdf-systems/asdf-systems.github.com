@@ -10,7 +10,7 @@
 		<a href="{{post.link}}" target="_blank">{{post.link}}</a>
 	</aside>
 	<div>
-		{{ post.content | newline_to_br | markdownify}}
+		{{ post.content }}
 	</div>
 	<div class="projects">
 		{% for project in post.projects %}

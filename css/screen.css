@@ -88,6 +88,19 @@ li {
   margin-left: 20px;
 }
 
+/* line 18, ../sass/_augmented_reset.scss */
+p {
+  margin: 10px 0;
+}
+/* line 19, ../sass/_augmented_reset.scss */
+p:first-child {
+  margin-top: 0;
+}
+/* line 22, ../sass/_augmented_reset.scss */
+p:last-child {
+  margin-bottom: 0;
+}
+
 @font-face {
   font-family: "Joey";
   src: url('/css/fonts/');

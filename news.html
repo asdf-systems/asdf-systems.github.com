@@ -8,7 +8,7 @@ corners: orange
 	{% for post in site.posts %}
 		{% if post.categories contains "intro" %}
 			<header>{{ post.title }}</header>
-			{{ post.content | newline_to_br | markdownify }}
+			{{ post.content }}
 		{% endif %}
 	{% endfor %}
 </article>

@@ -5,7 +5,7 @@
 				<img src="/img/{{page.menu | downcase}}/{{post.image}}">
 			{% endif %}
 			<div>
-				{{ post.content | markdownify | replace: "<slide />", "</div></section><section><div>" }}
+				{{ post.content | replace: "<slide />", "</div></section><section><div>" }}
 			</div>
 		</section>
 	</div>

@@ -11,7 +11,6 @@ Unsere Firmenphilosophie folgt genau dieser Bewegung: Unsere Lösungen verbinden
 
 Dafür steht asdf-systems.
 
-
 Durch andere Blickwinkel und Kreativität finden wir neue Ansätze und finden Lösungen um Bestehendes zu optimieren.
 
 Die optimale Lösung entsteht durch:

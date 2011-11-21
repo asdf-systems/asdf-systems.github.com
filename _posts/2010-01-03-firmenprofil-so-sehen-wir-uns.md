@@ -3,10 +3,10 @@ title: So sehen wir uns
 category: firmenprofil
 keyword: selbstbild
 ---
-Wir verstehen uns als Dienstleister für individuelle Unternehmenslösungen.
+Wir verstehen uns als Dienstleister für individuelle Unternehmenslösungen.  
 Wir analysieren zusammen mit unseren Kunden Arbeitsprozesse im Unternehmen und erarbeiten Konzepte, diese mit Soft- und Hardware zu unterstützen und zu optimieren.
 
-Die Einsatzgebiete unserer Software reichen dabei vom klassischen Warenwirtschaftssystem und Ressourcenverwaltung, über die Verwaltung von Rechnerclustern, bis hin zur Ansteuerung von Animatronics beim Film.
+Die Einsatzgebiete unserer Software reichen dabei vom klassischen Warenwirtschaftssystem und Ressourcenverwaltung, über die Verwaltung von Rechnerclustern, bis hin zur Ansteuerung von Animatronics beim Film.  
 Wir forschen im Bereich Hardwareentwicklung und unterstützen unsere Systeme durch eigene Geräte. Dadurch ist es uns möglich, an vielen Stellen neue Wege zu gehen, und Arbeitsprozesse aus einem neuen Blickwinkel zu betrachten.
 
 Wir liefern Ihnen die IT-Infrastruktur für Ihr Unternehmen. Dafür beraten wir Sie bei der Auswahl benötigter Hard- und Software, richten diese ein und passen die Komponenten an Ihre Wünsche und Gegebenheiten an.

@@ -6,8 +6,7 @@ keyword: servocontrol
 ---
 Die ServoControl ist ein Komplettpaket aus Soft- und Hardware, um den Umgang mit den in der Filmbranche bekannten Animatronics zu erleichtern.
 
-Die ServoControl ist eine Bruecke zwischen klassischem Puppenspiel und digitaler, keyframe-basierter Animation. Puppenspieler sind durch die ServoControl in der Lage, auch digitale Models auf gewohnte Art und Weise zu steuern.
-Digitale Artists können mit Hilfe der ServoControl Animationen in Echtzeit aufnehmen, um zum Beispiel saubere Lippensynchronisation zu erstellen, oder schnelle Animatics aufzunehmen. Die Animationen können im Nachhinein mit allen bekannten Mitteln der keyframe-basierten Animation bearbeitet werden.
+Die ServoControl ist eine Bruecke zwischen klassischem Puppenspiel und digitaler, keyframe-basierter Animation. Puppenspieler sind durch die ServoControl in der Lage, auch digitale Models auf gewohnte Art und Weise zu steuern. Digitale Artists können mit Hilfe der ServoControl Animationen in Echtzeit aufnehmen, um zum Beispiel saubere Lippensynchronisation zu erstellen, oder schnelle Animatics aufzunehmen. Die Animationen können im Nachhinein mit allen bekannten Mitteln der keyframe-basierten Animation bearbeitet werden.
 <slide />
 Die ServoControl entstand 2010 in Zusammenarbeit mit der Berliner Filmeffektfirma ChrisCreatures. Was am Anfang noch als kleines Hardwaremodul zur Unterstützung von Puppenspielern am Set spezifiert war, entwickelte sich schnell zu einer computergestützten Komplettlösung.
 

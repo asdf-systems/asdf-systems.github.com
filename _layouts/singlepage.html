@@ -9,11 +9,7 @@ layout: main
 			</dt>
 			<dd>
 				<div>
-					{% if post.raw %}
-						{{ post.content | markdownify }}
-					{% else %}
-						{{ post.content | newline_to_br | markdownify }}
-					{% endif %}
+					{{ post.content }}
 				</div>
 			</dd>
 		{% endif %}
