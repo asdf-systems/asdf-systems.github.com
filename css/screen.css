@@ -73,6 +73,21 @@ a, a:link, a:active, a:hover, a:visited {
   color: inherit;
 }
 
+/* line 6, ../sass/_augmented_reset.scss */
+ol {
+  list-style: decimal;
+}
+
+/* line 10, ../sass/_augmented_reset.scss */
+ul {
+  list-style: disc;
+}
+
+/* line 14, ../sass/_augmented_reset.scss */
+li {
+  margin-left: 20px;
+}
+
 @font-face {
   font-family: "Joey";
   src: url('/css/fonts/');
@@ -2009,14 +2024,6 @@ dt#agb + dd {
   font-size: 11px;
   letter-spacing: 0.025em;
   line-height: 17.5px;
-}
-/* line 3, ../sass/pages/_terms.scss */
-dt#agb + dd ol {
-  list-style: decimal;
-}
-/* line 5, ../sass/pages/_terms.scss */
-dt#agb + dd ol li {
-  margin-left: 5px;
 }
 
 /* line 41, ../sass/screen.scss */

@@ -1,7 +1,7 @@
 ---
 title: Webengine fertiggestellt
 image: webengine.png
-category: news
+category: archiv
 link: portfolio.html#software#webengine
 ---
 Wir haben unsere firmeninterne Engine für Websites fertig gestellt.

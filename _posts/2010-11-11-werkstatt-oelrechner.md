@@ -1,0 +1,20 @@
+---
+title: Ölrechner
+image: oelrechner.png
+category: werkstatt
+keyword: olrechner
+---
+Bei diesem Projekt wollten wir überprüfen, ob es möglich ist mit mid-end Computerhardware die selben Leistungen zu erzielen, wie mit spezialisierter Clusterhardware. Dies wollten wir durch starkes Übertakten und ein ungewöhnliches Kühlprinzip erreichen.
+
+Eine vergleichbare Leistung konnte mit den Testrechnern nicht erreicht werden.
+<slide />
+Nach eingehender Recherche haben wir uns entschieden, AMD X2 und AMD Athlon Prozessoren für den Testlauf zu verwenden.  
+
+* Phase 1:  
+    Um Vergleichswerte zu haben, haben wir die Rechner in einem normalen Gehaeuse mit normaler Luftkuehlung uebertaktet. Hierbei gab es keine Ausfaelle oder Defekte.
+
+* Phase 2:  
+    Die Rechner wurden in ein Ölbad eingelegt. Dabei war die komplette Maschine mit Öl bedeckt. Alle Testläufe wurden genau so problemlos gemeistert, wie in der ersten Phase.
+
+* Fazit:  
+    Die Rechner haben das Ölbad ohne Schaden überstanden und haben problemlos gearbeitet. Durch das einlegen in Öl liefen die Rechner völlig geräuschlos. Ein stärkeres Übertakten als im trockenen Zustand war jedoch nicht möglich, da das Oel in unserem Testaufbau nicht genug zirkulieren konnte, um die Waerme abzugeben. Der zu betreibende Aufwand und die umständliche Handhabung (vor allem in der Wartung) lassen einen Einsatz zum jetzigen Zeitpunkt nicht sinnvoll erscheinen.
