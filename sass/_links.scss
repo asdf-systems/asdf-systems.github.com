@@ -1,6 +1,7 @@
 a {
 	&:before {
 		content: '→';
+		padding-right: $spacing;
 		color: $ci_orange;
 	}
 	&:hover {

@@ -774,9 +774,10 @@ article.link:after {
 /* line 2, ../sass/_links.scss */
 a:before {
   content: '→';
+  padding-right: 5px;
   color: #fba22b;
 }
-/* line 6, ../sass/_links.scss */
+/* line 7, ../sass/_links.scss */
 a:hover {
   color: #fba22b;
 }
