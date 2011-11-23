@@ -1,10 +1,13 @@
+---
+layout: none
+---
 /* the humans responsible & colophon */
 /* humanstxt.org */
 
 
 /* TEAM */
   CEO: Alexander Surma
-  Site: http://www.asdf-systems.de
+  Site: {{site.url}}
   Twitter: @surmair
   Location: Berlin, Germany
 

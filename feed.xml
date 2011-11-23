@@ -1,0 +1,21 @@
+---
+layout: rss-feed
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel>
+		<title>asdf-systems – Neuigkeiten</title>
+		<description>Die Neuigkeiten von asdf-systems</description>
+		<link>{{ site.url }}</link>
+		{% for post in site.posts 	%}
+			{% if post.categories contains "news" %}
+				<item>
+					<title>{{ post.title }}</title>
+					<description>{{ post.content | xml_escape }}</description>
+					<published>{{ post.date }}</published>
+					<link>{{ site.url }}/news.html</link>
+				</item>
+			{% endif %}
+		{% endfor %}
+	</channel>
+</rss>

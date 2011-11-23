@@ -1,45 +1,45 @@
 ---
-root: http://www.asdf-systems.de
+layout: none
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 	<url>
-		<loc>{{page.root}}/news.html</loc>
+		<loc>{{site.url}}/news.html</loc>
 		<lastmod>{{site.time | date: "%Y-%m-%d"}}</lastmod>
 		<changefreq>hourly</changefreq>
 	</url>
 	<url>
-		<loc>{{page.root}}/portfolio.html</loc>
+		<loc>{{site.url}}/portfolio.html</loc>
 		<lastmod>{{site.time | date: "%Y-%m-%d"}}</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-		<loc>{{page.root}}/workshop.html</loc>
+		<loc>{{site.url}}/workshop.html</loc>
 		<lastmod>{{site.time | date: "%Y-%m-%d"}}</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
-		<loc>{{page.root}}/service.html</loc>
+		<loc>{{site.url}}/service.html</loc>
 		<lastmod>{{site.time | date: "%Y-%m-%d"}}</lastmod>
 		<changefreq>monthly</changefreq>
 	</url>
 	<url>
-		<loc>{{page.root}}/about.html</loc>
+		<loc>{{site.url}}/about.html</loc>
 		<lastmod>{{site.time | date: "%Y-%m-%d"}}</lastmod>
 		<changefreq>monthly</changefreq>
 	</url>
 	<url>
-		<loc>{{page.root}}/contact.html</loc>
+		<loc>{{site.url}}/contact.html</loc>
 		<lastmod>{{site.time | date: "%Y-%m-%d"}}</lastmod>
 		<changefreq>monthly</changefreq>
 	</url>
 	<url>
-		<loc>{{page.root}}/terms.html</loc>
+		<loc>{{site.url}}/terms.html</loc>
 		<lastmod>{{site.time | date: "%Y-%m-%d"}}</lastmod>
 		<changefreq>monthly</changefreq>
 	</url>
 	<url>
-		<loc>{{page.root}}/impressum.html</loc>
+		<loc>{{site.url}}/impressum.html</loc>
 		<lastmod>{{site.time | date: "%Y-%m-%d"}}</lastmod>
 		<changefreq>monthly</changefreq>
 	</url>

@@ -3,3 +3,4 @@ auto:        true
 source:      .
 destination: ./_site
 plugins:     ./_plugins
+url:         http://www.asdf-systems.de
