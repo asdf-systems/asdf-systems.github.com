@@ -37,6 +37,9 @@
 			&.disabled {
 				@include opacity(0);
 			}
+			&:hover {
+				color: $ci_orange;
+			}
 		}
 		.next {
 			border-right-width: $slider_arrow_border;
