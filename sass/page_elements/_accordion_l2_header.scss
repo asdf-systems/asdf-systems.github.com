@@ -17,9 +17,9 @@ dt {
 	}
 	background-image: none !important;
 	margin-bottom: 0;
-	color: $ci_lightgray;
+	color: $accordion_l2_text_color;
 	&.active, &:hover {
-		color: $ci_white;
+		color: $accordion_l2_active_color;
 		&:after {
 			background-color: transparent !important;
 			background-image: none !important;

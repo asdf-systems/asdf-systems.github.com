@@ -718,7 +718,7 @@ dl.singlepage > dd dl.accordion dt {
   border: 0;
   background-image: none !important;
   margin-bottom: 0;
-  color: #c2c3ba;
+  color: #292b28;
 }
 /* line 9, ../sass/page_elements/_accordion_l2_header.scss */
 dl.singlepage > dd dl.accordion dt.turquoise {
@@ -1111,7 +1111,7 @@ body.news dl.accordion > dd dl.accordion dt {
   border: 0;
   background-image: none !important;
   margin-bottom: 0;
-  color: #c2c3ba;
+  color: #292b28;
 }
 /* line 9, ../sass/page_elements/_accordion_l2_header.scss */
 body.news dl.accordion > dd dl.accordion dt.turquoise {
@@ -1273,7 +1273,7 @@ body.portfolio dl.accordion > dd dl.accordion dt {
   border: 0;
   background-image: none !important;
   margin-bottom: 0;
-  color: #c2c3ba;
+  color: #292b28;
 }
 /* line 9, ../sass/page_elements/_accordion_l2_header.scss */
 body.portfolio dl.accordion > dd dl.accordion dt.turquoise {
@@ -1455,7 +1455,7 @@ body.workshop dl.accordion > dd dl.accordion dt {
   border: 0;
   background-image: none !important;
   margin-bottom: 0;
-  color: #c2c3ba;
+  color: #292b28;
 }
 /* line 9, ../sass/page_elements/_accordion_l2_header.scss */
 body.workshop dl.accordion > dd dl.accordion dt.turquoise {
@@ -1637,7 +1637,7 @@ body.about dl.accordion dt#firmenprofil + dd dl.accordion dt, body.about dl.acco
   border: 0;
   background-image: none !important;
   margin-bottom: 0;
-  color: #c2c3ba;
+  color: #292b28;
 }
 /* line 9, ../sass/page_elements/_accordion_l2_header.scss */
 body.about dl.accordion dt#firmenprofil + dd dl.accordion dt.turquoise, body.about dl.accordion dt#wir + dd dl.accordion dt.turquoise {
@@ -1952,7 +1952,7 @@ body.service dl.accordion dt + dd dl.accordion dt {
   border: 0;
   background-image: none !important;
   margin-bottom: 0;
-  color: #c2c3ba;
+  color: #292b28;
 }
 /* line 9, ../sass/page_elements/_accordion_l2_header.scss */
 body.service dl.accordion dt + dd dl.accordion dt.turquoise {
