@@ -1527,6 +1527,22 @@ body.workshop dl.accordion dd > dl.accordion article.smallpost:first-child {
   padding-top: 31px;
 }
 
+/* line 2, ../sass/pages/_about.scss */
+body.about input {
+  background-color: #292b28;
+  color: #c2c3ba;
+  font-family: "Joey";
+  font-size: 16px;
+  letter-spacing: 0.025em;
+  line-height: 26px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  border: 2px solid #fba22b;
+}
 /* line 1, ../sass/page_elements/_accordion_header.scss */
 body.about dl.accordion > dt {
   z-index: 900;
@@ -1670,7 +1686,7 @@ body.about dl.accordion dt#firmenprofil + dd dl.accordion dt.noimg + dd, body.ab
 body.about dl.accordion dt#firmenprofil + dd dl.accordion dt.noimg + dd .slider .pages section:not(.page-0), body.about dl.accordion dt#wir + dd dl.accordion dt.noimg + dd .slider .pages section:not(.page-0) {
   padding-top: 0;
 }
-/* line 9, ../sass/pages/_about.scss */
+/* line 16, ../sass/pages/_about.scss */
 body.about dl.accordion dt#referenzen + dd > div {
   margin-bottom: 5px;
   border-top: 1px solid #2d2c29;
@@ -1683,7 +1699,7 @@ body.about dl.accordion dt#referenzen + dd > div {
   background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
   background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
 }
-/* line 11, ../sass/pages/_about.scss */
+/* line 18, ../sass/pages/_about.scss */
 body.about dl.accordion dt#referenzen + dd > div dl.accordion {
   padding: 10px 20px;
 }
@@ -1705,23 +1721,23 @@ body.about dl.accordion dt#referenzen + dd > div dl.accordion dt.active, body.ab
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dt:before {
   display: none;
 }
-/* line 15, ../sass/pages/_about.scss */
+/* line 22, ../sass/pages/_about.scss */
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dt .name {
   color: #ececec;
 }
-/* line 18, ../sass/pages/_about.scss */
+/* line 25, ../sass/pages/_about.scss */
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dt .location {
   color: #c2c3ba;
   margin-left: 5px;
 }
-/* line 22, ../sass/pages/_about.scss */
+/* line 29, ../sass/pages/_about.scss */
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dt:after {
   display: block;
   content: '';
   width: 80%;
   height: 3px;
 }
-/* line 29, ../sass/pages/_about.scss */
+/* line 36, ../sass/pages/_about.scss */
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dt.active .name, body.about dl.accordion dt#referenzen + dd > div dl.accordion dt:hover .name {
   color: #fba22b;
 }
@@ -1739,15 +1755,15 @@ body.about dl.accordion dt#referenzen + dd > div dl.accordion dt.active:after, b
   background-image: linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
   content: '';
 }
-/* line 33, ../sass/pages/_about.scss */
+/* line 40, ../sass/pages/_about.scss */
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dt.active:after, body.about dl.accordion dt#referenzen + dd > div dl.accordion dt:hover:after {
   margin-top: 0;
 }
-/* line 37, ../sass/pages/_about.scss */
+/* line 44, ../sass/pages/_about.scss */
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dt:before {
   display: none;
 }
-/* line 40, ../sass/pages/_about.scss */
+/* line 47, ../sass/pages/_about.scss */
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dt div.marker {
   display: block;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
@@ -1758,34 +1774,34 @@ body.about dl.accordion dt#referenzen + dd > div dl.accordion dt div.marker {
   padding: 0;
   margin: 0 5px;
 }
-/* line 49, ../sass/pages/_about.scss */
+/* line 56, ../sass/pages/_about.scss */
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dt div.marker.software {
   background-image: url("/img/minilogo_pink.png");
 }
-/* line 52, ../sass/pages/_about.scss */
+/* line 59, ../sass/pages/_about.scss */
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dt div.marker.hardware {
   background-image: url("/img/minilogo_turquoise.png");
 }
-/* line 55, ../sass/pages/_about.scss */
+/* line 62, ../sass/pages/_about.scss */
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dt div.marker.consulting {
   background-image: url("/img/minilogo_blue.png");
 }
-/* line 58, ../sass/pages/_about.scss */
+/* line 65, ../sass/pages/_about.scss */
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dt.software > div.software {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 61, ../sass/pages/_about.scss */
+/* line 68, ../sass/pages/_about.scss */
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dt.hardware > div.hardware {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 64, ../sass/pages/_about.scss */
+/* line 71, ../sass/pages/_about.scss */
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dt.consulting > div.consulting {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 68, ../sass/pages/_about.scss */
+/* line 75, ../sass/pages/_about.scss */
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dd {
   font-family: "Joey";
   font-size: 11px;
@@ -1807,21 +1823,21 @@ body.about dl.accordion dt#referenzen + dd > div dl.accordion dd:after {
   background-image: linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
   content: '';
 }
-/* line 72, ../sass/pages/_about.scss */
+/* line 79, ../sass/pages/_about.scss */
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dd:after {
   margin-top: 0;
 }
-/* line 76, ../sass/pages/_about.scss */
+/* line 83, ../sass/pages/_about.scss */
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dd div.projects div {
   display: inline-block;
   margin-right: 5px;
   text-align: center;
 }
-/* line 81, ../sass/pages/_about.scss */
+/* line 88, ../sass/pages/_about.scss */
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dd div.projects div > a:before {
   display: none;
 }
-/* line 84, ../sass/pages/_about.scss */
+/* line 91, ../sass/pages/_about.scss */
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dd div.projects div > a > img {
   display: block;
   width: 90px;
@@ -1829,15 +1845,15 @@ body.about dl.accordion dt#referenzen + dd > div dl.accordion dd div.projects di
   border: 4px solid transparent;
   margin-top: 10px;
 }
-/* line 92, ../sass/pages/_about.scss */
+/* line 99, ../sass/pages/_about.scss */
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dd div.projects div.software img {
   border-color: #a9749e;
 }
-/* line 95, ../sass/pages/_about.scss */
+/* line 102, ../sass/pages/_about.scss */
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dd div.projects div.hardware img {
   border-color: #008692;
 }
-/* line 98, ../sass/pages/_about.scss */
+/* line 105, ../sass/pages/_about.scss */
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dd div.projects div.consulting img {
   border-color: #3475b2;
 }

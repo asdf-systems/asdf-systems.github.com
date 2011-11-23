@@ -1,4 +1,11 @@
 body.about {
+	input {
+		background-color: $ci_gray;
+		color: $ci_lightgray;
+		@include opener-text-style;
+		@include border-radius(5px);
+		border: 2px solid $ci_orange;
+	}
 	dl.accordion {
 		@import "page_elements/_accordion_header.scss";
 		dt#firmenprofil, dt#wir {
