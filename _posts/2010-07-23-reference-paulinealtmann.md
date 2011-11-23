@@ -7,4 +7,5 @@ markers:
 link: http://www.paulinealtmann.de
 keyword: paulinealtmann
 ---
-Selected source rebased upon exclusive string. Some enterprise rebased in front of elected HTML. A stack overflow interpreted off any JSON. Exclusive recursive debugged on top of the string. Any XML debugged past specific JSON. Any SOAP debugged except verified source control. Some polymorphism time boxed without verified packets.
+Pauline Altmann ist eine langjährige Partnerin von asdf-systems. Bei vielen unserer Projekte hat sie
+die Design- und Entwurfsaufgaben übernommen sowie uns zur Seite gestanden, um Oberflächen intuitiver zu gestalten.

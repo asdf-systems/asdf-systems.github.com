@@ -4,4 +4,5 @@ categories:
 - faq
 - asdf
 ---
-Unser Firmenname wurde von unserem Firmenmeerschweinchen ausgesucht. Als es vor eine Tastatur gesetzt wurde, “schnupperte” es den Firmennamen. Wir nahmen das als ein Omen.
+“asdf” selbst hat keine feststehende Bedeutung. Die Art und Weise diese Buchstaben einzutippen
+ist jedoch repräsentativ für die Ergebnisse unserer Arbeit. Mehr [hier](/about.html#firmenprofil#hintergedanken).

@@ -3,4 +3,5 @@ title: http://www.paulinealtmann.de
 image: paulinealtmann.png
 category: links
 ---
-Dit is die Frau, die dit graphisch hier jemacht hat.
+Pauline Altmann ist eine langjährige Partnerin von asdf-systems. Bei vielen unserer Projekte hat sie
+die Design- und Entwurfsaufgaben übernommen sowie uns zur Seite gestanden, um Oberflächen intuitiver zu gestalten.

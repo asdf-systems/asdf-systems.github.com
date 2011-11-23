@@ -10,11 +10,11 @@ Mit Hilfe eines selbstgebauten Arms mit Stifthalterung und Servomotorisierung ha
 Zeichenbewegungen, die mit der Maus auf dem Rechner ausgeführt werden, sollen mittels Motoren auf einen mechanischen Arm übertragen werden.
 An diesem Arm befindet sich ein Stift, der die Bewegungen möglichst präzise auf ein Blatt Papier überträgt
 
-Der Prototyp ist mit einem einfachen Metallbaukasten konstruiert worden. Die Servomotoren wurden fest verschraubt und mit Hilfe eines Atmega AVR mit dem benötigen PWM-Steuersignalen versorgt. Über eine serielle Schnittstelle konnten wir die Signale des AVRs verändern.
+Der Prototyp ist mit einem einfachen Metallbaukasten konstruiert worden. Die Servomotoren wurden fest verschraubt und mit Hilfe eines AtMega AVR mit dem benötigen Steuersignalen versorgt. Über eine serielle Schnittstelle konnten wir die Signale des AVRs verändern.
 
 Bei den Testläufen erwies sich die Metallbaukasten-Konstruktion als zu instabil für präzise Bewegungen, grobe Bewegungen wurden aber gut übertragen und zeigten die Möglichkeiten des Sytems auf.
 
 Fazit:
 Die einfache mechanische Konstruktion hat zwar zu dürftigen Zeichenergebnissen geführt, aber gleichzeitig aufgezeigt welches großes Potential in dieser Idee steckt.
-Unsere Erkenntnisse beim Bauen des Servoplotters bildeten die Grundlage für die [servoControl](/portfolio.html/#hardware#servocontrol).
+Unsere Erkenntnisse beim Bauen des servoPlotters bildeten die Grundlage für die [servoControl](/portfolio.html/#hardware#servocontrol).
 

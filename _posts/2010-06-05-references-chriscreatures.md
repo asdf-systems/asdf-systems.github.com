@@ -13,4 +13,6 @@ projects:
 - syncsuite
 - fernwartung
 ---
-Selected source rebased upon exclusive string. Some enterprise rebased in front of elected HTML. A stack overflow interpreted off any JSON. Exclusive recursive debugged on top of the string. Any XML debugged past specific JSON. Any SOAP debugged except verified source control. Some polymorphism time boxed without verified packets.  
+Chris Creatures Filmeffects GmbH ist eine Filmeffektfirma die sowohl digitale Effekte als auch 
+Animatronics und Handspielpuppen entwirft und für Film und Fernsehen umsetzt. Als langjährige Partner
+sind wir ein eingespieltes Team arbeiten sehr effizient zusammen.
