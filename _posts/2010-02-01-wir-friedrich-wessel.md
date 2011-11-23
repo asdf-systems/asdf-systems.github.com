@@ -3,6 +3,7 @@ title: Friedrich Wessel
 image: wessel.png
 category: wir
 ---
+<!-- This comment is a workaround for a bug #439 of jekyll -->
 Projektleitung  
 E-Mail: [wessel@...](mailto:wessel@asdf-systems.de)
 

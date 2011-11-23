@@ -3,6 +3,7 @@ title: Christian Schmiedl
 image: schmiedl.png
 category: wir
 ---
+<!-- This comment is a workaround for a bug #439 of jekyll -->
 Software Development  
 E-Mail: [schmiedl@...](mailto:schmiedl@asdf-systems.de)
 

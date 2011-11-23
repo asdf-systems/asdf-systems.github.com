@@ -3,6 +3,7 @@ title: Fabian Reif
 image: reif.png
 category: wir
 ---
+<!-- This comment is a workaround for a bug #439 of jekyll -->
 Marketing & Sales  
 E-Mail: [reif@...](mailto:reif@asdf-systems.de)
 

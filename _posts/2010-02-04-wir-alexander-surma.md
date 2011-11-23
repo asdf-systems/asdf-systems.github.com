@@ -3,6 +3,7 @@ title: Alexander Surma
 image: surma.png
 category: wir
 ---
+<!-- This comment is a workaround for a bug #439 of jekyll -->
 Geschäftsführer  
 E-Mail: [surma@...](mailto:surma@asdf-systems.de)
 
