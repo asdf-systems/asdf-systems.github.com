@@ -101,12 +101,6 @@ p:last-child {
   margin-bottom: 0;
 }
 
-@font-face {
-  font-family: "Joey";
-  src: url('/css/fonts/');
-  src: url('/css/fonts/?iefix') format('eot'), url('/css/fonts/Joey.otf') format('opentype');
-}
-
 /* line 1, ../sass/plugins/_slider.scss */
 .slider {
   overflow: hidden;
@@ -282,7 +276,10 @@ article.smallpost {
   background-image: -o-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
   background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
   background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  font-family: "Joey";
+  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
+  font-size-adjust: 0.49;
+  font-weight: bold;
+  font-style: normal;
   font-size: 16px;
   letter-spacing: 0.025em;
   line-height: 26px;
@@ -290,7 +287,10 @@ article.smallpost {
 }
 /* line 5, ../sass/page_elements/_smallpost.scss */
 article.smallpost header {
-  font-family: "Joey";
+  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
+  font-size-adjust: 0.49;
+  font-weight: bold;
+  font-style: normal;
   font-size: 18px;
   letter-spacing: 0.025em;
   line-height: 1em;
@@ -393,7 +393,10 @@ article.download aside {
 }
 /* line 11, ../sass/page_elements/_download.scss */
 article.download div {
-  font-family: "Joey";
+  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
+  font-size-adjust: 0.49;
+  font-weight: bold;
+  font-style: normal;
   font-size: 11px;
   letter-spacing: 0.025em;
   line-height: 17.5px;
@@ -427,7 +430,10 @@ article.link figure img {
 }
 /* line 9, ../sass/page_elements/_link.scss */
 article.link div {
-  font-family: "Joey";
+  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
+  font-size-adjust: 0.49;
+  font-weight: bold;
+  font-style: normal;
   font-size: 11px;
   letter-spacing: 0.025em;
   line-height: 17.5px;
@@ -436,7 +442,10 @@ article.link div {
 article.link div header {
   margin-left: 0;
   margin-bottom: 0;
-  font-family: "Joey";
+  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
+  font-size-adjust: 0.49;
+  font-weight: bold;
+  font-style: normal;
   font-size: 16px;
   letter-spacing: 0.025em;
   line-height: 26px;
@@ -475,7 +484,10 @@ article.link:after {
 }
 /* line 8, ../sass/page_elements/_slider.scss */
 .slider .pages section.page-0 {
-  font-family: "Joey";
+  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
+  font-size-adjust: 0.49;
+  font-weight: bold;
+  font-style: normal;
   font-size: 16px;
   letter-spacing: 0.025em;
   line-height: 26px;
@@ -521,7 +533,10 @@ article.link:after {
 }
 /* line 30, ../sass/page_elements/_slider.scss */
 .slider nav .next, .slider nav .prev {
-  font-family: "Joey";
+  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
+  font-size-adjust: 0.49;
+  font-weight: bold;
+  font-style: normal;
   font-size: 18px;
   letter-spacing: 0.025em;
   line-height: 1em;
@@ -598,7 +613,10 @@ article.link:after {
 }
 /* line 5, ../sass/page_elements/_intro.scss */
 .intro > header {
-  font-family: "Joey";
+  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
+  font-size-adjust: 0.49;
+  font-weight: bold;
+  font-style: normal;
   font-size: 18px;
   letter-spacing: 0.025em;
   line-height: 1em;
@@ -606,7 +624,10 @@ article.link:after {
 }
 /* line 9, ../sass/page_elements/_intro.scss */
 .intro > p {
-  font-family: "Joey";
+  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
+  font-size-adjust: 0.49;
+  font-weight: bold;
+  font-style: normal;
   font-size: 16px;
   letter-spacing: 0.025em;
   line-height: 26px;
@@ -615,7 +636,10 @@ article.link:after {
 /* line 1, ../sass/page_elements/_accordion_header.scss */
 dl.singlepage > dt {
   z-index: 900;
-  font-family: "Joey";
+  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
+  font-size-adjust: 0.49;
+  font-weight: bold;
+  font-style: normal;
   font-size: 18px;
   letter-spacing: 0.025em;
   line-height: 1em;
@@ -757,7 +781,10 @@ dl.singlepage > dd dl.accordion dt.noimg + dd .slider .pages section:not(.page-0
 }
 /* line 1, ../sass/page_elements/_accordion_l3_header.scss */
 dl.singlepage > dd dl.accordion > dd dl.accordion dt {
-  font-family: "Joey";
+  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
+  font-size-adjust: 0.49;
+  font-weight: bold;
+  font-style: normal;
   font-size: 16px;
   letter-spacing: 0.025em;
   line-height: 26px;
@@ -835,7 +862,10 @@ dl.singlepage dd > div {
   background-image: -o-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
   background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
   background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  font-family: "Joey";
+  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
+  font-size-adjust: 0.49;
+  font-weight: bold;
+  font-style: normal;
   font-size: 18px;
   letter-spacing: 0.025em;
   line-height: 1em;
@@ -944,7 +974,10 @@ dl.singlepage dd > div {
   background-image: -o-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
   background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
   background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
-  font-family: "Joey";
+  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
+  font-size-adjust: 0.49;
+  font-weight: bold;
+  font-style: normal;
   font-size: 18px;
   letter-spacing: 0.025em;
   line-height: 1em;
@@ -1008,7 +1041,10 @@ a:hover {
 /* line 1, ../sass/page_elements/_accordion_header.scss */
 body.news dl.accordion > dt {
   z-index: 900;
-  font-family: "Joey";
+  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
+  font-size-adjust: 0.49;
+  font-weight: bold;
+  font-style: normal;
   font-size: 18px;
   letter-spacing: 0.025em;
   line-height: 1em;
@@ -1150,7 +1186,10 @@ body.news dl.accordion > dd dl.accordion dt.noimg + dd .slider .pages section:no
 }
 /* line 1, ../sass/page_elements/_accordion_l3_header.scss */
 body.news dl.accordion > dd dl.accordion > dd dl.accordion dt {
-  font-family: "Joey";
+  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
+  font-size-adjust: 0.49;
+  font-weight: bold;
+  font-style: normal;
   font-size: 16px;
   letter-spacing: 0.025em;
   line-height: 26px;
@@ -1170,7 +1209,10 @@ body.news dl.accordion > dd dl.accordion > dd dl.accordion dt:before {
 /* line 1, ../sass/page_elements/_accordion_header.scss */
 body.portfolio dl.accordion > dt {
   z-index: 900;
-  font-family: "Joey";
+  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
+  font-size-adjust: 0.49;
+  font-weight: bold;
+  font-style: normal;
   font-size: 18px;
   letter-spacing: 0.025em;
   line-height: 1em;
@@ -1312,7 +1354,10 @@ body.portfolio dl.accordion > dd dl.accordion dt.noimg + dd .slider .pages secti
 }
 /* line 1, ../sass/page_elements/_accordion_l3_header.scss */
 body.portfolio dl.accordion > dd dl.accordion > dd dl.accordion dt {
-  font-family: "Joey";
+  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
+  font-size-adjust: 0.49;
+  font-weight: bold;
+  font-style: normal;
   font-size: 16px;
   letter-spacing: 0.025em;
   line-height: 26px;
@@ -1352,7 +1397,10 @@ body.portfolio dl.accordion dd > dl.accordion article.smallpost:first-child {
 /* line 1, ../sass/page_elements/_accordion_header.scss */
 body.workshop dl.accordion > dt {
   z-index: 900;
-  font-family: "Joey";
+  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
+  font-size-adjust: 0.49;
+  font-weight: bold;
+  font-style: normal;
   font-size: 18px;
   letter-spacing: 0.025em;
   line-height: 1em;
@@ -1494,7 +1542,10 @@ body.workshop dl.accordion > dd dl.accordion dt.noimg + dd .slider .pages sectio
 }
 /* line 1, ../sass/page_elements/_accordion_l3_header.scss */
 body.workshop dl.accordion > dd dl.accordion > dd dl.accordion dt {
-  font-family: "Joey";
+  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
+  font-size-adjust: 0.49;
+  font-weight: bold;
+  font-style: normal;
   font-size: 16px;
   letter-spacing: 0.025em;
   line-height: 26px;
@@ -1535,7 +1586,10 @@ body.workshop dl.accordion dd > dl.accordion article.smallpost:first-child {
 body.about input {
   background-color: #292b28;
   color: #c2c3ba;
-  font-family: "Joey";
+  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
+  font-size-adjust: 0.49;
+  font-weight: bold;
+  font-style: normal;
   font-size: 16px;
   letter-spacing: 0.025em;
   line-height: 26px;
@@ -1550,7 +1604,10 @@ body.about input {
 /* line 1, ../sass/page_elements/_accordion_header.scss */
 body.about dl.accordion > dt {
   z-index: 900;
-  font-family: "Joey";
+  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
+  font-size-adjust: 0.49;
+  font-weight: bold;
+  font-style: normal;
   font-size: 18px;
   letter-spacing: 0.025em;
   line-height: 1em;
@@ -1709,7 +1766,10 @@ body.about dl.accordion dt#referenzen + dd > div dl.accordion {
 }
 /* line 1, ../sass/page_elements/_accordion_l3_header.scss */
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dt {
-  font-family: "Joey";
+  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
+  font-size-adjust: 0.49;
+  font-weight: bold;
+  font-style: normal;
   font-size: 16px;
   letter-spacing: 0.025em;
   line-height: 26px;
@@ -1807,7 +1867,10 @@ body.about dl.accordion dt#referenzen + dd > div dl.accordion dt.consulting > di
 }
 /* line 75, ../sass/pages/_about.scss */
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dd {
-  font-family: "Joey";
+  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
+  font-size-adjust: 0.49;
+  font-weight: bold;
+  font-style: normal;
   font-size: 11px;
   letter-spacing: 0.025em;
   line-height: 17.5px;
@@ -1865,7 +1928,10 @@ body.about dl.accordion dt#referenzen + dd > div dl.accordion dd div.projects di
 /* line 1, ../sass/page_elements/_accordion_header.scss */
 body.service dl.accordion > dt {
   z-index: 900;
-  font-family: "Joey";
+  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
+  font-size-adjust: 0.49;
+  font-weight: bold;
+  font-style: normal;
   font-size: 18px;
   letter-spacing: 0.025em;
   line-height: 1em;
@@ -2020,7 +2086,10 @@ body.service dl.accordion dt + dd dl.accordion dt + dd {
 }
 /* line 1, ../sass/page_elements/_accordion_l3_header.scss */
 body.service dl.accordion dt + dd dl.accordion dt + dd dl.accordion dt {
-  font-family: "Joey";
+  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
+  font-size-adjust: 0.49;
+  font-weight: bold;
+  font-style: normal;
   font-size: 16px;
   letter-spacing: 0.025em;
   line-height: 26px;
@@ -2041,7 +2110,10 @@ body.service dl.accordion dt + dd dl.accordion dt + dd dl.accordion dd {
   background-color: transparent !important;
   background-image: none !important;
   border: 0;
-  font-family: "Joey";
+  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
+  font-size-adjust: 0.49;
+  font-weight: bold;
+  font-style: normal;
   font-size: 11px;
   letter-spacing: 0.025em;
   line-height: 17.5px;
@@ -2053,7 +2125,10 @@ body.service dl.accordion dt + dd dl.accordion dt + dd dl.accordion dd div {
 
 /* line 1, ../sass/pages/_terms.scss */
 dt#agb + dd {
-  font-family: "Joey";
+  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
+  font-size-adjust: 0.49;
+  font-weight: bold;
+  font-style: normal;
   font-size: 11px;
   letter-spacing: 0.025em;
   line-height: 17.5px;
