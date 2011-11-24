@@ -9,7 +9,7 @@ Von Anfang an war Hardwareentwicklung ein integraler Bestandteil unseres Firmenp
 Aus diesem Grund ist es uns nicht nur möglich, mit anderen Programmen der virtuellen Welt zu interagieren, sondern Schnittstellen
 zur physischen Welt zu nutzen und unser Aktionsspektrum besonders breit zu halten.
 
-Von einfachen Elektroschaltung bis hin zur voll automatisierten Mikrokontrollerarchitektur – all dies liegt in
+Von einfachen Elektroschaltungen bis hin zur voll automatisierten Mikrokontrollerarchitektur – all dies liegt in
 unseren Kompetenzen.
 <slide />
 Mit den uns Vertrauten Miktrokontrollerarchitekturen können wir viele Anwendungsbereiche der Hardwareentwicklung
