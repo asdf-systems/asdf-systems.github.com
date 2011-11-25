@@ -47,20 +47,21 @@ body.about {
 					div.marker {
 						display: block;
 						@include opacity(0.2);
-						width: 6px;
-						height: 9px;
+						width: $sprite_logo_width;
+						height: $sprite_logo_height;
 						float: right;
 						padding: 0;
+						background-image: url('/img/statics.png');
 						margin: 0 $spacing;
 					}
 					div.marker.software {
-							background-image: url('/img/minilogo_pink.png');
+						background-position: -1*$sprite_logo_x -1*$sprite_logo_pink;
 					}
 					div.marker.hardware {
-							background-image: url('/img/minilogo_turquoise.png');
+						background-position: -1*$sprite_logo_x -1*$sprite_logo_turquoise;
 					}
 					div.marker.consulting {
-							background-image: url('/img/minilogo_blue.png');
+						background-position: -1*$sprite_logo_x -1*$sprite_logo_blue;
 					}
 					&.software > div.software {
 						@include opacity(1.0);

@@ -1,6 +1,6 @@
 @mixin corner_common {
 	position: absolute;
-	background-image: url('/img/corners.png');
+	background-image: url('/img/statics.png');
 	@media screen and (max-width: 1150px) {
 		display: none;
 	}

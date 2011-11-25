@@ -25,7 +25,7 @@
 		}
 		> li {
 			a:before {
-				content: '';
+				display: none;
 			}
 			margin-left: $nav_logo_space;
 			@media screen and (max-width: 880px) {
@@ -41,17 +41,15 @@
 			// This is for the appearing
 			// asdf symbol on hover
 			&:before {
-				text-align: center;
 				display: inline-block;
 				content: '';
-				width: 6px;
-				height: 9px;
+				width: $sprite_logo_width;
+				height: $sprite_logo_height;
 				margin-right: $nav_logo_space;
 			}
 			&:hover:before, &.active:before {
-				// TODO: Replace with image
-				content: '';
-				background-image: url('/img/minilogo_orange.png');
+				background-image: url('/img/statics.png');
+				background-position: -1*$sprite_logo_x -1*$sprite_logo_orange;
 			}
 		}
 	}

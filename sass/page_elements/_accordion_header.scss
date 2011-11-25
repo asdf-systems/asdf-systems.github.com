@@ -10,14 +10,19 @@
 	}
 	@include box-style;
 	&:before {
-		font-size: $accordion_button_size;
+		display: block;
+		content: '';
+		background-image: url('/img/statics.png');
+		background-position: -1*$sprite_arrow_normal_position_x -1*$sprite_arrow_down;
+		width: $sprite_arrow_ud_width;
+		height: $sprite_arrow_ud_height;
 		margin-right: $padding_horizontal;
+		margin-top: ($accordion_l1_line_height - $sprite_arrow_ud_height) / 2;
 		float: right;
-		content: '↓';
 		@include opacity(0.4);
 	}
 	&.active:before {
-		content: '↑';
+		background-position: -1*$sprite_arrow_normal_position_x -1*$sprite_arrow_up;
 	}
 	&:hover, &.active {
 		@include box-active-style($gradient_lightorange, $gradient_darkorange);

@@ -22,7 +22,7 @@
 			list-style-type: none;
 			> li {
 				a:before {
-					content: '';
+					display: none;
 				}
 				display: inline-block;
 				margin: 0 $padding_horizontal;

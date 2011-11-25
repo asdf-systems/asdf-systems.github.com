@@ -24,6 +24,26 @@ $corner_turquoise_index: 1;
 $corner_blue_index: 2;
 $corner_pink_index: 3;
 
+// statics sprite
+$sprite_arrow_normal_position_x: 485px;
+$sprite_arrow_active_position_x: 500px;
+$sprite_arrow_up: 531px;
+$sprite_arrow_down: 519px;
+$sprite_arrow_left: 512px;
+$sprite_arrow_right: 505px;
+$sprite_arrow_width: 10px;
+$sprite_arrow_ud_width: $sprite_arrow_width;
+$sprite_arrow_ud_height: $sprite_arrow_up - $sprite_arrow_down;
+$sprite_arrow_lr_height: $sprite_arrow_left - $sprite_arrow_right;
+$sprite_arrow_lr_width: $sprite_arrow_width;
+$sprite_logo_x: 485px;
+$sprite_logo_orange: 544px;
+$sprite_logo_turquoise: 552px;
+$sprite_logo_blue: 560px;
+$sprite_logo_pink: 568px;
+$sprite_logo_width: 6px;
+$sprite_logo_height: 8px;
+
 // gradients / highlights
 $gradient_lightorange: lighten($ci_orange, 5%);
 $gradient_darkorange: darken($ci_orange, 20%);

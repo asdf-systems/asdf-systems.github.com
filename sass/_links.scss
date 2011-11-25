@@ -1,8 +1,13 @@
 a {
 	&:before {
-		content: '→';
-		padding-right: $spacing;
-		color: $ci_orange;
+		display: inline-block;
+		background-image: url('/img/statics.png');
+		background-position: -1*$sprite_arrow_active_position_x -1*$sprite_arrow_right;
+		width: $sprite_arrow_lr_width;
+		height: $sprite_arrow_lr_height;
+		margin-bottom: 2px;
+		content: '';
+		margin-right: $spacing;
 	}
 	&:hover {
 		color: $ci_orange;
