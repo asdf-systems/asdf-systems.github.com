@@ -1,10 +1,1 @@
-/* Welcome to Compass. Use this file to write IE specific override styles.
- * Import this file using the following HTML or equivalent:
- * <!--[if IE]>
- *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
- * <![endif]--> */
-/* line 8, ../sass/ie.scss */
-dl > dd > dl > dd {
-  max-height: 0 !important;
-  margin-top: 0 !important;
-}
+dl > dd > dl > dd{max-height:0 !important;margin-top:0 !important}
