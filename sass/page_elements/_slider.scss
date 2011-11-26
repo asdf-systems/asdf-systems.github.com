@@ -39,32 +39,32 @@
 			}
 			&:before {
 				display: block;
-				width: $sprite_arrow_width;
-				height: $sprite_arrow_lr_height;
+				width: $sprite_arrow_big_width;
+				height: $sprite_arrow_big_height;
 				background-image: url('/img/statics.png');
-				margin-top: ($opener-size - $sprite_arrow_lr_height) / 2;
+				margin-top: ($opener-size - $sprite_arrow_big_height) / 2;
 			}
 		}
 		.next {
 			border-right-width: $slider_arrow_border;
 			float: right;
 			&:before {
-				background-position: -1*$sprite_arrow_normal_position_x -1*$sprite_arrow_right;
+				background-position: -1*$sprite_arrow_normal_position_x -1*$sprite_arrow_big_right;
 				content: ''
 			}
 			&:hover:before {
-				background-position: -1*$sprite_arrow_active_position_x -1*$sprite_arrow_right;
+				background-position: -1*$sprite_arrow_active_position_x -1*$sprite_arrow_big_right;
 			}
 		}
 		.prev {
 			border-left-width: $slider_arrow_border;
 			float: left;
 			&:before {
-				background-position: -1*$sprite_arrow_normal_position_x -1*$sprite_arrow_left;
+				background-position: -1*$sprite_arrow_normal_position_x -1*$sprite_arrow_big_left;
 				content: ''
 			}
 			&:hover:before {
-				background-position: -1*$sprite_arrow_active_position_x -1*$sprite_arrow_left;
+				background-position: -1*$sprite_arrow_active_position_x -1*$sprite_arrow_big_left;
 			}
 		}
 		.page {

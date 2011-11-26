@@ -545,10 +545,10 @@ article.link:after {
 /* line 40, ../sass/page_elements/_slider.scss */
 .slider nav .next:before, .slider nav .prev:before {
   display: block;
-  width: 10px;
-  height: 7px;
+  width: 12px;
+  height: 9px;
   background-image: url("/img/statics.png");
-  margin-top: 4.5px;
+  margin-top: 3.5px;
 }
 /* line 48, ../sass/page_elements/_slider.scss */
 .slider nav .next {
@@ -557,12 +557,12 @@ article.link:after {
 }
 /* line 51, ../sass/page_elements/_slider.scss */
 .slider nav .next:before {
-  background-position: -485px -505px;
+  background-position: -485px -576px;
   content: '';
 }
 /* line 55, ../sass/page_elements/_slider.scss */
 .slider nav .next:hover:before {
-  background-position: -500px -505px;
+  background-position: -500px -576px;
 }
 /* line 59, ../sass/page_elements/_slider.scss */
 .slider nav .prev {
@@ -571,12 +571,12 @@ article.link:after {
 }
 /* line 62, ../sass/page_elements/_slider.scss */
 .slider nav .prev:before {
-  background-position: -485px -512px;
+  background-position: -485px -585px;
   content: '';
 }
 /* line 66, ../sass/page_elements/_slider.scss */
 .slider nav .prev:hover:before {
-  background-position: -500px -512px;
+  background-position: -500px -585px;
 }
 /* line 70, ../sass/page_elements/_slider.scss */
 .slider nav .page {
