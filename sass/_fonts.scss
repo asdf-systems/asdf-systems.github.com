@@ -8,6 +8,11 @@
 	font-style:normal;
 }
 
+@mixin ubuntu {
+	font-family: "Ubuntu";
+	font-weight: 400;
+}
+
 @mixin headline-text-style {
 	@include joey;
 	font-size: $header_size;
@@ -16,8 +21,7 @@
 }
 
 @mixin normal-text-style {
-	font-family: "Ubuntu";
-	font-weight: 400;
+	@include ubuntu;
 	font-size: $normal_size;
 	letter-spacing: $normal_letter_spacing;
 	line-height: $normal_line_height;
@@ -31,7 +35,7 @@
 }
 
 @mixin small-text-style {
-	@include joey;
+	@include ubuntu;
 	font-size: $small_size;
 	letter-spacing: $small_letter_spacing;
 	line-height: $small_line_height;

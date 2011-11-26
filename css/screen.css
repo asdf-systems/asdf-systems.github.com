@@ -393,11 +393,9 @@ article.download aside {
 }
 /* line 11, ../sass/page_elements/_download.scss */
 article.download div {
-  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
-  font-size-adjust: 0.49;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 11px;
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-size: 13px;
   letter-spacing: 0.08em;
   line-height: 17.5px;
   width: auto;
@@ -430,11 +428,9 @@ article.link figure img {
 }
 /* line 9, ../sass/page_elements/_link.scss */
 article.link div {
-  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
-  font-size-adjust: 0.49;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 11px;
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-size: 13px;
   letter-spacing: 0.08em;
   line-height: 17.5px;
 }
@@ -1912,11 +1908,9 @@ body.about dl.accordion dt#referenzen + dd > div dl.accordion dt.consulting > di
 }
 /* line 76, ../sass/pages/_about.scss */
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dd {
-  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
-  font-size-adjust: 0.49;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 11px;
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-size: 13px;
   letter-spacing: 0.08em;
   line-height: 17.5px;
   width: 80%;
@@ -2160,11 +2154,9 @@ body.service dl.accordion dt + dd dl.accordion dt + dd dl.accordion dd {
   background-color: transparent !important;
   background-image: none !important;
   border: 0;
-  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
-  font-size-adjust: 0.49;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 11px;
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-size: 13px;
   letter-spacing: 0.08em;
   line-height: 17.5px;
 }
@@ -2175,11 +2167,9 @@ body.service dl.accordion dt + dd dl.accordion dt + dd dl.accordion dd div {
 
 /* line 1, ../sass/pages/_terms.scss */
 dt#agb + dd {
-  font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
-  font-size-adjust: 0.49;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 11px;
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-size: 13px;
   letter-spacing: 0.08em;
   line-height: 17.5px;
 }
