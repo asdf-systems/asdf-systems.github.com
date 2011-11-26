@@ -281,7 +281,7 @@ article.smallpost {
   font-weight: bold;
   font-style: normal;
   font-size: 16px;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.08em;
   line-height: 26px;
   margin-bottom: 0;
 }
@@ -398,7 +398,7 @@ article.download div {
   font-weight: bold;
   font-style: normal;
   font-size: 11px;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.08em;
   line-height: 17.5px;
   width: auto;
   display: block;
@@ -435,7 +435,7 @@ article.link div {
   font-weight: bold;
   font-style: normal;
   font-size: 11px;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.08em;
   line-height: 17.5px;
 }
 /* line 10, ../sass/page_elements/_link.scss */
@@ -447,7 +447,7 @@ article.link div header {
   font-weight: bold;
   font-style: normal;
   font-size: 16px;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.08em;
   line-height: 26px;
   color: #c2c3ba;
 }
@@ -479,7 +479,7 @@ article.link:after {
   font-family: "Ubuntu";
   font-weight: 400;
   font-size: 14px;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.08em;
   line-height: 26px;
 }
 /* line 7, ../sass/page_elements/_slider.scss */
@@ -489,7 +489,7 @@ article.link:after {
   font-weight: bold;
   font-style: normal;
   font-size: 16px;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.08em;
   line-height: 26px;
 }
 /* line 10, ../sass/page_elements/_slider.scss */
@@ -644,7 +644,7 @@ article.link:after {
   font-weight: bold;
   font-style: normal;
   font-size: 16px;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.08em;
   line-height: 26px;
 }
 
@@ -806,7 +806,7 @@ dl.singlepage > dd dl.accordion > dd dl.accordion dt {
   font-weight: bold;
   font-style: normal;
   font-size: 16px;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.08em;
   line-height: 26px;
   background: none !important;
   border: 0;
@@ -890,7 +890,7 @@ dl.singlepage dd > div {
   letter-spacing: 0.025em;
   line-height: 1em;
   font-size: 14px;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.08em;
   line-height: 36px;
   width: 150px;
   display: inline-block;
@@ -1220,7 +1220,7 @@ body.news dl.accordion > dd dl.accordion > dd dl.accordion dt {
   font-weight: bold;
   font-style: normal;
   font-size: 16px;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.08em;
   line-height: 26px;
   background: none !important;
   border: 0;
@@ -1393,7 +1393,7 @@ body.portfolio dl.accordion > dd dl.accordion > dd dl.accordion dt {
   font-weight: bold;
   font-style: normal;
   font-size: 16px;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.08em;
   line-height: 26px;
   background: none !important;
   border: 0;
@@ -1586,7 +1586,7 @@ body.workshop dl.accordion > dd dl.accordion > dd dl.accordion dt {
   font-weight: bold;
   font-style: normal;
   font-size: 16px;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.08em;
   line-height: 26px;
   background: none !important;
   border: 0;
@@ -1630,7 +1630,7 @@ body.about input {
   font-weight: bold;
   font-style: normal;
   font-size: 16px;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.08em;
   line-height: 26px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -1815,7 +1815,7 @@ body.about dl.accordion dt#referenzen + dd > div dl.accordion dt {
   font-weight: bold;
   font-style: normal;
   font-size: 16px;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.08em;
   line-height: 26px;
   background: none !important;
   border: 0;
@@ -1917,7 +1917,7 @@ body.about dl.accordion dt#referenzen + dd > div dl.accordion dd {
   font-weight: bold;
   font-style: normal;
   font-size: 11px;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.08em;
   line-height: 17.5px;
   width: 80%;
 }
@@ -2141,7 +2141,7 @@ body.service dl.accordion dt + dd dl.accordion dt + dd dl.accordion dt {
   font-weight: bold;
   font-style: normal;
   font-size: 16px;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.08em;
   line-height: 26px;
   background: none !important;
   border: 0;
@@ -2165,7 +2165,7 @@ body.service dl.accordion dt + dd dl.accordion dt + dd dl.accordion dd {
   font-weight: bold;
   font-style: normal;
   font-size: 11px;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.08em;
   line-height: 17.5px;
 }
 /* line 15, ../sass/pages/_service.scss */
@@ -2180,7 +2180,7 @@ dt#agb + dd {
   font-weight: bold;
   font-style: normal;
   font-size: 11px;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.08em;
   line-height: 17.5px;
 }
 
@@ -2202,7 +2202,7 @@ html body {
   font-family: "Ubuntu";
   font-weight: 400;
   font-size: 14px;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.08em;
   line-height: 26px;
 }
 /* line 59, ../sass/screen.scss */
