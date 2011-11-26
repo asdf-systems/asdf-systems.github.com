@@ -258,12 +258,6 @@ dl.accordion > dt.active + dd {
   height: 31px;
 }
 
-@media screen and (max-width: 880px) {
-  /* line 28, ../sass/page_elements/_bars.scss */
-  #precontentbar {
-    display: none;
-  }
-}
 /* line 1, ../sass/page_elements/_smallpost.scss */
 article.smallpost {
   margin-bottom: 5px;
@@ -1933,17 +1927,21 @@ body.about dl.accordion dt#referenzen + dd > div dl.accordion dd:after {
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dd:after {
   margin-top: 0;
 }
-/* line 84, ../sass/pages/_about.scss */
+/* line 83, ../sass/pages/_about.scss */
+body.about dl.accordion dt#referenzen + dd > div dl.accordion dd div {
+  padding-bottom: 2.5px;
+}
+/* line 87, ../sass/pages/_about.scss */
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dd div.projects div {
   display: inline-block;
   margin-right: 5px;
   text-align: center;
 }
-/* line 89, ../sass/pages/_about.scss */
+/* line 92, ../sass/pages/_about.scss */
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dd div.projects div > a:before {
   display: none;
 }
-/* line 92, ../sass/pages/_about.scss */
+/* line 95, ../sass/pages/_about.scss */
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dd div.projects div > a > img {
   display: block;
   width: 90px;
@@ -1951,15 +1949,15 @@ body.about dl.accordion dt#referenzen + dd > div dl.accordion dd div.projects di
   border: 4px solid transparent;
   margin-top: 10px;
 }
-/* line 100, ../sass/pages/_about.scss */
+/* line 103, ../sass/pages/_about.scss */
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dd div.projects div.software img {
   border-color: #a9749e;
 }
-/* line 103, ../sass/pages/_about.scss */
+/* line 106, ../sass/pages/_about.scss */
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dd div.projects div.hardware img {
   border-color: #008692;
 }
-/* line 106, ../sass/pages/_about.scss */
+/* line 109, ../sass/pages/_about.scss */
 body.about dl.accordion dt#referenzen + dd > div dl.accordion dd div.projects div.consulting img {
   border-color: #3475b2;
 }

@@ -80,6 +80,9 @@ body.about {
 					&:after {
 						margin-top: 0;
 					}
+					div {
+						padding-bottom: $spacing/2;
+					}
 					div.projects {
 						div {
 							display: inline-block;
