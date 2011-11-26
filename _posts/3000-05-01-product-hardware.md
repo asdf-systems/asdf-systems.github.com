@@ -4,13 +4,16 @@ image: hardware.png
 category: hardware
 keyword: hardware
 ---
+Von einfachen Elektroschaltungen bis hin zur voll automatisierten Mikrokontrollerarchitektur – all dies liegt in
+unseren Kompetenzen.
+
 Von Anfang an war Hardwareentwicklung ein integraler Bestandteil unseres Firmenportfolios.
 
 Aus diesem Grund ist es uns nicht nur möglich, mit anderen Programmen der virtuellen Welt zu interagieren, sondern Schnittstellen
 zur physischen Welt zu nutzen und unser Aktionsspektrum besonders breit zu halten.
 
-Von einfachen Elektroschaltungen bis hin zur voll automatisierten Mikrokontrollerarchitektur – all dies liegt in
-unseren Kompetenzen.
+So sind wir in der Lage, computergestützt Lichtanlagen zu steuern, ihre Webcam zu bewegen oder Roboter 
+zum Leben zu erwecken.
 <slide />
 Mit den uns Vertrauten Miktrokontrollerarchitekturen können wir viele Anwendungsbereiche der Hardwareentwicklung
 abdecken.
