@@ -4,15 +4,19 @@ dt {
 	font-size: $accordion_l2_header_font_size;
 	letter-spacing: $accordion_l2_letter_spacing;
 	line-height: $accordion_l2_line_height;
+	background-color: $ci_orange;
 	background-color: transparentize($ci_orange, $accordion_l2_transparency);
 	border: 0;
 	&.turquoise {
+		background-color: $ci_turquoise;
 		background-color: transparentize($ci_turquoise, $accordion_l2_transparency);
 	}
 	&.pink {
+		background-color: $ci_pink;
 		background-color: transparentize($ci_pink, $accordion_l2_transparency);
 	}
 	&.blue {
+		background-color: $ci_blue;
 		background-color: transparentize($ci_blue, $accordion_l2_transparency);
 	}
 	background-image: none !important;

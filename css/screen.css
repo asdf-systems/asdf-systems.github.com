@@ -752,40 +752,44 @@ dl.singlepage > dd dl.accordion dt {
   font-size: 18px;
   letter-spacing: 0.025em;
   line-height: 31px;
+  background-color: #fba22b;
   background-color: rgba(251, 162, 43, 0.8);
   border: 0;
   background-image: none !important;
   margin-bottom: 0;
   color: #292b28;
 }
-/* line 9, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 10, ../sass/page_elements/_accordion_l2_header.scss */
 dl.singlepage > dd dl.accordion dt.turquoise {
+  background-color: #008692;
   background-color: rgba(0, 134, 146, 0.8);
 }
-/* line 12, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 14, ../sass/page_elements/_accordion_l2_header.scss */
 dl.singlepage > dd dl.accordion dt.pink {
+  background-color: #a9749e;
   background-color: rgba(169, 116, 158, 0.8);
 }
-/* line 15, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 18, ../sass/page_elements/_accordion_l2_header.scss */
 dl.singlepage > dd dl.accordion dt.blue {
+  background-color: #3475b2;
   background-color: rgba(52, 117, 178, 0.8);
 }
-/* line 21, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 25, ../sass/page_elements/_accordion_l2_header.scss */
 dl.singlepage > dd dl.accordion dt.active, dl.singlepage > dd dl.accordion dt:hover {
   color: #ececec;
 }
-/* line 23, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 27, ../sass/page_elements/_accordion_l2_header.scss */
 dl.singlepage > dd dl.accordion dt.active:after, dl.singlepage > dd dl.accordion dt:hover:after {
   background-color: transparent !important;
   background-image: none !important;
 }
-/* line 30, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 34, ../sass/page_elements/_accordion_l2_header.scss */
 dl.singlepage > dd dl.accordion dt.noimg + dd {
   margin-top: 0;
   margin-bottom: 5px;
   max-height: 0;
 }
-/* line 36, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 40, ../sass/page_elements/_accordion_l2_header.scss */
 dl.singlepage > dd dl.accordion dt.noimg + dd .slider .pages section:not(.page-0) {
   padding-top: 0;
 }
@@ -1166,40 +1170,44 @@ body.news dl.accordion > dd dl.accordion dt {
   font-size: 18px;
   letter-spacing: 0.025em;
   line-height: 31px;
+  background-color: #fba22b;
   background-color: rgba(251, 162, 43, 0.8);
   border: 0;
   background-image: none !important;
   margin-bottom: 0;
   color: #292b28;
 }
-/* line 9, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 10, ../sass/page_elements/_accordion_l2_header.scss */
 body.news dl.accordion > dd dl.accordion dt.turquoise {
+  background-color: #008692;
   background-color: rgba(0, 134, 146, 0.8);
 }
-/* line 12, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 14, ../sass/page_elements/_accordion_l2_header.scss */
 body.news dl.accordion > dd dl.accordion dt.pink {
+  background-color: #a9749e;
   background-color: rgba(169, 116, 158, 0.8);
 }
-/* line 15, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 18, ../sass/page_elements/_accordion_l2_header.scss */
 body.news dl.accordion > dd dl.accordion dt.blue {
+  background-color: #3475b2;
   background-color: rgba(52, 117, 178, 0.8);
 }
-/* line 21, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 25, ../sass/page_elements/_accordion_l2_header.scss */
 body.news dl.accordion > dd dl.accordion dt.active, body.news dl.accordion > dd dl.accordion dt:hover {
   color: #ececec;
 }
-/* line 23, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 27, ../sass/page_elements/_accordion_l2_header.scss */
 body.news dl.accordion > dd dl.accordion dt.active:after, body.news dl.accordion > dd dl.accordion dt:hover:after {
   background-color: transparent !important;
   background-image: none !important;
 }
-/* line 30, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 34, ../sass/page_elements/_accordion_l2_header.scss */
 body.news dl.accordion > dd dl.accordion dt.noimg + dd {
   margin-top: 0;
   margin-bottom: 5px;
   max-height: 0;
 }
-/* line 36, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 40, ../sass/page_elements/_accordion_l2_header.scss */
 body.news dl.accordion > dd dl.accordion dt.noimg + dd .slider .pages section:not(.page-0) {
   padding-top: 0;
 }
@@ -1339,40 +1347,44 @@ body.portfolio dl.accordion > dd dl.accordion dt {
   font-size: 18px;
   letter-spacing: 0.025em;
   line-height: 31px;
+  background-color: #fba22b;
   background-color: rgba(251, 162, 43, 0.8);
   border: 0;
   background-image: none !important;
   margin-bottom: 0;
   color: #292b28;
 }
-/* line 9, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 10, ../sass/page_elements/_accordion_l2_header.scss */
 body.portfolio dl.accordion > dd dl.accordion dt.turquoise {
+  background-color: #008692;
   background-color: rgba(0, 134, 146, 0.8);
 }
-/* line 12, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 14, ../sass/page_elements/_accordion_l2_header.scss */
 body.portfolio dl.accordion > dd dl.accordion dt.pink {
+  background-color: #a9749e;
   background-color: rgba(169, 116, 158, 0.8);
 }
-/* line 15, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 18, ../sass/page_elements/_accordion_l2_header.scss */
 body.portfolio dl.accordion > dd dl.accordion dt.blue {
+  background-color: #3475b2;
   background-color: rgba(52, 117, 178, 0.8);
 }
-/* line 21, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 25, ../sass/page_elements/_accordion_l2_header.scss */
 body.portfolio dl.accordion > dd dl.accordion dt.active, body.portfolio dl.accordion > dd dl.accordion dt:hover {
   color: #ececec;
 }
-/* line 23, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 27, ../sass/page_elements/_accordion_l2_header.scss */
 body.portfolio dl.accordion > dd dl.accordion dt.active:after, body.portfolio dl.accordion > dd dl.accordion dt:hover:after {
   background-color: transparent !important;
   background-image: none !important;
 }
-/* line 30, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 34, ../sass/page_elements/_accordion_l2_header.scss */
 body.portfolio dl.accordion > dd dl.accordion dt.noimg + dd {
   margin-top: 0;
   margin-bottom: 5px;
   max-height: 0;
 }
-/* line 36, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 40, ../sass/page_elements/_accordion_l2_header.scss */
 body.portfolio dl.accordion > dd dl.accordion dt.noimg + dd .slider .pages section:not(.page-0) {
   padding-top: 0;
 }
@@ -1532,40 +1544,44 @@ body.workshop dl.accordion > dd dl.accordion dt {
   font-size: 18px;
   letter-spacing: 0.025em;
   line-height: 31px;
+  background-color: #fba22b;
   background-color: rgba(251, 162, 43, 0.8);
   border: 0;
   background-image: none !important;
   margin-bottom: 0;
   color: #292b28;
 }
-/* line 9, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 10, ../sass/page_elements/_accordion_l2_header.scss */
 body.workshop dl.accordion > dd dl.accordion dt.turquoise {
+  background-color: #008692;
   background-color: rgba(0, 134, 146, 0.8);
 }
-/* line 12, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 14, ../sass/page_elements/_accordion_l2_header.scss */
 body.workshop dl.accordion > dd dl.accordion dt.pink {
+  background-color: #a9749e;
   background-color: rgba(169, 116, 158, 0.8);
 }
-/* line 15, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 18, ../sass/page_elements/_accordion_l2_header.scss */
 body.workshop dl.accordion > dd dl.accordion dt.blue {
+  background-color: #3475b2;
   background-color: rgba(52, 117, 178, 0.8);
 }
-/* line 21, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 25, ../sass/page_elements/_accordion_l2_header.scss */
 body.workshop dl.accordion > dd dl.accordion dt.active, body.workshop dl.accordion > dd dl.accordion dt:hover {
   color: #ececec;
 }
-/* line 23, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 27, ../sass/page_elements/_accordion_l2_header.scss */
 body.workshop dl.accordion > dd dl.accordion dt.active:after, body.workshop dl.accordion > dd dl.accordion dt:hover:after {
   background-color: transparent !important;
   background-image: none !important;
 }
-/* line 30, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 34, ../sass/page_elements/_accordion_l2_header.scss */
 body.workshop dl.accordion > dd dl.accordion dt.noimg + dd {
   margin-top: 0;
   margin-bottom: 5px;
   max-height: 0;
 }
-/* line 36, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 40, ../sass/page_elements/_accordion_l2_header.scss */
 body.workshop dl.accordion > dd dl.accordion dt.noimg + dd .slider .pages section:not(.page-0) {
   padding-top: 0;
 }
@@ -1744,40 +1760,44 @@ body.about dl.accordion dt#firmenprofil + dd dl.accordion dt, body.about dl.acco
   font-size: 18px;
   letter-spacing: 0.025em;
   line-height: 31px;
+  background-color: #fba22b;
   background-color: rgba(251, 162, 43, 0.8);
   border: 0;
   background-image: none !important;
   margin-bottom: 0;
   color: #292b28;
 }
-/* line 9, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 10, ../sass/page_elements/_accordion_l2_header.scss */
 body.about dl.accordion dt#firmenprofil + dd dl.accordion dt.turquoise, body.about dl.accordion dt#wir + dd dl.accordion dt.turquoise {
+  background-color: #008692;
   background-color: rgba(0, 134, 146, 0.8);
 }
-/* line 12, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 14, ../sass/page_elements/_accordion_l2_header.scss */
 body.about dl.accordion dt#firmenprofil + dd dl.accordion dt.pink, body.about dl.accordion dt#wir + dd dl.accordion dt.pink {
+  background-color: #a9749e;
   background-color: rgba(169, 116, 158, 0.8);
 }
-/* line 15, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 18, ../sass/page_elements/_accordion_l2_header.scss */
 body.about dl.accordion dt#firmenprofil + dd dl.accordion dt.blue, body.about dl.accordion dt#wir + dd dl.accordion dt.blue {
+  background-color: #3475b2;
   background-color: rgba(52, 117, 178, 0.8);
 }
-/* line 21, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 25, ../sass/page_elements/_accordion_l2_header.scss */
 body.about dl.accordion dt#firmenprofil + dd dl.accordion dt.active, body.about dl.accordion dt#firmenprofil + dd dl.accordion dt:hover, body.about dl.accordion dt#wir + dd dl.accordion dt.active, body.about dl.accordion dt#wir + dd dl.accordion dt:hover {
   color: #ececec;
 }
-/* line 23, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 27, ../sass/page_elements/_accordion_l2_header.scss */
 body.about dl.accordion dt#firmenprofil + dd dl.accordion dt.active:after, body.about dl.accordion dt#firmenprofil + dd dl.accordion dt:hover:after, body.about dl.accordion dt#wir + dd dl.accordion dt.active:after, body.about dl.accordion dt#wir + dd dl.accordion dt:hover:after {
   background-color: transparent !important;
   background-image: none !important;
 }
-/* line 30, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 34, ../sass/page_elements/_accordion_l2_header.scss */
 body.about dl.accordion dt#firmenprofil + dd dl.accordion dt.noimg + dd, body.about dl.accordion dt#wir + dd dl.accordion dt.noimg + dd {
   margin-top: 0;
   margin-bottom: 5px;
   max-height: 0;
 }
-/* line 36, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 40, ../sass/page_elements/_accordion_l2_header.scss */
 body.about dl.accordion dt#firmenprofil + dd dl.accordion dt.noimg + dd .slider .pages section:not(.page-0), body.about dl.accordion dt#wir + dd dl.accordion dt.noimg + dd .slider .pages section:not(.page-0) {
   padding-top: 0;
 }
@@ -2076,40 +2096,44 @@ body.service dl.accordion dt + dd dl.accordion dt {
   font-size: 18px;
   letter-spacing: 0.025em;
   line-height: 31px;
+  background-color: #fba22b;
   background-color: rgba(251, 162, 43, 0.8);
   border: 0;
   background-image: none !important;
   margin-bottom: 0;
   color: #292b28;
 }
-/* line 9, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 10, ../sass/page_elements/_accordion_l2_header.scss */
 body.service dl.accordion dt + dd dl.accordion dt.turquoise {
+  background-color: #008692;
   background-color: rgba(0, 134, 146, 0.8);
 }
-/* line 12, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 14, ../sass/page_elements/_accordion_l2_header.scss */
 body.service dl.accordion dt + dd dl.accordion dt.pink {
+  background-color: #a9749e;
   background-color: rgba(169, 116, 158, 0.8);
 }
-/* line 15, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 18, ../sass/page_elements/_accordion_l2_header.scss */
 body.service dl.accordion dt + dd dl.accordion dt.blue {
+  background-color: #3475b2;
   background-color: rgba(52, 117, 178, 0.8);
 }
-/* line 21, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 25, ../sass/page_elements/_accordion_l2_header.scss */
 body.service dl.accordion dt + dd dl.accordion dt.active, body.service dl.accordion dt + dd dl.accordion dt:hover {
   color: #ececec;
 }
-/* line 23, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 27, ../sass/page_elements/_accordion_l2_header.scss */
 body.service dl.accordion dt + dd dl.accordion dt.active:after, body.service dl.accordion dt + dd dl.accordion dt:hover:after {
   background-color: transparent !important;
   background-image: none !important;
 }
-/* line 30, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 34, ../sass/page_elements/_accordion_l2_header.scss */
 body.service dl.accordion dt + dd dl.accordion dt.noimg + dd {
   margin-top: 0;
   margin-bottom: 5px;
   max-height: 0;
 }
-/* line 36, ../sass/page_elements/_accordion_l2_header.scss */
+/* line 40, ../sass/page_elements/_accordion_l2_header.scss */
 body.service dl.accordion dt + dd dl.accordion dt.noimg + dd .slider .pages section:not(.page-0) {
   padding-top: 0;
 }

@@ -3,3 +3,10 @@
  * <!--[if IE]>
  *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
  * <![endif]--> */
+
+// On level-2 transparent headers don’t do the transparency stuff
+dl > dd > dl > dd {
+	max-height: 0 !important;
+	margin-top: 0 !important;
+}
+
