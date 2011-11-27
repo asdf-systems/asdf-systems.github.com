@@ -9,6 +9,7 @@
 			display: inline-block;
 			width: $sprite_social_width;
 			height: $sprite_social_height;
+			margin-top: ($bar_height - $sprite_social_height)/2;
 			background-image: url('/img/statics.png');
 			cursor: pointer;
 		}

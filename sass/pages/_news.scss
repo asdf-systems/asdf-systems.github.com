@@ -2,4 +2,23 @@ body.news {
 	dl.accordion {
 		@import "page_elements/_accordion_default.scss";
 	}
+	#precontentbar {
+		text-align: right;
+		padding: 0 $padding_horizontal;
+		a:before {
+			display: none;
+		}
+		#rss {
+			margin-top: ($bar_height - $sprite_rss_height)/2;
+			display: inline-block;
+			background-image: url('/img/statics.png');
+			width: $sprite_rss_width;
+			height: $sprite_rss_height;
+			background-position: -1*$sprite_rss_x -1*$sprite_rss_y;
+			cursor: pointer;
+			&:hover {
+				background-position: -1*$sprite_rss_x -1*($sprite_rss_y+$sprite_rss_height);
+			}
+		}
+	}
 }

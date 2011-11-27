@@ -3,7 +3,11 @@ layout: main
 menu: news
 corners: orange
 ---
-<div id="precontentbar" class="bar"></div>
+<div id="precontentbar" class="bar">
+	<a href="/feed.xml" target="_blank">
+		<div id="rss"></div>
+	</a>
+</div>
 <article class="intro">
 	{% for post in site.posts %}
 		{% if post.categories contains "intro" %}
