@@ -1,4 +1,43 @@
 #container > header {
+	a:before {
+		display: none;
+	}
+	> #social {
+		padding: 0 $padding_horizontal;
+		text-align: right;
+		div {
+			display: inline-block;
+			width: $sprite_social_width;
+			height: $sprite_social_height;
+			margin-top: ($bar_height - $sprite_social_height)/2;
+			background-image: url('/img/statics.png');
+			cursor: pointer;
+		}
+		#facebook {
+			background-position: -1*$sprite_social_x -1*($sprite_social_y+($sprite_social_facebook_index*2+0)*$sprite_social_height);
+			&:hover {
+				background-position: -1*$sprite_social_x -1*($sprite_social_y+($sprite_social_facebook_index*2+1)*$sprite_social_height);
+			}
+		}
+		#twitter {
+			background-position: -1*$sprite_social_x -1*($sprite_social_y+($sprite_social_twitter_index*2+0)*$sprite_social_height);
+			&:hover {
+				background-position: -1*$sprite_social_x -1*($sprite_social_y+($sprite_social_twitter_index*2+1)*$sprite_social_height);
+			}
+		}
+		#gplus {
+			background-position: -1*$sprite_social_x -1*($sprite_social_y+($sprite_social_gplus_index*2+0)*$sprite_social_height);
+			&:hover {
+				background-position: -1*$sprite_social_x -1*($sprite_social_y+($sprite_social_gplus_index*2+1)*$sprite_social_height);
+			}
+		}
+		#github {
+			background-position: -1*$sprite_social_x -1*($sprite_social_y+($sprite_social_github_index*2+0)*$sprite_social_height);
+			&:hover {
+				background-position: -1*$sprite_social_x -1*($sprite_social_y+($sprite_social_github_index*2+1)*$sprite_social_height);
+			}
+		}
+	}
 	> figure {
 		margin-left: auto;
 		margin-right: auto;
