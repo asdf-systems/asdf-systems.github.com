@@ -5,7 +5,7 @@ category: software
 keyword: web
 ---
 Das Web hat sich in den letzten Jahren zur Hauptplattform für Applikationen entwickelt und hat eine
-entsprechend grosse Vielfalt and Möglickeiten, Eigenheiten und Wandlungsfähigkeit.
+entsprechend grosse Vielfalt an Möglichkeiten, Eigenheiten und Wandlungsfähigkeit.
 
 Auch wenn sich das Web in seinen Technologien schnell weiterentwickelt, halten wir mit dem Fortschritt
 mit und sind stets mit den aktuellsten Errungenschaften des Web vertraut.

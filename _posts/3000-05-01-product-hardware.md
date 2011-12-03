@@ -2,7 +2,7 @@
 title: Hardwareentwicklung
 image: hardware.png
 category: hardware
-keyword: hardware
+keyword: hardwareentwicklung
 ---
 Von einfachen Elektroschaltungen bis hin zur voll automatisierten Mikrokontrollerarchitektur – all dies liegt in
 unseren Kompetenzen.
@@ -15,7 +15,7 @@ zur physischen Welt zu nutzen und unser Aktionsspektrum besonders breit zu halte
 So sind wir in der Lage, computergestützt Lichtanlagen zu steuern, ihre Webcam zu bewegen oder Roboter 
 zum Leben zu erwecken.
 <slide />
-Mit den uns Vertrauten Miktrokontrollerarchitekturen können wir viele Anwendungsbereiche der Hardwareentwicklung
+Mit den uns vertrauten Mikrokontrollerarchitekturen können wir viele Anwendungsbereiche der Hardwareentwicklung
 abdecken.
 
 Die kostengünstige AVR AtMega-Reihe von [Atmel](http://www2.atmel.com/) ermöglicht schnelles und erschwingliches Aufbauen
@@ -28,8 +28,8 @@ viel Aufwand angesteuert und benutzt werden können.
 Für performancelastige oder zeitkritische Anwendungen haben wir uns auf die [XMOS](http://www.xmos.com)-Prozessorreihe spezialisiert.
 Durch die hohen Taktraten in Kombination mit der Mehrkern-Architektur sind im Anwendungsgebiet kaum Grenzen gesetzt.
 
-Die hoch flexibel gehaltente Architektur lässt ein wartbares und wiederverwendbares Design der Firmware zu, was die beim Prototyping
+Die hoch flexibel gehaltene Architektur lässt ein wartbares und wiederverwendbares Design der Firmware zu, was die beim Prototyping
 üblichen, spontanen Änderungen trivialisiert. Das intelligente Design der XMOS-Architektur ermöglicht das Verbindenen mehrerer Chips
 unter denen die Arbeit aufgeteil werden kann.
 
-Mit ihrer hohlen Toleranz für Temparatur, Kräfteeinwirkung und Lebensdauer sind sie selbst für den industriellen Einsatz geeignet.
+Mit ihrer hohen Toleranz für Temparatur, Kräfteeinwirkung und Lebensdauer sind sie selbst für den industriellen Einsatz geeignet.

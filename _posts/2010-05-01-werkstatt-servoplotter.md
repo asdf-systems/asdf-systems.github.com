@@ -16,5 +16,5 @@ Bei den Testläufen erwies sich die Metallbaukasten-Konstruktion als zu instabil
 
 Fazit:
 Die einfache mechanische Konstruktion hat zwar zu dürftigen Zeichenergebnissen geführt, aber gleichzeitig aufgezeigt welches großes Potential in dieser Idee steckt.
-Unsere Erkenntnisse beim Bauen des servoPlotters bildeten die Grundlage für die [servoControl](/portfolio.html/#hardware#servocontrol).
+Unsere Erkenntnisse beim Bauen des servoPlotters bildeten die Grundlage für die [servoControl](/portfolio.html#hardware#servocontrol).
 
