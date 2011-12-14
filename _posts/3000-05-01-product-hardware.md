@@ -2,7 +2,7 @@
 title: Hardwareentwicklung
 image: hardware.png
 category: hardware
-keyword: hardwareentwicklung
+keyword: section
 ---
 Von einfachen Elektroschaltungen bis hin zur voll automatisierten Mikrokontrollerarchitektur – all dies liegt in
 unseren Kompetenzen.
