@@ -11,21 +11,19 @@
 		var $headers = $($accordion.children('dt'));
 
 		var openTargets = function() {
+			$($headers[0]).addClass('active');
+
 			var targets = unescape(location.hash).split('#');
 			var found = false;
 			$headers.each(function() {
 				if($.inArray($(this).attr('id'), targets) != -1) {
-					$(this).addClass('active');
-					found = true;
-					return;
+					$(this).click();
 				}
 			})
-			if(!found && $headers.length > 0 && !$accordion.hasClass('closed')) {
-				$($headers[0]).addClass('active');
-			}
 		}
-		openTargets();
 
+		// Register click handlers first so we can use click()
+		// in openTargets()
 		$headers.click(function() {
 			if($(this).hasClass('active')) {
 				$(this).removeClass('active');
@@ -34,5 +32,6 @@
 				$(this).addClass('active');
 			}
 		})
+		openTargets();
 	});
 })(jQuery);
