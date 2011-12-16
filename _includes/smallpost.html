@@ -1,5 +1,5 @@
 <article class="smallpost">
-	<header>{{post.title}}</header>
+	<header>{{post.title}}<span>{{post.date | date: "%d. %B %Y"}}</span> </header>
 	{% if post.image %}
 		<figure>
 			<img src="/img/{{page.menu | downcase}}/{{post.image}}">

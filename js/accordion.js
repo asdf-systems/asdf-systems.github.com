@@ -11,7 +11,9 @@
 		var $headers = $($accordion.children('dt'));
 
 		var openTargets = function() {
-			$($headers[0]).addClass('active');
+			if(!$accordion.hasClass('closed')) {
+				$($headers[0]).addClass('active');
+			}
 
 			var targets = unescape(location.hash).split('#');
 			var found = false;

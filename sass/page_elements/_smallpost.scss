@@ -7,6 +7,14 @@ article.smallpost {
 		display: block;
 		color: $ci_white;
 		margin: $padding_vertical $padding_horizontal;
+		span {
+			padding-left: $padding_horizontal;
+			color: $ci_lightgray;
+			@include opacity(0.5);
+			@include small-text-style;
+			float: right;
+		}
+		@include pie-clearfix;
 	}
 	figure {
 		display: inline-block;
