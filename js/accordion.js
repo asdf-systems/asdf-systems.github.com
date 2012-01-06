@@ -18,7 +18,7 @@
 			var targets = unescape(location.hash).split('#');
 			var found = false;
 			$headers.each(function() {
-				if($.inArray($(this).attr('id'), targets) != -1) {
+				if(($.inArray($(this).attr('id'), targets) != -1) && !$(this).hasClass('active')){
 					$(this).click();
 				}
 			})
