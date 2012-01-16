@@ -16,7 +16,7 @@ article.smallpost {
 		}
 		@include pie-clearfix;
 	}
-	figure {
+	figure, iframe {
 		display: inline-block;
 		vertical-align: top;
 		@media screen and (max-width: 880px) {
@@ -32,6 +32,9 @@ article.smallpost {
 				margin-right: 0;
 			}
 		}
+	}
+	iframe {
+		height: 300px;
 	}
 	div {
 		vertical-align: top;
@@ -52,4 +55,18 @@ article.smallpost {
 		text-align: right;
 	}
 	@include box-active-style;
+	&.big {
+		figure, iframe {
+			display: block;
+			width: 100%;
+			max-width: 720px;
+			margin: 0 auto;
+		}
+		div {
+			display: block;
+			width: 90%;
+			padding-top: $padding_vertical;
+			padding-left: $padding_horizontal;
+		}
+	}
 }

@@ -7,12 +7,13 @@
 			&.page-0 {
 				@include opener-text-style;
 			}
-			img {
+			img, iframe {
 				width: 100%;
 				max-width: 720px;
 				display: block;
 				margin: 0 auto;
 			}
+
 			div {
 				> br:first-child {
 					display: none;

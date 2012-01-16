@@ -1,9 +1,13 @@
-<article class="smallpost">
+<article class="smallpost {% if post.categories contains "big" %} big {% endif %}">
 	<header>{{post.title}}<span>{{post.date | date: "%d. %B %Y"}}</span> </header>
-	{% if post.image %}
-		<figure>
-			<img src="/img/{{page.menu | downcase}}/{{post.image}}">
-		</figure>
+	{% if post.video %}
+		<iframe src="http://www.youtube.com/embed/{{post.video}}" frameborder="0" allowfullscreen></iframe>
+	{% else %}
+		{% if post.image %}
+			<figure>
+				<img src="/img/{{page.menu | downcase}}/{{post.image}}">
+			</figure>
+		{% endif %}
 	{% endif %}
 	<div>
 		{{ post.content }}
