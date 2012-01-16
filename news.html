@@ -19,7 +19,7 @@ corners: orange
 {% capture current_year %}{{site.time | date: "%Y"}}{% endcapture %}
 {% for post in site.posts %}
 	{% capture post_age %}{{post.date | date: "%Y" | minus: current_year}}{% endcapture %}
-	{% if (post.categories contains "news") and (post_age == "0") %}
+	{% if ((post.categories contains "news") and (post_age == "0")) or (post.categories contains "noarchive") %}
 		{% include smallpost.html %}
 	{% endif %}
 {% endfor %}
