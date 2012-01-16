@@ -16,9 +16,10 @@ corners: orange
 		{% endif %}
 	{% endfor %}
 </article>
-
+{% capture current_year %}{{site.time | date: "%Y"}}{% endcapture %}
 {% for post in site.posts %}
-	{% if post.categories contains "news" %}
+	{% capture post_age %}{{post.date | date: "%Y" | minus: current_year}}{% endcapture %}
+	{% if (post.categories contains "news") and (post_age == "0") %}
 		{% include smallpost.html %}
 	{% endif %}
 {% endfor %}
@@ -29,16 +30,20 @@ corners: orange
 	</dt>
 	<dd>
 		<dl class="accordion">
-			<dt>
-				<div>2010</div>
-			</dt>
-			<dd>
-				{% for post in site.posts %}
-					{% if post.categories contains "archiv" %}
-						{% include smallpost.html %}
-					{% endif %}
-				{% endfor %}
-			</dd>
+			{% capture last_year %}{{site.time | date: "%Y" | minus: 1}}{% endcapture %}
+			{% for year in (2010..last_year) %}
+				<dt>
+					<div>{{year}}</div>
+				</dt>
+				<dd>
+					{% for post in site.posts %}
+						{% capture post_age %}{{ post.date | date: "%Y" | minus: year }}{% endcapture %}
+						{% if (post_age == "0") and ((post.categories contains "news") or post.categories contains "archiv")) %}
+							{% include smallpost.html %}
+						{% endif %}
+					{% endfor %}
+				</dd>
+			{% endfor %}
 		</dl>
 	</dd>
 </dl>
