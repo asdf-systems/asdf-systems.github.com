@@ -2,19 +2,17 @@
 article.download {
 	figure {
 		margin: $padding_vertical $padding_horizontal;
-		float: left;
-	}
-	aside {
-		display: block;
-		float: right;
 	}
 	div {
 		@include small-text-style;
-		width: auto;
-		display: block;
 		header {
 			margin: 0;
 			margin: $padding_vertical 0;
+			display: inline-block;
+		}
+		aside {
+			display: inline-block;
+			float: right;
 		}
 	}
 

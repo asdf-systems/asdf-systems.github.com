@@ -75,7 +75,19 @@ corners: orange
 	</dt>
 	<dd>
 		<dl class="accordion">
-			<dt>
+			<dt id="spiele">
+				<div>Spiele</div>
+			</dt>
+			<dd>
+				<div>
+					{% for post in site.posts %}
+						{% if post.categories contains "downloads" and post.categories contains "spiele" %}
+							{% include download.html %}
+						{% endif %}
+					{% endfor %}
+				</div>
+			</dd>
+			<dt id="wallpaper">
 				<div>Wallpaper</div>
 			</dt>
 			<dd>
