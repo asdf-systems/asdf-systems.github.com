@@ -7,7 +7,11 @@
 	<div>
 		<header>{{post.title}}</header>
 		<aside>
-			<a href="{{post.link}}">Download</a>
+			{% if post.buttonname %}
+				<a href="{{post.link}}">{{post.buttonname}}</a>
+			{% else %}
+				<a href="{{post.link}}">Download</a>
+			{% endif %}
 		</aside>
 		{{ post.content }}
 	</div>

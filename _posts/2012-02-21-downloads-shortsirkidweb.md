@@ -5,4 +5,5 @@ link: /singles/shortsirkid
 categories:
 - downloads
 - spiele
+buttonname: "Spielen"
 ---
