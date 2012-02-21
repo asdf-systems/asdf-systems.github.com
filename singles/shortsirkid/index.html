@@ -1,0 +1,55 @@
+---
+layout: main
+title: Short Sir Kid – Web
+nomenu: "true"
+---
+<script type="text/javascript" src="http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject.js"></script>
+<script type="text/javascript">
+function GetUnity() {
+	if (typeof unityObject != "undefined") {
+		return unityObject.getObjectById("unityPlayer");
+	}
+	return null;
+}
+if (typeof unityObject != "undefined") {
+	unityObject.embedUnity("unityPlayer", "short_sir_kid.unity3d", 880, 495);
+
+}
+</script>
+<style>
+#container {
+	width: 880px !important;
+}
+</style>
+<div style="text-align:center; width: 880px !important;">
+	<div id="unityPlayer">
+		<div class="missing">
+			<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
+				<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
+			</a>
+		</div>
+	</div>
+</div>
+<article class="smallpost big" style="width: 880px !important;">
+	<header>Short Sir Kid</header>
+	<div>
+		<p>Short sir kid is a two button sidescrolling platformer. You use [space] to make the robot  jump and [s] to give him an electric shock to slow him down. You need to carefully time his jumps and manage his running speed by shocking him to successfully reach the end of the level. If the robot gains too much speed, he will spin out of control. Jumping and slowing down is considerably more difficult when the robot is in his out-of-control state.</p>
+
+		<p>GlobalGame-Jam Team:
+			<ul>
+				<li>Anjin Anhut</li>
+				<li>Arda Cevik</li>
+				<li>Cordula Guder</li>
+				<li>Friedrich Wessel</li>
+			</ul>
+		</p>
+
+		<p>Weitere Links:
+			<ul>
+				<li>Zu <a href="/">asdf-systems</a></li>
+				<li>Zu <a href="/portfolio.html#software#pux">asdf-systems’ Softwarerubrik</a></li>
+			</ul>
+		</p>
+	</div>
+</article>
+
