@@ -56,10 +56,12 @@ footermenu:
 			<header>
 				{% include header.html %}
 			</header>
+			{% if page.nomenu != "true" %}
 			<nav>
 				{% assign menuitems = page.mainmenu %}
 				{% include nav.html %}
 			</nav>
+			{% endif %}
 			<div id="content">
 				{{content}}
 			</div>
