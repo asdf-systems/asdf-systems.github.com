@@ -4,7 +4,7 @@ image: schmiedl.png
 category: wir
 ---
 <!-- This comment is a workaround for a bug #439 of jekyll -->
-Software Development  
+Software Development
 E-Mail: [schmiedl@...](mailto:schmiedl@asdf-systems.de)
 
 Christian ist einer der Gründer von asdf-systems und spezialisiert auf den Bereich Mikrocontrolling und mobile Sensornetzwerke.

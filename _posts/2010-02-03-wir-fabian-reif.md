@@ -4,7 +4,7 @@ image: reif.png
 category: wir
 ---
 <!-- This comment is a workaround for a bug #439 of jekyll -->
-Marketing & Sales  
+Marketing & Sales
 E-Mail: [reif@...](mailto:reif@asdf-systems.de)
 
 Fabian leitet seit November 2010 den Bereich Marketing & Sales.

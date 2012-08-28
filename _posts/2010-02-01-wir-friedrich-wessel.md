@@ -4,7 +4,7 @@ image: wessel.png
 category: wir
 ---
 <!-- This comment is a workaround for a bug #439 of jekyll -->
-Projektleitung  
+Projektleitung
 E-Mail: [wessel@...](mailto:wessel@asdf-systems.de)
 
 Friedrich ist einer der Gründer der Firma und der leitende Projektmanager von asdf-systems. Er hat sich neben Projektmanagement auf die Bereiche Visual-Effects für Film und Spiele spezialisiert. Sein besonderes Augenmerk richtet sich auf Pipeline- und Workflowoptimierung.
