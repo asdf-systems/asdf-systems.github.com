@@ -1,4 +1,5 @@
 body.portfolio {
+	@import "plugins/_accordion.scss";
 	dl.accordion {
 		@import "page_elements/_accordion_default.scss";
 		dd > dl.accordion {
