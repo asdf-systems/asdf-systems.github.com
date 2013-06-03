@@ -17,6 +17,7 @@ corners: orange
 	{% endfor %}
 </article>
 {% capture current_year %}{{site.time | date: "%Y"}}{% endcapture %}
+{% capture current_year %}2012{% endcapture %}
 {% for post in site.posts %}
 	{% capture post_age %}{{post.date | date: "%Y" | minus: current_year}}{% endcapture %}
 	{% if ((post.categories contains "news") and (post_age == "0")) or (post.categories contains "noarchive") %}
