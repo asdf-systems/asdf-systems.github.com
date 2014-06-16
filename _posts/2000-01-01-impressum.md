@@ -9,9 +9,9 @@ D-12157 Berlin
 
 E-Mail: <info@asdf-systems.de>
 
-Geschäftsführer: Alexander Surma
+Geschäftsführer: Friedrich Wessel
 
-Inhaltlich verantwortlich: Alexander Surma
+Inhaltlich verantwortlich: Friedrich Wessel
 
 Gestaltung der Website: Pauline Altmann
 <http://www.paulinealtmann.de>
